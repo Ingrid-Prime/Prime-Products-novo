@@ -1,1 +1,12 @@
+node_modules/
+.env
+.env.local
+*.local
+dist/
+public/images/Aplicações/
+public/images/Produtos/
+public/images/Soluções/
+public/api/data/cms-data.json
+public/api/data/cms-data.json.tmp
 .claude/
+public_html/.builds/

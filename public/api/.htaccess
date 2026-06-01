@@ -1,0 +1,6 @@
+Options -Indexes
+# Bloqueia acesso direto à pasta data
+<FilesMatch "^data">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
