@@ -79,7 +79,7 @@ export function Home() {
             </AnimateOnScroll>
             <AnimateOnScroll delay={200}>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 drop-shadow-2xl">
-                <EditableElement id="home_hero_title" defaultContent="Excelência Técnica, Engenharia Aplicada, Segurança em Soluções Industriais" />
+                <EditableElement id="home_hero_title" defaultContent="Excelência técnica em engenharia aplicada, segurança e soluções para processos críticos." />
               </h1>
             </AnimateOnScroll>
             <AnimateOnScroll delay={400}>
