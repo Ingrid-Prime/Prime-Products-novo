@@ -8,5 +8,6 @@ public/images/Produtos/
 public/images/Soluções/
 public/api/data/cms-data.json
 public/api/data/cms-data.json.tmp
+public_html/api/data/
 .claude/
 public_html/.builds/
