@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.local
+*.local
+dist/
+public/images/Aplicações/
+public/images/Produtos/
+public/images/Soluções/
+# Dados do banco CMS (gerado pelo servidor, não rastrear no git)
+public/api/data/cms-data.json
+public/api/data/cms-data.json.tmp

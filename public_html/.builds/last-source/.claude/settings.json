@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ':*)",
+      "Bash(node)",
+      "Bash(node gen_pages.js)",
+      "Bash(node --input-type=commonjs)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(xargs -I{} basename {})",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174)"
+    ]
+  }
+}
