@@ -6,7 +6,7 @@ import { SectionContainer } from '../../components/SectionContainer';
 
 const APP_GALLERY: Record<string, string[]> = {
   'laboratorios-analiticos': ['/images/app-lab-01.png', '/images/app-laboratorio-2.png', '/images/app-laboratorio-3.png', '/images/app-lab-04.png', '/images/app-lab-05.png', '/images/app-lab-06.png'],
-  'farmaceutica': ['/images/app-pesquisa-2.jpg', '/images/app-pesquisa-3.jpg', '/images/app-centros-pesquisa.jpg', '/images/app-data-center.jpg', '/images/app-laboratorio-3.png'],
+  'farmaceutica': ['/images/farmaceutica_linha_1.jpg', '/images/farmaceutica_linha_2.jpg', '/images/farmaceutica_filtro.jpg', '/images/farmaceutica_corredor.jpg'],
   'centros-pesquisa': ['/images/app-pesquisa-2.jpg', '/images/app-pesquisa-3.jpg', '/images/app-data-center.jpg'],
   'hospitalar': ['/images/prod-geracao-2.png', '/images/prod-geracao-3.png', '/images/prod-geracao-4.png', '/images/prod-dewars-criogenicos.png'],
   'oleo-gas': ['/images/app-seguranca-01.png', '/images/app-seguranca-2.png', '/images/app-seguranca-03.png', '/images/app-seguranca-04.png', '/images/prod-transmissores-pressao.png', '/images/app-planta-03.png'],
@@ -45,7 +45,7 @@ const APPLICATION_DATA: Record<string, {
   'farmaceutica': {
     name: 'Farmacêutica',
     cat: 'Laboratorial e Pesquisa',
-    img: '/images/app-lab-05.png',
+    img: '/images/farmaceutica_linha_1.jpg',
     desc: 'A indústria farmacêutica exige gases de grau USP, sistemas validados, rastreabilidade completa e conformidade com GMP. A Prime Products fornece soluções auditáveis, com documentação técnica completa para atender às exigências da Anvisa e da FDA.',
     challenges: ['Gases com grau farmacêutico (USP) e certificados', 'Validação de sistemas e qualificação de equipamentos', 'Conformidade GMP e rastreabilidade de lotes', 'Controle de pureza e monitoramento contínuo'],
     solutions: ['Cilindros e reguladores para gases USP com certificado de análise', 'Sistemas de distribuição de gases medicinais certificados', 'Instrumentação validada para ambientes GMP', 'Detectores de vazamento e monitoramento de pureza'],
@@ -221,7 +221,11 @@ export function ApplicationDetail() {
         type="container"
         as="section"
         className="relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
-        defaultStyle={{ backgroundImage: `url('${app.img}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        defaultStyle={{
+          backgroundImage: `url('${app.img}')`,
+          backgroundSize: 'cover',
+          backgroundPosition: id === 'farmaceutica' ? 'center 15%' : 'center'
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -247,6 +251,7 @@ export function ApplicationDetail() {
                   <EditableElement id={`app_${id}_desc`} defaultContent={app.desc} />
                 </p>
               </div>
+
               <div className="bg-white p-8 shadow-md">
                 <h2 className="text-xl font-bold text-secondary mb-6">Principais Desafios</h2>
                 <ul className="space-y-3">
@@ -273,12 +278,44 @@ export function ApplicationDetail() {
             <div className="space-y-6">
               <AnimateOnScroll>
                 <img src={app.img} alt={app.name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
-                {galleryImages.length > 0 && (
-                  <div className={`grid gap-2 mt-2 ${galleryImages.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
-                    {galleryImages.map((src, i) => (
-                      <img key={i} src={src} alt={`${app.name} ${i + 2}`} className="w-full h-28 object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity" referrerPolicy="no-referrer" />
-                    ))}
+                {id === 'farmaceutica' ? (
+                  <div className="grid grid-cols-2 gap-2 mt-2">
+                    {/* Filtro USP ocupando os dois espaços verticais */}
+                    <div className="row-span-2 h-[232px]">
+                      <img
+                        src="/images/farmaceutica_filtro.jpg"
+                        alt="Sistema de Filtração USP"
+                        className="w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                    {/* Linha 2 no topo direito */}
+                    <div className="h-[112px]">
+                      <img
+                        src="/images/farmaceutica_linha_2.jpg"
+                        alt="Linha de Distribuição Farmacêutica"
+                        className="w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
+                    {/* Corredor embaixo direito */}
+                    <div className="h-[112px]">
+                      <img
+                        src="/images/farmaceutica_corredor.jpg"
+                        alt="Corredor Limpo GMP"
+                        className="w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
+                        referrerPolicy="no-referrer"
+                      />
+                    </div>
                   </div>
+                ) : (
+                  galleryImages.length > 0 && (
+                    <div className={`grid gap-2 mt-2 ${galleryImages.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
+                      {galleryImages.map((src, i) => (
+                        <img key={i} src={src} alt={`${app.name} ${i + 2}`} className="w-full h-28 object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity" referrerPolicy="no-referrer" />
+                      ))}
+                    </div>
+                  )
                 )}
               </AnimateOnScroll>
               <div className="bg-secondary text-white p-8 rounded-sm shadow-lg">
