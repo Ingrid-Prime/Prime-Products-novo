@@ -12,7 +12,7 @@ const PRODUCTS = [
   { id: 'dewars-criogenicos', name: 'Dewars Criogênicos', cat: 'Criogenia', img: '/images/prod-dewars-criogenicos.png', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.' },
   { id: 'geracao-oxigenio', name: 'Geração de Oxigênio', cat: 'Gases', img: '/images/prod-geracao-oxigenio.png', desc: 'Sistemas PSA e concentradores para geração on-site de oxigênio.' },
   { id: 'corte-solda', name: 'Equipamentos de Corte e Solda', cat: 'Industrial', img: '/images/prod-corte-solda.png', desc: 'Maçaricos, reguladores e acessórios para corte e solda industrial.' },
-  { id: 'reguladores-especiais', name: 'Reguladores de Pressão Especiais', cat: 'Instrumentação', img: '/images/prod-reguladores.png', desc: 'Reguladores de alta performance para gases especiais e pureza analítica.' },
+  { id: 'reguladores-especiais', name: 'Reguladores de Gases Especiais', cat: 'Instrumentação', img: '/images/regulador-gases-09.jpg', desc: 'Reguladores de alta performance para gases especiais, alta pressão e calibração.' },
   { id: 'reguladores-hidraulicos', name: 'Reguladores Hidráulicos', cat: 'Hidráulica', img: '/images/prod-reguladores-2.png', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
   { id: 'combate-incendio', name: 'Combate a Incêndio', cat: 'Segurança', img: '/images/prod-combate-incendio.png', desc: 'Sistemas de supressão com CO₂, FM-200 e outros agentes limpos.' },
   { id: 'transmissores-pressao', name: 'Transmissores de Pressão e Nível', cat: 'Instrumentação', img: '/images/prod-transmissores-pressao.png', desc: 'Transmissores inteligentes para medição de pressão diferencial, manométrica e nível.' },

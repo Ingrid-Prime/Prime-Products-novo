@@ -23,31 +23,31 @@ const APPLICATION_GROUPS: AppGroup[] = [
     color: 'bg-blue-700',
     items: [
       { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/app-automotivo.jpg' },
-      { id: 'soldagem', name: 'Soldagem e Corte', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/prod-corte-solda.png' },
-      { id: 'mineral', name: 'Mineral e Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/app-plantas-industriais.png' },
+      { id: 'soldagem', name: 'Metal Mecânica', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/prod-corte-solda.png' },
+      { id: 'mineral', name: 'Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/app-plantas-industriais.png' },
     ],
   },
   {
     group: 'Hospitalar e Médico',
     color: 'bg-green-700',
     items: [
-      { id: 'hospitalar', name: 'Hospitalar e Clínicas', desc: 'Gases medicinais certificados (O₂, N₂O, ar medicinal), centrais de gases, geração de oxigênio e sistemas de distribuição hospitalar.', img: '/images/prod-geracao-oxigenio.png' },
+      { id: 'hospitalar', name: 'Hospitalar', desc: 'Gases medicinais certificados (O₂, N₂O, ar medicinal), centrais de gases, geração de oxigênio e sistemas de distribuição hospitalar.', img: '/images/prod-geracao-oxigenio.png' },
     ],
   },
   {
     group: 'Laboratorial e Pesquisa',
     color: 'bg-purple-700',
     items: [
-      { id: 'laboratorios-analiticos', name: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores certificados, conexões TK-Fujikin e detectores de vazamento para laboratórios de análise e controle de qualidade.', img: '/images/app-laboratorios-analiticos.png' },
-      { id: 'farmaceutica', name: 'Farmacêutica', desc: 'Soluções validadas para a indústria farmacêutica: gases USP, sistemas de alta pureza, instrumentação GMP e rastreabilidade completa.', img: '/images/farmaceutica_linha_1.jpg' },
-      { id: 'centros-pesquisa', name: 'Centros de Pesquisa', desc: 'Gases de altíssima pureza (5.0, 6.0), dewars criogênicos, equipamentos especializados e suporte técnico para P&D e universidades.', img: '/images/app-centros-pesquisa.jpg' },
+      { id: 'laboratorios-analiticos', name: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores certificados, conexões TK-Fujikin e detectores de vazamento para laboratórios de análise e controle de qualidade.', img: '/images/lab-analitico-scientist.jpg' },
+      { id: 'farmaceutica', name: 'Farmacêutico', desc: 'Soluções validadas para a indústria farmacêutica: gases USP, sistemas de alta pureza, instrumentação GMP e rastreabilidade completa.', img: '/images/farmaceutica_linha_1.jpg' },
+      { id: 'centros-pesquisa', name: 'Centros de Pesquisa', desc: 'Gases de altíssima pureza (5.0, 6.0), dewars criogênicos, equipamentos especializados e suporte técnico para P&D e universities.', img: '/images/app-centros-pesquisa.jpg' },
     ],
   },
   {
-    group: 'Energia e Transição Energética',
+    group: 'Energias Renováveis',
     color: 'bg-yellow-600',
     items: [
-      { id: 'energia-transicao-energetica', name: 'Energia e Transição Energética', desc: 'Cilindros para GNV/H₂, monitoramento de emissões (CEMS), tratamento de efluentes, bioenergia e integração com fontes de energia limpa.', img: '/images/app-energia.jpg' },
+      { id: 'energia-transicao-energetica', name: 'Energias Renováveis', desc: 'Cilindros para GNV/H₂, monitoramento de emissões (CEMS), tratamento de efluentes, bioenergia e integração com fontes de energia limpa.', img: '/images/app-energia.jpg' },
       { id: 'criogenia', name: 'Criogenia', desc: 'Dewars, tanques criogênicos e sistemas para nitrogênio líquido, oxigênio líquido, argônio líquido e hélio líquido para diversas aplicações industriais.', img: '/images/prod-dewars-criogenicos.png' },
     ],
   },

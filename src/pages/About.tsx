@@ -97,7 +97,7 @@ export function About() {
                 />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-10 z-20 shadow-xl -mb-6 md:-mb-10 mr-4 md:mr-0 max-w-[200px] md:max-w-[240px]">
                   <div className="text-4xl md:text-5xl font-black mb-1">
-                    <EditableElement id="about_stat_num" defaultContent="+10" />
+                    <EditableElement id="about_stat_num" defaultContent="+35" />
                   </div>
                   <div className="text-xs font-bold uppercase tracking-wider leading-tight">
                     <EditableElement id="about_stat_txt" defaultContent="Anos de Atuação Técnica" />
@@ -116,11 +116,11 @@ export function About() {
               </AnimateOnScroll>
               <AnimateOnScroll delay={300}>
                 <div className="text-gray-600 space-y-4 mb-8 leading-relaxed text-base">
-                  <EditableElement id="about_sec_p1" defaultContent="A Prime Products é uma empresa especializada em soluções técnicas para instrumentação, gases especiais, gases medicinais, gases industriais e aplicações de engenharia, atuando de forma integrada desde a especificação até a entrega, instalação e suporte técnico." />
+                  <EditableElement id="about_sec_p1" defaultContent="A Prime Products é uma empresa especializada em soluções técnicas para instrumentação, gases especiais, gases medicinais, gases industriais e engenharia aplicada, atuando de forma integrada desde a especificação até a entrega, instalação e suporte técnico." />
                   <br />
-                  <EditableElement id="about_sec_p2" defaultContent="Nossa atuação é fundamentada em critérios técnicos rigorosos, conformidade com normas de segurança aplicáveis e foco total em confiabilidade, desempenho e segurança operacional em processos críticos." />
+                  <EditableElement id="about_sec_p2" defaultContent="Nossa atuação é fundamentada em critérios técnicos rigorosos, conformidade técnica com normas vigentes e foco total em confiabilidade, desempenho e segurança operacional em processos críticos." />
                   <br />
-                  <EditableElement id="about_sec_p3" defaultContent="Atendemos indústrias de alta exigência técnica — como farmacêutica, óleo e gás, química, hospitalar, pesquisa e energia — com equipe qualificada e logística eficiente para todo o Brasil." />
+                  <EditableElement id="about_sec_p3" defaultContent="Atendemos indústrias de alta exigência técnica — como farmacêutica, óleo e gás, química, hospitalar, pesquisa e energia — garantindo o atendimento nacional através de equipe qualificada e logística eficiente." />
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll delay={400}>
@@ -272,10 +272,10 @@ export function About() {
             <AnimateOnScroll delay={200}>
               <div className="bg-primary/10 border border-primary/30 p-10 rounded-sm">
                 <h3 className="text-white font-bold text-xl mb-6">
-                  <EditableElement id="about_cta_side_title" defaultContent="Quer conhecer nossas soluções?" />
+                  <EditableElement id="about_cta_side_title" defaultContent="Pronto para elevar o nível da sua operação?" />
                 </h3>
                 <p className="text-gray-400 text-sm mb-8 leading-relaxed">
-                  <EditableElement id="about_cta_side_desc" defaultContent="Nossa equipe técnica está pronta para analisar sua aplicação e propor a solução mais adequada para o seu processo." />
+                  <EditableElement id="about_cta_side_desc" defaultContent="Nossa equipe de engenharia está à disposição para analisar as especificidades do seu processo e detalhar a solução adequada." />
                 </p>
                 <div className="space-y-3">
                   <Link to="/solucoes" className="flex items-center justify-between bg-white/5 hover:bg-white/10 border border-white/20 text-white px-5 py-3 transition-all text-sm font-semibold rounded-sm">

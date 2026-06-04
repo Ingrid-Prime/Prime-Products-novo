@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Gauge, FlaskConical, Flame, Settings, ShieldCheck, ArrowRight, CheckCircle, Wrench, ClipboardList, LifeBuoy, BookOpen, Cpu } from 'lucide-react';
+import { Gauge, FlaskConical, Flame, Settings, ShieldCheck, ArrowRight, CheckCircle, Wrench, ClipboardList, LifeBuoy, BookOpen, Cpu, Wind } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
@@ -8,34 +8,34 @@ const SERVICES = [
   {
     icon: ClipboardList,
     title: 'Projeto',
-    desc: 'Elaboração de projetos técnicos para instalações de gases especiais, medicinais e industriais, sistemas de instrumentação e utilidades industriais, incluindo memorial descritivo, P&IDs e especificação de materiais.',
+    desc: 'Elaboração de projetos de engenharia aplicada para instalações de gases e instrumentação, com atuação integrada na especificação técnica de sistemas complexos e fluxogramas de processo (P&IDs).',
   },
   {
     icon: Wrench,
     title: 'Montagem',
-    desc: 'Montagem e instalação de sistemas de distribuição de gases, painéis de instrumentação, skids de processo e redes de utilidades, com mão de obra especializada e conformidade com normas técnicas aplicáveis.',
+    desc: 'Execução real e instalação física de redes de distribuição, painéis e skids de processo, garantindo montagem de alta integridade técnica e conformidade rigorosa com as normas de segurança operacionais.',
   },
   {
     icon: LifeBuoy,
     title: 'Manutenção',
-    desc: 'Manutenção preventiva e corretiva de sistemas de gases, instrumentos analíticos, reguladores de pressão, válvulas industriais e detectores de vazamento, garantindo confiabilidade e continuidade operacional.',
+    desc: 'Suporte técnico contínuo através de manutenção preditiva, preventiva e corretiva para garantir o desempenho operacional de sistemas críticos, minimizando paradas não programadas.',
   },
   {
     icon: Cpu,
     title: 'Comissionamento',
-    desc: 'Comissionamento e start-up de sistemas instalados, incluindo testes de estanqueidade, verificação funcional, calibração de instrumentos e entrega de documentação técnica e certificados rastreáveis.',
+    desc: 'Testes funcionais, testes de estanqueidade e comissionamento de sistemas, atestando a conformidade técnica, calibragem e rastreabilidade para o início seguro da operação.',
   },
   {
     icon: BookOpen,
     title: 'Treinamentos',
-    desc: 'Treinamentos técnicos para equipes de operação e manutenção em sistemas de gases, instrumentação, normas de segurança NR-13 e melhores práticas para ambientes com gases tóxicos ou inflamáveis.',
+    desc: 'Capacitação técnica de equipes para operação segura de sistemas de gases e instrumentação de processos, alinhando as melhores práticas do setor e requisitos de segurança operacional.',
   },
 ];
 
 const TECHNICAL_AREAS = [
   {
     icon: Gauge,
-    title: 'Instrumentação e Medição',
+    title: 'Instrumentação de Processos',
     path: '/solucoes/instrumentacao-medicao',
     img: '/images/sol-instrumentacao-medicao.png',
     desc: 'Transmissores, sensores, reguladores de pressão e sistemas de medição de precisão para processos industriais e laboratoriais.',
@@ -51,7 +51,7 @@ const TECHNICAL_AREAS = [
   },
   {
     icon: Flame,
-    title: 'Gases, Segurança e Automação',
+    title: 'Segurança: detecção e combate a incêndio',
     path: '/solucoes/gases-seguranca-automacao',
     img: '/images/app-seguranca-automacao.png',
     desc: 'Cilindros de gás, dewars criogênicos, reguladores e sistemas completos de detecção e combate a incêndio.',
@@ -64,6 +64,14 @@ const TECHNICAL_AREAS = [
     img: '/images/app-plantas-industriais.png',
     desc: 'Skids de processo, painéis de controle e sistemas customizados desenvolvidos para aplicações específicas.',
     items: ['Skids de processo e utilidades', 'Painéis de instrumentação', 'Sistemas de purificação de gases', 'Projetos sob encomenda'],
+  },
+  {
+    icon: Wind,
+    title: 'Instalação de Rede de Gases',
+    path: '/solucoes/instalacao-rede-gases',
+    img: '/images/instalacao-gases-fundo.jpg',
+    desc: 'Desenvolvimento de soluções técnicas e montagem física de redes para gases especiais, industriais e centrais de gases.',
+    items: ['Redes em Inox 316L', 'Centrais e manifolds', 'Painéis de ponto de uso', 'Testes de estanqueidade'],
   },
 ];
 
@@ -103,10 +111,10 @@ export function SolutionsMain() {
             <div className="text-center mb-14">
               <h4 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">O que a Prime faz</h4>
               <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
-                <EditableElement id="sol_srv_title" defaultContent="Nossos Serviços" />
+                <EditableElement id="sol_srv_title" defaultContent="Serviços de Engenharia e Atuação Integrada" />
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-                <EditableElement id="sol_srv_desc" defaultContent="A Prime Products não atua apenas com fornecimento de produtos. Oferecemos suporte técnico completo desde o projeto até o treinamento das equipes." />
+                <EditableElement id="sol_srv_desc" defaultContent="Mais do que fornecer componentes, a Prime Products assegura a execução real e a integridade de seus processos críticos por meio de engenharia aplicada e suporte técnico completo de ponta a ponta." />
               </p>
               <div className="w-16 h-1 bg-primary mx-auto mt-6" />
             </div>

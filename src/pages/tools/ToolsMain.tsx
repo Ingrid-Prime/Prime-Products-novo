@@ -97,7 +97,7 @@ export function ToolsMain() {
             <Calculator size={48} className="text-primary mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-white mb-3">Calculadoras Prime Avançadas</h2>
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-              Acesse nossas calculadoras especializadas para dimensionamento de reguladores, seleção de cilindros e cálculo de autonomia de gases.
+              Acesse nossas calculadoras especializadas para dimensionamento de reguladores, seleção de cilindros e tabelas de conversão rápida.
             </p>
             <Link to="/ferramentas-pro" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-3 font-bold uppercase rounded-sm transition-all">
               Calculadoras Prime <ArrowRight size={16} />

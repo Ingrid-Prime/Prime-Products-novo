@@ -292,7 +292,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             {/* Contact */}
             <div>
               <h3 className="text-white font-bold uppercase tracking-wider mb-8 text-sm border-b border-gray-800 pb-2 inline-block">
-                Contato
+                Fale conosco
               </h3>
               <ul className="space-y-5 text-sm">
                 <li className="flex items-start group">

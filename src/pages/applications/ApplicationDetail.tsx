@@ -5,7 +5,7 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const APP_GALLERY: Record<string, string[]> = {
-  'laboratorios-analiticos': ['/images/app-lab-01.png', '/images/app-laboratorio-2.png', '/images/app-laboratorio-3.png', '/images/app-lab-04.png', '/images/app-lab-05.png', '/images/app-lab-06.png'],
+  'laboratorios-analiticos': ['/images/lab-analitico-panel.jpg'],
   'farmaceutica': ['/images/farmaceutica_linha_1.jpg', '/images/farmaceutica_linha_2.jpg', '/images/farmaceutica_filtro.jpg', '/images/farmaceutica_corredor.jpg'],
   'centros-pesquisa': ['/images/app-pesquisa-2.jpg', '/images/app-pesquisa-3.jpg', '/images/app-data-center.jpg'],
   'hospitalar': ['/images/prod-geracao-2.png', '/images/prod-geracao-3.png', '/images/prod-geracao-4.png', '/images/prod-dewars-criogenicos.png'],
@@ -31,7 +31,7 @@ const APPLICATION_DATA: Record<string, {
   'laboratorios-analiticos': {
     name: 'Laboratórios Analíticos',
     cat: 'Laboratorial e Pesquisa',
-    img: '/images/app-laboratorios-analiticos.png',
+    img: '/images/lab-analitico-scientist.jpg',
     desc: 'Laboratórios de análise química, controle de qualidade e pesquisa científica exigem gases de alta pureza, reguladores certificados e equipamentos de alta precisão para garantir a integridade e rastreabilidade dos resultados analíticos.',
     challenges: ['Pureza dos gases utilizados nos ensaios analíticos', 'Rastreabilidade e certificação dos instrumentos', 'Estanqueidade das conexões em gases reativos', 'Integração com sistemas LIMS e conformidade com normas'],
     solutions: ['Reguladores de alta pureza com certificado de calibração RBC', 'Cilindros com certificado de análise e rastreabilidade', 'Conexões TK-Fujikin para instrumentação analítica', 'Detectores de vazamento para gases tóxicos em laboratório'],
@@ -43,7 +43,7 @@ const APPLICATION_DATA: Record<string, {
     ],
   },
   'farmaceutica': {
-    name: 'Farmacêutica',
+    name: 'Farmacêutico',
     cat: 'Laboratorial e Pesquisa',
     img: '/images/farmaceutica_linha_1.jpg',
     desc: 'A indústria farmacêutica exige gases de grau USP, sistemas validados, rastreabilidade completa e conformidade com GMP. A Prime Products fornece soluções auditáveis, com documentação técnica completa para atender às exigências da Anvisa e da FDA.',
@@ -71,7 +71,7 @@ const APPLICATION_DATA: Record<string, {
     ],
   },
   'hospitalar': {
-    name: 'Hospitalar e Clínicas',
+    name: 'Hospitalar',
     cat: 'Hospitalar e Médico',
     img: '/images/prod-geracao-oxigenio.png',
     desc: 'O setor hospitalar exige gases medicinais certificados, sistemas de distribuição confiáveis e equipamentos que garantam a segurança de pacientes e profissionais. A Prime atende hospitais, clínicas e centros cirúrgicos com soluções completas e suporte técnico especializado.',
@@ -127,10 +127,10 @@ const APPLICATION_DATA: Record<string, {
     ],
   },
   'energia-transicao-energetica': {
-    name: 'Energia e Transição Energética',
+    name: 'Energias Renováveis',
     cat: 'Energia',
     img: '/images/app-energia.jpg',
-    desc: 'O setor de energia e transição energética requer soluções para GNV, hidrogênio verde, monitoramento de emissões, tratamento de efluentes e integração com plantas de bioenergia e energia renovável.',
+    desc: 'O setor de energias renováveis requer soluções para GNV, hidrogênio verde, monitoramento de emissões, tratamento de efluentes e integração com plantas de bioenergia e energia renovável.',
     challenges: ['Armazenamento seguro de H₂ e GNV em alta pressão', 'Monitoramento contínuo de emissões (CEMS)', 'Conformidade com legislação ambiental e metas de descarbonização', 'Tratamento de efluentes com dosagem de O₂'],
     solutions: ['Cilindros Tipo 4 para H₂ e GNV em alta pressão (até 700 bar)', 'Detectores de gases para monitoramento ambiental', 'Geradores de oxigênio para tratamento de efluentes', 'Instrumentação para plantas de bioenergia e geração distribuída'],
     products: [
@@ -169,7 +169,7 @@ const APPLICATION_DATA: Record<string, {
     ],
   },
   'soldagem': {
-    name: 'Soldagem e Corte',
+    name: 'Metal Mecânica',
     cat: 'Indústria',
     img: '/images/prod-corte-solda.png',
     desc: 'Processos de soldagem MIG/TIG, eletrodo revestido, oxicorte e plasma exigem gases adequados, reguladores calibrados e acessórios certificados. A Prime fornece soluções completas para metalurgia, construção civil e manutenção industrial.',
@@ -183,7 +183,7 @@ const APPLICATION_DATA: Record<string, {
     ],
   },
   'mineral': {
-    name: 'Mineral e Mineração',
+    name: 'Mineração',
     cat: 'Indústria',
     img: '/images/app-plantas-industriais.png',
     desc: 'O setor mineral exige instrumentação robusta para ambientes severos, detecção de gases em espaços confinados e subterrâneos, e sistemas de segurança para proteção de trabalhadores e equipamentos em minas e plantas de beneficiamento.',
@@ -277,7 +277,7 @@ export function ApplicationDetail() {
             </div>
             <div className="space-y-6">
               <AnimateOnScroll>
-                <img src={app.img} alt={app.name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
+                <img src={app.img} alt={id === 'laboratorios-analiticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : app.name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
                 {id === 'farmaceutica' ? (
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     {/* Filtro USP ocupando os dois espaços verticais */}
@@ -312,7 +312,7 @@ export function ApplicationDetail() {
                   galleryImages.length > 0 && (
                     <div className={`grid gap-2 mt-2 ${galleryImages.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
                       {galleryImages.map((src, i) => (
-                        <img key={i} src={src} alt={`${app.name} ${i + 2}`} className="w-full h-28 object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity" referrerPolicy="no-referrer" />
+                        <img key={i} src={src} alt={id === 'laboratorios-analiticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : `${app.name} ${i + 2}`} className={`w-full ${galleryImages.length === 1 ? 'h-56' : 'h-28'} object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity`} referrerPolicy="no-referrer" />
                       ))}
                     </div>
                   )

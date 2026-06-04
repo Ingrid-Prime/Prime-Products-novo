@@ -12,17 +12,17 @@ import { ParticleCanvas } from '../components/ParticleCanvas';
 import { useCMS } from '../contexts/CMSContext';
 
 const SOLUTIONS = [
-  { icon: Gauge, id: 'sol_1', label: 'Instrumentação e Medição', path: '/solucoes/instrumentacao-medicao', desc: 'Transmissores, sensores, reguladores e sistemas de medição de precisão.', img: '/images/sol-instrumentacao-medicao.png' },
+  { icon: Gauge, id: 'sol_1', label: 'Instrumentação de Processos', path: '/solucoes/instrumentacao-medicao', desc: 'Transmissores, sensores, reguladores e sistemas de medição de precisão.', img: '/images/sol-instrumentacao-medicao.png' },
   { icon: FlaskConical, id: 'sol_2', label: 'Instrumentação Analítica', path: '/solucoes/instrumentacao-analitica', desc: 'Analisadores de processo, cromatógrafos e detectores de gases.', img: '/images/sol-instrumentacao-analitica.png' },
-  { icon: Flame, id: 'sol_3', label: 'Gases e Segurança', path: '/solucoes/gases-seguranca-automacao', desc: 'Cilindros, reguladores, dewars e sistemas de combate a incêndio.', img: '/images/app-seguranca-automacao.png' },
+  { icon: Flame, id: 'sol_3', label: 'Segurança: detecção e combate a incêndio', path: '/solucoes/gases-seguranca-automacao', desc: 'Cilindros, reguladores, dewars e sistemas de combate a incêndio.', img: '/images/app-seguranca-automacao.png' },
   { icon: Settings, id: 'sol_4', label: 'Soluções Integradas', path: '/solucoes/integradas', desc: 'Skids, painéis e sistemas customizados para sua planta.', img: '/images/app-plantas-industriais.png' },
   { icon: ShieldCheck, id: 'sol_5', label: 'Engenharia Aplicada', path: '/solucoes', desc: 'Consultoria técnica, especificação e suporte para processos críticos.', img: '/images/quem-somos-campo.png' },
 ];
 
 const APPLICATIONS = [
   { label: 'Óleo e Gás', desc: 'Instrumentação certificada ATEX para refinarias e plantas de processo.', path: '/aplicacao/oleo-gas', img: '/images/app-tanques.jpg' },
-  { label: 'Hospitalar e Médico', desc: 'Gases medicinais, geração de oxigênio e sistemas de combate a incêndio.', path: '/aplicacao/hospitalar', img: '/images/prod-geracao-oxigenio.png' },
-  { label: 'Laboratórios e Pesquisa', desc: 'Gases de alta pureza, reguladores analíticos e criogenia.', path: '/aplicacao/laboratorios-analiticos', img: '/images/app-laboratorios-analiticos.png' },
+  { label: 'Hospitalar', desc: 'Gases medicinais, geração de oxigênio e sistemas de combate a incêndio.', path: '/aplicacao/hospitalar', img: '/images/prod-geracao-oxigenio.png' },
+  { label: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores analíticos e criogenia.', path: '/aplicacao/laboratorios-analiticos', img: '/images/lab-analitico-scientist.jpg' },
 ];
 
 const TESTIMONIALS = [
@@ -32,15 +32,35 @@ const TESTIMONIALS = [
 ];
 
 const FAQS = [
-  { q: 'A Prime Products atende em todo o Brasil?', a: 'Sim. Possuímos estrutura logística para atender demandas em todo o território nacional, com suporte técnico remoto e, quando necessário, visitas técnicas presenciais para grandes projetos.' },
-  { q: 'Os equipamentos possuem certificados de calibração?', a: 'Sim. Todos os equipamentos de medição e analíticos podem ser fornecidos com certificados de calibração rastreáveis RBC/Inmetro, garantindo a conformidade com as normas de qualidade.' },
-  { q: 'Vocês realizam projetos personalizados?', a: 'Com certeza. Nossa especialidade é a Engenharia Aplicada. Analisamos a necessidade do seu processo e desenvolvemos skids, painéis e sistemas sob medida para a sua aplicação.' },
-  { q: 'Qual o prazo médio de entrega para equipamentos?', a: 'Trabalhamos com estoque estratégico para itens de alto giro. Para itens importados ou sob encomenda, o prazo é alinhado na proposta comercial, sempre priorizando a agilidade.' },
+  {
+    q: 'A Prime Products atende em todo o Brasil?',
+    a: 'Sim. Possuímos estrutura comercial e de engenharia para atender demandas em todo o território nacional, oferecendo suporte técnico especializado tanto remoto quanto em campo para implantações de grande porte.'
+  },
+  {
+    q: 'Os equipamentos possuem certificados de calibração?',
+    a: 'Sim. Fornecemos nossos instrumentos de medição e sistemas analíticos com certificados de calibração rastreáveis RBC (Rede Brasileira de Calibração) e padrões do INMETRO, garantindo conformidade com normas de qualidade.'
+  },
+  {
+    q: 'Quais certificações técnicas as soluções da Prime atendem?',
+    a: 'Nossas soluções e skids integrados atendem a normas nacionais e internacionais rigorosas, incluindo NR-13 para vasos de pressão, NR-12 para segurança de máquinas, diretrizes da ANVISA (grau médico/farmacêutico), certificações SIL 2/3 de segurança funcional e certificações ATEX/IECEx para áreas classificadas.'
+  },
+  {
+    q: 'Qual o prazo médio de entrega para equipamentos e sistemas?',
+    a: 'Mantemos um estoque estratégico de componentes e sobressalentes críticos para atendimento imediato. Para skids, painéis dedicados e soluções customizadas de engenharia aplicada, o prazo é dimensionado de acordo com a complexidade técnica e detalhado na proposta comercial.'
+  },
+  {
+    q: 'A Prime executa a montagem física dos sistemas além do projeto?',
+    a: 'Sim. Desenvolvemos soluções completas do tipo turn-key, executando desde a engenharia de projeto (conceitual e detalhada) até a montagem mecânica, montagem de skids de válvulas, conexões de tubulação de alta pressão, teste de estanqueidade, comissionamento em campo (start-up) e treinamento operacional.'
+  },
+  {
+    q: 'Quais disciplinas de engenharia a Prime Products atende em seus projetos?',
+    a: 'Nossa equipe multidisciplinar atende plenamente as demandas de Instrumentação e Controle de Processos, Engenharia Civil (bases e estruturas de suporte), Engenharia Elétrica (painéis de comando e distribuição de força) e sistemas de HVAC (aquecimento, ventilação e ar condicionado) aplicados a salas de analisadores e abrigos industriais.'
+  }
 ];
 
 const STATS = [
-  { icon: History, numId: 'home_stat_1_num', lblId: 'home_stat_1_lbl', num: '+10', lbl: 'Anos de Experiência' },
-  { icon: Briefcase, numId: 'home_stat_2_num', lblId: 'home_stat_2_lbl', num: '+500', lbl: 'Projetos Entregues' },
+  { icon: History, numId: 'home_stat_1_num', lblId: 'home_stat_1_lbl', num: '+35', lbl: 'Anos de Experiência' },
+  { icon: Briefcase, numId: 'home_stat_2_num', lblId: 'home_stat_2_lbl', num: '+1000', lbl: 'Projetos Entregues' },
   { icon: ShieldCheck, numId: 'home_stat_3_num', lblId: 'home_stat_3_lbl', num: '100%', lbl: 'Segurança Operacional' },
   { icon: Trophy, numId: 'home_stat_4_num', lblId: 'home_stat_4_lbl', num: '+50', lbl: 'Marcas Parceiras' },
 ];
@@ -134,9 +154,9 @@ export function Home() {
               </AnimateOnScroll>
               <AnimateOnScroll delay={300}>
                 <div className="text-gray-600 space-y-4 mb-8 leading-relaxed text-base">
-                  <EditableElement id="home_about_p1" defaultContent="A Prime Products é uma empresa especializada em soluções técnicas para instrumentação, gases e aplicações de engenharia, atuando de forma integrada desde a especificação até a entrega e suporte técnico." />
+                  <EditableElement id="home_about_p1" defaultContent="A Prime Products é uma empresa especializada em soluções técnicas para instrumentação, gases e engenharia aplicada, atuando de forma integrada desde a especificação até a entrega e suporte técnico." />
                   <br />
-                  <EditableElement id="home_about_p2" defaultContent="Nossa atuação é baseada em critérios técnicos rigorosos, normas aplicáveis e foco total em segurança, confiabilidade e desempenho." />
+                  <EditableElement id="home_about_p2" defaultContent="Nossa atuação é fundamentada em critérios técnicos rigorosos, conformidade técnica e foco total em segurança operacional, confiabilidade e desempenho, apoiados por uma equipe qualificada e logística eficiente." />
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll delay={400}>
@@ -248,7 +268,7 @@ export function Home() {
             {APPLICATIONS.map(({ label, desc, path, img }, i) => (
               <AnimateOnScroll key={i} delay={i * 150}>
                 <Link to={path} className="group relative overflow-hidden block h-64 rounded-sm">
-                  <img src={img} alt={label} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src={img} alt={label === 'Laboratórios Analíticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : label} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-6">
                     <h3 className="text-white font-bold text-lg mb-1">

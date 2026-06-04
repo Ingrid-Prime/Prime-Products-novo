@@ -17,7 +17,7 @@ const PRODUCTS = [
   { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-pressao.png', name: 'Transmissores de Pressão', desc: 'Alta precisão para medições diferenciais, manométricas e absolutas.' },
   { path: '/produto/valvulas-industriais', img: '/images/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas de controle para aplicações industriais e medicinais.' },
   { path: '/produto/conexoes-instrumentacao', img: '/images/prod-conexoes-instrumentacao.png', name: 'Conexões para Instrumentação', desc: 'Conexões certificadas para instrumentação analítica e industrial.' },
-  { path: '/produto/reguladores-especiais', img: '/images/prod-reguladores.png', name: 'Reguladores de Pressão', desc: 'Reguladores de alta performance para gases especiais.' },
+  { path: '/produto/reguladores-especiais', img: '/images/regulador-gases-09.jpg', name: 'Reguladores de Pressão', desc: 'Reguladores de alta performance para gases especiais.' },
 ];
 
 export function InstrumentacaoMedicao() {
@@ -36,7 +36,7 @@ export function InstrumentacaoMedicao() {
           <AnimateOnScroll><div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" /></AnimateOnScroll>
           <AnimateOnScroll delay={200}>
             <h1 className="text-4xl md:text-6xl font-black text-white mb-6">
-              <EditableElement id="sol_med_title" defaultContent="Instrumentação e Medição" />
+              <EditableElement id="sol_med_title" defaultContent="Instrumentação de Processos" />
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={400}>

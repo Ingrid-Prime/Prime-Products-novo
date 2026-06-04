@@ -16,7 +16,7 @@ const GALLERY = [
 const PRODUCTS = [
   { path: '/produto/detectores-vazamento', img: '/images/prod-detectores-vazamento.png', name: 'Detectores de Vazamento', desc: 'Detecção de gases tóxicos e inflamáveis com tecnologia avançada.' },
   { path: '/produto/conexoes-instrumentacao', img: '/images/prod-conexoes-instrumentacao.png', name: 'Conexões Analíticas', desc: 'Conexões específicas para análise e laboratório.' },
-  { path: '/produto/reguladores-especiais', img: '/images/prod-reguladores.png', name: 'Reguladores de Alta Pureza', desc: 'Reguladores certificados para gases analíticos.' },
+  { path: '/produto/reguladores-especiais', img: '/images/regulador-gases-09.jpg', name: 'Reguladores de Alta Pureza', desc: 'Reguladores certificados para gases analíticos.' },
   { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-pressao.png', name: 'Transmissores de Processo', desc: 'Para aplicações analíticas de alta precisão.' },
 ];
 

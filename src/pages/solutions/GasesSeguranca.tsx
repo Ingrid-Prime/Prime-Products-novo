@@ -38,7 +38,7 @@ export function GasesSeguranca() {
           <AnimateOnScroll><div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" /></AnimateOnScroll>
           <AnimateOnScroll delay={200}>
             <h1 className="text-4xl md:text-6xl font-black text-white mb-6">
-              <EditableElement id="sol_gas_title" defaultContent="Gases, Segurança e Automação" />
+              <EditableElement id="sol_gas_title" defaultContent="Segurança: detecção e combate a incêndio" />
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={400}>

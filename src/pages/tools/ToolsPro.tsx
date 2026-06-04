@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, Activity, ArrowLeftRight, Wind, Gauge, Zap, Ruler } from 'lucide-react';
+import { ArrowLeft, Activity, ArrowLeftRight, Gauge, Zap, Ruler } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
@@ -324,6 +324,7 @@ function ConversorPro() {
   );
 }
 
+/*
 // ─── Autonomia de Cilindro ────────────────────────────────────────────────────
 function CylinderAutonomy() {
   const [volume,   setVolume]   = useState('');
@@ -381,6 +382,7 @@ function CylinderAutonomy() {
     </div>
   );
 }
+*/
 
 // ─── Conversor de Pressão rápido ──────────────────────────────────────────────
 function QuickPressure() {
@@ -598,16 +600,15 @@ export function ToolsPro() {
             <Link to="/ferramentas" className="inline-flex items-center gap-2 text-white/40 hover:text-primary text-xs font-bold uppercase tracking-wider transition-colors">
               <ArrowLeft size={14} /> Voltar para Ferramentas
             </Link>
-            <span className="text-white/20 text-xs">6 ferramentas disponíveis</span>
+            <span className="text-white/20 text-xs">5 ferramentas disponíveis</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <AnimateOnScroll><CvKvCalc /></AnimateOnScroll>
             <AnimateOnScroll delay={80}><ConversorPro /></AnimateOnScroll>
-            <AnimateOnScroll delay={120}><CylinderAutonomy /></AnimateOnScroll>
-            <AnimateOnScroll delay={160}><QuickPressure /></AnimateOnScroll>
-            <AnimateOnScroll delay={200}><Reynolds /></AnimateOnScroll>
-            <AnimateOnScroll delay={240}><PipeVelocity /></AnimateOnScroll>
+            <AnimateOnScroll delay={120}><QuickPressure /></AnimateOnScroll>
+            <AnimateOnScroll delay={160}><Reynolds /></AnimateOnScroll>
+            <AnimateOnScroll delay={200}><PipeVelocity /></AnimateOnScroll>
           </div>
         </div>
       </section>

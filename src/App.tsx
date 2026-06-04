@@ -12,6 +12,7 @@ import { InstrumentacaoMedicao } from './pages/solutions/InstrumentacaoMedicao';
 import { InstrumentacaoAnalitica } from './pages/solutions/InstrumentacaoAnalitica';
 import { GasesSeguranca } from './pages/solutions/GasesSeguranca';
 import { Integradas } from './pages/solutions/Integradas';
+import { InstalacaoRedeGases } from './pages/solutions/InstalacaoRedeGases';
 
 import { ProductsMain } from './pages/products/ProductsMain';
 import { ProductDetail } from './pages/products/ProductDetail';
@@ -38,6 +39,7 @@ export function App() {
             <Route path="/solucoes/instrumentacao-analitica" element={<InstrumentacaoAnalitica />} />
             <Route path="/solucoes/gases-seguranca-automacao" element={<GasesSeguranca />} />
             <Route path="/solucoes/integradas" element={<Integradas />} />
+            <Route path="/solucoes/instalacao-rede-gases" element={<InstalacaoRedeGases />} />
             <Route path="/produtos" element={<ProductsMain />} />
             <Route path="/produto/:id" element={<ProductDetail />} />
             <Route path="/aplicacoes" element={<ApplicationsMain />} />

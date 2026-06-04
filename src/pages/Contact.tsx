@@ -66,7 +66,7 @@ export function Contact() {
           </AnimateOnScroll>
           <AnimateOnScroll delay={400}>
             <div className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
-              <EditableElement id="cont_hero_s" defaultContent="Canais de atendimento dedicados para sua demanda." />
+              <EditableElement id="cont_hero_s" defaultContent="Canais de suporte de engenharia e atendimento técnico especializado para o seu processo." />
             </div>
           </AnimateOnScroll>
         </div>
@@ -85,7 +85,7 @@ export function Contact() {
                     <EditableElement id="cont_info_t" defaultContent="Informações de Contato" />
                   </h3>
                   <div className="text-gray-300 mb-12">
-                    <EditableElement id="cont_info_d" defaultContent="Nossa equipe técnica está pronta para analisar sua aplicação e propor a melhor solução." />
+                    <EditableElement id="cont_info_d" defaultContent="Nossa equipe de engenharia está pronta para analisar a viabilidade e propor a solução técnica adequada para a sua demanda." />
                   </div>
                   <div className="space-y-8">
                     <AnimateOnScroll delay={100}>
