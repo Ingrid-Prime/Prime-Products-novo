@@ -8,7 +8,9 @@ import {
 import { AnimateOnScroll } from '../components/AnimateOnScroll';
 import { EditableElement } from '../components/EditableElement';
 import { SectionContainer } from '../components/SectionContainer';
+import { Counter } from '../components/Counter';
 import { ParticleCanvas } from '../components/ParticleCanvas';
+import { useCMS } from '../contexts/CMSContext';
 
 const SOLUTIONS = [
   { icon: Gauge, id: 'sol_1', label: 'Instrumentação de Processos', path: '/solucoes/instrumentacao-medicao', desc: 'Transmissores, sensores, reguladores e sistemas de medição de precisão.', img: '/images/sol-instrumentacao-medicao.png' },
@@ -66,6 +68,9 @@ const STATS = [
 
 export function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { articles, data, isEditing } = useCMS();
+  const latestArticles = articles.slice(0, 4);
+
   return (
     <>
       {/* Hero */}
@@ -75,7 +80,7 @@ export function Home() {
         as="section"
         className="relative h-[700px] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+          backgroundImage: "url('/images/lab-analitico-panel.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
@@ -186,7 +191,11 @@ export function Home() {
                     <Icon size={28} className="text-primary" />
                   </div>
                   <div className="text-4xl font-black text-white mb-1">
-                    <EditableElement id={numId} defaultContent={num} />
+                    {isEditing ? (
+                      <EditableElement id={numId} defaultContent={num} />
+                    ) : (
+                      <Counter value={String(data[numId] || num)} />
+                    )}
                   </div>
                   <div className="text-sm text-gray-400 uppercase tracking-wider font-medium">
                     <EditableElement id={lblId} defaultContent={lbl} />
@@ -330,6 +339,47 @@ export function Home() {
         </SectionContainer>
       </section>
 
+      {/* Latest Articles */}
+      {latestArticles.length > 0 && (
+        <section className="bg-white py-20">
+          <SectionContainer className="py-0">
+            <AnimateOnScroll>
+              <div className="text-center mb-16">
+                <h4 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">
+                  <EditableElement id="home_blog_label" defaultContent="Informação Qualificada" />
+                </h4>
+                <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                  <EditableElement id="home_blog_title" defaultContent="Conteúdo Técnico" />
+                </h2>
+                <div className="w-16 h-1 bg-primary mx-auto" />
+              </div>
+            </AnimateOnScroll>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {latestArticles.map((article, i) => (
+                <AnimateOnScroll key={article.id} delay={i * 100}>
+                  <Link to={`/artigo/${article.id}`} className="group block bg-white border border-gray-100 hover:border-primary shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden h-full">
+                    {article.image && (
+                      <div className="h-40 overflow-hidden">
+                        <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                      </div>
+                    )}
+                    <div className="p-5">
+                      <span className="text-xs font-bold uppercase text-primary tracking-wider">{article.category}</span>
+                      <h3 className="font-bold text-secondary mt-2 mb-2 text-sm leading-tight group-hover:text-primary transition-colors line-clamp-3">{article.title}</h3>
+                      <p className="text-xs text-gray-500">{article.date}</p>
+                    </div>
+                  </Link>
+                </AnimateOnScroll>
+              ))}
+            </div>
+            <div className="text-center mt-10">
+              <Link to="/conteudo" className="inline-flex items-center gap-2 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white px-10 py-4 font-bold uppercase tracking-wider transition-all rounded-sm">
+                Ver Todo Conteúdo <ArrowRight size={18} />
+              </Link>
+            </div>
+          </SectionContainer>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="bg-surface py-20">

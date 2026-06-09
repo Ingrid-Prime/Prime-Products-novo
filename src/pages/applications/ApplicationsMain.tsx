@@ -22,16 +22,16 @@ const APPLICATION_GROUPS: AppGroup[] = [
     group: 'Indústria',
     color: 'bg-blue-700',
     items: [
-      { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/app-automotivo-1.jpg' },
-      { id: 'soldagem', name: 'Metal Mecânica', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/prod-corte-solda.png' },
-      { id: 'mineral', name: 'Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/app-mineracao-1.jpg' },
+      { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/app-automotivo-2.jpg' },
+      { id: 'soldagem', name: 'Metal Mecânica', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/prod-corte-solda-2.png' },
+      { id: 'mineral', name: 'Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/app-mineracao-2.jpg' },
     ],
   },
   {
     group: 'Hospitalar e Médico',
     color: 'bg-green-700',
     items: [
-      { id: 'hospitalar', name: 'Hospitalar', desc: 'Gases medicinais certificados (O₂, N₂O, ar medicinal), centrais de gases, geração de oxigênio e sistemas de distribuição hospitalar.', img: '/images/prod-geracao-oxigenio.png' },
+      { id: 'hospitalar', name: 'Hospitalar', desc: 'Gases medicinais certificados (O₂, N₂O, ar medicinal), centrais de gases, geração de oxigênio e sistemas de distribuição hospitalar.', img: '/images/app-hospitalar-leito.jpg' },
     ],
   },
   {
@@ -40,24 +40,24 @@ const APPLICATION_GROUPS: AppGroup[] = [
     items: [
       { id: 'laboratorios-analiticos', name: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores certificados, conexões TK-Fujikin e detectores de vazamento para laboratórios de análise e controle de qualidade.', img: '/images/lab-analitico-scientist.jpg' },
       { id: 'farmaceutica', name: 'Farmacêutico', desc: 'Soluções validadas para a indústria farmacêutica: gases USP, sistemas de alta pureza, instrumentação GMP e rastreabilidade completa.', img: '/images/farmaceutica_linha_1.jpg' },
-      { id: 'centros-pesquisa', name: 'Centros de Pesquisa', desc: 'Gases de altíssima pureza (5.0, 6.0), dewars criogênicos, equipamentos especializados e suporte técnico para P&D e universities.', img: '/images/app-centros-pesquisa.jpg' },
+      { id: 'centros-pesquisa', name: 'Centros de Pesquisa', desc: 'Gases de altíssima pureza (5.0, 6.0), dewars criogênicos, equipamentos especializados e suporte técnico para P&D e universities.', img: '/images/app-pesquisa-2.jpg' },
     ],
   },
   {
     group: 'Energias Renováveis',
     color: 'bg-yellow-600',
     items: [
-      { id: 'energia-transicao-energetica', name: 'Energias Renováveis', desc: 'Cilindros para GNV/H₂, monitoramento de emissões (CEMS), tratamento de efluentes, bioenergia e integração com fontes de energia limpa.', img: '/images/app-energia-renovavel-1.jpg' },
-      { id: 'criogenia', name: 'Criogenia', desc: 'Dewars, tanques criogênicos e sistemas para nitrogênio líquido, oxigênio líquido, argônio líquido e hélio líquido para diversas aplicações industriais.', img: '/images/app-criogenia.jpg' },
+      { id: 'energia-transicao-energetica', name: 'Energias Renováveis', desc: 'Cilindros para GNV/H₂, monitoramento de emissões (CEMS), tratamento de efluentes, bioenergia e integração com fontes de energia limpa.', img: '/images/app-energia-renovavel-2.jpg' },
+      { id: 'criogenia', name: 'Criogenia', desc: 'Dewars, tanques criogênicos e sistemas para nitrogênio líquido, oxigênio líquido, argônio líquido e hélio líquido para diversas aplicações industriais.', img: '/images/prod-dewars-2.png' },
     ],
   },
   {
     group: 'Química, Óleo & Gás',
     color: 'bg-orange-700',
     items: [
-      { id: 'oleo-gas', name: 'Óleo & Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/app-seguranca-automacao.png' },
-      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy, PTFE), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/app-quimica-1.jpg' },
-      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases de grau alimentar (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/app-alimentos-bebidas-1.jpg' },
+      { id: 'oleo-gas', name: 'Óleo & Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/app-oleo-gas-refinaria.jpg' },
+      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy, PTFE), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/app-quimica-2.jpg' },
+      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases de grau alimentar (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/app-alimentos-bebidas-2.jpg' },
     ],
   },
 ];
@@ -70,7 +70,7 @@ export function ApplicationsMain() {
         type="container"
         as="section"
         className="relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/lab-analitico-panel.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/85 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

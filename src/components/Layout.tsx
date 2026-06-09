@@ -75,7 +75,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <EditableElement
                   id="layout_logo_img"
                   type="image"
-                  defaultContent="/logo-prime.png"
+                  defaultContent="https://placehold.co/200x60/transparent/1564C0?text=LOGO+AQUI"
                   className="h-full w-auto object-contain"
                 />
               </div>
@@ -99,7 +99,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                         <ChevronDown size={12} />
                       </NavLink>
                       <div className="absolute left-0 top-full pt-2 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-200 w-56">
-                        <div className="bg-white shadow-xl rounded-sm border-t-4 border-primary p-2 flex flex-col gap-1">
+                        <div className="bg-white shadow-xl rounded-sm border-t-4 border-primary p-2 flex flex-col gap-1 max-h-[80vh] overflow-y-auto custom-scrollbar">
                           {item.subItems.map((sub, j) => (
                             <NavLink
                               key={j}
@@ -257,7 +257,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <EditableElement
                   id="footer_logo_img"
                   type="image"
-                  defaultContent="/logo-prime.png"
+                  defaultContent="https://placehold.co/200x60/transparent/white?text=LOGO+BRANCA"
                   className="h-full w-auto object-contain"
                 />
               </div>
