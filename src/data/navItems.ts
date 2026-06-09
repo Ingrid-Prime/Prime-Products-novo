@@ -61,5 +61,4 @@ export const defaultNavItems: NavItem[] = [
       { label: 'Calculadoras Prime', path: '/ferramentas-pro' },
     ],
   },
-  { label: 'Conteúdo', path: '/conteudo' },
 ];

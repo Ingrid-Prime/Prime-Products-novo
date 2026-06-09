@@ -75,7 +75,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <EditableElement
                   id="layout_logo_img"
                   type="image"
-                  defaultContent="https://placehold.co/200x60/transparent/1564C0?text=LOGO+AQUI"
+                  defaultContent="/logo-prime.png"
                   className="h-full w-auto object-contain"
                 />
               </div>
@@ -257,7 +257,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <EditableElement
                   id="footer_logo_img"
                   type="image"
-                  defaultContent="https://placehold.co/200x60/transparent/white?text=LOGO+BRANCA"
+                  defaultContent="/logo-prime.png"
                   className="h-full w-auto object-contain"
                 />
               </div>
