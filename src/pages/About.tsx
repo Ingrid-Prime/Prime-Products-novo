@@ -40,7 +40,7 @@ const DIFERENCIAIS = [
 ];
 
 const OBJETIVOS = [
-  'Ampliar o atendimento a mercados de alta exigência técnica: farmacêutico, óleo e gás, hospitalar e pesquisa',
+  'Ampliar o atendimento a mercados de alta exigência técnica: farmacêutico, óleo & gás, hospitalar e pesquisa',
   'Consolidar o portfólio de gases de alta pureza e instalações especiais',
   'Fortalecer a oferta de serviços integrados: projeto, montagem, comissionamento e manutenção',
   'Desenvolver parcerias estratégicas com fabricantes líderes em instrumentação e segurança',
@@ -120,7 +120,7 @@ export function About() {
                   <br />
                   <EditableElement id="about_sec_p2" defaultContent="Nossa atuação é fundamentada em critérios técnicos rigorosos, conformidade técnica com normas vigentes e foco total em confiabilidade, desempenho e segurança operacional em processos críticos." />
                   <br />
-                  <EditableElement id="about_sec_p3" defaultContent="Atendemos indústrias de alta exigência técnica — como farmacêutica, óleo e gás, química, hospitalar, pesquisa e energia — garantindo o atendimento nacional através de equipe qualificada e logística eficiente." />
+                  <EditableElement id="about_sec_p3" defaultContent="Atendemos indústrias de alta exigência técnica — como farmacêutica, óleo & gás, química, hospitalar, pesquisa e energia — garantindo o atendimento nacional através de equipe qualificada e logística eficiente." />
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll delay={400}>

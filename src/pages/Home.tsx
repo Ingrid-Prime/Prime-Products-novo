@@ -20,8 +20,8 @@ const SOLUTIONS = [
 ];
 
 const APPLICATIONS = [
-  { label: 'Óleo e Gás', desc: 'Instrumentação certificada ATEX para refinarias e plantas de processo.', path: '/aplicacao/oleo-gas', img: '/images/app-tanques.jpg' },
-  { label: 'Hospitalar', desc: 'Gases medicinais, geração de oxigênio e sistemas de combate a incêndio.', path: '/aplicacao/hospitalar', img: '/images/prod-geracao-oxigenio.png' },
+  { label: 'Óleo & Gás', desc: 'Instrumentação certificada ATEX para refinarias e plantas de processo.', path: '/aplicacao/oleo-gas', img: '/images/app-oleo-gas-offshore.jpg' },
+  { label: 'Hospitalar', desc: 'Gases medicinais, geração de oxigênio e sistemas de combate a incêndio.', path: '/aplicacao/hospitalar', img: '/images/app-hospitalar-leito.jpg' },
   { label: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores analíticos e criogenia.', path: '/aplicacao/laboratorios-analiticos', img: '/images/lab-analitico-scientist.jpg' },
 ];
 
@@ -268,7 +268,7 @@ export function Home() {
             {APPLICATIONS.map(({ label, desc, path, img }, i) => (
               <AnimateOnScroll key={i} delay={i * 150}>
                 <Link to={path} className="group relative overflow-hidden block h-64 rounded-sm">
-                  <img src={img} alt={label === 'Laboratórios Analíticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : label} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src={img} alt={label === 'Laboratórios Analíticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : label === 'Hospitalar' ? 'Infraestrutura hospitalar de gases medicinais com painel técnico e saídas de oxigênio, ar e vácuo.' : label === 'Óleo & Gás' ? 'Ambiente offshore de óleo & gás com instrumentação de processo e infraestrutura técnica.' : label} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-6">
                     <h3 className="text-white font-bold text-lg mb-1">

@@ -29,6 +29,7 @@ export const defaultNavItems: NavItem[] = [
       { label: 'Corte e Solda', path: '/produto/corte-solda' },
       { label: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { label: 'Reguladores Hidráulicos', path: '/produto/reguladores-hidraulicos' },
+      { label: 'Reguladores para Calibração de Equipamentos', path: '/produto/reguladores-calibracao' },
       { label: 'Combate a Incêndio', path: '/produto/combate-incendio' },
       { label: 'Transmissores de Pressão', path: '/produto/transmissores-pressao' },
       { label: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
@@ -39,7 +40,7 @@ export const defaultNavItems: NavItem[] = [
     path: '/aplicacoes',
     subItems: [
       { label: 'Ver Todas', path: '/aplicacoes' },
-      { label: 'Óleo e Gás', path: '/aplicacao/oleo-gas' },
+      { label: 'Óleo & Gás', path: '/aplicacao/oleo-gas' },
       { label: 'Farmacêutico', path: '/aplicacao/farmaceutica' },
       { label: 'Hospitalar', path: '/aplicacao/hospitalar' },
       { label: 'Laboratórios Analíticos', path: '/aplicacao/laboratorios-analiticos' },

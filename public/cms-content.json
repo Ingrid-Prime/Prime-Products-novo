@@ -171,6 +171,10 @@
           "path": "/produto/reguladores-hidraulicos"
         },
         {
+          "label": "Reguladores para Calibração de Equipamentos",
+          "path": "/produto/reguladores-calibracao"
+        },
+        {
           "label": "Combate a Incêndio",
           "path": "/produto/combate-incendio"
         },

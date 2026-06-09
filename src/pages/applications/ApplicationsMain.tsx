@@ -22,9 +22,9 @@ const APPLICATION_GROUPS: AppGroup[] = [
     group: 'Indústria',
     color: 'bg-blue-700',
     items: [
-      { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/app-automotivo.jpg' },
+      { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/app-automotivo-1.jpg' },
       { id: 'soldagem', name: 'Metal Mecânica', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/prod-corte-solda.png' },
-      { id: 'mineral', name: 'Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/app-plantas-industriais.png' },
+      { id: 'mineral', name: 'Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/app-mineracao-1.jpg' },
     ],
   },
   {
@@ -47,17 +47,17 @@ const APPLICATION_GROUPS: AppGroup[] = [
     group: 'Energias Renováveis',
     color: 'bg-yellow-600',
     items: [
-      { id: 'energia-transicao-energetica', name: 'Energias Renováveis', desc: 'Cilindros para GNV/H₂, monitoramento de emissões (CEMS), tratamento de efluentes, bioenergia e integração com fontes de energia limpa.', img: '/images/app-energia.jpg' },
-      { id: 'criogenia', name: 'Criogenia', desc: 'Dewars, tanques criogênicos e sistemas para nitrogênio líquido, oxigênio líquido, argônio líquido e hélio líquido para diversas aplicações industriais.', img: '/images/prod-dewars-criogenicos.png' },
+      { id: 'energia-transicao-energetica', name: 'Energias Renováveis', desc: 'Cilindros para GNV/H₂, monitoramento de emissões (CEMS), tratamento de efluentes, bioenergia e integração com fontes de energia limpa.', img: '/images/app-energia-renovavel-1.jpg' },
+      { id: 'criogenia', name: 'Criogenia', desc: 'Dewars, tanques criogênicos e sistemas para nitrogênio líquido, oxigênio líquido, argônio líquido e hélio líquido para diversas aplicações industriais.', img: '/images/app-criogenia.jpg' },
     ],
   },
   {
-    group: 'Química, Óleo e Gás',
+    group: 'Química, Óleo & Gás',
     color: 'bg-orange-700',
     items: [
-      { id: 'oleo-gas', name: 'Óleo e Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/app-seguranca-automacao.png' },
-      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy, PTFE), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/prod-conexoes-instrumentacao.png' },
-      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases de grau alimentar (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/app-linhas-producao.png' },
+      { id: 'oleo-gas', name: 'Óleo & Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/app-seguranca-automacao.png' },
+      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy, PTFE), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/app-quimica-1.jpg' },
+      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases de grau alimentar (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/app-alimentos-bebidas-1.jpg' },
     ],
   },
 ];
@@ -105,7 +105,7 @@ export function ApplicationsMain() {
                     <AnimateOnScroll key={id} delay={(gi * 50) + (i * 80)}>
                       <Link to={`/aplicacao/${id}`} className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 block overflow-hidden h-full flex flex-col">
                         <div className="h-44 overflow-hidden">
-                          <img src={img} alt={name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                          <img src={img} alt={name === 'Alimentos e Bebidas' ? 'Ambiente industrial de alimentos e bebidas com processo em inox e aplicação técnica de gases.' : name === 'Criogenia' ? 'Instalação criogênica com tanque estacionário e infraestrutura técnica.' : name === 'Energias Renováveis' ? 'Aplicação de energias renováveis com infraestrutura técnica de gases, instrumentação e engenharia industrial.' : name === 'Mineração' ? 'Aplicação em mineração com monitoramento, segurança operacional, gases e infraestrutura técnica industrial.' : name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                         </div>
                         <div className="p-6 flex flex-col flex-1">
                           <h3 className="font-bold text-secondary text-lg mb-2 group-hover:text-primary transition-colors">{name}</h3>
