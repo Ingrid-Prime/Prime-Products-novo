@@ -18,7 +18,7 @@ export function InstalacaoRedeGases() {
         id="sol_gases_bg"
         type="container"
         as="section"
-        className="relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{ backgroundImage: "url('/images/instalacao-gases-fundo.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
@@ -208,7 +208,7 @@ export function InstalacaoRedeGases() {
               <AnimateOnScroll key={i} delay={i * 100}>
                 <Link to={path} className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 block overflow-hidden h-full flex flex-col">
                   <div className="h-40 overflow-hidden">
-                    <img src={img} alt={name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={img} alt={name} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                   <div className="p-5 flex flex-col flex-1 border-b-4 border-transparent group-hover:border-primary transition-colors">
                     <h3 className="font-bold text-secondary text-sm mb-2 group-hover:text-primary transition-colors">{name}</h3>

@@ -50,7 +50,7 @@ export function ToolsMain() {
         id="tools_hero_bg"
         type="container"
         as="section"
-        className="relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/85 z-0" />

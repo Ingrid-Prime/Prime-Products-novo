@@ -23,6 +23,18 @@
 }
 
 @layer utilities {
+  .prime-image-standard {
+    filter: contrast(1.08) saturate(0.85) brightness(1.02);
+    /* Essa regra aplica uma padronização visual instantânea.
+       Aumenta o contraste para destacar o aço/inox,
+       reduz a saturação para evitar cores muito "amadoras" (estilo premium)
+       e ajusta o brilho para equalizar fotos escuras. */
+  }
+
+  .prime-bg-standard {
+    filter: contrast(1.05) saturate(0.9) brightness(0.9);
+  }
+
   .animate-fade-in-up {
     animation: fadeInUp 0.5s ease-out forwards;
   }

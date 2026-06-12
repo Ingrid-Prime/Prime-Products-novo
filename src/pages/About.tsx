@@ -55,7 +55,7 @@ export function About() {
         id="about_hero_bg"
         type="container"
         as="section"
-        className="relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{
           backgroundImage: "url('/images/quem-somos-equipe.png')",
           backgroundSize: 'cover',
@@ -236,7 +236,7 @@ export function About() {
 
       {/* Banner Equipe */}
       <section className="relative h-72 overflow-hidden">
-        <img src="/images/quem-somos-equipe.png" alt="Equipe Prime Products" className="w-full h-full object-cover object-center" />
+        <img src="/images/quem-somos-equipe.png" alt="Equipe Prime Products" className="prime-image-standard w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-secondary/65" />
         <div className="absolute inset-0 flex items-center justify-center text-center px-4">
           <div>

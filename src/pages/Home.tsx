@@ -21,7 +21,7 @@ const SOLUTIONS = [
 ];
 
 const APPLICATIONS = [
-  { label: 'Óleo & Gás', desc: 'Instrumentação certificada ATEX para refinarias e plantas de processo.', path: '/aplicacao/oleo-gas', img: '/images/app-oleo-gas-offshore.jpg' },
+  { label: 'Óleo & Gás', desc: 'Instrumentação certificada ATEX para refinarias e plantas de processo.', path: '/aplicacao/oleo-gas', img: '/images/segmento-oleo-gas.png' },
   { label: 'Hospitalar', desc: 'Gases medicinais, geração de oxigênio e sistemas de combate a incêndio.', path: '/aplicacao/hospitalar', img: '/images/app-hospitalar-leito.jpg' },
   { label: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores analíticos e criogenia.', path: '/aplicacao/laboratorios-analiticos', img: '/images/lab-analitico-scientist.jpg' },
 ];
@@ -61,7 +61,7 @@ const FAQS = [
 
 const STATS = [
   { icon: History, numId: 'home_stat_1_num', lblId: 'home_stat_1_lbl', num: '+35', lbl: 'Anos de Experiência' },
-  { icon: Briefcase, numId: 'home_stat_2_num', lblId: 'home_stat_2_lbl', num: '+1000', lbl: 'Projetos Entregues' },
+  { icon: Briefcase, numId: 'home_stat_2_num', lblId: 'home_stat_2_lbl', num: '+1003', lbl: 'Projetos Entregues' },
   { icon: ShieldCheck, numId: 'home_stat_3_num', lblId: 'home_stat_3_lbl', num: '100%', lbl: 'Segurança Operacional' },
   { icon: Trophy, numId: 'home_stat_4_num', lblId: 'home_stat_4_lbl', num: '+50', lbl: 'Marcas Parceiras' },
 ];
@@ -78,7 +78,7 @@ export function Home() {
         id="home_hero_bg"
         type="container"
         as="section"
-        className="relative h-[700px] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative h-[700px] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{
           backgroundImage: "url('/images/lab-analitico-panel.jpg')",
           backgroundSize: 'cover',
@@ -226,7 +226,7 @@ export function Home() {
               <AnimateOnScroll key={i} delay={i * 100}>
                 <Link to={path} className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 block overflow-hidden h-full flex flex-col">
                   <div className="h-44 overflow-hidden relative">
-                    <img src={img} alt={label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    <img src={img} alt={label} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 to-transparent" />
                     <div className="absolute bottom-4 left-4 w-9 h-9 bg-primary rounded-sm flex items-center justify-center shadow-md">
                       <Icon size={18} className="text-white" />
@@ -273,7 +273,7 @@ export function Home() {
             {APPLICATIONS.map(({ label, desc, path, img }, i) => (
               <AnimateOnScroll key={i} delay={i * 150}>
                 <Link to={path} className="group relative overflow-hidden block h-64 rounded-sm">
-                  <img src={img} alt={label === 'Laboratórios Analíticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : label === 'Hospitalar' ? 'Infraestrutura hospitalar de gases medicinais com painel técnico e saídas de oxigênio, ar e vácuo.' : label === 'Óleo & Gás' ? 'Ambiente offshore de óleo & gás com instrumentação de processo e infraestrutura técnica.' : label} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
+                  <img src={img} alt={label === 'Laboratórios Analíticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : label === 'Hospitalar' ? 'Infraestrutura hospitalar de gases medicinais com painel técnico e saídas de oxigênio, ar e vácuo.' : label === 'Óleo & Gás' ? 'Ambiente offshore de óleo & gás com instrumentação de processo e infraestrutura técnica.' : label} className="prime-image-standard w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer" />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-6">
                     <h3 className="text-white font-bold text-lg mb-1">
@@ -360,7 +360,7 @@ export function Home() {
                   <Link to={`/artigo/${article.id}`} className="group block bg-white border border-gray-100 hover:border-primary shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden h-full">
                     {article.image && (
                       <div className="h-40 overflow-hidden">
-                        <img src={article.image} alt={article.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                        <img src={article.image} alt={article.title} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                       </div>
                     )}
                     <div className="p-5">

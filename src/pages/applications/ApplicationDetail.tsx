@@ -9,7 +9,7 @@ const APP_GALLERY: Record<string, string[]> = {
   'farmaceutica': ['/images/farmaceutica_linha_1.jpg', '/images/farmaceutica_linha_2.jpg', '/images/farmaceutica_filtro.jpg', '/images/farmaceutica_corredor.jpg'],
   'centros-pesquisa': ['/images/app-pesquisa-2.jpg', '/images/app-pesquisa-3.jpg', '/images/app-data-center.jpg'],
   'hospitalar': ['/images/app-hospitalar-leito.jpg', '/images/medical-gas-outlets.png'],
-  'oleo-gas': ['/images/app-oleo-gas-refinaria.jpg'],
+  'oleo-gas': ['/images/app-oleo-gas-offshore.jpg'],
   'industria-quimica': ['/images/app-quimica-2.jpg'],
   'alimentos-bebidas': ['/images/app-alimentos-bebidas-2.jpg'],
   'energia-transicao-energetica': ['/images/app-energia-renovavel-2.jpg'],
@@ -87,7 +87,7 @@ const APPLICATION_DATA: Record<string, {
   'oleo-gas': {
     name: 'Óleo & Gás',
     cat: 'Processos Industriais',
-    img: '/images/app-oleo-gas-offshore.jpg',
+    img: '/images/segmento-oleo-gas.png',
     desc: 'Refinarias, plantas de GNL, plataformas e instalações de óleo & gás exigem instrumentação certificada para áreas classificadas, sistemas de detecção de gases tóxicos e inflamáveis e soluções de segurança funcional com certificação SIL.',
     challenges: ['Instrumentação certificada ATEX/IECEx para zonas classificadas', 'Detecção de H₂S, CO, LEL e outros gases de risco', 'Certificação de segurança funcional SIL 2/3', 'Alta disponibilidade e confiabilidade em ambientes críticos'],
     solutions: ['Transmissores de pressão com certificação ATEX e SIL', 'Detectores de gases tóxicos e inflamáveis com saída 4-20 mA/HART', 'Sistemas de supressão de incêndio por agentes limpos', 'Reguladores e válvulas para gases de processo em alta pressão'],
@@ -220,7 +220,7 @@ export function ApplicationDetail() {
         id={`app_${id}_hero`}
         type="container"
         as="section"
-        className="relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
+        className="prime-bg-standard relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
         defaultStyle={{
           backgroundImage: `url('${app.img}')`,
           backgroundSize: 'cover',
@@ -285,7 +285,7 @@ export function ApplicationDetail() {
                       <img
                         src="/images/farmaceutica_filtro.jpg"
                         alt="Sistema de Filtração USP"
-                        className="w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
+                        className="prime-image-standard w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
                         referrerPolicy="no-referrer"
                       />
                     </div>
@@ -294,7 +294,7 @@ export function ApplicationDetail() {
                       <img
                         src="/images/farmaceutica_linha_2.jpg"
                         alt="Linha de Distribuição Farmacêutica"
-                        className="w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
+                        className="prime-image-standard w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
                         referrerPolicy="no-referrer"
                       />
                     </div>
@@ -302,7 +302,7 @@ export function ApplicationDetail() {
                       <img
                         src="/images/farmaceutica_corredor.jpg"
                         alt="Corredor Limpo GMP"
-                        className="w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
+                        className="prime-image-standard w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
                         referrerPolicy="no-referrer"
                       />
                     </div>
@@ -311,7 +311,7 @@ export function ApplicationDetail() {
                   galleryImages.length > 0 && (
                     <div className={`grid gap-2 mt-2 ${galleryImages.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
                       {galleryImages.map((src: string, i: number) => (
-                        <img key={i} src={src} alt={id === 'laboratorios-analiticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : `${app.name} ${i + 2}`} className={`w-full ${galleryImages.length === 1 ? (id === 'industria-quimica' ? 'h-auto max-h-[800px] object-contain bg-gray-50' : 'h-56 object-cover') : 'h-28 object-cover'} shadow-sm rounded-sm hover:opacity-90 transition-opacity`} referrerPolicy="no-referrer" />
+                        <img key={i} src={src} alt={id === 'laboratorios-analiticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : `${app.name} ${i + 2}`} className={`prime-image-standard w-full ${galleryImages.length === 1 ? (id === 'industria-quimica' ? 'h-auto max-h-[800px] object-contain bg-gray-50' : 'h-56 object-cover') : 'h-28 object-cover'} shadow-sm rounded-sm hover:opacity-90 transition-opacity`} referrerPolicy="no-referrer" />
                       ))}
                     </div>
                   )

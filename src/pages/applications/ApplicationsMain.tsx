@@ -55,7 +55,7 @@ const APPLICATION_GROUPS: AppGroup[] = [
     group: 'Química, Óleo & Gás',
     color: 'bg-orange-700',
     items: [
-      { id: 'oleo-gas', name: 'Óleo & Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/app-oleo-gas-refinaria.jpg' },
+      { id: 'oleo-gas', name: 'Óleo & Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/segmento-oleo-gas.png' },
       { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy, PTFE), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/app-quimica-2.jpg' },
       { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases de grau alimentar (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/app-alimentos-bebidas-2.jpg' },
     ],
@@ -69,7 +69,7 @@ export function ApplicationsMain() {
         id="app_hero_bg"
         type="container"
         as="section"
-        className="relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{ backgroundImage: "url('/images/lab-analitico-panel.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/85 z-0" />
@@ -105,7 +105,7 @@ export function ApplicationsMain() {
                     <AnimateOnScroll key={id} delay={(gi * 50) + (i * 80)}>
                       <Link to={`/aplicacao/${id}`} className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 block overflow-hidden h-full flex flex-col">
                         <div className="h-44 overflow-hidden">
-                          <img src={img} alt={name === 'Alimentos e Bebidas' ? 'Ambiente industrial de alimentos e bebidas com processo em inox e aplicação técnica de gases.' : name === 'Criogenia' ? 'Instalação criogênica com tanque estacionário e infraestrutura técnica.' : name === 'Energias Renováveis' ? 'Aplicação de energias renováveis com infraestrutura técnica de gases, instrumentação e engenharia industrial.' : name === 'Mineração' ? 'Aplicação em mineração com monitoramento, segurança operacional, gases e infraestrutura técnica industrial.' : name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                          <img src={img} alt={name === 'Alimentos e Bebidas' ? 'Ambiente industrial de alimentos e bebidas com processo em inox e aplicação técnica de gases.' : name === 'Criogenia' ? 'Instalação criogênica com tanque estacionário e infraestrutura técnica.' : name === 'Energias Renováveis' ? 'Aplicação de energias renováveis com infraestrutura técnica de gases, instrumentação e engenharia industrial.' : name === 'Mineração' ? 'Aplicação em mineração com monitoramento, segurança operacional, gases e infraestrutura técnica industrial.' : name} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                         </div>
                         <div className="p-6 flex flex-col flex-1">
                           <h3 className="font-bold text-secondary text-lg mb-2 group-hover:text-primary transition-colors">{name}</h3>

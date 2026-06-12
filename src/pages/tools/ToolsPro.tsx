@@ -569,7 +569,7 @@ export function ToolsPro() {
         id="toolspro_hero_bg"
         type="container"
         as="section"
-        className="relative min-h-[44vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[44vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{ backgroundImage: "url('/images/app-plantas-industriais.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/88 z-0" />

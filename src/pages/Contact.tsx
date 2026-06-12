@@ -45,7 +45,7 @@ export function Contact() {
         id="contact_hero_c"
         type="container"
         as="section"
-        className="relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{
           backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
           backgroundSize: 'cover',

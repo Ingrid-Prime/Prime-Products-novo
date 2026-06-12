@@ -25,7 +25,7 @@ export function ArticleDetail() {
   return (
     <>
       <section
-        className="relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
+        className="prime-bg-standard relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
         style={{ backgroundImage: `url('${article.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent" />
@@ -74,7 +74,7 @@ export function ArticleDetail() {
                     {related.map(({ id: rid, title, category, image }) => (
                       <Link key={rid} to={`/artigo/${rid}`} className="group bg-white shadow-md hover:shadow-lg transition-all block overflow-hidden">
                         <div className="h-32 overflow-hidden">
-                          <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                          <img src={image} alt={title} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                         </div>
                         <div className="p-4">
                           <span className="text-xs font-bold text-primary uppercase">{category}</span>

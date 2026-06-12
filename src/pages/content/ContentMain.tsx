@@ -14,7 +14,7 @@ export function ContentMain() {
         id="content_hero_bg"
         type="container"
         as="section"
-        className="relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/85 z-0" />
@@ -50,7 +50,7 @@ export function ContentMain() {
                       <img
                         src={articles[0].image}
                         alt={articles[0].title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         referrerPolicy="no-referrer"
                       />
                     </div>
@@ -79,7 +79,7 @@ export function ContentMain() {
                   <AnimateOnScroll key={id} delay={(i % 3) * 80}>
                     <Link to={`/artigo/${id}`} className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 block overflow-hidden h-full flex flex-col">
                       <div className="h-48 overflow-hidden">
-                        <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                        <img src={image} alt={title} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                       </div>
                       <div className="p-6 flex flex-col flex-1">
                         <div className="flex items-center justify-between mb-3">

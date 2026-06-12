@@ -14,7 +14,7 @@ const PRODUCTS = [
   { id: 'corte-solda', name: 'Equipamentos de Corte e Solda', cat: 'Industrial', img: '/images/prod-corte-solda.png', desc: 'Maçaricos, reguladores e acessórios para corte e solda industrial.' },
   { id: 'reguladores-especiais', name: 'Reguladores de Gases Especiais', cat: 'Instrumentação', img: '/images/regulador-gases-09.jpg', desc: 'Reguladores de alta performance para gases especiais, alta pressão e calibração.' },
   { id: 'reguladores-hidraulicos', name: 'Reguladores Hidráulicos', cat: 'Hidráulica', img: '/images/prod-reguladores.png', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
-  { id: 'reguladores-calibracao', name: 'Reguladores para Calibração de Equipamentos', cat: 'Instrumentação', img: '/images/prod-calibracao-1.png', desc: 'Mini reguladores e reguladores de demanda compactos de alta precisão para calibração e instrumentação.' },
+  { id: 'reguladores-calibracao', name: 'Reguladores para Calibração de Equipamentos', cat: 'Instrumentação', img: '/images/prod-reguladores-calibracao-novo.png', desc: 'Mini reguladores e reguladores de demanda compactos de alta precisão para calibração e instrumentação.' },
   { id: 'combate-incendio', name: 'Combate a Incêndio', cat: 'Segurança', img: '/images/prod-combate-incendio.png', desc: 'Sistemas de supressão com CO₂, FM-200 e outros agentes limpos.' },
   { id: 'transmissores-pressao', name: 'Transmissores de Pressão e Nível', cat: 'Instrumentação', img: '/images/prod-transmissores-pressao.png', desc: 'Transmissores inteligentes para medição de pressão diferencial, manométrica e nível.' },
   { id: 'valvulas-industriais', name: 'Válvulas Industriais e Medicinais', cat: 'Válvulas', img: '/images/prod-valvulas.png', desc: 'Válvulas de agulha, esfera e membrana para gases industriais e medicinais.' },
@@ -27,7 +27,7 @@ export function ProductsMain() {
         id="prod_hero_bg"
         type="container"
         as="section"
-        className="relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
+        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{ backgroundImage: "url('/images/lab-analitico-panel.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/85 z-0" />
@@ -54,7 +54,7 @@ export function ProductsMain() {
               <AnimateOnScroll key={id} delay={(i % 4) * 80}>
                 <Link to={`/produto/${id}`} className="group bg-white shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 block overflow-hidden">
                   <div className="h-44 overflow-hidden">
-                    <img src={img} alt={name === 'Geração de Oxigênio' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                    <img src={img} alt={name === 'Geração de Oxigênio' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
                   </div>
                   <div className="p-5">
                     <span className="text-xs font-bold uppercase text-primary tracking-wider">{cat}</span>
