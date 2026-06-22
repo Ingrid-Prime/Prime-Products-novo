@@ -100,7 +100,7 @@ export function EditableElement({
       <img
         src={content}
         alt="Editable"
-        className="prime-image-standard w-full h-full object-cover pointer-events-none"
+        className={`${className || ''} pointer-events-none`}
         referrerPolicy="no-referrer"
       />
     );

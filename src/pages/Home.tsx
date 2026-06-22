@@ -61,7 +61,7 @@ const FAQS = [
 
 const STATS = [
   { icon: History, numId: 'home_stat_1_num', lblId: 'home_stat_1_lbl', num: '+35', lbl: 'Anos de Experiência' },
-  { icon: Briefcase, numId: 'home_stat_2_num', lblId: 'home_stat_2_lbl', num: '+1003', lbl: 'Projetos Entregues' },
+  { icon: Briefcase, numId: 'home_stat_2_num', lblId: 'home_stat_2_lbl', num: '+1000', lbl: 'Projetos Entregues' },
   { icon: ShieldCheck, numId: 'home_stat_3_num', lblId: 'home_stat_3_lbl', num: '100%', lbl: 'Segurança Operacional' },
   { icon: Trophy, numId: 'home_stat_4_num', lblId: 'home_stat_4_lbl', num: '+50', lbl: 'Marcas Parceiras' },
 ];
