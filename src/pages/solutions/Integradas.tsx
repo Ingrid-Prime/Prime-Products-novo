@@ -5,12 +5,12 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
-  { img: '/images/app-plantas-industriais.png', label: 'Plantas Industriais' },
-  { img: '/images/app-planta-01.png', label: 'Instalações de Processo' },
-  { img: '/images/app-planta-03.png', label: 'Skids e Painéis' },
-  { img: '/images/app-planta-04.png', label: 'Sistemas Integrados' },
-  { img: '/images/app-linhas-producao.png', label: 'Linhas de Produção' },
-  { img: '/images/app-linhas-03.png', label: 'Automação de Linha' },
+  { img: '/images/sol-inte-novo-1.jpg', label: 'Plantas Industriais' },
+  { img: '/images/sol-inte-novo-2.jpg', label: 'Instalações de Processo' },
+  { img: '/images/sol-inte-novo-3.jpg', label: 'Skids e Painéis' },
+  { img: '/images/sol-inte-novo-4.jpg', label: 'Sistemas Integrados' },
+  { img: '/images/sol-inte-novo-5.jpg', label: 'Linhas de Produção' },
+  { img: '/images/sol-inte-novo-6.jpg', label: 'Automação de Linha' },
 ];
 
 const PRODUCTS = [
@@ -28,7 +28,7 @@ export function Integradas() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/app-plantas-industriais.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/capa-integradas-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

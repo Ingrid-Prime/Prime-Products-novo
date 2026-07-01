@@ -16,7 +16,7 @@ export const defaultArticles: Article[] = [
     category: 'Segurança',
     date: '05 Mar 2025',
     summary: 'Normas e procedimentos essenciais para garantir a integridade e a segurança de sistemas de gases industriais.',
-    image: '/images/app-seguranca-automacao.png',
+    image: '/images/sol-seg-novo-5.jpg',
     content: '<p class=\"mb-4\">A gestão segura de gases industriais exige um entendimento profundo das normas regulamentadoras. A NR-13 estabelece requisitos para gestão de vasos de pressão e caldeiras.</p>',
   },
   {

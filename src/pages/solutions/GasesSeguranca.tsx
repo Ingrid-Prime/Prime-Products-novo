@@ -5,12 +5,12 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
-  { img: '/images/app-seguranca-automacao.png', label: 'Segurança Industrial' },
-  { img: '/images/app-seguranca-01.png', label: 'Automação e Controle' },
-  { img: '/images/app-seguranca-2.png', label: 'Sistemas de Detecção' },
-  { img: '/images/app-seguranca-03.png', label: 'Proteção de Processo' },
-  { img: '/images/app-seguranca-04.png', label: 'Monitoramento Contínuo' },
-  { img: '/images/prod-combate-3.png', label: 'Combate a Incêndio' },
+  { img: '/images/sol-seg-novo-1.jpg', label: 'Segurança Industrial' },
+  { img: '/images/sol-seg-novo-2.jpg', label: 'Automação e Controle' },
+  { img: '/images/sol-seg-novo-3.jpg', label: 'Sistemas de Detecção' },
+  { img: '/images/sol-seg-novo-4.jpg', label: 'Proteção de Processo' },
+  { img: '/images/sol-seg-novo-5.jpg', label: 'Monitoramento Contínuo' },
+  { img: '/images/sol-seg-novo-6.jpg', label: 'Combate a Incêndio' },
 ];
 
 const PRODUCTS = [
@@ -30,7 +30,7 @@ export function GasesSeguranca() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/app-seguranca-automacao.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/capa-seguranca-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

@@ -5,11 +5,11 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
-  { img: '/images/sol-analitica-00.png', label: 'Análise de Processo' },
-  { img: '/images/sol-analitica-01.png', label: 'Instrumentação Analítica' },
-  { img: '/images/sol-analitica-02.png', label: 'Detecção de Gases' },
-  { img: '/images/sol-analitica-03.png', label: 'Cromatografia' },
-  { img: '/images/sol-analitica-04.png', label: 'Laboratório Analítico' },
+  { img: '/images/sol-analitica-novo-laboratorio.jpg', label: 'Análise de Processo' },
+  { img: '/images/sol-analitica-novo-analise-processo.jpg', label: 'Instrumentação Analítica' },
+  { img: '/images/app-detector-2.jpg', label: 'Detecção de Gases' },
+  { img: '/images/sol-analitica-novo-cromatografia.jpg', label: 'Cromatografia' },
+  { img: '/images/sol-analitica-novo-instrumentacao.jpg', label: 'Laboratório Analítico' },
   { img: '/images/sol-instrumentacao-analitica.png', label: 'Controle de Qualidade' },
 ];
 
@@ -28,7 +28,7 @@ export function InstrumentacaoAnalitica() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/sol-instrumentacao-analitica.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/capa-analitica-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />
