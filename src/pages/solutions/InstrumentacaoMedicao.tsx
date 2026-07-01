@@ -6,11 +6,11 @@ import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
   { img: '/images/sol-medicao-01.png', label: 'Transmissores de Pressão' },
-  { img: '/images/sol-medicao-02.png', label: 'Sensores de Processo' },
-  { img: '/images/sol-medicao-03.png', label: 'Instrumentação Industrial' },
-  { img: '/images/sol-medicao-04.png', label: 'Painéis de Medição' },
-  { img: '/images/sol-medicao-05.png', label: 'Sistemas de Controle' },
-  { img: '/images/sol-instrumentacao-medicao.png', label: 'Integração de Campo' },
+  { img: '/images/sol-medicao-novo-02.jpg', label: 'Sensores de Processo' },
+  { img: '/images/sol-medicao-novo-01.jpg', label: 'Instrumentação Industrial' },
+  { img: '/images/sol-medicao-novo-04.jpg', label: 'Painéis de Medição' },
+  { img: '/images/sol-medicao-novo-05.jpg', label: 'Sistemas de Controle' },
+  { img: '/images/sol-medicao-novo-03.jpg', label: 'Integração de Campo' },
 ];
 
 const PRODUCTS = [
