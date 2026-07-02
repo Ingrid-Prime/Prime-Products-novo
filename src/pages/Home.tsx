@@ -133,7 +133,7 @@ export function Home() {
             <AnimateOnScroll>
               <div className="relative pl-8 pt-8">
                 <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-gray-50 -z-10" />
-                <EditableElement id="home_about_img" type="image" defaultContent="/images/quem-somos-equipe.png" className="w-full h-auto shadow-lg relative z-10" />
+                <EditableElement id="home_about_img" type="image" defaultContent="/images/quem-somos-nr13.jpg" className="w-full h-[500px] lg:h-[600px] object-cover object-center shadow-lg relative z-10 rounded-sm" />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-10 z-20 shadow-xl -mb-6 md:-mb-10 mr-4 md:mr-0 max-w-[200px] md:max-w-[240px]">
                   <div className="text-4xl md:text-5xl font-black mb-1">
                     <EditableElement id="home_about_stat_num" defaultContent="100%" />
@@ -155,14 +155,27 @@ export function Home() {
               </AnimateOnScroll>
               <AnimateOnScroll delay={300}>
                 <div className="text-gray-600 space-y-4 mb-8 leading-relaxed text-base">
-                  <EditableElement id="home_about_p1" defaultContent="A Prime Products é uma empresa especializada em soluções técnicas para instrumentação, gases e engenharia aplicada, atuando de forma integrada desde a especificação até a entrega e suporte técnico." />
-                  <br />
-                  <EditableElement id="home_about_p2" defaultContent="Nossa atuação é fundamentada em critérios técnicos rigorosos, conformidade técnica e foco total em segurança operacional, confiabilidade e desempenho, apoiados por uma equipe qualificada e logística eficiente." />
+                  <p className="text-lg font-medium text-secondary">
+                    <EditableElement id="home_about_p1" defaultContent="A Prime Products atua no desenvolvimento e na integração de soluções técnicas para gases especiais, gases industriais, gases medicinais, instrumentação e sistemas aplicados a processos críticos." />
+                  </p>
+                  <p>
+                    <EditableElement id="home_about_p2" defaultContent="Nossa atuação combina fornecimento especializado, engenharia aplicada, instalação em campo, comissionamento, testes e suporte técnico, com foco em segurança, conformidade e confiabilidade operacional." />
+                  </p>
+                  <p>
+                    <EditableElement id="home_about_p3" defaultContent="Atendemos empresas e instituições que exigem precisão técnica, rastreabilidade, documentação consistente e desempenho estável em aplicações industriais, laboratoriais, hospitalares e científicas." />
+                  </p>
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll delay={400}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-4 mb-8">
-                  {['Engenharia aplicada', 'Equipamentos engineering-grade', 'Conformidade técnica', 'Segurança operacional', 'Suporte técnico especializado'].map((item, i) => (
+                  {[
+                    'Instalação de gases especiais e medicinais',
+                    'Instrumentação e projetos técnicos',
+                    'Alta pureza e conformidade técnica',
+                    'Segurança ocupacional e operacional',
+                    'Suporte técnico especializado',
+                    'Logística nacional eficiente'
+                  ].map((item, i) => (
                     <div key={i} className="flex items-center">
                       <CheckCircle className="text-primary shrink-0 mr-3" size={18} />
                       <span className="text-secondary font-medium text-sm">
