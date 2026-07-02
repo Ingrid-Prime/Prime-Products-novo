@@ -248,19 +248,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </a>
 
       {/* Footer */}
-      <footer className="bg-secondary text-gray-400 border-t-4 border-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <footer className="bg-secondary text-gray-400 border-t-4 border-primary flex flex-col">
+        {/* Banner Institucional (Substitui o Logo) */}
+        <div className="bg-white w-full py-6 sm:py-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <EditableElement
+              id="footer_wide_banner"
+              type="image"
+              defaultContent="/images/footer-banner.png"
+              className="w-full h-auto max-h-24 md:max-h-32 object-contain"
+            />
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-            {/* Brand */}
+            {/* Brand Info */}
             <div>
-              <div className="mb-6 h-14">
-                <EditableElement
-                  id="footer_logo_img"
-                  type="image"
-                  defaultContent="/logo-prime.png"
-                  className="h-full w-auto object-contain"
-                />
-              </div>
               <div className="mb-8 border-l-2 border-gray-700 pl-4 text-sm leading-relaxed">
                 <EditableElement
                   id="footer_desc"
