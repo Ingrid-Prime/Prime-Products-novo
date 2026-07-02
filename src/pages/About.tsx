@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Award, Users, TrendingUp, Target, Eye, Heart, Compass, Wrench, BookOpen, Truck, ShieldCheck, FileCheck, PhoneCall, CheckSquare } from 'lucide-react';
+import { Award, TrendingUp, Target, Eye, Heart, Compass, Wrench, Truck, ShieldCheck, FileCheck, PhoneCall } from 'lucide-react';
 import { AnimateOnScroll } from '../components/AnimateOnScroll';
 import { EditableElement } from '../components/EditableElement';
 import { SectionContainer } from '../components/SectionContainer';
