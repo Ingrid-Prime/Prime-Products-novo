@@ -74,20 +74,23 @@ export function Home() {
   return (
     <>
       {/* Hero */}
-      <EditableElement
-        id="home_hero_bg"
-        type="container"
-        as="section"
-        className="prime-bg-standard relative h-[700px] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{
-          backgroundImage: "url('/images/lab-analitico-panel.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
-        }}
-      >
-        <div className="absolute inset-0 bg-secondary/80 z-0" />
-        <ParticleCanvas />
+      <section className="relative h-[700px] flex items-center bg-secondary overflow-hidden">
+        {/* Video Background */}
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
+        >
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Camada Base removida para testar luminosidade do vídeo */}
+        {/* <div className="absolute inset-0 bg-secondary/70 z-[1] pointer-events-none" /> */}
+        <div className="absolute inset-0 z-[1] pointer-events-none">
+           <ParticleCanvas />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 via-secondary/70 to-transparent z-[2] pointer-events-none" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pointer-events-none">
           <div className="max-w-3xl pt-8 pointer-events-auto">
@@ -124,16 +127,17 @@ export function Home() {
           </div>
         </div>
         <div className="absolute bottom-0 right-0 h-32 w-2/3 md:w-1/2 bg-primary z-10 pointer-events-none" style={{ clipPath: 'polygon(15% 100%, 100% 100%, 100% 0, 0 100%)' }} />
-      </EditableElement>
+      </section>
 
       {/* About section */}
       <section className="bg-white overflow-visible py-20">
         <SectionContainer className="py-0">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <AnimateOnScroll>
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-3">
+              <AnimateOnScroll>
               <div className="relative pl-8 pt-8">
                 <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-gray-50 -z-10" />
-                <EditableElement id="home_about_img" type="image" defaultContent="/images/quem-somos-nr13.jpg" className="w-full h-[500px] lg:h-[600px] object-cover object-center shadow-lg relative z-10 rounded-sm" />
+                <EditableElement id="home_about_img" type="image" defaultContent="/images/home-about-ihm.jpg" className="w-full h-[650px] lg:h-[750px] object-cover object-center shadow-lg relative z-10 rounded-sm" />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-10 z-20 shadow-xl -mb-6 md:-mb-10 mr-4 md:mr-0 max-w-[200px] md:max-w-[240px]">
                   <div className="text-4xl md:text-5xl font-black mb-1">
                     <EditableElement id="home_about_stat_num" defaultContent="100%" />
@@ -143,46 +147,50 @@ export function Home() {
                   </div>
                 </div>
               </div>
-            </AnimateOnScroll>
-            <div className="lg:pl-8 mt-12 lg:mt-0">
+              </AnimateOnScroll>
+            </div>
+            <div className="lg:col-span-2 lg:pl-4 mt-12 lg:mt-0">
               <AnimateOnScroll delay={200}>
                 <h4 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">
                   <EditableElement id="home_about_label" defaultContent="Quem Somos" />
                 </h4>
                 <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6 leading-tight">
-                  <EditableElement id="home_about_heading" defaultContent="Excelência e Segurança em Soluções Industriais" />
+                  <EditableElement id="home_about_heading" defaultContent="Onde a precisão técnica encontra a confiabilidade operacional." />
                 </h2>
               </AnimateOnScroll>
               <AnimateOnScroll delay={300}>
                 <div className="text-gray-600 space-y-4 mb-8 leading-relaxed text-base">
                   <p className="text-lg font-medium text-secondary">
-                    <EditableElement id="home_about_p1" defaultContent="A Prime Products atua no desenvolvimento e na integração de soluções técnicas para gases especiais, gases industriais, gases medicinais, instrumentação e sistemas aplicados a processos críticos." />
+                    <EditableElement id="home_about_p1" defaultContent="Na Prime Products, transformamos complexidade técnica em estabilidade operacional, integrando engenharia aplicada, instrumentação de alta confiabilidade e sistemas de controle que ampliam a segurança, a rastreabilidade e a previsibilidade do processo." />
                   </p>
                   <p>
-                    <EditableElement id="home_about_p2" defaultContent="Nossa atuação combina fornecimento especializado, engenharia aplicada, instalação em campo, comissionamento, testes e suporte técnico, com foco em segurança, conformidade e confiabilidade operacional." />
-                  </p>
-                  <p>
-                    <EditableElement id="home_about_p3" defaultContent="Atendemos empresas e instituições que exigem precisão técnica, rastreabilidade, documentação consistente e desempenho estável em aplicações industriais, laboratoriais, hospitalares e científicas." />
+                    <EditableElement id="home_about_p2" defaultContent="Sua operação não pode parar. Entregamos soluções para que ela funcione com segurança, continuidade e controle." />
                   </p>
                 </div>
               </AnimateOnScroll>
               <AnimateOnScroll delay={400}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-4 mb-8">
-                  {[
-                    'Instalação de gases especiais e medicinais',
-                    'Instrumentação e projetos técnicos',
-                    'Alta pureza e conformidade técnica',
-                    'Segurança ocupacional e operacional',
-                    'Suporte técnico especializado',
-                    'Logística nacional eficiente'
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center">
-                      <CheckCircle className="text-primary shrink-0 mr-3" size={18} />
-                      <span className="text-secondary font-medium text-sm">
-                        <EditableElement id={`home_chk_${i}`} defaultContent={item} />
-                      </span>
+                <div className="space-y-6 mb-8">
+                  <div className="flex">
+                    <div className="flex-shrink-0 mt-1"><CheckCircle className="text-primary" size={20} /></div>
+                    <div className="ml-4">
+                      <h5 className="text-secondary font-bold text-base"><EditableElement id="home_feat1_title" defaultContent="Engenharia sem margem para erro" /></h5>
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat1_desc" defaultContent="Projetos de skids e painéis customizados, dimensionados para aplicações críticas e ambientes de alta exigência técnica." /></p>
                     </div>
-                  ))}
+                  </div>
+                  <div className="flex">
+                    <div className="flex-shrink-0 mt-1"><CheckCircle className="text-primary" size={20} /></div>
+                    <div className="ml-4">
+                      <h5 className="text-secondary font-bold text-base"><EditableElement id="home_feat2_title" defaultContent="Rastreabilidade de ponta a ponta" /></h5>
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat2_desc" defaultContent="Documentação técnica, conformidade e suporte para processos que exigem segurança, controle e previsibilidade operacional." /></p>
+                    </div>
+                  </div>
+                  <div className="flex">
+                    <div className="flex-shrink-0 mt-1"><CheckCircle className="text-primary" size={20} /></div>
+                    <div className="ml-4">
+                      <h5 className="text-secondary font-bold text-base"><EditableElement id="home_feat3_title" defaultContent="Controle sob medida" /></h5>
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat3_desc" defaultContent="Soluções em instrumentação e IHM que colocam a inteligência do processo na ponta dos dedos, com leitura precisa e resposta imediata." /></p>
+                    </div>
+                  </div>
                 </div>
                 <Link to="/sobre" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-3 font-bold uppercase tracking-wider transition-all hover:-translate-y-0.5 shadow-md rounded-sm">
                   <EditableElement id="home_about_btn" defaultContent="Conheça a Prime" /> <ArrowRight size={18} />

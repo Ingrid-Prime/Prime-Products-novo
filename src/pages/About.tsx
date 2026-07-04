@@ -279,9 +279,9 @@ export function About() {
         {/* Imagem de fundo e Overlay Escuro */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/cta-bg.jpg')" }}
+          style={{ backgroundImage: "url('/images/cta-bg-reuniao.jpg')" }}
         />
-        <div className="absolute inset-0 z-0 bg-primary/90" />
+        <div className="absolute inset-0 z-0 bg-gray-800/80 mix-blend-multiply" />
         
         <SectionContainer className="relative z-10">
           <div className="max-w-4xl mx-auto text-center">
