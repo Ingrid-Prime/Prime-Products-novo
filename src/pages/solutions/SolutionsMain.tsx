@@ -81,13 +81,16 @@ export function SolutionsMain() {
       <EditableElement
         id="sol_hero_bg"
         type="container"
-        as="section"
-        className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        as="div"
+        className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-secondary/85 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="absolute inset-0 bg-secondary/70 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent z-0" />
+      </EditableElement>
+
+      <section className="relative min-h-[50vh] flex items-center z-10 pt-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <AnimateOnScroll>
             <div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" />
           </AnimateOnScroll>
@@ -102,18 +105,18 @@ export function SolutionsMain() {
             </div>
           </AnimateOnScroll>
         </div>
-      </EditableElement>
+      </section>
 
       {/* Serviços */}
-      <section className="bg-white py-20">
+      <section className="py-20 relative z-10">
         <SectionContainer className="py-0">
           <AnimateOnScroll>
             <div className="text-center mb-14">
               <h4 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">O que a Prime faz</h4>
-              <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 <EditableElement id="sol_srv_title" defaultContent="Serviços de Engenharia e Atuação Integrada" />
               </h2>
-              <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
+              <p className="text-gray-300 max-w-2xl mx-auto text-sm leading-relaxed">
                 <EditableElement id="sol_srv_desc" defaultContent="Mais do que fornecer componentes, a Prime Products assegura a execução real e a integridade de seus processos críticos por meio de engenharia aplicada e suporte técnico completo de ponta a ponta." />
               </p>
               <div className="w-16 h-1 bg-primary mx-auto mt-6" />
@@ -145,15 +148,15 @@ export function SolutionsMain() {
       </section>
 
       {/* Áreas Técnicas */}
-      <section className="bg-surface py-20">
+      <section className="py-20 relative z-10">
         <SectionContainer className="py-0">
           <AnimateOnScroll>
             <div className="text-center mb-14">
               <h4 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">Especialidades Técnicas</h4>
-              <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 <EditableElement id="sol_area_title" defaultContent="Áreas de Atuação" />
               </h2>
-              <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
+              <p className="text-gray-300 max-w-2xl mx-auto text-sm leading-relaxed">
                 <EditableElement id="sol_area_desc" defaultContent="Quatro verticais técnicas que cobrem as principais demandas de instrumentação, gases e engenharia para processos críticos." />
               </p>
               <div className="w-16 h-1 bg-primary mx-auto mt-6" />

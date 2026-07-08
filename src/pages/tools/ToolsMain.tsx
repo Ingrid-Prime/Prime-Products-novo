@@ -53,8 +53,8 @@ export function ToolsMain() {
         className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
         defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
-        <div className="absolute inset-0 bg-secondary/85 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />
+        <div className="absolute inset-0 bg-secondary/60 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent z-0" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
           <AnimateOnScroll><div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" /></AnimateOnScroll>
           <AnimateOnScroll delay={200}>

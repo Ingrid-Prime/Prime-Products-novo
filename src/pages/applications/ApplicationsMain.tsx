@@ -28,7 +28,7 @@ const APPLICATION_GROUPS: AppGroup[] = [
     ],
   },
   {
-    group: 'Hospitalar e Médico',
+    group: 'Hospitalar',
     color: 'bg-green-700',
     items: [
       { id: 'hospitalar', name: 'Hospitalar', desc: 'Gases medicinais certificados (O₂, N₂O, ar medicinal), centrais de gases, geração de oxigênio e sistemas de distribuição hospitalar.', img: '/images/app-hospitalar-leito.jpg' },
@@ -68,13 +68,16 @@ export function ApplicationsMain() {
       <EditableElement
         id="app_hero_bg"
         type="container"
-        as="section"
-        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/lab-analitico-panel.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        as="div"
+        className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
+        defaultStyle={{ backgroundImage: "url('/images/app-bg-pharma.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-secondary/85 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="absolute inset-0 bg-secondary/70 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent z-0" />
+      </EditableElement>
+
+      <section className="relative min-h-[50vh] flex items-center z-10 pt-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <AnimateOnScroll><div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" /></AnimateOnScroll>
           <AnimateOnScroll delay={200}>
             <h1 className="text-4xl md:text-6xl font-black text-white mb-6">
@@ -87,9 +90,9 @@ export function ApplicationsMain() {
             </div>
           </AnimateOnScroll>
         </div>
-      </EditableElement>
+      </section>
 
-      <section className="bg-surface py-20">
+      <section className="py-20 relative z-10">
         <SectionContainer className="py-0">
           <div className="space-y-16">
             {APPLICATION_GROUPS.map(({ group, color, items }, gi) => (

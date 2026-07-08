@@ -26,13 +26,16 @@ export function ProductsMain() {
       <EditableElement
         id="prod_hero_bg"
         type="container"
-        as="section"
-        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/lab-analitico-panel.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        as="div"
+        className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
+        defaultStyle={{ backgroundImage: "url('/images/produtos-bg-nostar.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-secondary/85 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="absolute inset-0 bg-secondary/70 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent z-0" />
+      </EditableElement>
+      
+      <section className="relative min-h-[50vh] flex items-center z-10 pt-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <AnimateOnScroll><div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" /></AnimateOnScroll>
           <AnimateOnScroll delay={200}>
             <h1 className="text-4xl md:text-6xl font-black text-white mb-6">
@@ -45,9 +48,9 @@ export function ProductsMain() {
             </div>
           </AnimateOnScroll>
         </div>
-      </EditableElement>
+      </section>
 
-      <section className="bg-surface py-20">
+      <section className="py-20 relative z-10">
         <SectionContainer className="py-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {PRODUCTS.map(({ id, name, cat, img, desc }, i) => (

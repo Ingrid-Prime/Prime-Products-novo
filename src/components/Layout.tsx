@@ -248,18 +248,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </a>
 
       {/* Footer */}
-      <footer className="bg-secondary text-gray-400 border-t-4 border-primary flex flex-col">
+      <footer className={`${['/produtos', '/aplicacoes', '/solucoes'].includes(location.pathname) ? 'bg-transparent border-t border-gray-800' : 'bg-secondary border-t-4 border-primary'} text-gray-400 flex flex-col relative z-10`}>
         {/* Banner Institucional (Substitui o Logo) */}
-        <div className="bg-white w-full py-6 sm:py-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
-            <EditableElement
-              id="footer_wide_banner"
-              type="image"
-              defaultContent="/images/footer-banner.png"
-              className="w-full h-auto max-h-24 md:max-h-32 object-contain"
-            />
+        {!['/produtos', '/aplicacoes', '/solucoes'].includes(location.pathname) && (
+          <div className="bg-white w-full py-6 sm:py-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+              <EditableElement
+                id="footer_wide_banner"
+                type="image"
+                defaultContent="/images/footer-banner.png"
+                className="w-full h-auto max-h-24 md:max-h-32 object-contain"
+              />
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
