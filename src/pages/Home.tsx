@@ -132,12 +132,12 @@ export function Home() {
       {/* About section */}
       <section className="bg-white overflow-visible py-20">
         <SectionContainer className="py-0">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
-            <div className="lg:col-span-3">
-              <AnimateOnScroll>
-              <div className="relative pl-8 pt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-stretch">
+            <div className="lg:col-span-3 h-full">
+              <AnimateOnScroll className="h-full">
+              <div className="relative pl-8 pt-8 h-full min-h-[400px]">
                 <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-gray-50 -z-10" />
-                <EditableElement id="home_about_img" type="image" defaultContent="/images/home-about-ihm.jpg" className="w-full h-[650px] lg:h-[750px] object-cover object-center shadow-lg relative z-10 rounded-sm" />
+                <EditableElement id="home_about_img" type="image" defaultContent="/images/home-about-ihm2.jpg" className="w-full h-full object-cover object-center shadow-lg relative z-10 rounded-sm" />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-10 z-20 shadow-xl -mb-6 md:-mb-10 mr-4 md:mr-0 max-w-[200px] md:max-w-[240px]">
                   <div className="text-4xl md:text-5xl font-black mb-1">
                     <EditableElement id="home_about_stat_num" defaultContent="100%" />
@@ -161,10 +161,10 @@ export function Home() {
               <AnimateOnScroll delay={300}>
                 <div className="text-gray-600 space-y-4 mb-8 leading-relaxed text-base">
                   <p className="text-lg font-medium text-secondary">
-                    <EditableElement id="home_about_p1" defaultContent="Na Prime Products, transformamos complexidade técnica em estabilidade operacional, integrando engenharia aplicada, instrumentação de alta confiabilidade e sistemas de controle que ampliam a segurança, a rastreabilidade e a previsibilidade do processo." />
+                    <EditableElement id="home_about_p1" defaultContent="Sua operação não pode parar. Por isso, transformamos complexidade técnica em estabilidade operacional." />
                   </p>
                   <p>
-                    <EditableElement id="home_about_p2" defaultContent="Sua operação não pode parar. Entregamos soluções para que ela funcione com segurança, continuidade e controle." />
+                    <EditableElement id="home_about_p2" defaultContent="Entregamos engenharia aplicada e sistemas de controle precisos. O resultado? Mais segurança, rastreabilidade e continuidade para o seu processo." />
                   </p>
                 </div>
               </AnimateOnScroll>
@@ -174,21 +174,21 @@ export function Home() {
                     <div className="flex-shrink-0 mt-1"><CheckCircle className="text-primary" size={20} /></div>
                     <div className="ml-4">
                       <h5 className="text-secondary font-bold text-base"><EditableElement id="home_feat1_title" defaultContent="Engenharia sem margem para erro" /></h5>
-                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat1_desc" defaultContent="Projetos de skids e painéis customizados, dimensionados para aplicações críticas e ambientes de alta exigência técnica." /></p>
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat1_desc" defaultContent="Projetamos skids e painéis customizados para aplicações críticas. Soluções dimensionadas para a mais alta exigência." /></p>
                     </div>
                   </div>
                   <div className="flex">
                     <div className="flex-shrink-0 mt-1"><CheckCircle className="text-primary" size={20} /></div>
                     <div className="ml-4">
                       <h5 className="text-secondary font-bold text-base"><EditableElement id="home_feat2_title" defaultContent="Rastreabilidade de ponta a ponta" /></h5>
-                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat2_desc" defaultContent="Documentação técnica, conformidade e suporte para processos que exigem segurança, controle e previsibilidade operacional." /></p>
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat2_desc" defaultContent="Asseguramos conformidade total. Documentação rigorosa e suporte para processos que exigem controle absoluto." /></p>
                     </div>
                   </div>
                   <div className="flex">
                     <div className="flex-shrink-0 mt-1"><CheckCircle className="text-primary" size={20} /></div>
                     <div className="ml-4">
                       <h5 className="text-secondary font-bold text-base"><EditableElement id="home_feat3_title" defaultContent="Controle sob medida" /></h5>
-                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat3_desc" defaultContent="Soluções em instrumentação e IHM que colocam a inteligência do processo na ponta dos dedos, com leitura precisa e resposta imediata." /></p>
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed"><EditableElement id="home_feat3_desc" defaultContent="Colocamos a inteligência nas suas mãos. Instrumentação e IHM com leitura exata e resposta imediata." /></p>
                     </div>
                   </div>
                 </div>

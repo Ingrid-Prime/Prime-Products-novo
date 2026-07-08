@@ -2,6 +2,15 @@ import type { Article } from '../types';
 
 export const defaultArticles: Article[] = [
   {
+    id: 'compatibilidade-elgiloy-h2s',
+    title: 'Compatibilidade do H₂S com Liga Elgiloy®',
+    category: 'Engenharia de Materiais',
+    date: '08 Jul 2026',
+    summary: 'Folha de dados técnica orientativa sobre componentes de reguladores e válvulas para gases especiais contendo Sulfeto de Hidrogênio (H₂S).',
+    image: '/images/elgiloy-capa.png',
+    content: '<p class=\"mb-6\">A liga Elgiloy® (Co-Cr-Ni-Mo / UNS R30003) é um material especial reconhecido por sua altíssima resistência à fadiga e excelente comportamento frente à corrosão, sendo ideal para ambientes de serviço ácido (sour gas). Esta avaliação técnica resume sua aplicabilidade em contato com H₂S.</p><h3 class=\"text-xl font-bold text-secondary mt-8 mb-4\">Avaliação de Compatibilidade Técnica</h3><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-8\"><div class=\"bg-green-50 border-l-4 border-green-500 p-4\"><div class=\"font-bold text-green-700 mb-1\">✅ Altamente Recomendado</div><div class=\"text-sm text-green-900 leading-relaxed\">Molas internas de reguladores, diafragmas metálicos e pequenos elementos elásticos submetidos a ciclos de fadiga.</div></div><div class=\"bg-yellow-50 border-l-4 border-yellow-500 p-4\"><div class=\"font-bold text-yellow-700 mb-1\">⚠️ Depende do Conjunto</div><div class=\"text-sm text-yellow-900 leading-relaxed\">Uso como corpo de válvula ou peça estrutural não é usual. A boa resistência do Elgiloy® isoladamente não garante que vedações e conexões sejam compatíveis.</div></div></div><h3 class=\"text-xl font-bold text-secondary mt-8 mb-4\">Fatores que Alteram a Compatibilidade</h3><ul class=\"list-disc pl-5 space-y-2 mb-8 text-gray-700\"><li><strong>Pressão Parcial de H₂S:</strong> Quanto maior a severidade, mais importante a verificação normativa (NACE MR0175 / ISO 15156).</li><li><strong>Contaminantes Associados:</strong> A presença de água livre (condensado) e cloretos somados ao H₂S aumenta drasticamente o risco.</li><li><strong>Tensão Mecânica:</strong> O risco de trinca aumenta em componentes com tensões residuais elevadas ou submetidos à flexão cíclica.</li></ul><div class=\"bg-secondary/5 p-6 rounded-sm text-center mt-12 border border-gray-200\"><p class=\"font-bold text-secondary text-lg mb-2\">Deseja aplicar essa especificação no seu processo?</p><p class=\"text-sm text-gray-600 mb-6\">A aprovação de uso para Sour Gas exige a validação do conjunto completo e das condições reais de serviço.</p><a href=\"/contato\" class=\"inline-block bg-primary text-white font-bold uppercase tracking-wider text-sm px-6 py-3 rounded-sm hover:bg-blue-700 transition-colors shadow-md\">Falar com a Engenharia da Prime</a></div>',
+  },
+  {
     id: 'instrumentacao-industria-4-0',
     title: 'Importância da instrumentação correta na indústria 4.0',
     category: 'Instrumentação',
