@@ -13,6 +13,7 @@ export const defaultNavItems: NavItem[] = [
       { label: 'Segurança: detecção e combate a incêndio', path: '/solucoes/gases-seguranca-automacao' },
       { label: 'Soluções Integradas', path: '/solucoes/integradas' },
       { label: 'Instalação de Rede de Gases', path: '/solucoes/instalacao-rede-gases' },
+      { label: 'Guia Técnico de Ar Comprimido', path: '/solucoes/ar-comprimido-industrial-guia-tecnico' },
     ],
   },
   {

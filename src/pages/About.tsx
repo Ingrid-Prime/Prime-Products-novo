@@ -53,22 +53,25 @@ const TABLE_DATA = [
 export function About() {
   return (
     <>
-      {/* 1. Hero */}
+      {/* 1. Fundo Fixo */}
       <EditableElement
         id="about_hero_bg"
         type="container"
-        as="section"
-        className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
+        as="div"
+        className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
         defaultStyle={{
-          backgroundImage: "url('/images/about-tubos.jpg')",
+          backgroundImage: "url('/images/about-bg.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
         }}
       >
-        <div className="absolute inset-0 bg-secondary/70 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent z-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="absolute inset-0 bg-secondary/80 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/30 to-transparent z-0" />
+      </EditableElement>
+
+      {/* 2. Hero Content */}
+      <section className="relative min-h-[60vh] flex items-center z-10 pt-20 pb-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <AnimateOnScroll>
             <div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" />
           </AnimateOnScroll>
@@ -77,12 +80,13 @@ export function About() {
               <EditableElement id="about_hero_title" defaultContent="Engenharia aplicada e soluções integradas para gases, instrumentação e processos críticos" />
             </h1>
           </AnimateOnScroll>
-
         </div>
-      </EditableElement>
+      </section>
 
-      {/* 2. Introdução institucional e 3. Proposta de valor */}
-      <section className="bg-white py-20">
+      {/* Container Principal */}
+      <div className="bg-white relative z-10">
+        {/* 3. Introdução institucional e Proposta de valor */}
+        <section className="bg-white py-20">
         <SectionContainer>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Imagem Restaurada */}
@@ -306,6 +310,7 @@ export function About() {
           </div>
         </SectionContainer>
       </section>
+      </div>
     </>
   );
 }

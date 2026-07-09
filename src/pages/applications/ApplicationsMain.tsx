@@ -52,12 +52,12 @@ const APPLICATION_GROUPS: AppGroup[] = [
     ],
   },
   {
-    group: 'Química, Óleo & Gás',
+    group: 'Química, Óleo & Gás, Alimentos e Bebidas',
     color: 'bg-orange-700',
     items: [
       { id: 'oleo-gas', name: 'Óleo & Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/segmento-oleo-gas.png' },
-      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy, PTFE), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/app-quimica-2.jpg' },
-      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases de grau alimentar (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/app-alimentos-bebidas-2.jpg' },
+      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy®, AISI 316, Duplex, Superduplex, etc.), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/app-quimica-2.jpg' },
+      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases e misturas gasosas (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/app-alimentos-bebidas-2.jpg' },
     ],
   },
 ];

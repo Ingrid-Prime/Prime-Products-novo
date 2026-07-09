@@ -73,6 +73,14 @@ const TECHNICAL_AREAS = [
     desc: 'Desenvolvimento de soluções técnicas e montagem física de redes para gases especiais, industriais e centrais de gases.',
     items: ['Redes em Inox 316L', 'Centrais e manifolds', 'Painéis de ponto de uso', 'Testes de estanqueidade'],
   },
+  {
+    icon: BookOpen,
+    title: 'Guia Técnico de Ar Comprimido',
+    path: '/solucoes/ar-comprimido-industrial-guia-tecnico',
+    img: '/images/capa-guia-ar.jpg',
+    desc: 'Contaminantes, pureza ISO 8573, tecnologias de secagem, compressores e projeto de redes industriais.',
+    items: ['ISO 8573', 'Tecnologias de Compressores', 'Seleção de Secadores', 'Boas práticas e redes'],
+  },
 ];
 
 export function SolutionsMain() {
@@ -193,6 +201,7 @@ export function SolutionsMain() {
               </AnimateOnScroll>
             ))}
           </div>
+
           <div className="mt-16 bg-secondary rounded-sm p-10 text-center">
             <ShieldCheck size={48} className="text-primary mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-white mb-3">Engenharia Aplicada ao Seu Processo</h2>

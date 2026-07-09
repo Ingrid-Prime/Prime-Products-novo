@@ -13,6 +13,7 @@ import { InstrumentacaoAnalitica } from './pages/solutions/InstrumentacaoAnaliti
 import { GasesSeguranca } from './pages/solutions/GasesSeguranca';
 import { Integradas } from './pages/solutions/Integradas';
 import { InstalacaoRedeGases } from './pages/solutions/InstalacaoRedeGases';
+import { GuiaArComprimido } from './pages/solutions/GuiaArComprimido';
 
 import { ProductsMain } from './pages/products/ProductsMain';
 import { ProductDetail } from './pages/products/ProductDetail';
@@ -40,6 +41,7 @@ export function App() {
             <Route path="/solucoes/gases-seguranca-automacao" element={<GasesSeguranca />} />
             <Route path="/solucoes/integradas" element={<Integradas />} />
             <Route path="/solucoes/instalacao-rede-gases" element={<InstalacaoRedeGases />} />
+            <Route path="/solucoes/ar-comprimido-industrial-guia-tecnico" element={<GuiaArComprimido />} />
             <Route path="/produtos" element={<ProductsMain />} />
             <Route path="/produto/:id" element={<ProductDetail />} />
             <Route path="/aplicacoes" element={<ApplicationsMain />} />

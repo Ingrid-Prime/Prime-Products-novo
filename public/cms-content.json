@@ -132,6 +132,10 @@
         {
           "label": "Instalação de Rede de Gases",
           "path": "/solucoes/instalacao-rede-gases"
+        },
+        {
+          "label": "Guia Técnico de Ar Comprimido",
+          "path": "/solucoes/ar-comprimido-industrial-guia-tecnico"
         }
       ]
     },
