@@ -14,6 +14,7 @@ export const defaultNavItems: NavItem[] = [
       { label: 'Soluções Integradas', path: '/solucoes/integradas' },
       { label: 'Instalação de Rede de Gases', path: '/solucoes/instalacao-rede-gases' },
       { label: 'Guia Técnico de Ar Comprimido', path: '/solucoes/ar-comprimido-industrial-guia-tecnico' },
+      { label: 'Levantamento 3D e As Built', path: '/solucoes/engenharia-digital-3d' },
     ],
   },
   {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Gauge, FlaskConical, Flame, Settings, ShieldCheck, ArrowRight, CheckCircle, Wrench, ClipboardList, LifeBuoy, BookOpen, Cpu, Wind } from 'lucide-react';
+import { Gauge, FlaskConical, Flame, Settings, ShieldCheck, ArrowRight, CheckCircle, Wrench, ClipboardList, LifeBuoy, BookOpen, Cpu, Wind, Scan } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
@@ -80,6 +80,14 @@ const TECHNICAL_AREAS = [
     img: '/images/capa-guia-ar.jpg',
     desc: 'Contaminantes, pureza ISO 8573, tecnologias de secagem, compressores e projeto de redes industriais.',
     items: ['ISO 8573', 'Tecnologias de Compressores', 'Seleção de Secadores', 'Boas práticas e redes'],
+  },
+  {
+    icon: Scan,
+    title: 'Levantamento 3D e As Built',
+    path: '/solucoes/engenharia-digital-3d',
+    img: '/images/eng-3d-bg.jpg',
+    desc: 'Reality capture, modelagem e engenharia reversa para instalações críticas. Transformamos nuvens de pontos em as built validado.',
+    items: ['Escaneamento Laser 3D', 'Scan-to-BIM e Plant 3D', 'Análise de Interferências', 'Dataviewer interativo'],
   },
 ];
 
