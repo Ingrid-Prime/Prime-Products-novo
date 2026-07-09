@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Droplets, Wind, Zap, Bug, CheckCircle, ArrowDown, Activity, Info } from 'lucide-react';
+import { ArrowRight, Droplets, Wind, Zap, Bug, CheckCircle, ArrowDown, Activity } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { SectionContainer } from '../../components/SectionContainer';
 import { EditableElement } from '../../components/EditableElement';
