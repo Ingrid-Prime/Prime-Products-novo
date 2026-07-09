@@ -175,7 +175,7 @@ export function SolutionsMain() {
               <AnimateOnScroll key={i} delay={i * 100}>
                 <div className="bg-white shadow-lg overflow-hidden group hover:-translate-y-1 transition-all duration-300">
                   <div className="h-56 overflow-hidden relative">
-                    <img src={img} alt={title} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                    <img src={img} alt={title} className={`prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${img.includes('capa-guia-ar') ? 'object-[center_30%]' : ''}`} referrerPolicy="no-referrer" />
                     <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" />
                     <div className="absolute bottom-4 left-6 flex items-center gap-3">
                       <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center">
