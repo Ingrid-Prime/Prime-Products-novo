@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Scan, Box, Layers, Database, ShieldCheck, Cpu, Camera, Crosshair, Map, Video, CheckCircle } from 'lucide-react';
+import { Scan, Box, Layers, Database, ShieldCheck, Cpu, Camera, Crosshair, Map, CheckCircle } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { SectionContainer } from '../../components/SectionContainer';
 import { EditableElement } from '../../components/EditableElement';
