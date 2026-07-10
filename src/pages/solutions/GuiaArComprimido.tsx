@@ -50,13 +50,13 @@ export function GuiaArComprimido() {
         </div>
       </section>
 
-      <div id="conteudo" className="bg-white relative z-10">
+      <div id="conteudo" className="bg-transparent text-white relative z-10">
         {/* Contaminantes */}
-        <section className="py-20 border-b border-gray-100">
+        <section className="py-20 border-b border-white/10">
           <SectionContainer>
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-secondary mb-4">A Cadeia de Contaminação</h2>
-              <p className="text-gray-500 max-w-3xl mx-auto">O compressor não cria pureza. Ele aspira o ar atmosférico e concentra tudo o que estiver presente. Conheça os 4 principais vilões da qualidade do ar comprimido.</p>
+              <h2 className="text-3xl font-bold text-white mb-4">A Cadeia de Contaminação</h2>
+              <p className="text-gray-300 max-w-3xl mx-auto">O compressor não cria pureza. Ele aspira o ar atmosférico e concentra tudo o que estiver presente. Conheça os 4 principais vilões da qualidade do ar comprimido.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -77,12 +77,12 @@ export function GuiaArComprimido() {
         </section>
 
         {/* ISO 8573 */}
-        <section className="py-20 bg-surface border-b border-gray-100">
+        <section className="py-20 border-b border-white/10">
           <SectionContainer>
             <div className="max-w-4xl mx-auto">
               <div className="mb-10 text-center">
-                <h2 className="text-3xl font-bold text-secondary mb-4">Entendendo a ISO 8573-1</h2>
-                <p className="text-gray-500">A ISO classifica a pureza em três eixos independentes: Partículas, Água e Óleo. Uma especificação típica é escrita no formato [Partículas : Água : Óleo], por exemplo: <strong>Classe 1:2:1</strong>.</p>
+                <h2 className="text-3xl font-bold text-white mb-4">Entendendo a ISO 8573-1</h2>
+                <p className="text-gray-300">A ISO classifica a pureza em três eixos independentes: Partículas, Água e Óleo. Uma especificação típica é escrita no formato [Partículas : Água : Óleo], por exemplo: <strong>Classe 1:2:1</strong>.</p>
               </div>
 
               <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
@@ -146,11 +146,11 @@ export function GuiaArComprimido() {
         </section>
 
         {/* Compressores */}
-        <section className="py-20 border-b border-gray-100">
+        <section className="py-20 border-b border-white/10">
           <SectionContainer>
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-secondary mb-4">Tecnologias de Compressores</h2>
-              <p className="text-gray-500 max-w-3xl mx-auto">Não existe um compressor perfeito para todas as aplicações. O melhor equipamento depende da sua curva de demanda, pressão, requisito de pureza e custo de energia.</p>
+              <h2 className="text-3xl font-bold text-white mb-4">Tecnologias de Compressores</h2>
+              <p className="text-gray-300 max-w-3xl mx-auto">Não existe um compressor perfeito para todas as aplicações. O melhor equipamento depende da sua curva de demanda, pressão, requisito de pureza e custo de energia.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -174,11 +174,11 @@ export function GuiaArComprimido() {
         </section>
 
         {/* Secadores */}
-        <section className="py-20 bg-surface border-b border-gray-100">
+        <section className="py-20 border-b border-white/10">
           <SectionContainer>
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-secondary mb-4">Secadores e Remoção de Água</h2>
-              <p className="text-gray-500 max-w-3xl mx-auto">A seleção começa pelo menor Ponto de Orvalho sob Pressão (PDP) requerido no ponto crítico. Cada tecnologia tem sua faixa de atuação ideal.</p>
+              <h2 className="text-3xl font-bold text-white mb-4">Secadores e Remoção de Água</h2>
+              <p className="text-gray-300 max-w-3xl mx-auto">A seleção começa pelo menor Ponto de Orvalho sob Pressão (PDP) requerido no ponto crítico. Cada tecnologia tem sua faixa de atuação ideal.</p>
             </div>
             
             <div className="overflow-x-auto shadow-sm rounded-lg bg-white border border-gray-200">
@@ -223,30 +223,30 @@ export function GuiaArComprimido() {
         </section>
 
         {/* Calculadora */}
-        <section className="py-20 bg-white border-b border-gray-100">
+        <section className="py-20 border-b border-white/10">
           <SectionContainer>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h4 className="text-primary font-bold uppercase tracking-widest text-sm mb-3 flex items-center gap-2"><Zap size={16} /> Ferramenta Expressa</h4>
-                <h2 className="text-3xl font-bold text-secondary mb-4">Estimativa de Queda de Pressão</h2>
-                <p className="text-gray-500 mb-6">O diâmetro domina a queda de pressão. Tubulações estranguladas obrigam o compressor a trabalhar com pressão mais alta, aumentando o consumo de energia artificialmente.</p>
-                <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-md">
-                  <p className="text-sm text-yellow-800 font-medium">Regra Prática do DOE: Elevar a pressão de descarga em apenas 2 psi aumenta o consumo de energia em até 2%.</p>
+                <h2 className="text-3xl font-bold text-white mb-4">Estimativa de Queda de Pressão</h2>
+                <p className="text-gray-300 mb-6">O diâmetro domina a queda de pressão. Tubulações estranguladas obrigam o compressor a trabalhar com pressão mais alta, aumentando o consumo de energia artificialmente.</p>
+                <div className="bg-yellow-500/20 backdrop-blur-md border-l-4 border-yellow-400 p-4 rounded-r-md">
+                  <p className="text-sm text-yellow-100 font-medium">Regra Prática do DOE: Elevar a pressão de descarga em apenas 2 psi aumenta o consumo de energia em até 2%.</p>
                 </div>
               </div>
 
-              <div className="bg-surface p-8 rounded-lg shadow-sm border border-gray-200">
+              <div className="bg-white/10 backdrop-blur-md p-8 rounded-lg shadow-xl border border-white/20">
                 <div className="space-y-6">
                   <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-2">Vazão (Nm³/h): {calcVazao}</label>
+                    <label className="block text-sm font-bold text-white mb-2">Vazão (Nm³/h): {calcVazao}</label>
                     <input type="range" min="100" max="5000" step="50" value={calcVazao} onChange={(e) => setCalcVazao(Number(e.target.value))} className="w-full accent-primary" />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-2">Pressão (bar g): {calcPressao}</label>
+                    <label className="block text-sm font-bold text-white mb-2">Pressão (bar g): {calcPressao}</label>
                     <input type="range" min="4" max="13" step="1" value={calcPressao} onChange={(e) => setCalcPressao(Number(e.target.value))} className="w-full accent-primary" />
                   </div>
                   <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-2">Diâmetro Interno Estimado (mm): {calcDiametro}</label>
+                    <label className="block text-sm font-bold text-white mb-2">Diâmetro Interno Estimado (mm): {calcDiametro}</label>
                     <input type="range" min="25" max="150" step="5" value={calcDiametro} onChange={(e) => setCalcDiametro(Number(e.target.value))} className="w-full accent-primary" />
                   </div>
                   
@@ -272,8 +272,7 @@ export function GuiaArComprimido() {
         </section>
 
         {/* Boas Práticas - Pescoço de Ganso e CTA */}
-        <section className="py-20 bg-secondary relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/pattern-grid.png')] opacity-5" />
+        <section className="py-20 relative overflow-hidden">
           <SectionContainer className="relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
