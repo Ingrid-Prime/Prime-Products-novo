@@ -21,7 +21,7 @@ export function GuiaArComprimido() {
         type="container"
         as="div"
         className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
-        defaultStyle={{ backgroundImage: "url('/images/capa-guia-ar-v2.jpg')", backgroundSize: 'cover', backgroundPosition: 'center 30%' }}
+        defaultStyle={{ backgroundImage: "url('/images/capa-guia-ar-v3.jpg')", backgroundSize: 'cover', backgroundPosition: 'center 30%' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/30 to-transparent z-0" />

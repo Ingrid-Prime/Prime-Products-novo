@@ -77,7 +77,7 @@ const TECHNICAL_AREAS = [
     icon: BookOpen,
     title: 'Guia Técnico de Ar Comprimido',
     path: '/solucoes/ar-comprimido-industrial-guia-tecnico',
-    img: '/images/capa-guia-ar-v2.jpg',
+    img: '/images/capa-guia-ar-v3.jpg',
     desc: 'Contaminantes, pureza ISO 8573, tecnologias de secagem, compressores e projeto de redes industriais.',
     items: ['ISO 8573', 'Tecnologias de Compressores', 'Seleção de Secadores', 'Boas práticas e redes'],
   },
