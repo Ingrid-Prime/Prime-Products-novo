@@ -85,7 +85,7 @@ export function GuiaArComprimido() {
                 <p className="text-gray-300">A ISO classifica a pureza em três eixos independentes: Partículas, Água e Óleo. Uma especificação típica é escrita no formato [Partículas : Água : Óleo], por exemplo: <strong>Classe 1:2:1</strong>.</p>
               </div>
 
-              <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <div className="bg-white text-secondary rounded-lg shadow-sm border border-gray-200 overflow-hidden">
                 <div className="flex border-b border-gray-200">
                   <button onClick={() => setActiveTab('particulas')} className={`flex-1 py-4 text-sm font-bold uppercase transition-colors ${activeTab === 'particulas' ? 'bg-primary text-white' : 'text-gray-500 hover:bg-gray-50'}`}>Partículas (1º Dígito)</button>
                   <button onClick={() => setActiveTab('agua')} className={`flex-1 py-4 text-sm font-bold uppercase transition-colors ${activeTab === 'agua' ? 'bg-primary text-white' : 'text-gray-500 hover:bg-gray-50'}`}>Água (2º Dígito)</button>
@@ -160,7 +160,7 @@ export function GuiaArComprimido() {
                 { title: 'Parafuso Oil-Free Seco', ideal: 'Processos críticos, operação contínua.', pro: 'Sem óleo na câmara de compressão.', con: 'CAPEX maior, sensível a operação.' },
                 { title: 'Centrífugo', ideal: 'Grandes vazões e demanda base estável.', pro: 'Sem óleo, alta eficiência no projeto.', con: 'Turndown limitado (surge).' }
               ].map((comp, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:border-primary transition-colors flex flex-col">
+                <div key={i} className="bg-white text-secondary border border-gray-200 rounded-lg p-6 shadow-sm hover:border-primary transition-colors flex flex-col">
                   <h3 className="font-bold text-secondary text-lg mb-4 border-b pb-3">{comp.title}</h3>
                   <div className="flex-1 space-y-4">
                     <div><span className="text-xs uppercase font-bold text-gray-400 block mb-1">Perfil Ideal</span><p className="text-sm text-gray-700">{comp.ideal}</p></div>
@@ -181,7 +181,7 @@ export function GuiaArComprimido() {
               <p className="text-gray-300 max-w-3xl mx-auto">A seleção começa pelo menor Ponto de Orvalho sob Pressão (PDP) requerido no ponto crítico. Cada tecnologia tem sua faixa de atuação ideal.</p>
             </div>
             
-            <div className="overflow-x-auto shadow-sm rounded-lg bg-white border border-gray-200">
+            <div className="overflow-x-auto shadow-sm rounded-lg bg-white text-secondary border border-gray-200">
               <table className="w-full text-sm text-left">
                 <thead className="bg-secondary text-white">
                   <tr>
@@ -250,7 +250,7 @@ export function GuiaArComprimido() {
                     <input type="range" min="25" max="150" step="5" value={calcDiametro} onChange={(e) => setCalcDiametro(Number(e.target.value))} className="w-full accent-primary" />
                   </div>
                   
-                  <div className="mt-8 bg-white p-4 rounded-md border border-gray-100 flex items-center justify-between">
+                  <div className="mt-8 bg-white text-secondary p-4 rounded-md border border-gray-100 flex items-center justify-between">
                     <div>
                       <span className="block text-xs text-gray-400 uppercase font-bold mb-1">Velocidade Aprox.</span>
                       <span className="text-xl font-bold text-secondary">{((calcVazao / 3600) / (Math.PI * Math.pow(calcDiametro/2000, 2)) / (calcPressao + 1)).toFixed(1)} m/s</span>
