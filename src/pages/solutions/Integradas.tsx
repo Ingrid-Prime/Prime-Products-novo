@@ -16,7 +16,7 @@ const GALLERY = [
 const PRODUCTS = [
   { path: '/produto/reguladores-hidraulicos', img: '/images/prod-reguladores.png', name: 'Reguladores Hidráulicos', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
   { path: '/produto/corte-solda', img: '/images/prod-corte-solda.png', name: 'Equipamentos Corte e Solda', desc: 'Sistemas completos para corte e solda industrial.' },
-  { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-pressao.png', name: 'Transmissores de Pressão', desc: 'Integração de transmissores em painéis de controle.' },
+  { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-new.jpg', name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', desc: 'Integração de transmissores em painéis de controle.' },
   { path: '/produto/valvulas-industriais', img: '/images/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas integradas em sistemas de processo customizados.' },
 ];
 

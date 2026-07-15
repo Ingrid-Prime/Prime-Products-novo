@@ -39,7 +39,7 @@ const APPLICATION_GROUPS: AppGroup[] = [
     color: 'bg-purple-700',
     items: [
       { id: 'laboratorios-analiticos', name: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores certificados, conexões TK-Fujikin e detectores de vazamento para laboratórios de análise e controle de qualidade.', img: '/images/lab-analitico-scientist.jpg' },
-      { id: 'farmaceutica', name: 'Farmacêutico', desc: 'Soluções validadas para a indústria farmacêutica: gases USP, sistemas de alta pureza, instrumentação GMP e rastreabilidade completa.', img: '/images/farmaceutica_linha_1.jpg' },
+      { id: 'farmaceutica', name: 'Farmacêutico', desc: 'Soluções validadas para a indústria farmacêutica: gases USP, sistemas de alta pureza, instrumentação GMP e rastreabilidade completa.', img: '/images/app-farmaceutica-new.jpg' },
       { id: 'centros-pesquisa', name: 'Centros de Pesquisa', desc: 'Gases de altíssima pureza (5.0, 6.0), dewars criogênicos, equipamentos especializados e suporte técnico para P&D e universities.', img: '/images/app-pesquisa-2.jpg' },
     ],
   },

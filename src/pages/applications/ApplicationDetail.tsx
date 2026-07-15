@@ -6,7 +6,7 @@ import { SectionContainer } from '../../components/SectionContainer';
 
 const APP_GALLERY: Record<string, string[]> = {
   'laboratorios-analiticos': ['/images/lab-analitico-panel.jpg'],
-  'farmaceutica': ['/images/farmaceutica_linha_1.jpg', '/images/farmaceutica_linha_2.jpg', '/images/farmaceutica_filtro.jpg', '/images/farmaceutica_corredor.jpg'],
+  'farmaceutica': ['/images/app-farmaceutica-new.jpg', '/images/farmaceutica_linha_2.jpg', '/images/farmaceutica_filtro.jpg', '/images/farmaceutica_corredor.jpg'],
   'centros-pesquisa': ['/images/app-pesquisa-2.jpg', '/images/app-pesquisa-3.jpg', '/images/app-data-center.jpg'],
   'hospitalar': ['/images/app-hospitalar-leito.jpg', '/images/medical-gas-outlets.png'],
   'oleo-gas': ['/images/app-oleo-gas-offshore.jpg'],
@@ -39,13 +39,13 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
-      { name: 'Transmissores de Pressão', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
     ],
   },
   'farmaceutica': {
     name: 'Farmacêutico',
     cat: 'Laboratorial e Pesquisa',
-    img: '/images/farmaceutica_linha_1.jpg',
+    img: '/images/app-farmaceutica-new.jpg',
     desc: 'A indústria farmacêutica exige gases de grau USP, sistemas validados, rastreabilidade completa e conformidade com GMP. A Prime Products fornece soluções auditáveis, com documentação técnica completa para atender às exigências da Anvisa e da FDA.',
     challenges: ['Gases com grau farmacêutico (USP) e certificados', 'Validação de sistemas e qualificação de equipamentos', 'Conformidade GMP e rastreabilidade de lotes', 'Controle de pureza e monitoramento contínuo'],
     solutions: ['Cilindros e reguladores para gases USP com certificado de análise', 'Sistemas de distribuição de gases medicinais certificados', 'Instrumentação validada para ambientes GMP', 'Detectores de vazamento e monitoramento de pureza'],
@@ -92,7 +92,7 @@ const APPLICATION_DATA: Record<string, {
     challenges: ['Instrumentação certificada ATEX/IECEx para zonas classificadas', 'Detecção de H₂S, CO, LEL e outros gases de risco', 'Certificação de segurança funcional SIL 2/3', 'Alta disponibilidade e confiabilidade em ambientes críticos'],
     solutions: ['Transmissores de pressão com certificação ATEX e SIL', 'Detectores de gases tóxicos e inflamáveis com saída 4-20 mA/HART', 'Sistemas de supressão de incêndio por agentes limpos', 'Reguladores e válvulas para gases de processo em alta pressão'],
     products: [
-      { name: 'Transmissores de Pressão e Nível', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Sistemas de Combate a Incêndio', path: '/produto/combate-incendio' },
       { name: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
@@ -109,7 +109,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
-      { name: 'Transmissores de Pressão e Nível', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
     ],
   },
   'alimentos-bebidas': {
@@ -137,7 +137,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Cilindros Tipo 4', path: '/produto/cilindros-tipo-4' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Geração de Oxigênio e Anestesia', path: '/produto/geracao-oxigenio' },
-      { name: 'Transmissores de Pressão e Nível', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
     ],
   },
   'criogenia': {
@@ -191,7 +191,7 @@ const APPLICATION_DATA: Record<string, {
     solutions: ['Detectores portáteis e fixos de CO, H₂S, O₂ e LEL', 'Instrumentação com proteção IP67/IP68 para ambientes severos', 'Transmissores com certificação ATEX para áreas classificadas', 'Sistemas de combate a incêndio para plantas de beneficiamento'],
     products: [
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
-      { name: 'Transmissores de Pressão e Nível', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
       { name: 'Sistemas de Combate a Incêndio', path: '/produto/combate-incendio' },
       { name: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
     ],
@@ -220,14 +220,14 @@ export function ApplicationDetail() {
         id={`app_${id}_hero`}
         type="container"
         as="section"
-        className="prime-bg-standard relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
+        className="prime-bg-standard relative min-h-[65vh] flex items-end bg-secondary overflow-hidden pb-16 pt-40"
         defaultStyle={{
           backgroundImage: `url('${app.img}')`,
           backgroundSize: 'cover',
           backgroundPosition: id === 'farmaceutica' ? 'center 15%' : 'center'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 mb-4">{app.cat}</span>
           <h1 className="text-3xl md:text-5xl font-black text-white leading-tight">

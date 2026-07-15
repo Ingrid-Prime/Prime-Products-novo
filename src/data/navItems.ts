@@ -33,7 +33,7 @@ export const defaultNavItems: NavItem[] = [
       { label: 'Reguladores Hidráulicos', path: '/produto/reguladores-hidraulicos' },
       { label: 'Reguladores para Calibração de Equipamentos', path: '/produto/reguladores-calibracao' },
       { label: 'Combate a Incêndio', path: '/produto/combate-incendio' },
-      { label: 'Transmissores de Pressão', path: '/produto/transmissores-pressao' },
+      { label: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
       { label: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
     ],
   },

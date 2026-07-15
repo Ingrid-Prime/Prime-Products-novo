@@ -25,10 +25,10 @@ export function ArticleDetail() {
   return (
     <>
       <section
-        className="prime-bg-standard relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
+        className="prime-bg-standard relative min-h-[65vh] flex items-end bg-secondary overflow-hidden pb-16 pt-40"
         style={{ backgroundImage: `url('${article.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center gap-3 mb-4">
             <span className="inline-flex items-center gap-1 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1">

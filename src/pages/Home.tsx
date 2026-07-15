@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   Gauge, ShieldCheck, Settings, FlaskConical, Flame, CheckCircle,
   ArrowRight, MessageSquare, Star, ChevronDown, ChevronUp,
-  UserCheck, History, Briefcase, Trophy,
+  UserCheck, History, Briefcase, Trophy, PhoneCall, Wrench
 } from 'lucide-react';
 import { AnimateOnScroll } from '../components/AnimateOnScroll';
 import { EditableElement } from '../components/EditableElement';
@@ -18,6 +18,11 @@ const SOLUTIONS = [
   { icon: Flame, id: 'sol_3', label: 'Segurança: detecção e combate a incêndio', path: '/solucoes/gases-seguranca-automacao', desc: 'Cilindros, reguladores, dewars e sistemas de combate a incêndio.', img: '/images/capa-seguranca-nova.jpg' },
   { icon: Settings, id: 'sol_4', label: 'Soluções Integradas', path: '/solucoes/integradas', desc: 'Skids, painéis e sistemas customizados para sua planta.', img: '/images/capa-integradas-nova.jpg' },
   { icon: ShieldCheck, id: 'sol_5', label: 'Engenharia Aplicada', path: '/solucoes', desc: 'Consultoria técnica, especificação e suporte para processos críticos.', img: '/images/quem-somos-campo.png' },
+  { icon: FlaskConical, id: 'sol_6', label: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio', desc: 'Cilindros leves e resistentes para transporte de gases comprimidos.', img: '/images/prod-cilindros-aluminio-new.jpg' },
+  { icon: FlaskConical, id: 'sol_7', label: 'Cilindros Tipo 4', path: '/produto/cilindros-tipo-4', desc: 'Cilindros compósitos de alta performance para logística e mobilidade.', img: '/images/prod-cilindros-tipo4-new.jpg' },
+  { icon: Settings, id: 'sol_8', label: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao', desc: 'Conexões certificadas para aplicações analíticas e industriais.', img: '/images/prod-conexoes-instrumentacao-new.jpg' },
+  { icon: FlaskConical, id: 'sol_9', label: 'Dewars Criogênicos', path: '/produto/dewars-criogenicos', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.', img: '/images/prod-dewars-criogenicos-new.jpg' },
+  { icon: Gauge, id: 'sol_10', label: 'Reguladores Especiais', path: '/produto/reguladores-especiais', desc: 'Reguladores de alta performance para gases especiais e calibração.', img: '/images/prod-reguladores-especiais-new.jpg' },
 ];
 
 const APPLICATIONS = [
@@ -443,35 +448,38 @@ export function Home() {
         </SectionContainer>
       </section>
 
-      {/* CTA */}
-      <EditableElement
-        id="home_cta_bg"
-        type="container"
-        as="section"
-        className="relative py-24 bg-primary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
-        <div className="absolute inset-0 bg-primary/90" />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <AnimateOnScroll>
-            <UserCheck size={56} className="text-white/30 mx-auto mb-6" />
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6">
-              <EditableElement id="home_cta_title" defaultContent="Pronto para elevar o nível da sua operação?" />
-            </h2>
-            <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
-              <EditableElement id="home_cta_desc" defaultContent="Fale com um especialista da Prime Products e descubra a solução ideal para o seu processo." />
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contato" className="bg-white text-primary hover:bg-gray-100 px-10 py-4 font-black uppercase tracking-wider transition-all hover:-translate-y-1 shadow-2xl rounded-sm inline-flex items-center gap-2">
-                <EditableElement id="home_cta_btn1" defaultContent="Solicitar Cotação" /> <ArrowRight size={18} />
-              </Link>
-              <Link to="/sobre" className="border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-4 font-black uppercase tracking-wider transition-all rounded-sm">
-                <EditableElement id="home_cta_btn2" defaultContent="A Prime Products" />
-              </Link>
-            </div>
-          </AnimateOnScroll>
-        </div>
-      </EditableElement>
+      {/* CTA Final */}
+      <section className="relative py-24 overflow-hidden">
+        {/* Imagem de fundo e Overlay Escuro */}
+        <div 
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/cta-bg-reuniao.jpg')" }}
+        />
+        <div className="absolute inset-0 z-0 bg-gray-800/80 mix-blend-multiply" />
+        
+        <SectionContainer className="relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <AnimateOnScroll>
+              <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
+                <EditableElement id="home_cta_title" defaultContent="Engenharia de precisão para operações que não podem parar." />
+              </h2>
+              <p className="text-white/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
+                <EditableElement id="home_cta_desc" defaultContent="Sente-se à mesa com nossos especialistas. Desenvolvemos skids e painéis customizados para os processos mais críticos da indústria." />
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link to="/contato" className="w-full sm:w-auto bg-secondary text-white font-bold py-4 px-8 rounded hover:bg-gray-800 transition-colors shadow-lg flex items-center justify-center gap-2">
+                  <PhoneCall size={20} />
+                  <EditableElement id="home_cta_btn1" defaultContent="Discutir meu projeto" />
+                </Link>
+                <Link to="/solucoes" className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded hover:bg-white hover:text-primary transition-colors flex items-center justify-center gap-2">
+                  <Wrench size={20} />
+                  <EditableElement id="home_cta_btn2" defaultContent="Ver Soluções Integradas" />
+                </Link>
+              </div>
+            </AnimateOnScroll>
+          </div>
+        </SectionContainer>
+      </section>
     </>
   );
 }

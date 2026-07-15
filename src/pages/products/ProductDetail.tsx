@@ -5,20 +5,22 @@ import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 import { useCMS } from '../../contexts/CMSContext';
+import { TRANSMITTER_CATALOG } from '../../data/transmitterCatalog';
+import { CALIBRATION_CATALOG } from '../../data/calibrationCatalog';
 
-const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; desc: string; features: string[]; apps: string[] }> = {
-  'cilindros-aluminio': { name: 'Cilindros de Alumínio', cat: 'Gases', img: '/images/prod-cilindros-aluminio.png', images: ['/images/prod-cilindros-aluminio.png', '/images/prod-cilindros-aluminio-2.png', '/images/prod-cilindros-aluminio-3.png'], desc: 'Cilindros leves e resistentes para transporte seguro de gases comprimidos. Fabricados em ligas de alumínio de alta resistência, ideais para gases medicinais, industriais e especiais.', features: ['Conformidade com normas DOT e ISO', 'Peso reduzido vs. cilindros de aço', 'Resistência à corrosão', 'Diversas capacidades disponíveis', 'Válvulas de segurança integradas'], apps: ['Gases medicinais', 'Gases de laboratório', 'Gases de alta pureza', 'Transporte especializado'] },
-  'cilindros-tipo-4': { name: 'Cilindros Tipo 4', cat: 'Gases', img: '/images/prod-cilindros-tipo4.png', images: ['/images/prod-cilindros-tipo4.png', '/images/prod-cilindros-tipo4-2.png', '/images/prod-cilindros-tipo4-3.png', '/images/prod-cilindros-tipo4-4.png'], desc: 'Cilindros compósitos de alta performance com liner polimérico e reforço em fibra de carbono. Máxima leveza com alta capacidade de armazenamento.', features: ['Liner em HDPE ou liner metálico', 'Reforço em fibra de carbono ou vidro', 'Peso 70% menor que aço equivalente', 'Pressões de trabalho de até 700 bar', 'Alta resistência à fadiga'], apps: ['Logística de gases', 'Veículos a GNV', 'Gases medicinais portáteis', 'Indústria aeroespacial'] },
-  'conexoes-instrumentacao': { name: 'Conexões para Instrumentação', cat: 'Instrumentação', img: '/images/prod-conexoes-instrumentacao.png', images: ['/images/prod-conexoes-instrumentacao.png', '/images/prod-conexoes-2.png', '/images/prod-conexoes-3.png', '/images/prod-conexoes-4.png', '/images/prod-conexoes-5.png'], desc: 'Conexões certificadas para aplicações de instrumentação analítica e industrial. Compatibilidade com transmissores, analisadores e sistemas de processo.', features: ['Conexões TK-Fujikin e equivalentes', 'Materiais: SS 316, Hastelloy, PTFE', 'Certificação para fluidos agressivos', 'Conexões compressão, NPT e flange', 'Estanqueidade garantida a altas pressões'], apps: ['Análise de processo', 'Instrumentação industrial', 'Laboratórios', 'Petroquímica'] },
+const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG }> = {
+  'cilindros-aluminio': { name: 'Cilindros de Alumínio', cat: 'Gases', img: '/images/prod-cilindros-aluminio-new.jpg', images: ['/images/prod-cilindros-aluminio-new.jpg', '/images/prod-cilindros-aluminio-2.png', '/images/prod-cilindros-aluminio-3.png'], desc: 'Cilindros leves e resistentes para transporte seguro de gases comprimidos. Fabricados em ligas de alumínio de alta resistência, ideais para gases medicinais, industriais e especiais.', features: ['Conformidade com normas DOT e ISO', 'Peso reduzido vs. cilindros de aço', 'Resistência à corrosão', 'Diversas capacidades disponíveis', 'Válvulas de segurança integradas'], apps: ['Gases medicinais', 'Gases de laboratório', 'Gases de alta pureza', 'Transporte especializado'] },
+  'cilindros-tipo-4': { name: 'Cilindros Tipo 4', cat: 'Gases', img: '/images/prod-cilindros-tipo4-new.jpg', images: ['/images/prod-cilindros-tipo4-new.jpg', '/images/prod-cilindros-tipo4-2.png', '/images/prod-cilindros-tipo4-3.png', '/images/prod-cilindros-tipo4-4.png'], desc: 'Cilindros compósitos de alta performance com liner polimérico e reforço em fibra de carbono. Máxima leveza com alta capacidade de armazenamento.', features: ['Liner em HDPE ou liner metálico', 'Reforço em fibra de carbono ou vidro', 'Peso 70% menor que aço equivalente', 'Pressões de trabalho de até 700 bar', 'Alta resistência à fadiga'], apps: ['Logística de gases', 'Veículos a GNV', 'Gases medicinais portáteis', 'Indústria aeroespacial'] },
+  'conexoes-instrumentacao': { name: 'Conexões para Instrumentação', cat: 'Instrumentação', img: '/images/prod-conexoes-instrumentacao-new.jpg', images: ['/images/prod-conexoes-instrumentacao-new.jpg', '/images/prod-conexoes-2.png', '/images/prod-conexoes-3.png', '/images/prod-conexoes-4.png', '/images/prod-conexoes-5.png'], desc: 'Conexões certificadas para aplicações de instrumentação analítica e industrial. Compatibilidade com transmissores, analisadores e sistemas de processo.', features: ['Conexões TK-Fujikin e equivalentes', 'Materiais: SS 316, Hastelloy, PTFE', 'Certificação para fluidos agressivos', 'Conexões compressão, NPT e flange', 'Estanqueidade garantida a altas pressões'], apps: ['Análise de processo', 'Instrumentação industrial', 'Laboratórios', 'Petroquímica'] },
   'detectores-vazamento': { name: 'Detectores de Vazamento', cat: 'Segurança', img: '/images/app-detector-fundo.jpg', images: ['/images/app-detector-fundo.jpg', '/images/prod-detectores-vazamento.png', '/images/app-detector-2.jpg'], desc: 'Sistemas de detecção de gases tóxicos e inflamáveis para proteção de ambientes industriais. Tecnologias catalítica, eletroquímica e de infravermelho.', features: ['Detecção de H₂S, CO, NH₃, LEL', 'Saída 4-20 mA e HART', 'Certificação ATEX e IECEx', 'Display local e alarmes sonoros/visuais', 'Calibração simplificada em campo'], apps: ['Refinarias e petroquímicas', 'Plantas de gás e GNL', 'Laboratórios químicos', 'Ambientes confinados'] },
-  'dewars-criogenicos': { name: 'Dewars e Recipientes Criogênicos', cat: 'Criogenia', img: '/images/prod-dewars-criogenicos.png', images: ['/images/prod-dewars-criogenicos.png', '/images/prod-dewars-2.png', '/images/prod-dewars-3.png'], desc: 'Recipientes criogênicos para armazenamento e transporte de nitrogênio líquido, oxigênio líquido, argônio líquido e outros gases liquefeitos.', features: ['Isolamento a vácuo multicamada', 'Capacidade de 10 a 500 litros', 'Bocal de acesso largo ou estreito', 'Conformidade com normas de transporte', 'Acessórios e suprimentos'], apps: ['Criopreservação biológica', 'Laboratórios de pesquisa', 'Indústria alimentícia', 'Metalurgia criogênica'] },
+  'dewars-criogenicos': { name: 'Dewars e Recipientes Criogênicos', cat: 'Criogenia', img: '/images/prod-dewars-criogenicos-new.jpg', images: ['/images/prod-dewars-criogenicos-new.jpg', '/images/prod-dewars-2.png', '/images/prod-dewars-3.png'], desc: 'Recipientes criogênicos para armazenamento e transporte de nitrogênio líquido, oxigênio líquido, argônio líquido e outros gases liquefeitos.', features: ['Isolamento a vácuo multicamada', 'Capacidade de 10 a 500 litros', 'Bocal de acesso largo ou estreito', 'Conformidade com normas de transporte', 'Acessórios e suprimentos'], apps: ['Criopreservação biológica', 'Laboratórios de pesquisa', 'Indústria alimentícia', 'Metalurgia criogênica'] },
   'geracao-oxigenio': { name: 'Geração de Oxigênio e Anestesia', cat: 'Gases', img: '/images/prod-geracao-gases-2.jpg', images: ['/images/prod-geracao-gases-2.jpg', '/images/prod-geracao-gases-1.jpg', '/images/prod-geracao-gases-3.jpg'], desc: 'Sistemas PSA e concentradores de oxigênio para geração on-site. Independência de fornecedores externos de gases com produção contínua e confiável.', features: ['Pureza de 93% a 99,5% O₂', 'Capacidade de 1 a 500 Nm³/h', 'Tecnologia PSA ou VPSA', 'Monitoramento e controle automático', 'Manutenção simplificada'], apps: ['Hospitais e clínicas', 'Ozonização de água', 'Tratamento de efluentes', 'Soldagem e corte'] },
-  'corte-solda': { name: 'Equipamentos para Corte e Solda', cat: 'Industrial', img: '/images/prod-corte-solda.png', images: ['/images/prod-corte-solda.png', '/images/prod-corte-solda-2.png', '/images/prod-corte-solda-3.png', '/images/prod-corte-solda-4.png'], desc: 'Maçaricos, reguladores e acessórios para corte oxiacetilênico e soldagem MIG/TIG/Eletrodo. Equipamentos para metalurgia, fabricação e manutenção industrial.', features: ['Maçaricos para corte e solda', 'Reguladores para CO₂, Ar, O₂, Acetileno', 'Mangueiras certificadas', 'Bocais e consumíveis', 'Kits completos para oficinas'], apps: ['Metalurgia e siderurgia', 'Construção civil e obras', 'Manutenção industrial', 'Oficinas mecânicas'] },
-  'reguladores-especiais': { name: 'Reguladores de Gases Especiais', cat: 'Instrumentação', img: '/images/regulador-gases-09.jpg', images: ['/images/regulador-gases-09.jpg', '/images/regulador-gases-08.png', '/images/regulador-gases-04.jpg', '/images/regulador-gases-05.jpg', '/images/regulador-gases-06.jpg', '/images/regulador-gases-10-cropped.png'], desc: 'Reguladores de alta performance projetados para controle de gases especiais, aplicações de alta e altíssima pressão, e calibração de instrumentos de medição. Desenvolvidos com foco em máxima estabilidade e vedação absoluta contra vazamentos.', features: ['Modelos específicos para gases especiais de alta pureza', 'Estágio simples ou duplo para alta e altíssima pressão (até 300 bar)', 'Otimizados para processos críticos de calibração analítica', 'Construção em materiais inertes (Aço Inox 316, PTFE)', 'Estanqueidade certificada com teste de hélio em fábrica'], apps: ['Análise de gases padrão e misturas especiais', 'Estações de calibração de instrumentação', 'Controle de processos críticos de alta pressão', 'Laboratórios de P&D de alta exigência'] },
-  'reguladores-hidraulicos': { name: 'Reguladores Hidráulicos Alta Pressão', cat: 'Hidráulica', img: '/images/prod-reguladores.png', images: ['/images/prod-reguladores.png', '/images/prod-reguladores-2.png'], desc: 'Reguladores de pressão de alta performance para sistemas hidráulicos industriais. Controle preciso de pressão em circuitos hidráulicos de alta demanda.', features: ['Pressões de até 700 bar', 'Vazões elevadas', 'Filtros integrados disponíveis', 'Construção em aço de alta resistência', 'Vedações de longa duração'], apps: ['Prensas e conformação', 'Injetoras plásticas', 'Máquinas-ferramenta', 'Sistemas de teste'] },
-  'reguladores-calibracao': { name: 'Reguladores para Calibração de Equipamentos', cat: 'Instrumentação', img: '/images/prod-reguladores-calibracao-novo.png', images: ['/images/prod-reguladores-calibracao-novo.png'], desc: 'Mini Reguladores de Pressão Automáticos e modelos de Demanda, projetados especificamente para cilindros de alta pressão e processos críticos de calibração laboratorial. Ideais para controle rigoroso de baixa vazão, gases corrosivos e misturas especiais com máxima estabilidade técnica.', features: ['Pressão de entrada de até 3.500 PSIG e saídas de 0-10, 0-50 ou 0-100 PSIG', 'Modelos compactos simples e duplo estágio com vazão fixa ou ajustável (até 9.0 LPM)', 'Versões tipo DEMANDA que fornecem gás automaticamente de acordo com o consumo do analisador', 'Corpo e capa em SAE 360 Latão, Aço Inox 316L ou Alumínio 6061-T6 Anodizado', 'Vedações premium em Viton®, Teflon® ou KEL-F® com válvula de segurança e filtro 40 microns integrado'], apps: ['Calibração de detectores e analisadores de gases', 'Estações de instrumentação analítica e laboratorial', 'Dosagem para misturas de gases especiais e corrosivos', 'Processos com fornecimento de gás sob demanda'] },
+  'corte-solda': { name: 'Equipamentos para Corte e Solda', cat: 'Industrial', img: '/images/prod-corte-solda-new.jpg', images: ['/images/prod-corte-solda-new.jpg', '/images/prod-corte-solda-2.png', '/images/prod-corte-solda-3.png', '/images/prod-corte-solda-4.png'], desc: 'Maçaricos, reguladores e acessórios para corte oxiacetilênico e soldagem MIG/TIG/Eletrodo. Equipamentos para metalurgia, fabricação e manutenção industrial.', features: ['Maçaricos para corte e solda', 'Reguladores para CO₂, Ar, O₂, Acetileno', 'Mangueiras certificadas', 'Bocais e consumíveis', 'Kits completos para oficinas'], apps: ['Metalurgia e siderurgia', 'Construção civil e obras', 'Manutenção industrial', 'Oficinas mecânicas'] },
+  'reguladores-especiais': { name: 'Reguladores de Gases Especiais', cat: 'Instrumentação', img: '/images/prod-reguladores-especiais-new.jpg', images: ['/images/prod-reguladores-especiais-new.jpg', '/images/regulador-gases-08.png', '/images/regulador-gases-04.jpg', '/images/regulador-gases-05.jpg', '/images/regulador-gases-06.jpg', '/images/regulador-gases-10-cropped.png'], desc: 'Reguladores de alta performance projetados para controle de gases especiais, aplicações de alta e altíssima pressão, e calibração de instrumentos de medição. Desenvolvidos com foco em máxima estabilidade e vedação absoluta contra vazamentos.', features: ['Modelos específicos para gases especiais de alta pureza', 'Estágio simples ou duplo para alta e altíssima pressão (até 300 bar)', 'Otimizados para processos críticos de calibração analítica', 'Construção em materiais inertes (Aço Inox 316, PTFE)', 'Estanqueidade certificada com teste de hélio em fábrica'], apps: ['Análise de gases padrão e misturas especiais', 'Estações de calibração de instrumentação', 'Controle de processos críticos de alta pressão', 'Laboratórios de P&D de alta exigência'] },
+  'reguladores-hidraulicos': { name: 'Reguladores Hidráulicos Alta Pressão', cat: 'Hidráulica', img: '/images/prod-reguladores-hidraulicos-new.jpg', images: ['/images/prod-reguladores-hidraulicos-new.jpg', '/images/prod-reguladores-2.png'], desc: 'Reguladores de pressão de alta performance para sistemas hidráulicos industriais. Controle preciso de pressão em circuitos hidráulicos de alta demanda.', features: ['Pressões de até 700 bar', 'Vazões elevadas', 'Filtros integrados disponíveis', 'Construção em aço de alta resistência', 'Vedações de longa duração'], apps: ['Prensas e conformação', 'Injetoras plásticas', 'Máquinas-ferramenta', 'Sistemas de teste'] },
+  'reguladores-calibracao': { name: 'Reguladores para Calibração de Equipamentos', cat: 'Instrumentação', img: '/images/reguladores-calibracao/bg-principal.png', images: ['/images/reguladores-calibracao/bg-principal.png'], desc: 'Mini Reguladores de Pressão Automáticos e modelos de Demanda, projetados especificamente para cilindros de alta pressão e processos críticos de calibração laboratorial. Ideais para controle rigoroso de baixa vazão, gases corrosivos e misturas especiais com máxima estabilidade técnica.', features: ['Pressão de entrada de até 3.500 PSIG e saídas de 0-10, 0-50 ou 0-100 PSIG', 'Modelos compactos simples e duplo estágio com vazão fixa ou ajustável (até 9.0 LPM)', 'Versões tipo DEMANDA que fornecem gás automaticamente de acordo com o consumo do analisador', 'Corpo e capa em SAE 360 Latão, Aço Inox 316L ou Alumínio 6061-T6 Anodizado', 'Vedações premium em Viton®, Teflon® ou KEL-F® com válvula de segurança e filtro 40 microns integrado'], apps: ['Calibração de detectores e analisadores de gases', 'Estações de instrumentação analítica e laboratorial', 'Dosagem para misturas de gases especiais e corrosivos', 'Processos com fornecimento de gás sob demanda'], catalogTables: CALIBRATION_CATALOG },
   'combate-incendio': { name: 'Sistemas de Combate a Incêndio', cat: 'Segurança', img: '/images/prod-combate-incendio.png', images: ['/images/prod-combate-incendio.png', '/images/prod-combate-incendio-2.png', '/images/prod-combate-3.png', '/images/prod-combate-4.png'], desc: 'Sistemas de supressão de incêndio com CO₂, FM-200, Novec 1230 e outros agentes limpos. Proteção de salas de dados, painéis elétricos e ambientes críticos.', features: ['Agentes: CO₂, FM-200, Novec 1230', 'Supressão total por inundação', 'Detecção integrada', 'Projeto conforme NFPA 12/2001', 'Manutenção e recarga de cilindros'], apps: ['Data centers e CPD', 'Painéis e subestações elétricas', 'Salas de controle', 'Museus e arquivos'] },
-  'transmissores-pressao': { name: 'Transmissores de Pressão e Nível', cat: 'Instrumentação', img: '/images/prod-transmissores-pressao.png', images: ['/images/prod-transmissores-pressao.png', '/images/prod-transmissores-2.png'], desc: 'Transmissores inteligentes de alta performance para medição de pressão diferencial, manométrica, absoluta e nível. Compatíveis com HART, Profibus e Foundation Fieldbus.', features: ['Precisão de ±0,04% da URL', 'Protocolo HART, Profibus PA, FF', 'Rangeabilidade de 100:1', 'Display LCD local configurável', 'Certificação ATEX e SIL 2/3'], apps: ['Óleo & gás', 'Petroquímica e química', 'Geração de energia', 'Processos críticos de segurança'] },
+  'transmissores-pressao': { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', cat: 'Instrumentação', img: '/images/prod-transmissores-new.jpg', images: ['/images/prod-transmissores-new.jpg', '/images/prod-transmissores-2.png'], desc: 'Transmissores inteligentes de alta performance para medição de pressão diferencial, manométrica, absoluta e nível. Compatíveis com HART, Profibus e Foundation Fieldbus.', features: ['Precisão de ±0,04% da URL', 'Protocolo HART, Profibus PA, FF', 'Rangeabilidade de 100:1', 'Display LCD local configurável', 'Certificação ATEX e SIL 2/3'], apps: ['Óleo & gás', 'Petroquímica e química', 'Geração de energia', 'Processos críticos de segurança'], catalogTables: TRANSMITTER_CATALOG },
   'valvulas-industriais': { name: 'Válvulas Industriais e Medicinais', cat: 'Válvulas', img: '/images/prod-valvulas.png', images: ['/images/prod-valvulas.png', '/images/prod-valvulas-2.png'], desc: 'Válvulas de agulha, esfera, globo e membrana para gases industriais, medicinais e especiais. Certificadas para aplicações de alta pressão e fluidos agressivos.', features: ['Materiais: aço inox, latão, PTFE', 'Pressões de até 400 bar', 'Tamanhos de 1/8" a 2"', 'Certificação para gases medicinais', 'Conexões rosca, solda e flange'], apps: ['Distribuição de gases medicinais', 'Laboratórios e P&D', 'Indústria química', 'Automação de processos'] },
 };
 
@@ -67,10 +69,10 @@ export function ProductDetail() {
         id={`prod_${id}_hero`}
         type="container"
         as="section"
-        className="prime-bg-standard relative min-h-[50vh] flex items-end bg-secondary overflow-hidden pb-16 pt-32"
+        className="prime-bg-standard relative min-h-[65vh] flex items-end bg-secondary overflow-hidden pb-16 pt-40"
         defaultStyle={{ backgroundImage: `url('${img}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 mb-4">{cat}</span>
           <h1 className="text-3xl md:text-5xl font-black text-white leading-tight">
@@ -123,6 +125,103 @@ export function ProductDetail() {
                   </div>
                 </div>
               )}
+            </div>
+
+            <div className="space-y-6">
+              {!PRODUCT_DATA[id]?.catalogTables && (
+                <AnimateOnScroll>
+                  <img src={img} alt={name === 'Geração de Oxigênio e Anestesia' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
+                  {images.length > 1 && (
+                    <div className={`grid ${images.length === 2 ? 'grid-cols-1' : 'grid-cols-2'} gap-2 mt-2`}>
+                      {images.slice(1).map((src, i) => {
+                        const isFullWidth = src.includes('regulador-gases-10-cropped.png');
+                        const isDetector = id === 'detectores-vazamento';
+                        const isCalibracao = id === 'reguladores-calibracao';
+                        const isEspeciais = id === 'reguladores-especiais';
+                        return (
+                          <img
+                            key={i}
+                            src={src}
+                            alt={`${name} ${i + 2}`}
+                            className={`prime-image-standard ${isFullWidth ? 'col-span-2 h-48 object-cover object-center bg-white border border-gray-100' : (isDetector ? 'h-64 object-cover' : (isCalibracao ? 'h-48 object-contain bg-white border border-gray-100' : (isEspeciais ? 'h-40 object-contain bg-white p-2 border border-gray-100' : 'h-28 object-cover')))} w-full shadow-sm rounded-sm hover:opacity-90 transition-opacity`}
+                            referrerPolicy="no-referrer"
+                          />
+                        );
+                      })}
+                    </div>
+                  )}
+                </AnimateOnScroll>
+              )}
+              <div className="bg-secondary text-white p-8 rounded-sm shadow-lg">
+                <h3 className="font-bold text-lg mb-4">Solicitar Informações</h3>
+                <p className="text-gray-400 text-sm mb-6">Nossa equipe técnica está pronta para atender sua demanda.</p>
+                <div className="space-y-3 text-sm mb-6">
+                  <div className="flex items-center gap-3"><Phone size={16} className="text-primary" /><span>(31) 9 8670-8742</span></div>
+                  <div className="flex items-center gap-3"><Mail size={16} className="text-primary" /><span>info@primeproducts.ind.br</span></div>
+                </div>
+                <Link to="/contato" className="block w-full bg-primary hover:bg-primary-hover text-white text-center py-3 font-bold uppercase tracking-wider rounded-sm transition-all">
+                  Solicitar Cotação
+                </Link>
+              </div>
+              <div className="bg-white p-6 shadow-md rounded-sm">
+                <h3 className="font-bold text-secondary mb-4 text-sm uppercase tracking-wide">Outros Produtos</h3>
+                <div className="space-y-2">
+                  {Object.entries(PRODUCT_DATA).filter(([k]) => k !== id).slice(0, 4).map(([key, p]) => (
+                    <Link key={key} to={`/produto/${key}`} className="block text-sm text-gray-600 hover:text-primary transition-colors py-1 border-b border-gray-100 last:border-0 flex items-center gap-2">
+                      <ArrowRight size={12} className="text-primary shrink-0" /> {p.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-8 mt-12">
+            {/* Catalog Tables */}
+              {PRODUCT_DATA[id]?.catalogTables && (
+                <div className="bg-white p-8 shadow-md">
+                  <h2 className="text-xl font-bold text-secondary mb-6">Modelos e Especificações Técnicas</h2>
+                  <div className="space-y-4">
+                    {PRODUCT_DATA[id].catalogTables.map((table, i) => (
+                      <details key={i} className="group border border-gray-200 rounded-sm">
+                        <summary className="flex justify-between items-center font-medium cursor-pointer list-none p-4 bg-gray-50 hover:bg-gray-100 transition-colors">
+                          <span className="text-secondary font-bold text-sm uppercase tracking-wide">{table.title}</span>
+                          <span className="transition group-open:rotate-180">
+                            <svg fill="none" height="20" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="20"><path d="M6 9l6 6 6-6"></path></svg>
+                          </span>
+                        </summary>
+                        <div className="p-4 text-gray-600 border-t border-gray-200 overflow-x-auto">
+                          <table className="w-full text-sm text-left">
+                            <thead className="text-xs text-gray-700 uppercase bg-gray-100">
+                              <tr>
+                                {table.columns.map((col, j) => (
+                                  <th key={j} className="px-4 py-3">{col}</th>
+                                ))}
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {table.rows.map((row, j) => (
+                                <tr key={j} className="border-b border-gray-100 last:border-0 hover:bg-gray-50">
+                                  {row.map((cell, k) => (
+                                    <td key={k} className="px-4 py-3 whitespace-pre-line align-top">
+                                      {cell.includes('<img') ? (
+                                        <div dangerouslySetInnerHTML={{ __html: cell }} />
+                                      ) : (
+                                        cell
+                                      )}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              )}
+
 
               {/* Datasheet */}
               <div className="bg-white p-8 shadow-md">
@@ -200,52 +299,6 @@ export function ProductDetail() {
                 )}
               </div>
             </div>
-            <div className="space-y-6">
-              <AnimateOnScroll>
-                <img src={img} alt={name === 'Geração de Oxigênio e Anestesia' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
-                {images.length > 1 && (
-                  <div className={`grid ${images.length === 2 ? 'grid-cols-1' : 'grid-cols-2'} gap-2 mt-2`}>
-                    {images.slice(1).map((src, i) => {
-                      const isFullWidth = src.includes('regulador-gases-10-cropped.png');
-                      const isDetector = id === 'detectores-vazamento';
-                      const isCalibracao = id === 'reguladores-calibracao';
-                      const isEspeciais = id === 'reguladores-especiais';
-                      return (
-                        <img
-                          key={i}
-                          src={src}
-                          alt={`${name} ${i + 2}`}
-                          className={`prime-image-standard ${isFullWidth ? 'col-span-2 h-48 object-cover object-center bg-white border border-gray-100' : (isDetector ? 'h-64 object-cover' : (isCalibracao ? 'h-48 object-contain bg-white border border-gray-100' : (isEspeciais ? 'h-40 object-contain bg-white p-2 border border-gray-100' : 'h-28 object-cover')))} w-full shadow-sm rounded-sm hover:opacity-90 transition-opacity`}
-                          referrerPolicy="no-referrer"
-                        />
-                      );
-                    })}
-                  </div>
-                )}
-              </AnimateOnScroll>
-              <div className="bg-secondary text-white p-8 rounded-sm shadow-lg">
-                <h3 className="font-bold text-lg mb-4">Solicitar Informações</h3>
-                <p className="text-gray-400 text-sm mb-6">Nossa equipe técnica está pronta para atender sua demanda.</p>
-                <div className="space-y-3 text-sm mb-6">
-                  <div className="flex items-center gap-3"><Phone size={16} className="text-primary" /><span>(31) 9 8670-8742</span></div>
-                  <div className="flex items-center gap-3"><Mail size={16} className="text-primary" /><span>info@primeproducts.ind.br</span></div>
-                </div>
-                <Link to="/contato" className="block w-full bg-primary hover:bg-primary-hover text-white text-center py-3 font-bold uppercase tracking-wider rounded-sm transition-all">
-                  Solicitar Cotação
-                </Link>
-              </div>
-              <div className="bg-white p-6 shadow-md rounded-sm">
-                <h3 className="font-bold text-secondary mb-4 text-sm uppercase tracking-wide">Outros Produtos</h3>
-                <div className="space-y-2">
-                  {Object.entries(PRODUCT_DATA).filter(([k]) => k !== id).slice(0, 4).map(([key, p]) => (
-                    <Link key={key} to={`/produto/${key}`} className="block text-sm text-gray-600 hover:text-primary transition-colors py-1 border-b border-gray-100 last:border-0 flex items-center gap-2">
-                      <ArrowRight size={12} className="text-primary shrink-0" /> {p.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
         </SectionContainer>
       </section>
     </>
