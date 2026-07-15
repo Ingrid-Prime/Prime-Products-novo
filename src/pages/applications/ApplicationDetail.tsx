@@ -53,7 +53,7 @@ const APPLICATION_DATA: Record<string, {
     products: [
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
-      { name: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
     ],
   },
@@ -81,7 +81,7 @@ const APPLICATION_DATA: Record<string, {
     products: [
       { name: 'Geração de Oxigênio e Anestesia', path: '/produto/geracao-oxigenio' },
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
-      { name: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
     ],
   },
@@ -124,7 +124,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Dewars e Recipientes Criogênicos', path: '/produto/dewars-criogenicos' },
-      { name: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
   },
   'energia-transicao-energetica': {
@@ -147,7 +147,7 @@ const APPLICATION_DATA: Record<string, {
     products: [
       { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
-      { name: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
   },
   'criogenia': {
@@ -159,7 +159,7 @@ const APPLICATION_DATA: Record<string, {
     solutions: ['Dewars e recipientes criogênicos de 10 a 500 litros', 'Válvulas e conexões especiais para temperaturas criogênicas', 'Sistemas de transferência e vaporizadores', 'Acessórios e EPIs para manuseio seguro de criogênicos'],
     products: [
       { name: 'Dewars e Recipientes Criogênicos', path: '/produto/dewars-criogenicos' },
-      { name: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
     ],
@@ -189,7 +189,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Equipamentos para Corte e Solda', path: '/produto/corte-solda' },
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
-      { name: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
   },
   'mineral': {

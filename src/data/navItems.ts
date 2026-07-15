@@ -34,7 +34,7 @@ export const defaultNavItems: NavItem[] = [
       { label: 'Reguladores para Calibração de Equipamentos', path: '/produto/reguladores-calibracao' },
       { label: 'Combate a Incêndio', path: '/produto/combate-incendio' },
       { label: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
-      { label: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
+      { label: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
   },
   {

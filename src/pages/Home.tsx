@@ -142,7 +142,7 @@ export function Home() {
               <AnimateOnScroll className="h-full">
               <div className="relative pl-8 pt-8 h-full min-h-[400px]">
                 <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-gray-50 -z-10" />
-                <EditableElement id="home_about_img" type="image" defaultContent="/images/home-about-ihm2.jpg" className="w-full h-full object-cover object-center shadow-lg relative z-10 rounded-sm" />
+                <EditableElement id="home_about_img" type="image" defaultContent="/images/home-about-ihm-new-2.jpg" className="w-full h-full object-cover object-center shadow-lg relative z-10 rounded-sm" />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-10 z-20 shadow-xl -mb-6 md:-mb-10 mr-4 md:mr-0 max-w-[200px] md:max-w-[240px]">
                   <div className="text-4xl md:text-5xl font-black mb-1">
                     <EditableElement id="home_about_stat_num" defaultContent="100%" />
