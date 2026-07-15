@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   Gauge, ShieldCheck, Settings, FlaskConical, Flame, CheckCircle,
   ArrowRight, MessageSquare, Star, ChevronDown, ChevronUp,
-  UserCheck, History, Briefcase, Trophy, PhoneCall, Wrench
+  History, Briefcase, Trophy, PhoneCall, Wrench
 } from 'lucide-react';
 import { AnimateOnScroll } from '../components/AnimateOnScroll';
 import { EditableElement } from '../components/EditableElement';
