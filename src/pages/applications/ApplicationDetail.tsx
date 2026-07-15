@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, CheckCircle, Phone, Mail } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
+import HydrogenEnergyPage from './HydrogenEnergyPage';
 
 const APP_GALLERY: Record<string, string[]> = {
   'laboratorios-analiticos': ['/images/lab-analitico-panel.jpg'],
@@ -12,7 +13,7 @@ const APP_GALLERY: Record<string, string[]> = {
   'oleo-gas': ['/images/app-oleo-gas-offshore.jpg'],
   'industria-quimica': ['/images/app-quimica-2.jpg'],
   'alimentos-bebidas': ['/images/app-alimentos-bebidas-2.jpg'],
-  'energia-transicao-energetica': ['/images/app-energia-renovavel-2.jpg'],
+  'energia-transicao-energetica': ['/images/energias-renovaveis-hero.jpg', '/images/h2-jumbo-tube.png', '/images/h2-tube-trailer.png', '/images/h2-storage.png'],
   'criogenia': ['/images/prod-dewars-2.png', '/images/prod-dewars-3.png'],
   'automotivo': ['/images/app-automotivo-2.jpg'],
   'soldagem': ['/images/prod-corte-solda-2.png', '/images/prod-corte-solda-3.png', '/images/prod-corte-solda-4.png'],
@@ -39,7 +40,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
-      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
     ],
   },
   'farmaceutica': {
@@ -92,7 +93,7 @@ const APPLICATION_DATA: Record<string, {
     challenges: ['Instrumentação certificada ATEX/IECEx para zonas classificadas', 'Detecção de H₂S, CO, LEL e outros gases de risco', 'Certificação de segurança funcional SIL 2/3', 'Alta disponibilidade e confiabilidade em ambientes críticos'],
     solutions: ['Transmissores de pressão com certificação ATEX e SIL', 'Detectores de gases tóxicos e inflamáveis com saída 4-20 mA/HART', 'Sistemas de supressão de incêndio por agentes limpos', 'Reguladores e válvulas para gases de processo em alta pressão'],
     products: [
-      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Sistemas de Combate a Incêndio', path: '/produto/combate-incendio' },
       { name: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
@@ -109,7 +110,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
-      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
     ],
   },
   'alimentos-bebidas': {
@@ -127,17 +128,26 @@ const APPLICATION_DATA: Record<string, {
     ],
   },
   'energia-transicao-energetica': {
-    name: 'Energias Renováveis',
+    name: 'Energias Renováveis e Hidrogênio',
     cat: 'Energia',
-    img: '/images/app-energia-renovavel-1.jpg',
-    desc: 'O setor de energias renováveis requer soluções para GNV, hidrogênio verde, monitoramento de emissões, tratamento de efluentes e integração com plantas de bioenergia e energia renovável.',
-    challenges: ['Armazenamento seguro de H₂ e GNV em alta pressão', 'Monitoramento contínuo de emissões (CEMS)', 'Conformidade com legislação ambiental e metas de descarbonização', 'Tratamento de efluentes com dosagem de O₂'],
-    solutions: ['Cilindros Tipo 4 para H₂ e GNV em alta pressão (até 700 bar)', 'Detectores de gases para monitoramento ambiental', 'Geradores de oxigênio para tratamento de efluentes', 'Instrumentação para plantas de bioenergia e geração distribuída'],
+    img: '/images/energias-renovaveis-hero.jpg',
+    desc: 'O futuro da energia passa pelo Hidrogênio e soluções de altíssima pressão. A Prime Products fornece as melhores tecnologias do mercado (Best of Breed) em Jumbo Tubes de alta pressão e infraestrutura para H₂.',
+    challenges: [
+      'Garantir armazenamento e transporte 100% seguros de H₂ em altas pressões',
+      'Infraestrutura para estações de abastecimento de H₂ (Filling Stations)',
+      'Prevenção contra fragilização por hidrogênio em materiais sob estresse',
+      'Soluções de super alta capacidade para estocagem estacionária (248 a 875 bar)'
+    ],
+    solutions: [
+      'Sistemas de Transporte (Tube Trailers) Tipo 1 e Tipo 4',
+      'Pacotes de Armazenamento de H₂ em Jumbo Tubes Tipo 4',
+      'Vasos e tanques de combustível operando a 248 bar, 500 bar, 700 bar e até 875 bar',
+      'Componentes e infraestrutura para centros Aeroespaciais e aplicações especiais'
+    ],
     products: [
-      { name: 'Cilindros Tipo 4', path: '/produto/cilindros-tipo-4' },
-      { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
-      { name: 'Geração de Oxigênio e Anestesia', path: '/produto/geracao-oxigenio' },
-      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
+      { name: 'Válvulas Industriais e Medicinais', path: '/produto/valvulas-industriais' },
     ],
   },
   'criogenia': {
@@ -191,7 +201,7 @@ const APPLICATION_DATA: Record<string, {
     solutions: ['Detectores portáteis e fixos de CO, H₂S, O₂ e LEL', 'Instrumentação com proteção IP67/IP68 para ambientes severos', 'Transmissores com certificação ATEX para áreas classificadas', 'Sistemas de combate a incêndio para plantas de beneficiamento'],
     products: [
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
-      { name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', path: '/produto/transmissores-pressao' },
+      { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
       { name: 'Sistemas de Combate a Incêndio', path: '/produto/combate-incendio' },
       { name: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
     ],
@@ -204,14 +214,12 @@ export function ApplicationDetail() {
   const galleryImages = id ? (APP_GALLERY[id] ?? []) : [];
 
   if (!app) {
-    return (
-      <SectionContainer className="text-center py-32">
-        <h1 className="text-2xl font-bold text-secondary mb-4">Aplicação não encontrada</h1>
-        <Link to="/aplicacoes" className="text-primary font-bold hover:underline inline-flex items-center gap-2">
-          <ArrowLeft size={16} /> Voltar para Aplicações
-        </Link>
-      </SectionContainer>
-    );
+    return <div className="text-center py-20 text-gray-500">Aplicação não encontrada</div>;
+  }
+
+  // Intercept the render if it is the Hydrogen page
+  if (id === 'energia-transicao-energetica') {
+    return <HydrogenEnergyPage />;
   }
 
   return (

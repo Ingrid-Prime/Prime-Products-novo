@@ -49,7 +49,8 @@ export function CMSProvider({ children }: { children: React.ReactNode }) {
       .then((saved) => {
         if (Object.keys(saved.elements ?? {}).length > 0) setData(saved.elements);
         if ((saved.articles ?? []).length > 0) setArticles(saved.articles);
-        if ((saved.navItems ?? []).length > 0) setNavItems(saved.navItems);
+        // Force use of defaultNavItems from code instead of localStorage to apply recent changes
+        setNavItems(defaultNavItems);
       })
       .catch(() => {
         // Fallback: tenta o arquivo estático legado
@@ -58,7 +59,8 @@ export function CMSProvider({ children }: { children: React.ReactNode }) {
           .then((saved) => {
             if (Object.keys(saved.elements ?? {}).length > 0) setData(saved.elements);
             if ((saved.articles ?? []).length > 0) setArticles(saved.articles);
-            if ((saved.navItems ?? []).length > 0) setNavItems(saved.navItems);
+            // Force use of defaultNavItems from code instead of localStorage
+            setNavItems(defaultNavItems);
           })
           .catch(() => {/* usa defaults */});
       });

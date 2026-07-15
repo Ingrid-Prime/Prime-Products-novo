@@ -47,7 +47,7 @@ const APPLICATION_GROUPS: AppGroup[] = [
     group: 'Energias Renováveis',
     color: 'bg-yellow-600',
     items: [
-      { id: 'energia-transicao-energetica', name: 'Energias Renováveis', desc: 'Cilindros para GNV/H₂, monitoramento de emissões (CEMS), tratamento de efluentes, bioenergia e integração com fontes de energia limpa.', img: '/images/app-energia-renovavel-2.jpg' },
+      { id: 'energia-transicao-energetica', name: 'Energias Renováveis e Hidrogênio', desc: 'Soluções de alta pressão para H₂: Tube Trailers, Jumbo Tubes (Tipo 1 e Tipo 4), Estações de Abastecimento e Vasos de Armazenamento de até 875 bar.', img: '/images/energias-renovaveis-hero.jpg' },
       { id: 'criogenia', name: 'Criogenia', desc: 'Dewars, tanques criogênicos e sistemas para nitrogênio líquido, oxigênio líquido, argônio líquido e hélio líquido para diversas aplicações industriais.', img: '/images/prod-dewars-2.png' },
     ],
   },

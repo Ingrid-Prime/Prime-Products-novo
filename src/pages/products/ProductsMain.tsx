@@ -16,7 +16,7 @@ const PRODUCTS = [
   { id: 'reguladores-hidraulicos', name: 'Reguladores Hidráulicos', cat: 'Hidráulica', img: '/images/prod-reguladores-hidraulicos-new.jpg', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
   { id: 'reguladores-calibracao', name: 'Reguladores para Calibração de Equipamentos', cat: 'Instrumentação', img: '/images/reguladores-calibracao/bg-principal.png', desc: 'Mini reguladores e reguladores de demanda compactos de alta precisão para calibração e instrumentação.' },
   { id: 'combate-incendio', name: 'Combate a Incêndio', cat: 'Segurança', img: '/images/prod-combate-incendio.png', desc: 'Sistemas de supressão com CO₂, FM-200 e outros agentes limpos.' },
-  { id: 'transmissores-pressao', name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', cat: 'Instrumentação', img: '/images/prod-transmissores-new.jpg', desc: 'Transmissores inteligentes para medição de pressão diferencial, manométrica e nível.' },
+  { id: 'transmissores-pressao', name: 'Transmissores: Pressão - Nível - Temperatura', cat: 'Instrumentação', img: '/images/prod-transmissores-new.jpg', desc: 'Transmissores inteligentes para medição de pressão diferencial, manométrica e nível.' },
   { id: 'valvulas-industriais', name: 'Válvulas Industriais e Medicinais', cat: 'Válvulas', img: '/images/prod-valvulas.png', desc: 'Válvulas de agulha, esfera e membrana para gases industriais e medicinais.' },
 ];
 

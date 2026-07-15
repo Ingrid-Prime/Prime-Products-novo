@@ -14,7 +14,7 @@ const GALLERY = [
 ];
 
 const PRODUCTS = [
-  { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-new.jpg', name: 'Transmissores: PRESSÃO - NÍVEL - TEMPERATURA', desc: 'Alta precisão para medições diferenciais, manométricas e absolutas.' },
+  { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Alta precisão para medições diferenciais, manométricas e absolutas.' },
   { path: '/produto/valvulas-industriais', img: '/images/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas de controle para aplicações industriais e medicinais.' },
   { path: '/produto/conexoes-instrumentacao', img: '/images/prod-conexoes-instrumentacao.png', name: 'Conexões para Instrumentação', desc: 'Conexões certificadas para instrumentação analítica e industrial.' },
   { path: '/produto/reguladores-especiais', img: '/images/regulador-gases-09.jpg', name: 'Reguladores de Pressão', desc: 'Reguladores de alta performance para gases especiais.' },
