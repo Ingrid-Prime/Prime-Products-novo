@@ -97,7 +97,7 @@ export const defaultArticles: Article[] = [
     category: 'Inovação',
     date: '15 Jan 2025',
     summary: 'O que esperar do futuro da automação e instrumentação industrial.',
-    image: '/images/app-energia-pesquisa.jpg',
+    image: '/images/app-energia-pesquisa.webp',
     content: '<p>Conteúdo sobre tendências em breve.</p>',
   },
 ];

@@ -8,7 +8,7 @@ import HydrogenEnergyPage from './HydrogenEnergyPage';
 const APP_GALLERY: Record<string, string[]> = {
   'laboratorios-analiticos': ['/images/lab-analitico-panel.jpg'],
   'farmaceutica': ['/images/app-farmaceutica-new.jpg', '/images/farmaceutica_linha_2.jpg', '/images/farmaceutica_filtro.jpg', '/images/farmaceutica_corredor.jpg'],
-  'centros-pesquisa': ['/images/app-pesquisa-2.jpg', '/images/app-pesquisa-3.jpg', '/images/app-data-center.jpg'],
+  'centros-pesquisa': ['/images/app-pesquisa-2.webp', '/images/app-pesquisa-3.webp', '/images/app-data-center.webp'],
   'hospitalar': ['/images/app-hospitalar-leito.jpg', '/images/medical-gas-outlets.png'],
   'oleo-gas': ['/images/app-oleo-gas-offshore.jpg'],
   'industria-quimica': ['/images/app-quimica-2.jpg'],
@@ -60,7 +60,7 @@ const APPLICATION_DATA: Record<string, {
   'centros-pesquisa': {
     name: 'Centros de Pesquisa',
     cat: 'Laboratorial e Pesquisa',
-    img: '/images/app-centros-pesquisa.jpg',
+    img: '/images/app-centros-pesquisa.webp',
     desc: 'Centros de pesquisa e universidades demandam gases de altíssima pureza (5.0, 6.0), equipamentos especializados e suporte técnico de alto nível para viabilizar experimentos científicos e descobertas de ponta.',
     challenges: ['Gases de altíssima pureza (5.0, 6.0) com certificado de análise', 'Condições criogênicas para experimentos especiais', 'Flexibilidade e customização das soluções', 'Custo-benefício para aplicações de P&D acadêmico'],
     solutions: ['Cilindros e reguladores para gases de pesquisa de alta pureza', 'Dewars criogênicos para nitrogênio líquido, He e Ar líquido', 'Conexões ultra-limpas e inertes para ambientes de pesquisa', 'Sistemas de geração de gases in-situ (N₂, O₂)'],

@@ -96,7 +96,7 @@ export function About() {
                 <EditableElement
                   id="about_main_img"
                   type="image"
-                  defaultContent="/images/quem-somos-campo.png"
+                  defaultContent="/images/quem-somos-campo.webp"
                   className="w-full h-auto shadow-lg relative z-10"
                 />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-8 z-20 shadow-xl -mb-6 md:-mb-8 mr-4 md:mr-0 max-w-[280px]">
