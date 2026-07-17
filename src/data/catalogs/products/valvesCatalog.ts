@@ -1,0 +1,70 @@
+export const VALVES_CATALOG = [
+  {
+    title: 'ULTRA HIGH PURITY (UHP) VALVES',
+    columns: ['IMAGE', 'PRODUCT FAMILY', 'DESCRIPTION', 'APPLICATION'],
+    rows: [
+      ['<img src="/images/valvulas-industriais/double_duty_diaphragm_valve.jpg" alt="Double Duty Diaphragm Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Double Duty Diaphragm Valve', 'Válvula diafragma de altíssima pureza com atuador integrado de dupla função, garantindo vedação perfeita para gases críticos.', 'UHP Systems'],
+      ['<img src="/images/valvulas-industriais/low_pressure_manual_diaphragm_valve.jpg" alt="Low Pressure Manual Diaphragm Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Low Pressure Manual Diaphragm Valve', 'Válvula manual compacta projetada para controle preciso de fluxo em linhas de baixa pressão de gases ultra puros.', 'UHP Systems'],
+      ['<img src="/images/valvulas-industriais/low_pressure_pneumatic_diaphragm_valve.jpg" alt="Low Pressure Pneumatic Diaphragm Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Low Pressure Pneumatic Diaphragm Valve', 'Válvula operada pneumaticamente para automação de processos, ideal para painéis de distribuição e manifolds UHP.', 'UHP Systems'],
+      ['<img src="/images/valvulas-industriais/low_pressure_metal_diaphragm_metering_valve.jpg" alt="Metal Diaphragm Metering Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Metal Diaphragm Metering Valve', 'Válvula dosadora de altíssima precisão com diafragma metálico para ajustes finos em laboratórios e processos analíticos.', 'UHP Systems'],
+      ['<img src="/images/valvulas-industriais/high_flow_manual_diaphragm_valve.jpg" alt="High Flow Diaphragm Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'High Flow Diaphragm Valve', 'Válvula de alta vazão para linhas principais e sistemas Bulk, mantendo o grau de pureza exigido na indústria de semicondutores.', 'UHP Systems']
+    ]
+  },
+  {
+    title: 'GENERAL INDUSTRIAL VALVES',
+    columns: ['IMAGE', 'PRODUCT FAMILY', 'DESCRIPTION', 'APPLICATION'],
+    rows: [
+      ['<img src="/images/valvulas-industriais/hex_ball_valve.jpg" alt="Ball Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Ball Valves (Esfera)', 'Válvulas de bloqueio rápido e confiável para aplicações gerais em tubulações industriais.', 'General Industrial'],
+      ['<img src="/images/valvulas-industriais/forged_high_pressure_ball_valve.png" alt="High Pressure Forged Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'High Pressure Forged Valves', 'Corpo forjado para suportar pressões extremas, ideal para aplicações óleo & gás e fluidos pesados.', 'General Industrial'],
+      ['<img src="/images/valvulas-industriais/integral_bonnet_needle_valves.png" alt="Needle Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Needle Valves (Agulha)', 'Válvulas de controle fino e bloqueio, excelentes para instrumentação e amostragem de fluidos.', 'General Industrial'],
+      ['<img src="/images/valvulas-industriais/plug_valve.png" alt="Plug Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Plug Valves', 'Válvulas tipo macho de ¼ de volta que oferecem fechamento hermético e baixa manutenção.', 'General Industrial'],
+      ['<img src="/images/valvulas-industriais/check_valve.png" alt="Check Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Check Valves (Retenção)', 'Previnem o fluxo reverso no sistema, protegendo bombas e equipamentos críticos.', 'General Industrial'],
+      ['<img src="/images/valvulas-industriais/relief_valve.png" alt="Relief Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Relief Valves (Alívio)', 'Proteção contra sobrepressão em linhas e equipamentos, garantindo a segurança operacional.', 'General Industrial'],
+      ['<img src="/images/valvulas-industriais/gauge_valve.png" alt="Gauge Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Gauge Valves (Manométrica)', 'Isolam instrumentos de medição (manômetros e transmissores) para manutenção sem despressurizar a linha.', 'General Industrial'],
+      ['<img src="/images/valvulas-industriais/manifold_valves.png" alt="Manifold Valves" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Manifold Valves', 'Válvulas combinadas em bloco (2, 3 ou 5 vias) essenciais para transmissores de pressão diferencial.', 'General Industrial']
+    ]
+  },
+  {
+    title: 'ULTRA HIGH PURITY (UHP) FITTINGS & COMPONENTS',
+    columns: ['IMAGE', 'PRODUCT FAMILY', 'DESCRIPTION', 'APPLICATION'],
+    rows: [
+      ['<img src="/images/tkf-fittings/bend-fittings.png" alt="Bend Fittings" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Bend Fittings', 'High purity bend fittings sizes 1/4" ~ 600A for semiconductor applications.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/clean-ball-valve.png" alt="Clean Ball V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Clean Ball V/V', 'Ultra clean ball valves for high purity gas distribution lines.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/bellows-valve.png" alt="Bellows V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Bellows V/V', 'Bellows sealed valves ensuring absolute leak tightness in UHP environments.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/diaphragm-valve.png" alt="Diaphragm V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Diaphragm V/V', 'Precision metal diaphragm valves for zero particle generation.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/mfc.png" alt="MFC" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'MFC (Mass Flow Controller)', 'Accurate and stable mass flow controllers for critical process gases.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/pt-sensor.png" alt="PT Sensor" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'PT Sensor', 'High-accuracy pressure transducers for UHP gas line monitoring.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/filter.png" alt="Filter" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Filter', 'In-line gas filters to eliminate nano-particles from the process stream.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/gas-box.png" alt="Gas Box" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Gas Box', 'Integrated gas distribution boxes engineered for semiconductor tools.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/igs.png" alt="IGS" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'IGS (Integrated Gas System)', 'Modular surface-mount gas panels for compact and efficient delivery.', 'UHP Systems'],
+      ['<img src="/images/tkf-fittings/micro-fitting.png" alt="Micro Fitting" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Micro Fitting', 'Miniaturized fittings for tightly spaced UHP analytical instrumentation.', 'UHP Systems']
+    ]
+  },
+  {
+    title: 'GENERAL INDUSTRIAL (GI) FITTINGS & COMPONENTS',
+    columns: ['IMAGE', 'PRODUCT FAMILY', 'DESCRIPTION', 'APPLICATION'],
+    rows: [
+      ['<img src="/images/tkf-fittings/lok-fittings.png" alt="Lok Fittings" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Lok Fittings', 'Twin-ferrule compression fittings for leak-free connections in harsh industrial environments.', 'General Industrial'],
+      ['<img src="/images/tkf-fittings/ball-valve.png" alt="Ball V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Ball V/V', 'Reliable quarter-turn ball valves for quick shut-off in plant utility lines.', 'General Industrial'],
+      ['<img src="/images/tkf-fittings/plug-valve.png" alt="Plug V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Plug V/V', 'High-performance plug valves for precise flow control and durability.', 'General Industrial'],
+      ['<img src="/images/tkf-fittings/check-valve.png" alt="Check V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Check V/V', 'Prevents reverse flow to protect pumps, compressors, and sensitive instrumentation.', 'General Industrial'],
+      ['<img src="/images/tkf-fittings/trunnion-valve.png" alt="Trunnion V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Trunnion V/V', 'Robust trunnion mounted ball valves designed for high pressure and large bore pipelines.', 'General Industrial'],
+      ['<img src="/images/tkf-fittings/relief-valve.png" alt="Relief V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Relief V/V', 'Safety relief valves to protect lines and vessels from overpressure conditions.', 'General Industrial'],
+      ['<img src="/images/tkf-fittings/toggle-valve.png" alt="Toggle V/V" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Toggle V/V', 'Fast-acting toggle valves for immediate manual on/off control.', 'General Industrial']
+    ]
+  },
+  {
+    title: 'HYDROGEN REFUELING STATION COMPONENTS',
+    columns: ['IMAGE', 'PRODUCT FAMILY', 'DESCRIPTION', 'APPLICATION'],
+    rows: [
+      ['<img src="/images/tkf-fittings/h2-fittings.png" alt="High Pressure Fittings" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'High Pressure Fittings', 'Specialized fittings rated for 20,000 psi (1,380 bar) to handle extreme hydrogen pressure.', 'Hydrogen / CNG'],
+      ['<img src="/images/tkf-fittings/h2-needle-valve.png" alt="High Pressure Needle Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'High Pressure Needle Valve', 'Needle valves rated for 20,000 psi ensuring zero-leakage control in hydrogen dispensers.', 'Hydrogen / CNG'],
+      ['<img src="/images/tkf-fittings/poppet-check-valve.png" alt="Ball-Seal Poppet Check Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Ball-Seal Poppet Check Valve', 'Poppet check valves (20,000 psi) designed for safe unidirectional hydrogen flow.', 'Hydrogen / CNG'],
+      ['<img src="/images/tkf-fittings/h2-line-filter.png" alt="High Pressure Line Filter" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'High Pressure Line Filter', 'Filters impurities in 20,000 psi hydrogen streams protecting fuel cells and vehicles.', 'Hydrogen / CNG'],
+      ['<img src="/images/tkf-fittings/h2-trunnion.png" alt="Trunnion Ball Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Trunnion Ball Valve', '6,000 psi trunnion ball valves designed for bulk hydrogen transport and storage.', 'Hydrogen / CNG'],
+      ['<img src="/images/tkf-fittings/adj-air-actuator.png" alt="Adjustable Air Actuator Needle Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Adjustable Air Actuator Needle Valve', 'Pneumatically actuated needle valves (20,000 psi) for automated dispensing systems.', 'Hydrogen / CNG'],
+      ['<img src="/images/tkf-fittings/air-actuator.png" alt="Air Actuator Needle Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Air Actuator Needle Valve', 'Standard air actuated needle valves for high-pressure hydrogen routing.', 'Hydrogen / CNG'],
+      ['<img src="/images/tkf-fittings/h2-relief-valve.png" alt="Set Pressure RVS Relief Valve" class="w-32 h-32 object-contain bg-white rounded-sm border border-gray-100" />', 'Set / Adjustable Pressure RVS Relief Valve', 'Safety relief valves to protect hydrogen tanks and refueling infrastructure from overpressure.', 'Hydrogen / CNG']
+    ]
+  }
+];
