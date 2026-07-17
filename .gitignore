@@ -13,3 +13,8 @@ public_html/api/data/
 public_html/.builds/
 Prime-Products-novo-main.zip  
  
+# Scripts temporarios
+scripts/output/
+scripts/tmp/
+scripts/logs/
+scripts/local/
