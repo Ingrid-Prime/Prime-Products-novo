@@ -79,7 +79,7 @@ export const defaultArticles: Article[] = [
     category: 'Analítica',
     date: '02 Fev 2025',
     summary: 'Vantagens e desvantagens de cada abordagem para o controle de qualidade.',
-    image: '/images/aplicacoes/laboratorios-pesquisa/app-lab-01.png',
+    image: '/images/aplicacoes/lab-analitico-panel.jpg',
     content: '<p>Conteúdo comparativo em breve.</p>',
   },
   {
@@ -88,7 +88,7 @@ export const defaultArticles: Article[] = [
     category: 'Normas',
     date: '25 Jan 2025',
     summary: 'A importância da documentação técnica na indústria regulada.',
-    image: '/images/produtos/prod-geracao-worker.jpg',
+    image: '/images/conteudos/dossie-01.jpg',
     content: '<p>Conteúdo sobre normas em breve.</p>',
   },
   {
@@ -97,7 +97,7 @@ export const defaultArticles: Article[] = [
     category: 'Inovação',
     date: '15 Jan 2025',
     summary: 'O que esperar do futuro da automação e instrumentação industrial.',
-    image: '/images/aplicacoes/laboratorios-pesquisa/app-energia-pesquisa.webp',
+    image: '/images/conteudos/dossie-02.jpg',
     content: '<p>Conteúdo sobre tendências em breve.</p>',
   },
 ];
