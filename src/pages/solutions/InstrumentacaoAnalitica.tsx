@@ -5,19 +5,19 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
-  { img: '/images/sol-analitica-novo-laboratorio.jpg', label: 'Análise de Processo' },
-  { img: '/images/sol-analitica-novo-analise-processo.jpg', label: 'Instrumentação Analítica' },
-  { img: '/images/app-detector-2.jpg', label: 'Detecção de Gases' },
-  { img: '/images/sol-analitica-novo-cromatografia.jpg', label: 'Cromatografia' },
-  { img: '/images/sol-analitica-novo-instrumentacao.jpg', label: 'Laboratório Analítico' },
-  { img: '/images/sol-instrumentacao-analitica.png', label: 'Controle de Qualidade' },
+  { img: '/images/solucoes-integradas/instrumentacao-analitica/sol-analitica-novo-laboratorio.jpg', label: 'Análise de Processo' },
+  { img: '/images/solucoes-integradas/instrumentacao-analitica/sol-analitica-novo-analise-processo.jpg', label: 'Instrumentação Analítica' },
+  { img: '/images/solucoes-integradas/instrumentacao-analitica/app-detector-2.jpg', label: 'Detecção de Gases' },
+  { img: '/images/solucoes-integradas/instrumentacao-analitica/sol-analitica-novo-cromatografia.jpg', label: 'Cromatografia' },
+  { img: '/images/solucoes-integradas/instrumentacao-analitica/sol-analitica-novo-instrumentacao.jpg', label: 'Laboratório Analítico' },
+  { img: '/images/solucoes-integradas/instrumentacao-analitica/sol-instrumentacao-analitica.png', label: 'Controle de Qualidade' },
 ];
 
 const PRODUCTS = [
-  { path: '/produto/detectores-vazamento', img: '/images/prod-detectores-vazamento.png', name: 'Detectores de Vazamento', desc: 'Detecção de gases tóxicos e inflamáveis com tecnologia avançada.' },
-  { path: '/produto/conexoes-instrumentacao', img: '/images/prod-conexoes-instrumentacao.png', name: 'Conexões Analíticas', desc: 'Conexões específicas para análise e laboratório.' },
-  { path: '/produto/reguladores-especiais', img: '/images/regulador-gases-09.jpg', name: 'Reguladores de Alta Pureza', desc: 'Reguladores certificados para gases analíticos.' },
-  { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Para aplicações analíticas de alta precisão.' },
+  { path: '/produto/detectores-vazamento', img: '/images/solucoes-integradas/instrumentacao-analitica/prod-detectores-vazamento.png', name: 'Detectores de Vazamento', desc: 'Detecção de gases tóxicos e inflamáveis com tecnologia avançada.' },
+  { path: '/produto/conexoes-instrumentacao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-conexoes-instrumentacao.png', name: 'Conexões Analíticas', desc: 'Conexões específicas para análise e laboratório.' },
+  { path: '/produto/reguladores-especiais', img: '/images/solucoes-integradas/instrumentacao-medicao/regulador-gases-09.jpg', name: 'Reguladores de Alta Pureza', desc: 'Reguladores certificados para gases analíticos.' },
+  { path: '/produto/transmissores-pressao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Para aplicações analíticas de alta precisão.' },
 ];
 
 export function InstrumentacaoAnalitica() {
@@ -28,7 +28,7 @@ export function InstrumentacaoAnalitica() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/capa-analitica-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/instrumentacao-analitica/capa-analitica-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

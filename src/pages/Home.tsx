@@ -13,22 +13,22 @@ import { ParticleCanvas } from '../components/ParticleCanvas';
 import { useCMS } from '../contexts/CMSContext';
 
 const SOLUTIONS = [
-  { icon: Gauge, id: 'sol_1', label: 'Instrumentação de Processos', path: '/solucoes/instrumentacao-medicao', desc: 'Transmissores, sensores, reguladores e sistemas de medição de precisão.', img: '/images/capa-medicao-nova.jpg' },
-  { icon: FlaskConical, id: 'sol_2', label: 'Instrumentação Analítica', path: '/solucoes/instrumentacao-analitica', desc: 'Analisadores de processo, cromatógrafos e detectores de gases.', img: '/images/capa-analitica-nova.jpg' },
-  { icon: Flame, id: 'sol_3', label: 'Segurança: detecção e combate a incêndio', path: '/solucoes/gases-seguranca-automacao', desc: 'Cilindros, reguladores, dewars e sistemas de combate a incêndio.', img: '/images/capa-seguranca-nova.jpg' },
-  { icon: Settings, id: 'sol_4', label: 'Soluções Integradas', path: '/solucoes/integradas', desc: 'Skids, painéis e sistemas customizados para sua planta.', img: '/images/capa-integradas-nova.jpg' },
-  { icon: ShieldCheck, id: 'sol_5', label: 'Engenharia Aplicada', path: '/solucoes', desc: 'Consultoria técnica, especificação e suporte para processos críticos.', img: '/images/quem-somos-campo.webp' },
-  { icon: FlaskConical, id: 'sol_6', label: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio', desc: 'Cilindros leves e resistentes para transporte de gases comprimidos.', img: '/images/prod-cilindros-aluminio-new.jpg' },
-  { icon: FlaskConical, id: 'sol_7', label: 'Cilindros Tipo 4', path: '/produto/cilindros-tipo-4', desc: 'Cilindros compósitos de alta performance para logística e mobilidade.', img: '/images/prod-cilindros-tipo4-new.jpg' },
-  { icon: Settings, id: 'sol_8', label: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao', desc: 'Conexões certificadas para aplicações analíticas e industriais.', img: '/images/prod-conexoes-instrumentacao-new.jpg' },
-  { icon: FlaskConical, id: 'sol_9', label: 'Dewars Criogênicos', path: '/produto/dewars-criogenicos', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.', img: '/images/prod-dewars-criogenicos-new.jpg' },
-  { icon: Gauge, id: 'sol_10', label: 'Reguladores Especiais', path: '/produto/reguladores-especiais', desc: 'Reguladores de alta performance para gases especiais e calibração.', img: '/images/prod-reguladores-especiais-new.jpg' },
+  { icon: Gauge, id: 'sol_1', label: 'Instrumentação de Processos', path: '/solucoes/instrumentacao-medicao', desc: 'Transmissores, sensores, reguladores e sistemas de medição de precisão.', img: '/images/solucoes-integradas/instrumentacao-medicao/capa-medicao-nova.jpg' },
+  { icon: FlaskConical, id: 'sol_2', label: 'Instrumentação Analítica', path: '/solucoes/instrumentacao-analitica', desc: 'Analisadores de processo, cromatógrafos e detectores de gases.', img: '/images/solucoes-integradas/instrumentacao-analitica/capa-analitica-nova.jpg' },
+  { icon: Flame, id: 'sol_3', label: 'Segurança: detecção e combate a incêndio', path: '/solucoes/gases-seguranca-automacao', desc: 'Cilindros, reguladores, dewars e sistemas de combate a incêndio.', img: '/images/solucoes-integradas/capa-seguranca-nova.jpg' },
+  { icon: Settings, id: 'sol_4', label: 'Soluções Integradas', path: '/solucoes/integradas', desc: 'Skids, painéis e sistemas customizados para sua planta.', img: '/images/solucoes-integradas/capa-integradas-nova.jpg' },
+  { icon: ShieldCheck, id: 'sol_5', label: 'Engenharia Aplicada', path: '/solucoes', desc: 'Consultoria técnica, especificação e suporte para processos críticos.', img: '/images/quem-somos/quem-somos-campo.webp' },
+  { icon: FlaskConical, id: 'sol_6', label: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio', desc: 'Cilindros leves e resistentes para transporte de gases comprimidos.', img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg' },
+  { icon: FlaskConical, id: 'sol_7', label: 'Cilindros Tipo 4', path: '/produto/cilindros-tipo-4', desc: 'Cilindros compósitos de alta performance para logística e mobilidade.', img: '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-new.jpg' },
+  { icon: Settings, id: 'sol_8', label: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao', desc: 'Conexões certificadas para aplicações analíticas e industriais.', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg' },
+  { icon: FlaskConical, id: 'sol_9', label: 'Dewars Criogênicos', path: '/produto/dewars-criogenicos', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.', img: '/images/produtos/prod-dewars-criogenicos-new.jpg' },
+  { icon: Gauge, id: 'sol_10', label: 'Reguladores Especiais', path: '/produto/reguladores-especiais', desc: 'Reguladores de alta performance para gases especiais e calibração.', img: '/images/produtos/prod-reguladores-especiais-new.jpg' },
 ];
 
 const APPLICATIONS = [
-  { label: 'Óleo & Gás', desc: 'Instrumentação certificada ATEX para refinarias e plantas de processo.', path: '/aplicacao/oleo-gas', img: '/images/segmento-oleo-gas.png' },
-  { label: 'Hospitalar', desc: 'Gases medicinais, geração de oxigênio e sistemas de combate a incêndio.', path: '/aplicacao/hospitalar', img: '/images/app-hospitalar-leito.jpg' },
-  { label: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores analíticos e criogenia.', path: '/aplicacao/laboratorios-analiticos', img: '/images/lab-analitico-scientist.jpg' },
+  { label: 'Óleo & Gás', desc: 'Instrumentação certificada ATEX para refinarias e plantas de processo.', path: '/aplicacao/oleo-gas', img: '/images/aplicacoes/oleo-gas/segmento-oleo-gas.png' },
+  { label: 'Hospitalar', desc: 'Gases medicinais, geração de oxigênio e sistemas de combate a incêndio.', path: '/aplicacao/hospitalar', img: '/images/aplicacoes/hospitalar/app-hospitalar-leito.jpg' },
+  { label: 'Laboratórios Analíticos', desc: 'Gases de alta pureza, reguladores analíticos e criogenia.', path: '/aplicacao/laboratorios-analiticos', img: '/images/aplicacoes/laboratorios-pesquisa/lab-analitico-scientist.jpg' },
 ];
 
 const TESTIMONIALS = [
@@ -142,7 +142,7 @@ export function Home() {
               <AnimateOnScroll className="h-full">
               <div className="relative pl-8 pt-8 h-full min-h-[400px]">
                 <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-gray-50 -z-10" />
-                <EditableElement id="home_about_img" type="image" defaultContent="/images/home-about-ihm-new-2.jpg" className="w-full h-full object-cover object-center shadow-lg relative z-10 rounded-sm" />
+                <EditableElement id="home_about_img" type="image" defaultContent="/images/home/home-about-ihm-new-2.jpg" className="w-full h-full object-cover object-center shadow-lg relative z-10 rounded-sm" />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-10 z-20 shadow-xl -mb-6 md:-mb-10 mr-4 md:mr-0 max-w-[200px] md:max-w-[240px]">
                   <div className="text-4xl md:text-5xl font-black mb-1">
                     <EditableElement id="home_about_stat_num" defaultContent="100%" />
@@ -453,7 +453,7 @@ export function Home() {
         {/* Imagem de fundo e Overlay Escuro */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/cta-bg-reuniao.jpg')" }}
+          style={{ backgroundImage: "url('/images/quem-somos/cta-bg-reuniao.jpg')" }}
         />
         <div className="absolute inset-0 z-0 bg-gray-800/80 mix-blend-multiply" />
         

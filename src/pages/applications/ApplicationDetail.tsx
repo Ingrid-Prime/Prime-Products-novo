@@ -6,18 +6,18 @@ import { SectionContainer } from '../../components/SectionContainer';
 import HydrogenEnergyPage from './HydrogenEnergyPage';
 
 const APP_GALLERY: Record<string, string[]> = {
-  'laboratorios-analiticos': ['/images/lab-analitico-panel.jpg'],
-  'farmaceutica': ['/images/app-farmaceutica-new.jpg', '/images/farmaceutica_linha_2.jpg', '/images/farmaceutica_filtro.jpg', '/images/farmaceutica_corredor.jpg'],
-  'centros-pesquisa': ['/images/app-pesquisa-2.webp', '/images/app-pesquisa-3.webp', '/images/app-data-center.webp'],
-  'hospitalar': ['/images/app-hospitalar-leito.jpg', '/images/medical-gas-outlets.png'],
-  'oleo-gas': ['/images/app-oleo-gas-offshore.jpg'],
-  'industria-quimica': ['/images/app-quimica-2.jpg'],
-  'alimentos-bebidas': ['/images/app-alimentos-bebidas-2.jpg'],
-  'energia-transicao-energetica': ['/images/energias-renovaveis-hero.jpg', '/images/h2-jumbo-tube.png', '/images/h2-tube-trailer.png', '/images/h2-storage.png'],
-  'criogenia': ['/images/prod-dewars-2.png', '/images/prod-dewars-3.png'],
-  'automotivo': ['/images/app-automotivo-2.jpg'],
-  'soldagem': ['/images/prod-corte-solda-2.png', '/images/prod-corte-solda-3.png', '/images/prod-corte-solda-4.png'],
-  'mineral': ['/images/app-mineracao-2.jpg'],
+  'laboratorios-analiticos': ['/images/aplicacoes/laboratorio analitico/about-lab.jpg', '/images/aplicacoes/laboratorio analitico/sol-analitica-00.png', '/images/aplicacoes/laboratorio analitico/sol-analitica-02.png', '/images/aplicacoes/laboratorio analitico/WhatsApp Image 2026-03-24 at 17.03.49.jpeg'],
+  'farmaceutica': ['/images/aplicacoes/farmaceutica/farmaceutica_corredor.jpg', '/images/aplicacoes/farmaceutica/farmaceutica_filtro.jpg', '/images/aplicacoes/farmaceutica/farmaceutica_linha_1.jpg', '/images/aplicacoes/farmaceutica/farmaceutica_linha_2.jpg'],
+  'centros-pesquisa': ['/images/aplicacoes/centro-pesquisa/app-centros-pesquisa.webp', '/images/aplicacoes/centro-pesquisa/pesquisa.jpg'],
+  'hospitalar': ['/images/aplicacoes/hospitalar/Hospitalar.png', '/images/aplicacoes/hospitalar/medical-gas-outlets.png'],
+  'oleo-gas': ['/images/aplicacoes/oleo-gas/app-oleo-gas-offshore.jpg', '/images/aplicacoes/oleo-gas/app-oleo-gas-refinaria.jpg'],
+  'industria-quimica': ['/images/aplicacoes/quimica-petroquimica/app-quimica-1.jpg', '/images/aplicacoes/quimica-petroquimica/app-quimica-2.jpg', '/images/aplicacoes/quimica-petroquimica/Industria Química.png'],
+  'alimentos-bebidas': ['/images/aplicacoes/alimenticia/app-alimentos-bebidas-1.jpg', '/images/aplicacoes/alimenticia/app-alimentos-bebidas-2.jpg', '/images/aplicacoes/alimenticia/Segmento de Alimentos e Bebidas.png'],
+  'energia-transicao-energetica': ['/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-1.jpg', '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-2.jpg', '/images/aplicacoes/Energias Renováveis Hidrogênio/Energia verde - Transição Energética.png', '/images/aplicacoes/Energias Renováveis Hidrogênio/h2-jumbo-tube.png'],
+  'criogenia': ['/images/aplicacoes/criogenia/app-criogenia.jpg', '/images/aplicacoes/criogenia/criogenia.png', '/images/aplicacoes/criogenia/prod-dewars-2.png', '/images/aplicacoes/criogenia/prod-dewars-3.png'],
+  'automotivo': ['/images/aplicacoes/automotiva/app-automotivo-1.jpg', '/images/aplicacoes/automotiva/app-automotivo-2.jpg', '/images/aplicacoes/automotiva/Caminhão.png'],
+  'soldagem': ['/images/aplicacoes/metal-mecanica/prod-corte-solda-principal.jpg', '/images/aplicacoes/metal-mecanica/Equipamentos para Corte e Solda.png', '/images/aplicacoes/metal-mecanica/prod-corte-solda-2.png'],
+  'mineral': ['/images/aplicacoes/mineracao/mineracao principal.jpg', '/images/aplicacoes/mineracao/app-mineracao-1.jpg', '/images/aplicacoes/mineracao/app-mineracao-2.jpg'],
 };
 
 const APPLICATION_DATA: Record<string, {
@@ -32,7 +32,7 @@ const APPLICATION_DATA: Record<string, {
   'laboratorios-analiticos': {
     name: 'Laboratórios Analíticos',
     cat: 'Laboratorial e Pesquisa',
-    img: '/images/lab-analitico-scientist.jpg',
+    img: '/images/aplicacoes/lab-analitico-panel.jpg',
     desc: 'Laboratórios de análise química, controle de qualidade e pesquisa científica exigem gases de alta pureza, reguladores certificados e equipamentos de alta precisão para garantir a integridade e rastreabilidade dos resultados analíticos.',
     challenges: ['Pureza dos gases utilizados nos ensaios analíticos', 'Rastreabilidade e certificação dos instrumentos', 'Estanqueidade das conexões em gases reativos', 'Integração com sistemas LIMS e conformidade com normas'],
     solutions: ['Reguladores de alta pureza com certificado de calibração RBC', 'Cilindros com certificado de análise e rastreabilidade', 'Conexões TK-Fujikin para instrumentação analítica', 'Detectores de vazamento para gases tóxicos em laboratório'],
@@ -46,7 +46,7 @@ const APPLICATION_DATA: Record<string, {
   'farmaceutica': {
     name: 'Farmacêutico',
     cat: 'Laboratorial e Pesquisa',
-    img: '/images/app-farmaceutica-new.jpg',
+    img: '/images/aplicacoes/farmaceutica-new.jpg',
     desc: 'A indústria farmacêutica exige gases de grau USP, sistemas validados, rastreabilidade completa e conformidade com GMP. A Prime Products fornece soluções auditáveis, com documentação técnica completa para atender às exigências da Anvisa e da FDA.',
     challenges: ['Gases com grau farmacêutico (USP) e certificados', 'Validação de sistemas e qualificação de equipamentos', 'Conformidade GMP e rastreabilidade de lotes', 'Controle de pureza e monitoramento contínuo'],
     solutions: ['Cilindros e reguladores para gases USP com certificado de análise', 'Sistemas de distribuição de gases medicinais certificados', 'Instrumentação validada para ambientes GMP', 'Detectores de vazamento e monitoramento de pureza'],
@@ -60,7 +60,7 @@ const APPLICATION_DATA: Record<string, {
   'centros-pesquisa': {
     name: 'Centros de Pesquisa',
     cat: 'Laboratorial e Pesquisa',
-    img: '/images/app-centros-pesquisa.webp',
+    img: '/images/aplicacoes/centro-pesquisa.jpg',
     desc: 'Centros de pesquisa e universidades demandam gases de altíssima pureza (5.0, 6.0), equipamentos especializados e suporte técnico de alto nível para viabilizar experimentos científicos e descobertas de ponta.',
     challenges: ['Gases de altíssima pureza (5.0, 6.0) com certificado de análise', 'Condições criogênicas para experimentos especiais', 'Flexibilidade e customização das soluções', 'Custo-benefício para aplicações de P&D acadêmico'],
     solutions: ['Cilindros e reguladores para gases de pesquisa de alta pureza', 'Dewars criogênicos para nitrogênio líquido, He e Ar líquido', 'Conexões ultra-limpas e inertes para ambientes de pesquisa', 'Sistemas de geração de gases in-situ (N₂, O₂)'],
@@ -74,7 +74,7 @@ const APPLICATION_DATA: Record<string, {
   'hospitalar': {
     name: 'Hospitalar',
     cat: 'Aplicações Médicas',
-    img: '/images/app-hospitalar-leito.jpg',
+    img: '/images/aplicacoes/app-hospitalar-leito.jpg',
     desc: 'O setor hospitalar exige gases medicinais certificados, sistemas de distribuição confiáveis e equipamentos que garantam a segurança de pacientes e profissionais. A Prime atende hospitais, clínicas e centros cirúrgicos com soluções completas e suporte técnico especializado.',
     challenges: ['Fornecimento contínuo e confiável de gases medicinais', 'Conformidade com normas ABNT NBR 12188 e ANVISA', 'Sistemas de geração de oxigênio para independência de fornecedores', 'Segurança na distribuição e detecção de vazamentos'],
     solutions: ['Centrais de gases medicinais (O₂, N₂O, ar medicinal, CO₂)', 'Geradores de oxigênio PSA para produção on-site', 'Sistemas de distribuição em cobre e ramais de gases', 'Detectores de vazamento e alarmes de segurança hospitalar'],
@@ -88,7 +88,7 @@ const APPLICATION_DATA: Record<string, {
   'oleo-gas': {
     name: 'Óleo & Gás',
     cat: 'Processos Industriais',
-    img: '/images/segmento-oleo-gas.png',
+    img: '/images/aplicacoes/segmento-oleo-gas.png',
     desc: 'Refinarias, plantas de GNL, plataformas e instalações de óleo & gás exigem instrumentação certificada para áreas classificadas, sistemas de detecção de gases tóxicos e inflamáveis e soluções de segurança funcional com certificação SIL.',
     challenges: ['Instrumentação certificada ATEX/IECEx para zonas classificadas', 'Detecção de H₂S, CO, LEL e outros gases de risco', 'Certificação de segurança funcional SIL 2/3', 'Alta disponibilidade e confiabilidade em ambientes críticos'],
     solutions: ['Transmissores de pressão com certificação ATEX e SIL', 'Detectores de gases tóxicos e inflamáveis com saída 4-20 mA/HART', 'Sistemas de supressão de incêndio por agentes limpos', 'Reguladores e válvulas para gases de processo em alta pressão'],
@@ -102,7 +102,7 @@ const APPLICATION_DATA: Record<string, {
   'industria-quimica': {
     name: 'Indústria Química',
     cat: 'Química, Óleo & Gás',
-    img: '/images/app-quimica-1.jpg',
+    img: '/images/aplicacoes/industria quimica.jpg',
     desc: 'A indústria química trabalha com fluidos agressivos, gases reativos e processos em alta pressão. A Prime fornece conexões em materiais resistentes, reguladores para gases especiais e instrumentação certificada para ambientes com substâncias corrosivas.',
     challenges: ['Compatibilidade de materiais com fluidos agressivos e corrosivos', 'Detecção de gases tóxicos como Cl₂, NH₃, HF e outros', 'Alta pressão e temperaturas extremas de processo', 'Rastreabilidade e conformidade com normas de segurança'],
     solutions: ['Conexões em Hastelloy, PTFE e SS316L para fluidos agressivos', 'Detectores de gases tóxicos com certificação ATEX', 'Reguladores de pressão para gases especiais e reativos', 'Transmissores de processo com diafragma e selo químico'],
@@ -116,7 +116,7 @@ const APPLICATION_DATA: Record<string, {
   'alimentos-bebidas': {
     name: 'Alimentos e Bebidas',
     cat: 'Processos Industriais',
-    img: '/images/app-alimentos-bebidas-1.jpg',
+    img: '/images/aplicacoes/alimentos e bebidas.jpg',
     desc: 'O setor de alimentos e bebidas utiliza gases de grau alimentar para carbonatação, embalagem em atmosfera modificada (MAP), congelamento criogênico e processos de higienização. A Prime fornece gases certificados e sistemas de distribuição seguros e higiênicos.',
     challenges: ['Gases de grau alimentar (Food Grade) com certificação', 'Sistemas de embalagem em atmosfera modificada (MAP)', 'Carbonatação e dosagem precisa de CO₂', 'Higiene e conformidade com normas sanitárias'],
     solutions: ['CO₂, N₂ e O₂ de grau alimentar com certificados', 'Reguladores e conexões sanitizáveis para processos higiênicos', 'Sistemas de dosagem e mistura para carbonatação', 'Cilindros e tanques criogênicos para congelamento'],
@@ -130,7 +130,7 @@ const APPLICATION_DATA: Record<string, {
   'energia-transicao-energetica': {
     name: 'Energias Renováveis e Hidrogênio',
     cat: 'Energia',
-    img: '/images/energias-renovaveis-hero.jpg',
+    img: '/images/aplicacoes/energias-renovaveis-hero.jpg',
     desc: 'O futuro da energia passa pelo Hidrogênio e soluções de altíssima pressão. A Prime Products fornece as melhores tecnologias do mercado (Best of Breed) em Jumbo Tubes de alta pressão e infraestrutura para H₂.',
     challenges: [
       'Garantir armazenamento e transporte 100% seguros de H₂ em altas pressões',
@@ -153,7 +153,7 @@ const APPLICATION_DATA: Record<string, {
   'criogenia': {
     name: 'Criogenia',
     cat: 'Energia',
-    img: '/images/app-criogenia.jpg',
+    img: '/images/aplicacoes/criogenia.jpg',
     desc: 'Aplicações criogênicas demandam equipamentos especializados para armazenamento e transferência de gases liquefeitos como nitrogênio líquido (LN₂), oxigênio líquido (LOX), argônio líquido e hélio líquido.',
     challenges: ['Isolamento térmico eficiente para temperaturas criogênicas', 'Segurança no manuseio de LN₂, LOX e outros criogênicos', 'Compatibilidade de materiais com temperaturas abaixo de -150 °C', 'Logística de transporte e fornecimento contínuo'],
     solutions: ['Dewars e recipientes criogênicos de 10 a 500 litros', 'Válvulas e conexões especiais para temperaturas criogênicas', 'Sistemas de transferência e vaporizadores', 'Acessórios e EPIs para manuseio seguro de criogênicos'],
@@ -167,7 +167,7 @@ const APPLICATION_DATA: Record<string, {
   'automotivo': {
     name: 'Automotivo',
     cat: 'Indústria',
-    img: '/images/app-automotivo-1.jpg',
+    img: '/images/aplicacoes/automotivo.jpg',
     desc: 'A indústria automotiva utiliza gases para soldagem MIG/TIG, testes de estanqueidade, pintura a pó, processos de fabricação e controle de qualidade. A Prime fornece misturas certificadas, reguladores e equipamentos para cada etapa da produção.',
     challenges: ['Misturas para soldagem MIG/TIG com precisão de composição', 'Testes de estanqueidade em componentes e sistemas', 'Alta demanda e fornecimento contínuo nas linhas de produção', 'Conformidade com normas automotivas (IATF 16949)'],
     solutions: ['Misturas Ar+CO₂, Ar+He e gases puros para soldagem', 'Reguladores de alta vazão para linhas de produção', 'Cilindros de alumínio leves para aplicações móveis', 'Kits completos de corte e solda para manutenção'],
@@ -181,7 +181,7 @@ const APPLICATION_DATA: Record<string, {
   'soldagem': {
     name: 'Metal Mecânica',
     cat: 'Indústria',
-    img: '/images/prod-corte-solda.png',
+    img: '/images/aplicacoes/metal mecanica.jpg',
     desc: 'Processos de soldagem MIG/TIG, eletrodo revestido, oxicorte e plasma exigem gases adequados, reguladores calibrados e acessórios certificados. A Prime fornece soluções completas para metalurgia, construção civil e manutenção industrial.',
     challenges: ['Seleção correta do gás de proteção para cada processo', 'Reguladores com vazão adequada para cada aplicação', 'Segurança no manuseio de acetileno e gases combustíveis', 'Qualidade e homogeneidade das juntas soldadas'],
     solutions: ['Gases puros e misturas para MIG/TIG (Ar, CO₂, He, N₂)', 'Maçaricos para corte oxiacetilênico e oxicorte', 'Reguladores para CO₂, O₂, Acetileno e misturas', 'Mangueiras certificadas e acessórios para soldagem'],
@@ -195,7 +195,7 @@ const APPLICATION_DATA: Record<string, {
   'mineral': {
     name: 'Mineração',
     cat: 'Indústria',
-    img: '/images/app-mineracao-1.jpg',
+    img: '/images/aplicacoes/mineiracao.jpg',
     desc: 'O setor mineral exige instrumentação robusta para ambientes severos, detecção de gases em espaços confinados e subterrâneos, e sistemas de segurança para proteção de trabalhadores e equipamentos em minas e plantas de beneficiamento.',
     challenges: ['Detecção de gases em espaços confinados e subterrâneos', 'Instrumentação resistente a poeira, umidade e vibração', 'Segurança ocupacional em ambientes de alto risco', 'Conformidade com NR-22 e normas de mineração'],
     solutions: ['Detectores portáteis e fixos de CO, H₂S, O₂ e LEL', 'Instrumentação com proteção IP67/IP68 para ambientes severos', 'Transmissores com certificação ATEX para áreas classificadas', 'Sistemas de combate a incêndio para plantas de beneficiamento'],
@@ -282,49 +282,12 @@ export function ApplicationDetail() {
                   ))}
                 </ul>
               </div>
+
+
             </div>
+
+            {/* Sidebar (Solicitar Informações e Produtos Relacionados) */}
             <div className="space-y-6">
-              <AnimateOnScroll>
-                <img src={app.img} alt={id === 'laboratorios-analiticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : app.name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
-                {id === 'farmaceutica' ? (
-                  <div className="grid grid-cols-2 gap-2 mt-2">
-                    {/* Filtro USP ocupando os dois espaços verticais */}
-                    <div className="row-span-2 h-[232px]">
-                      <img
-                        src="/images/farmaceutica_filtro.jpg"
-                        alt="Sistema de Filtração USP"
-                        className="prime-image-standard w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
-                    {/* Linha 2 no topo direito */}
-                    <div className="h-[112px]">
-                      <img
-                        src="/images/farmaceutica_linha_2.jpg"
-                        alt="Linha de Distribuição Farmacêutica"
-                        className="prime-image-standard w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
-                    <div className="h-[112px]">
-                      <img
-                        src="/images/farmaceutica_corredor.jpg"
-                        alt="Corredor Limpo GMP"
-                        className="prime-image-standard w-full h-full object-cover shadow-sm rounded-sm hover:opacity-90 transition-opacity"
-                        referrerPolicy="no-referrer"
-                      />
-                    </div>
-                  </div>
-                ) : (
-                  galleryImages.length > 0 && (
-                    <div className={`grid gap-2 mt-2 ${galleryImages.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}`}>
-                      {galleryImages.map((src: string, i: number) => (
-                        <img key={i} src={src} alt={id === 'laboratorios-analiticos' ? 'Painel de gases de alta pureza em ambiente laboratorial analítico com tubulação em inox e instrumentação técnica.' : `${app.name} ${i + 2}`} className={`prime-image-standard w-full ${galleryImages.length === 1 ? (id === 'industria-quimica' ? 'h-auto max-h-[800px] object-contain bg-gray-50' : 'h-56 object-cover') : 'h-28 object-cover'} shadow-sm rounded-sm hover:opacity-90 transition-opacity`} referrerPolicy="no-referrer" />
-                      ))}
-                    </div>
-                  )
-                )}
-              </AnimateOnScroll>
               <div className="bg-secondary text-white p-8 rounded-sm shadow-lg">
                 <h3 className="font-bold text-lg mb-4">Solicitar Informações</h3>
                 <p className="text-gray-400 text-sm mb-6">Nossa equipe técnica está pronta para atender sua demanda.</p>
@@ -348,6 +311,33 @@ export function ApplicationDetail() {
               </div>
             </div>
           </div>
+          
+          {/* Galeria de Imagens Técnicas e Complementares (Full Width) */}
+          {galleryImages.length > 0 && (
+            <div className="mt-16 border-t border-gray-200 pt-12">
+              <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Galeria de Aplicações Técnicas</h2>
+              <AnimateOnScroll>
+                <div className={`grid gap-6 ${galleryImages.length === 1 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'}`}>
+                  {galleryImages.map((src: string, i: number) => {
+                    const isFeatured = galleryImages.length === 3 && i === 0;
+                    const colSpan = isFeatured ? 'md:col-span-2' : '';
+                    const height = galleryImages.length === 1 ? 'max-h-[800px] object-contain bg-gray-50' : (isFeatured ? 'h-[500px] object-cover' : 'h-96 object-cover');
+
+                    return (
+                      <div key={i} className={`relative group overflow-hidden rounded-sm shadow-md ${colSpan}`}>
+                        <img 
+                          src={src} 
+                          alt={`${app.name} - Imagem Técnica ${i + 1}`} 
+                          className={`w-full ${height} group-hover:scale-[1.02] transition-transform duration-700`} 
+                          referrerPolicy="no-referrer" 
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              </AnimateOnScroll>
+            </div>
+          )}
         </SectionContainer>
       </section>
     </>

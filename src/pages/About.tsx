@@ -60,7 +60,7 @@ export function About() {
         as="div"
         className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
         defaultStyle={{
-          backgroundImage: "url('/images/about-bg.jpg')",
+          backgroundImage: "url('/images/quem-somos/about-bg.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -96,7 +96,7 @@ export function About() {
                 <EditableElement
                   id="about_main_img"
                   type="image"
-                  defaultContent="/images/quem-somos-campo.webp"
+                  defaultContent="/images/quem-somos/quem-somos-campo.webp"
                   className="w-full h-auto shadow-lg relative z-10"
                 />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-8 z-20 shadow-xl -mb-6 md:-mb-8 mr-4 md:mr-0 max-w-[280px]">
@@ -283,7 +283,7 @@ export function About() {
         {/* Imagem de fundo e Overlay Escuro */}
         <div 
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/cta-bg-reuniao.jpg')" }}
+          style={{ backgroundImage: "url('/images/quem-somos/cta-bg-reuniao.jpg')" }}
         />
         <div className="absolute inset-0 z-0 bg-gray-800/80 mix-blend-multiply" />
         

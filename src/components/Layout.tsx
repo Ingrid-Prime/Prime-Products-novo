@@ -256,7 +256,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <EditableElement
                 id="footer_wide_banner"
                 type="image"
-                defaultContent="/images/footer-banner.png"
+                defaultContent="/images/home/footer-banner.png"
                 className="w-full h-auto max-h-24 md:max-h-32 object-contain"
               />
             </div>

@@ -13,7 +13,7 @@ export function EngenhariaDigital3D() {
         type="container"
         as="div"
         className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
-        defaultStyle={{ backgroundImage: "url('/images/eng-3d-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center center' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/engenharia-3d/eng-3d-bg.jpg')", backgroundSize: 'cover', backgroundPosition: 'center center' }}
       >
         <div className="absolute inset-0 bg-secondary/70 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent z-0" />

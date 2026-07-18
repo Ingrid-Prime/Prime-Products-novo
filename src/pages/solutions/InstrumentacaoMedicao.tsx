@@ -5,19 +5,19 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
-  { img: '/images/sol-medicao-01.png', label: 'Transmissores de Pressão' },
-  { img: '/images/sol-medicao-novo-02.jpg', label: 'Sensores de Processo' },
-  { img: '/images/sol-medicao-novo-01.jpg', label: 'Instrumentação Industrial' },
-  { img: '/images/sol-medicao-novo-paineis.jpg', label: 'Painéis de Medição' },
-  { img: '/images/sol-medicao-novo-05.jpg', label: 'Sistemas de Controle' },
-  { img: '/images/sol-medicao-novo-03.jpg', label: 'Integração de Campo' },
+  { img: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-01.png', label: 'Transmissores de Pressão' },
+  { img: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-novo-02.jpg', label: 'Sensores de Processo' },
+  { img: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-novo-01.jpg', label: 'Instrumentação Industrial' },
+  { img: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-novo-paineis.jpg', label: 'Painéis de Medição' },
+  { img: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-novo-05.jpg', label: 'Sistemas de Controle' },
+  { img: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-novo-03.jpg', label: 'Integração de Campo' },
 ];
 
 const PRODUCTS = [
-  { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Alta precisão para medições diferenciais, manométricas e absolutas.' },
-  { path: '/produto/valvulas-industriais', img: '/images/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas de controle para aplicações industriais e medicinais.' },
-  { path: '/produto/conexoes-instrumentacao', img: '/images/prod-conexoes-instrumentacao.png', name: 'Conexões para Instrumentação', desc: 'Conexões certificadas para instrumentação analítica e industrial.' },
-  { path: '/produto/reguladores-especiais', img: '/images/regulador-gases-09.jpg', name: 'Reguladores de Pressão', desc: 'Reguladores de alta performance para gases especiais.' },
+  { path: '/produto/transmissores-pressao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Alta precisão para medições diferenciais, manométricas e absolutas.' },
+  { path: '/produto/valvulas-industriais', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas de controle para aplicações industriais e medicinais.' },
+  { path: '/produto/conexoes-instrumentacao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-conexoes-instrumentacao.png', name: 'Conexões para Instrumentação', desc: 'Conexões certificadas para instrumentação analítica e industrial.' },
+  { path: '/produto/reguladores-especiais', img: '/images/solucoes-integradas/instrumentacao-medicao/regulador-gases-09.jpg', name: 'Reguladores de Pressão', desc: 'Reguladores de alta performance para gases especiais.' },
 ];
 
 export function InstrumentacaoMedicao() {
@@ -28,7 +28,7 @@ export function InstrumentacaoMedicao() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/capa-medicao-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/instrumentacao-medicao/capa-medicao-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

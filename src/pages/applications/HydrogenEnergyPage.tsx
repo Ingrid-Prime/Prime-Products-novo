@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { ShieldCheck, Zap, Factory, CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const HydrogenEnergyPage = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/images/energias-renovaveis-hero.jpg")',
+            backgroundImage: 'url("/images/aplicacoes/energias-renovaveis-hero.jpg")',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
@@ -109,7 +109,7 @@ const HydrogenEnergyPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
               <img 
-                src="/images/h2-tube-trailer.png" 
+                src="/images/aplicacoes/Energias Renováveis Hidrogênio/h2-tube-trailer.png" 
                 alt="Transportation Systems" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
@@ -142,7 +142,7 @@ const HydrogenEnergyPage = () => {
             <div className="flex flex-col md:flex-row-reverse items-center gap-12">
               <div className="w-full md:w-1/2">
                 <img 
-                  src="/images/h2-jumbo-tube.png" 
+                  src="/images/aplicacoes/Energias Renováveis Hidrogênio/h2-jumbo-tube.png" 
                   alt="Storage Systems" 
                   className="w-full h-auto rounded-lg shadow-2xl border-4 border-white/10"
                 />
@@ -174,7 +174,7 @@ const HydrogenEnergyPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
               <img 
-                src="/images/h2-storage.png" 
+                src="/images/aplicacoes/Energias Renováveis Hidrogênio/h2-storage.png" 
                 alt="H2 Filling Stations" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
@@ -208,6 +208,28 @@ const HydrogenEnergyPage = () => {
           </div>
         </div>
 
+        </div>
+        
+        {/* Galeria de Imagens Técnicas e Complementares (Full Width) */}
+        <div className="container mx-auto px-4 mt-16 border-t border-gray-200 pt-12">
+          <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Galeria de Aplicações Técnicas</h2>
+          <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+            {[
+              '/images/aplicacoes/Energias Renováveis Hidrogênio/Energia verde - Transição Energética.png',
+              '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-1.jpg',
+              '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-2.jpg',
+              '/images/aplicacoes/Energias Renováveis Hidrogênio/h2-jumbo-tube.png'
+            ].map((src, i) => (
+              <div key={i} className="relative group overflow-hidden rounded-sm shadow-md">
+                <img 
+                  src={src} 
+                  alt={`Energias Renováveis - Imagem Técnica ${i + 1}`} 
+                  className="w-full h-72 object-cover group-hover:scale-[1.02] transition-transform duration-700" 
+                  referrerPolicy="no-referrer" 
+                />
+              </div>
+            ))}
+          </div>
         </div>
         </div>
       </section>

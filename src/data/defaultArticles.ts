@@ -7,7 +7,7 @@ export const defaultArticles: Article[] = [
     category: 'Engenharia',
     date: '15 Jul 2026',
     summary: 'Análise técnica da conversão de grupos geradores de diesel para misturas dual-fuel com hidrogênio verde, frentes de engenharia e mitigação de riscos.',
-    image: '/images/h2-tube-trailer.png',
+    image: '/images/aplicacoes/h2-tube-trailer.png',
     content: '<p class=\"text-lg text-gray-700 mb-6\">A transição energética impõe novos desafios para grupos geradores e motores pesados. A conversão de diesel para hidrogênio (H₂) surge como uma alternativa de rápida descarbonização. Abaixo, detalhamos o comparativo técnico entre a conversão clássica (Diesel-GNV) e a nova fronteira (Diesel-H₂).</p><h3 class=\"text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4\">A Rota Recomendada: Dual-Fuel</h3><p class=\"mb-4\">O DOE observa que o H₂, assim como o gás natural, não se autoignita adequadamente em um motor diesel convencional. A recomendação da Prime Products para protótipos é preservar o sistema original, usando o <strong>diesel como piloto de ignição</strong> e limitando a primeira calibração a 20-40% de substituição energética.</p><h3 class=\"text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4\">Por que H₂ não é GNV?</h3><div class=\"overflow-x-auto mb-6\"><table class=\"min-w-full bg-white border border-gray-200\"><thead class=\"bg-gray-100\"><tr><th class=\"py-2 px-4 border-b text-left\">Propriedade</th><th class=\"py-2 px-4 border-b text-left\">GNV / Metano</th><th class=\"py-2 px-4 border-b text-left\">Hidrogênio (H₂)</th><th class=\"py-2 px-4 border-b text-left\">Efeito na Engenharia</th></tr></thead><tbody><tr><td class=\"py-2 px-4 border-b font-medium\">Faixa Inflamável</td><td class=\"py-2 px-4 border-b\">~5–15% vol.</td><td class=\"py-2 px-4 border-b\">~4–75% vol.</td><td class=\"py-2 px-4 border-b\">Envelope de ignição do H₂ é muito amplo.</td></tr><tr><td class=\"py-2 px-4 border-b font-medium\">Energia Mín. de Ignição</td><td class=\"py-2 px-4 border-b\">~0,28 mJ</td><td class=\"py-2 px-4 border-b\">~0,02 mJ</td><td class=\"py-2 px-4 border-b\">H₂ acende em hot spots e eletricidade estática.</td></tr><tr><td class=\"py-2 px-4 border-b font-medium\">Velocidade de Chama</td><td class=\"py-2 px-4 border-b\">~0,45 m/s</td><td class=\"py-2 px-4 border-b\">~3 m/s</td><td class=\"py-2 px-4 border-b\">Eleva pressão no cilindro e altíssimo risco de flashback.</td></tr></tbody></table></div><h3 class=\"text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4\">As 8 Frentes Obrigatórias da Conversão</h3><ul class=\"list-disc pl-6 space-y-2 mb-6 text-gray-700\"><li><strong>Armazenamento:</strong> Tanques Type III/IV operando a 350 ou 700 bar (veículos) ou alimentação por planta regulada (estacionários).</li><li><strong>Alimentação:</strong> Tubulações e reguladores compatíveis com permeação e fadiga do H₂.</li><li><strong>Admissão:</strong> Eliminação de hot spots e rebarbas, recalibração de turbos para evitar deslocamento excessivo de ar.</li><li><strong>Combustão:</strong> Monitoramento rígido de knock (detonação) e EGT (temperatura de escape).</li><li><strong>Controle:</strong> Máquina de estados complexa na ECU, garantindo fallback instantâneo e seguro para 100% diesel.</li></ul><div class=\"bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mt-8\"><h4 class=\"text-lg font-bold text-blue-900 mb-2\">O Diferencial Prime Products</h4><p class=\"text-blue-800\">A vantagem competitiva da Prime não é vender tubos. É entregar uma conversão documentada que conecta fenômenos de combustão, controle eletrônico, segurança e emissões. Realizamos o processo através de <strong>7 Gates de Validação</strong> — do P&ID e HAZID até o ensaio de durabilidade de 2.000 horas.</p></div>'
   },
   {
@@ -16,7 +16,7 @@ export const defaultArticles: Article[] = [
     category: 'Analítica',
     date: '14 Jul 2026',
     summary: 'A diferença crítica entre montar tubulações industriais comuns e projetar redes de utilidades baseadas no limite de detecção do instrumento.',
-    image: '/images/lab-analitico-panel.jpg',
+    image: '/images/aplicacoes/laboratorios-pesquisa/lab-analitico-panel.jpg',
     content: '<p class=\"text-lg text-gray-700 mb-6\">Laboratórios de pesquisa, controle de qualidade e desenvolvimento dependem de instrumentos capazes de converter fenômenos físicos e químicos em resultados. No entanto, o desempenho declarado pelo fabricante só é alcançado quando os gases, ar comprimido, exaustão e energia chegam com precisão analítica.</p><h3 class=\"text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4\">Montar a Rede vs Projetar a Utilidade</h3><p class=\"mb-4\">Tubos alinhados e sem vazamento representam apenas o básico. A verdadeira engenharia de utilidades responde perguntas críticas: Qual contaminante destrói a coluna do GC-MS? Como a pressão estática difere da pressão dinâmica na ignição de um ICP-OES?</p><div class=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 mt-6\"><div class=\"bg-red-50 p-6 rounded-lg border border-red-100\"><h4 class=\"font-bold text-red-800 mb-4 flex items-center\"><span class=\"mr-2\">❌</span> Apenas Montagem</h4><ul class=\"space-y-2 text-sm text-red-900\"><li>• Chama instável e sinal ruidoso.</li><li>• Paradas prolongadas por falta de argônio.</li><li>• Oxidação prematura de colunas.</li><li>• Exaustão subdimensionada alterando leituras.</li></ul></div><div class=\"bg-green-50 p-6 rounded-lg border border-green-100\"><h4 class=\"font-bold text-green-800 mb-4 flex items-center\"><span class=\"mr-2\">✅</span> Engenharia Prime</h4><ul class=\"space-y-2 text-sm text-green-900\"><li>• Requisitos vinculados ao fenômeno físico/químico.</li><li>• Materiais e purga selecionados pelo limite de detecção.</li><li>• Segurança integrada e intertravamentos fail-safe.</li><li>• Testes focados no desempenho analítico real.</li></ul></div></div><h3 class=\"text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4\">Casos Reais por Instrumento</h3><ul class=\"list-disc pl-6 space-y-4 mb-6 text-gray-700\"><li><strong>AA por Chama (Acetileno/Óxido Nitroso):</strong> A estabilidade depende vitalmente da regulagem fina sem flutuação e do controle restrito do arraste de acetona do cilindro, além de proteção rigorosa contra retrocesso de chama.</li><li><strong>GC-FID e GC-MS (Arraste de Hélio/H₂):</strong> Um vazamento microscópico introduz oxigênio e umidade. Isso destrói o filamento no Mass Spec (MS) ou gera linha de base flutuante severa e oxidação na fase estacionária.</li><li><strong>ICP-OES / ICP-MS (Argônio):</strong> O plasma consome vazões extremas. O projeto não deve olhar a \"pressão de catálogo\", mas a vazão dinâmica da tubulação para não extinguir o plasma.</li><li><strong>Analisadores NDIR:</strong> As calibrações dependem de mistura span precisa e sem alteração química na linha de amostragem por condensação ou materiais adsorventes.</li></ul><div class=\"bg-secondary/5 border-t-4 border-primary p-6 mt-8\"><p class=\"font-bold text-lg text-secondary mb-2\">Conhecimento que se transforma em infraestrutura</p><p class=\"text-gray-700\">A Prime Products não projeta apenas \"três tubos\". Nós avaliamos a cinética de atomização, a estabilidade do plasma e o limite de detecção para entregar infraestruturas laboratoriais à prova de falhas.</p></div>'
   },
   {
@@ -25,7 +25,7 @@ export const defaultArticles: Article[] = [
     category: 'Engenharia de Materiais',
     date: '08 Jul 2026',
     summary: 'Folha de dados técnica orientativa sobre componentes de reguladores e válvulas para gases especiais contendo Sulfeto de Hidrogênio (H₂S).',
-    image: '/images/elgiloy-capa.png',
+    image: '/images/conteudos/elgiloy-capa.png',
     content: '<p class=\"mb-6\">A liga Elgiloy® (Co-Cr-Ni-Mo / UNS R30003) é um material especial reconhecido por sua altíssima resistência à fadiga e excelente comportamento frente à corrosão, sendo ideal para ambientes de serviço ácido (sour gas). Esta avaliação técnica resume sua aplicabilidade em contato com H₂S.</p><h3 class=\"text-xl font-bold text-secondary mt-8 mb-4\">Avaliação de Compatibilidade Técnica</h3><div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 mb-8\"><div class=\"bg-green-50 border-l-4 border-green-500 p-4\"><div class=\"font-bold text-green-700 mb-1\">✅ Altamente Recomendado</div><div class=\"text-sm text-green-900 leading-relaxed\">Molas internas de reguladores, diafragmas metálicos e pequenos elementos elásticos submetidos a ciclos de fadiga.</div></div><div class=\"bg-yellow-50 border-l-4 border-yellow-500 p-4\"><div class=\"font-bold text-yellow-700 mb-1\">⚠️ Depende do Conjunto</div><div class=\"text-sm text-yellow-900 leading-relaxed\">Uso como corpo de válvula ou peça estrutural não é usual. A boa resistência do Elgiloy® isoladamente não garante que vedações e conexões sejam compatíveis.</div></div></div><h3 class=\"text-xl font-bold text-secondary mt-8 mb-4\">Fatores que Alteram a Compatibilidade</h3><ul class=\"list-disc pl-5 space-y-2 mb-8 text-gray-700\"><li><strong>Pressão Parcial de H₂S:</strong> Quanto maior a severidade, mais importante a verificação normativa (NACE MR0175 / ISO 15156).</li><li><strong>Contaminantes Associados:</strong> A presença de água livre (condensado) e cloretos somados ao H₂S aumenta drasticamente o risco.</li><li><strong>Tensão Mecânica:</strong> O risco de trinca aumenta em componentes com tensões residuais elevadas ou submetidos à flexão cíclica.</li></ul><div class=\"bg-secondary/5 p-6 rounded-sm text-center mt-12 border border-gray-200\"><p class=\"font-bold text-secondary text-lg mb-2\">Deseja aplicar essa especificação no seu processo?</p><p class=\"text-sm text-gray-600 mb-6\">A aprovação de uso para Sour Gas exige a validação do conjunto completo e das condições reais de serviço.</p><a href=\"/contato\" class=\"inline-block bg-primary text-white font-bold uppercase tracking-wider text-sm px-6 py-3 rounded-sm hover:bg-blue-700 transition-colors shadow-md\">Falar com a Engenharia da Prime</a></div>',
   },
   {
@@ -34,7 +34,7 @@ export const defaultArticles: Article[] = [
     category: 'Instrumentação',
     date: '12 Mar 2025',
     summary: 'Como a escolha dos instrumentos afeta a qualidade e a eficiência dos processos modernos.',
-    image: '/images/sol-medicao-01.png',
+    image: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-01.png',
     content: '<p class=\"mb-4\">A Indústria 4.0 transformou a maneira como as fábricas operam. Sem sensores precisos e instrumentação adequada, os algoritmos de IA recebem dados ruidosos. Protocolos como HART, Profibus e Ethernet-APL permitem diagnósticos avançados.</p>',
   },
   {
@@ -43,7 +43,7 @@ export const defaultArticles: Article[] = [
     category: 'Segurança',
     date: '05 Mar 2025',
     summary: 'Normas e procedimentos essenciais para garantir a integridade e a segurança de sistemas de gases industriais.',
-    image: '/images/sol-seg-novo-5.jpg',
+    image: '/images/solucoes-integradas/sol-seg-novo-5.jpg',
     content: '<p class=\"mb-4\">A gestão segura de gases industriais exige um entendimento profundo das normas regulamentadoras. A NR-13 estabelece requisitos para gestão de vasos de pressão e caldeiras.</p>',
   },
   {
@@ -52,7 +52,7 @@ export const defaultArticles: Article[] = [
     category: 'Engenharia',
     date: '28 Fev 2025',
     summary: 'A diferença entre a teoria e a prática na otimização de malhas de controle e processos críticos.',
-    image: '/images/app-plantas-industriais.png',
+    image: '/images/aplicacoes/app-plantas-industriais.png',
     content: '<p class=\"mb-4\">A engenharia aplicada é sobre entender as nuances do processo real. Nossa equipe atua diretamente na especificação de instrumentos e na integração de sistemas.</p>',
   },
   {
@@ -61,7 +61,7 @@ export const defaultArticles: Article[] = [
     category: 'Manutenção',
     date: '15 Fev 2025',
     summary: 'Estratégias para reduzir paradas não programadas e aumentar a vida útil dos seus ativos.',
-    image: '/images/prod-detectores-4.jpg',
+    image: '/images/produtos/prod-detectores-4.jpg',
     content: '<p class=\"mb-4\">A confiabilidade operacional requer uma abordagem estruturada: Análise de Criticidade, Manutenção Preditiva, Calibração Rastreável, Gestão de Sobressalentes e Análise de Falhas (RCA).</p>',
   },
   {
@@ -70,7 +70,7 @@ export const defaultArticles: Article[] = [
     category: 'Qualidade',
     date: '10 Fev 2025',
     summary: 'Como garantir a rastreabilidade e a precisão das suas análises.',
-    image: '/images/sol-analitica-01.png',
+    image: '/images/solucoes-integradas/instrumentacao-analitica/sol-analitica-01.png',
     content: '<p>Conteúdo detalhado sobre calibração em breve.</p>',
   },
   {
@@ -79,7 +79,7 @@ export const defaultArticles: Article[] = [
     category: 'Analítica',
     date: '02 Fev 2025',
     summary: 'Vantagens e desvantagens de cada abordagem para o controle de qualidade.',
-    image: '/images/app-lab-01.png',
+    image: '/images/aplicacoes/laboratorios-pesquisa/app-lab-01.png',
     content: '<p>Conteúdo comparativo em breve.</p>',
   },
   {
@@ -88,7 +88,7 @@ export const defaultArticles: Article[] = [
     category: 'Normas',
     date: '25 Jan 2025',
     summary: 'A importância da documentação técnica na indústria regulada.',
-    image: '/images/prod-geracao-worker.jpg',
+    image: '/images/produtos/prod-geracao-worker.jpg',
     content: '<p>Conteúdo sobre normas em breve.</p>',
   },
   {
@@ -97,7 +97,7 @@ export const defaultArticles: Article[] = [
     category: 'Inovação',
     date: '15 Jan 2025',
     summary: 'O que esperar do futuro da automação e instrumentação industrial.',
-    image: '/images/app-energia-pesquisa.webp',
+    image: '/images/aplicacoes/laboratorios-pesquisa/app-energia-pesquisa.webp',
     content: '<p>Conteúdo sobre tendências em breve.</p>',
   },
 ];

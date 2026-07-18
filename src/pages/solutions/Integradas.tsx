@@ -5,19 +5,19 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
-  { img: '/images/sol-inte-novo-1.jpg', label: 'Plantas Industriais' },
-  { img: '/images/sol-inte-novo-2.jpg', label: 'Instalações de Processo' },
-  { img: '/images/sol-inte-novo-3.jpg', label: 'Skids e Painéis' },
-  { img: '/images/sol-inte-novo-4.jpg', label: 'Sistemas Integrados' },
-  { img: '/images/sol-inte-novo-5.jpg', label: 'Linhas de Produção' },
-  { img: '/images/sol-inte-novo-6.jpg', label: 'Automação de Linha' },
+  { img: '/images/solucoes-integradas/sol-inte-novo-1.jpg', label: 'Plantas Industriais' },
+  { img: '/images/solucoes-integradas/sol-inte-novo-2.jpg', label: 'Instalações de Processo' },
+  { img: '/images/solucoes-integradas/sol-inte-novo-3.jpg', label: 'Skids e Painéis' },
+  { img: '/images/solucoes-integradas/sol-inte-novo-4.jpg', label: 'Sistemas Integrados' },
+  { img: '/images/solucoes-integradas/sol-inte-novo-5.jpg', label: 'Linhas de Produção' },
+  { img: '/images/solucoes-integradas/sol-inte-novo-6.jpg', label: 'Automação de Linha' },
 ];
 
 const PRODUCTS = [
-  { path: '/produto/reguladores-hidraulicos', img: '/images/prod-reguladores.png', name: 'Reguladores Hidráulicos', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
-  { path: '/produto/corte-solda', img: '/images/prod-corte-solda.png', name: 'Equipamentos Corte e Solda', desc: 'Sistemas completos para corte e solda industrial.' },
-  { path: '/produto/transmissores-pressao', img: '/images/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Integração de transmissores em painéis de controle.' },
-  { path: '/produto/valvulas-industriais', img: '/images/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas integradas em sistemas de processo customizados.' },
+  { path: '/produto/reguladores-hidraulicos', img: '/images/solucoes-integradas/prod-reguladores.png', name: 'Reguladores Hidráulicos', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
+  { path: '/produto/corte-solda', img: '/images/solucoes-integradas/prod-corte-solda.png', name: 'Equipamentos Corte e Solda', desc: 'Sistemas completos para corte e solda industrial.' },
+  { path: '/produto/transmissores-pressao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Integração de transmissores em painéis de controle.' },
+  { path: '/produto/valvulas-industriais', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas integradas em sistemas de processo customizados.' },
 ];
 
 export function Integradas() {
@@ -28,7 +28,7 @@ export function Integradas() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/capa-integradas-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/capa-integradas-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

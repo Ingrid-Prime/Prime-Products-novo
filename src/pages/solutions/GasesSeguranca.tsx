@@ -5,21 +5,21 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const GALLERY = [
-  { img: '/images/sol-seg-novo-1.jpg', label: 'Segurança Industrial' },
-  { img: '/images/sol-seg-novo-2.jpg', label: 'Automação e Controle' },
-  { img: '/images/sol-seg-novo-3.jpg', label: 'Sistemas de Detecção' },
-  { img: '/images/sol-seg-novo-4.jpg', label: 'Proteção de Processo' },
-  { img: '/images/sol-seg-novo-5.jpg', label: 'Monitoramento Contínuo' },
-  { img: '/images/sol-seg-novo-6.jpg', label: 'Combate a Incêndio' },
+  { img: '/images/solucoes-integradas/sol-seg-novo-1.jpg', label: 'Segurança Industrial' },
+  { img: '/images/solucoes-integradas/sol-seg-novo-2.jpg', label: 'Automação e Controle' },
+  { img: '/images/solucoes-integradas/sol-seg-novo-3.jpg', label: 'Sistemas de Detecção' },
+  { img: '/images/solucoes-integradas/sol-seg-novo-4.jpg', label: 'Proteção de Processo' },
+  { img: '/images/solucoes-integradas/sol-seg-novo-5.jpg', label: 'Monitoramento Contínuo' },
+  { img: '/images/solucoes-integradas/sol-seg-novo-6.jpg', label: 'Combate a Incêndio' },
 ];
 
 const PRODUCTS = [
-  { path: '/produto/cilindros-aluminio', img: '/images/prod-cilindros-aluminio.png', name: 'Cilindros de Alumínio', desc: 'Leves e resistentes para transporte de gases comprimidos.' },
-  { path: '/produto/cilindros-tipo-4', img: '/images/prod-cilindros-tipo4.png', name: 'Cilindros Tipo 4', desc: 'Cilindros compostos de alta performance para logística.' },
-  { path: '/produto/dewars-criogenicos', img: '/images/prod-dewars-criogenicos.png', name: 'Dewars Criogênicos', desc: 'Recipientes para nitrogênio líquido e outros gases criogênicos.' },
-  { path: '/produto/geracao-oxigenio', img: '/images/prod-geracao-oxigenio.png', name: 'Geração de Oxigênio', desc: 'Sistemas de geração on-site para aplicações médicas e industriais.' },
-  { path: '/produto/detectores-vazamento', img: '/images/prod-detectores-vazamento.png', name: 'Detectores de Vazamento', desc: 'Monitoramento contínuo de ambientes com risco de gases.' },
-  { path: '/produto/combate-incendio', img: '/images/prod-combate-incendio.png', name: 'Combate a Incêndio', desc: 'Sistemas de supressão com CO₂ e agentes limpos.' },
+  { path: '/produto/cilindros-aluminio', img: '/images/solucoes-integradas/prod-cilindros-aluminio.png', name: 'Cilindros de Alumínio', desc: 'Leves e resistentes para transporte de gases comprimidos.' },
+  { path: '/produto/cilindros-tipo-4', img: '/images/solucoes-integradas/prod-cilindros-tipo4.png', name: 'Cilindros Tipo 4', desc: 'Cilindros compostos de alta performance para logística.' },
+  { path: '/produto/dewars-criogenicos', img: '/images/solucoes-integradas/prod-dewars-criogenicos.png', name: 'Dewars Criogênicos', desc: 'Recipientes para nitrogênio líquido e outros gases criogênicos.' },
+  { path: '/produto/geracao-oxigenio', img: '/images/solucoes-integradas/prod-geracao-oxigenio.png', name: 'Geração de Oxigênio', desc: 'Sistemas de geração on-site para aplicações médicas e industriais.' },
+  { path: '/produto/detectores-vazamento', img: '/images/solucoes-integradas/instrumentacao-analitica/prod-detectores-vazamento.png', name: 'Detectores de Vazamento', desc: 'Monitoramento contínuo de ambientes com risco de gases.' },
+  { path: '/produto/combate-incendio', img: '/images/solucoes-integradas/prod-combate-incendio.png', name: 'Combate a Incêndio', desc: 'Sistemas de supressão com CO₂ e agentes limpos.' },
 ];
 
 export function GasesSeguranca() {
@@ -30,7 +30,7 @@ export function GasesSeguranca() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/capa-seguranca-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/capa-seguranca-nova.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

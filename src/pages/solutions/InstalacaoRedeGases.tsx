@@ -5,10 +5,10 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const PRODUCTS = [
-  { path: '/produto/reguladores-especiais', img: '/images/regulador-gases-09.jpg', name: 'Reguladores de Gases Especiais', desc: 'Reguladores de alta performance para gases especiais, alta pressão e calibração.' },
-  { path: '/produto/conexoes-instrumentacao', img: '/images/prod-conexoes-instrumentacao.png', name: 'Conexões para Instrumentação', desc: 'Conexões de alta performance para aplicações industriais e analíticas.' },
-  { path: '/produto/valvulas-industriais', img: '/images/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas de agulha, esfera e membrana para controle e bloqueio.' },
-  { path: '/produto/cilindros-aluminio', img: '/images/prod-cilindros-aluminio.png', name: 'Cilindros de Alumínio', desc: 'Cilindros de alta durabilidade para transporte seguro de gases.' },
+  { path: '/produto/reguladores-especiais', img: '/images/solucoes-integradas/instrumentacao-medicao/regulador-gases-09.jpg', name: 'Reguladores de Gases Especiais', desc: 'Reguladores de alta performance para gases especiais, alta pressão e calibração.' },
+  { path: '/produto/conexoes-instrumentacao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-conexoes-instrumentacao.png', name: 'Conexões para Instrumentação', desc: 'Conexões de alta performance para aplicações industriais e analíticas.' },
+  { path: '/produto/valvulas-industriais', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas de agulha, esfera e membrana para controle e bloqueio.' },
+  { path: '/produto/cilindros-aluminio', img: '/images/solucoes-integradas/prod-cilindros-aluminio.png', name: 'Cilindros de Alumínio', desc: 'Cilindros de alta durabilidade para transporte seguro de gases.' },
 ];
 
 export function InstalacaoRedeGases() {
@@ -19,7 +19,7 @@ export function InstalacaoRedeGases() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/instalacao-gases-fundo.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/instalacao-redes-gases/instalacao-gases-fundo.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />

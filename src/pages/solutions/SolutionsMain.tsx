@@ -37,7 +37,7 @@ const TECHNICAL_AREAS = [
     icon: Gauge,
     title: 'Instrumentação de Processos',
     path: '/solucoes/instrumentacao-medicao',
-    img: '/images/capa-medicao-nova.jpg',
+    img: '/images/solucoes-integradas/instrumentacao-medicao/capa-medicao-nova.jpg',
     desc: 'Transmissores, sensores, reguladores de pressão e sistemas de medição de precisão para processos industriais e laboratoriais.',
     items: ['Transmissores de pressão e nível', 'Sensores de temperatura', 'Medidores de vazão', 'Reguladores de precisão'],
   },
@@ -45,7 +45,7 @@ const TECHNICAL_AREAS = [
     icon: FlaskConical,
     title: 'Instrumentação Analítica',
     path: '/solucoes/instrumentacao-analitica',
-    img: '/images/capa-analitica-nova.jpg',
+    img: '/images/solucoes-integradas/instrumentacao-analitica/capa-analitica-nova.jpg',
     desc: 'Analisadores de processo, cromatógrafos, detectores de gases e equipamentos para laboratórios analíticos.',
     items: ['Cromatógrafos de processo', 'Analisadores de O₂ e CO₂', 'Detectores de gases tóxicos', 'Sistemas de amostragem'],
   },
@@ -53,7 +53,7 @@ const TECHNICAL_AREAS = [
     icon: Flame,
     title: 'Segurança: detecção e combate a incêndio',
     path: '/solucoes/gases-seguranca-automacao',
-    img: '/images/capa-seguranca-nova.jpg',
+    img: '/images/solucoes-integradas/capa-seguranca-nova.jpg',
     desc: 'Cilindros de gás, dewars criogênicos, reguladores e sistemas completos de detecção e combate a incêndio.',
     items: ['Instalação de gases especiais e medicinais', 'Dewars e sistemas criogênicos', 'Geração de O₂ on-site', 'Combate a incêndio por agentes gasosos'],
   },
@@ -61,7 +61,7 @@ const TECHNICAL_AREAS = [
     icon: Settings,
     title: 'Soluções Integradas',
     path: '/solucoes/integradas',
-    img: '/images/capa-integradas-nova.jpg',
+    img: '/images/solucoes-integradas/capa-integradas-nova.jpg',
     desc: 'Skids de processo, painéis de controle e sistemas customizados desenvolvidos para aplicações específicas.',
     items: ['Skids de processo e utilidades', 'Painéis de instrumentação', 'Sistemas de purificação de gases', 'Projetos sob encomenda'],
   },
@@ -69,7 +69,7 @@ const TECHNICAL_AREAS = [
     icon: Wind,
     title: 'Instalação de Rede de Gases',
     path: '/solucoes/instalacao-rede-gases',
-    img: '/images/instalacao-gases-fundo.jpg',
+    img: '/images/solucoes-integradas/instalacao-redes-gases/instalacao-gases-fundo.jpg',
     desc: 'Desenvolvimento de soluções técnicas e montagem física de redes para gases especiais, industriais e centrais de gases.',
     items: ['Redes em Inox 316L', 'Centrais e manifolds', 'Painéis de ponto de uso', 'Testes de estanqueidade'],
   },
@@ -77,7 +77,7 @@ const TECHNICAL_AREAS = [
     icon: BookOpen,
     title: 'Guia Técnico de Ar Comprimido',
     path: '/solucoes/ar-comprimido-industrial-guia-tecnico',
-    img: '/images/capa-guia-ar-v3.jpg',
+    img: '/images/solucoes-integradas/capa-guia-ar-v3.jpg',
     desc: 'Contaminantes, pureza ISO 8573, tecnologias de secagem, compressores e projeto de redes industriais.',
     items: ['ISO 8573', 'Tecnologias de Compressores', 'Seleção de Secadores', 'Boas práticas e redes'],
   },
@@ -85,7 +85,7 @@ const TECHNICAL_AREAS = [
     icon: Scan,
     title: 'Levantamento 3D e As Built',
     path: '/solucoes/engenharia-digital-3d',
-    img: '/images/eng-3d-bg.jpg',
+    img: '/images/solucoes-integradas/engenharia-3d/eng-3d-bg.jpg',
     desc: 'Reality capture, modelagem e engenharia reversa para instalações críticas. Transformamos nuvens de pontos em as built validado.',
     items: ['Escaneamento Laser 3D', 'Scan-to-BIM e Plant 3D', 'Análise de Interferências', 'Dataviewer interativo'],
   },
@@ -99,7 +99,7 @@ export function SolutionsMain() {
         type="container"
         as="div"
         className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
-        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/solucoes-integradas-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
         <div className="absolute inset-0 bg-secondary/70 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent z-0" />

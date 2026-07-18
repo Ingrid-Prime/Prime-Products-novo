@@ -1,10 +1,13 @@
 const renderImages = (images: string[], scaleClass: string = '') => {
-  const containerClass = images.length >= 4 
-    ? "grid grid-cols-2 gap-2 place-items-center max-w-[240px] mx-auto" 
-    : "flex flex-row flex-nowrap gap-2 items-center justify-center overflow-visible";
+  const isMultiple = images.length > 1;
+  const containerClass = isMultiple
+    ? "flex flex-row flex-wrap gap-2 items-center justify-center max-w-[200px] mx-auto" 
+    : "flex items-center justify-center";
+    
+  const imgSize = isMultiple ? "w-16 h-16" : "w-28 h-28";
     
   return `<div class="${containerClass}">` +
-    images.map(img => `<img src="/images/tkf-fittings/${img}" alt="Fittings" class="w-28 h-28 object-contain mix-blend-multiply transition-transform duration-300 flex-shrink-0 ${scaleClass} hover:!scale-125" />`).join('') +
+    images.map(img => `<img src="/images/produtos/conexao-para-instrumentacao/${img}" alt="Fittings" class="${imgSize} object-contain ${scaleClass} mix-blend-multiply transition-transform duration-300 flex-shrink-0 hover:!scale-125" />`).join('') +
     `</div>`;
 };
 

@@ -14,7 +14,7 @@ const newArticleTemplate = (): Article => ({
   date: new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' }),
   summary: '',
   content: '<p>Escreva seu conteúdo aqui...</p>',
-  image: '/images/sol-medicao-02.png',
+  image: '/images/solucoes-integradas/instrumentacao-medicao/sol-medicao-02.png',
 });
 
 export function ArticleManager({ onClose }: Props) {
