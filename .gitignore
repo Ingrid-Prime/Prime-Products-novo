@@ -4,7 +4,7 @@ node_modules/
 *.local
 dist/
 public/images/Aplicações/
-public/images/Produtos/
+
 public/images/Soluções/
 public/api/data/cms-data.json
 public/api/data/cms-data.json.tmp
