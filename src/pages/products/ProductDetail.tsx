@@ -204,7 +204,7 @@ export function ProductDetail() {
                                   {row.map((cell: string, k: number) => (
                                     <td key={k} className="px-4 py-3 whitespace-pre-line align-top">
                                       {cell.includes('<img') ? (
-                                        <div dangerouslySetInnerHTML={{ __html: cell }} />
+                                        <div className="[&>img]:mix-blend-multiply" dangerouslySetInnerHTML={{ __html: cell }} />
                                       ) : (
                                         cell
                                       )}

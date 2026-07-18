@@ -216,9 +216,7 @@ const HydrogenEnergyPage = () => {
           <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
             {[
               '/images/aplicacoes/Energias Renováveis Hidrogênio/Energia verde - Transição Energética.png',
-              '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-1.jpg',
-              '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-2.jpg',
-              '/images/aplicacoes/Energias Renováveis Hidrogênio/h2-jumbo-tube.png'
+              '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-1.jpg'
             ].map((src, i) => (
               <div key={i} className="relative group overflow-hidden rounded-sm shadow-md">
                 <img 
