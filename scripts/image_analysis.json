@@ -1,0 +1,1252 @@
+{
+  "about-bg.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/About.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "quem-somos"
+  },
+  "about-lab.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "about-manometros.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "about-tubos.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-alimentos-bebidas-1.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/alimenticia"
+  },
+  "app-alimentos-bebidas-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/alimenticia"
+  },
+  "app-automotivo-1.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/automotiva"
+  },
+  "app-automotivo-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/automotiva"
+  },
+  "app-bg-pharma.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes"
+  },
+  "app-centros-pesquisa.webp": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/laboratorios-pesquisa"
+  },
+  "app-cidade.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-criogenia.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/criogenia"
+  },
+  "app-data-center.webp": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes"
+  },
+  "app-detector-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "app-detector-fundo.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "app-energia-pesquisa.webp": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/laboratorios-pesquisa"
+  },
+  "app-energia-renovavel-1.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-energia-renovavel-2.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-farmaceutica-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/farmaceutica"
+  },
+  "app-hospitalar-leito.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx",
+      "c:/Site-prime-products/src/pages/Home.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/hospitalar"
+  },
+  "app-lab-01.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/laboratorios-pesquisa"
+  },
+  "app-laboratorio-2.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-laboratorios-analiticos.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-linhas-03.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-linhas-producao-2.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-linhas-producao.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-mineracao-1.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/mineracao"
+  },
+  "app-mineracao-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/mineracao"
+  },
+  "app-oleo-gas-offshore.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/oleo-gas"
+  },
+  "app-oleo-gas-refinaria.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-pesquisa-2.webp": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/laboratorios-pesquisa"
+  },
+  "app-pesquisa-3.webp": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/laboratorios-pesquisa"
+  },
+  "app-planta-01.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-planta-03.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-planta-04.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-plantas-industriais.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/src/pages/tools/ToolsPro.tsx",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "app-quimica-1.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/quimica-petroquimica"
+  },
+  "app-quimica-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/quimica-petroquimica"
+  },
+  "app-seguranca-03.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-seguranca-04.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-seguranca-2.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "app-seguranca-automacao.png": {
+    "usedIn": [
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/automotiva"
+  },
+  "capa-analitica-nova.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx",
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "capa-guia-ar-v3.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GuiaArComprimido.tsx",
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas"
+  },
+  "capa-integradas-nova.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx",
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas"
+  },
+  "capa-medicao-nova.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx",
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "capa-seguranca-nova.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx",
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas"
+  },
+  "cta-bg-reuniao.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/About.tsx",
+      "c:/Site-prime-products/src/pages/Home.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "quem-somos"
+  },
+  "cta-bg.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "dossie-01.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "A",
+    "targetFolder": "G"
+  },
+  "dossie-02.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "A",
+    "targetFolder": "G"
+  },
+  "dossie-03.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "A",
+    "targetFolder": "G"
+  },
+  "energias-renovaveis-hero.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx",
+      "c:/Site-prime-products/src/pages/applications/HydrogenEnergyPage.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/energia-hidrogenio"
+  },
+  "eng-3d-bg.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/EngenhariaDigital3D.tsx",
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/engenharia-3d"
+  },
+  "farmaceutica_capa.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "farmaceutica_corredor.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/farmaceutica"
+  },
+  "farmaceutica_filtro.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/farmaceutica"
+  },
+  "farmaceutica_infografico.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "farmaceutica_linha_1.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "farmaceutica_linha_2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/farmaceutica"
+  },
+  "fluxo-trabalho-3d.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "footer-banner.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/components/Layout.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "home"
+  },
+  "h2-jumbo-tube.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/HydrogenEnergyPage.tsx",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "h2-storage.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/HydrogenEnergyPage.tsx",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "h2-tube-trailer.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/HydrogenEnergyPage.tsx",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "home-about-ihm-new.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "home-about-ihm.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "home-about-ihm2.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "instalacao-gases-fundo.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstalacaoRedeGases.tsx",
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instalacao-redes-gases"
+  },
+  "lab-analitico-panel.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/laboratorios-pesquisa"
+  },
+  "lab-analitico-scientist.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx",
+      "c:/Site-prime-products/src/pages/Home.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/laboratorios-pesquisa"
+  },
+  "medical-gas-outlets.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "aplicacoes/oleo-gas"
+  },
+  "prod-calibracao-1.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-calibracao-2.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-calibracao-3.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-calibracao-crop-1.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-calibracao-crop-2.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-calibracao-crop-3.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-calibracao-final-1.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-calibracao-final-2.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-cilindros-aluminio-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/cilindros-aluminio"
+  },
+  "prod-cilindros-aluminio-3.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/cilindros-aluminio"
+  },
+  "prod-cilindros-aluminio-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos/cilindros-aluminio"
+  },
+  "prod-cilindros-aluminio.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstalacaoRedeGases.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas"
+  },
+  "prod-cilindros-tipo4-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/cilindros-tipo-4"
+  },
+  "prod-cilindros-tipo4-3.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/cilindros-tipo-4"
+  },
+  "prod-cilindros-tipo4-4.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/cilindros-tipo-4"
+  },
+  "prod-cilindros-tipo4-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos/cilindros-tipo-4"
+  },
+  "prod-cilindros-tipo4.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "prod-combate-3.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "prod-combate-4.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "prod-combate-incendio-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "prod-combate-incendio.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx",
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas"
+  },
+  "prod-conexoes-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/conexoes-instrumentacao"
+  },
+  "prod-conexoes-3.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/conexoes-instrumentacao"
+  },
+  "prod-conexoes-4.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/conexoes-instrumentacao"
+  },
+  "prod-conexoes-5.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/conexoes-instrumentacao"
+  },
+  "prod-conexoes-instrumentacao-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos/conexoes-instrumentacao"
+  },
+  "prod-conexoes-instrumentacao.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstalacaoRedeGases.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "prod-corte-solda-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "prod-corte-solda-3.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "prod-corte-solda-4.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "prod-corte-solda-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos/corte-solda"
+  },
+  "prod-corte-solda.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas"
+  },
+  "prod-detectores-2.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-detectores-3.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-detectores-4.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "produtos"
+  },
+  "prod-detectores-vazamento.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "prod-dewars-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "prod-dewars-3.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes"
+  },
+  "prod-dewars-criogenicos-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos"
+  },
+  "prod-dewars-criogenicos.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "prod-geracao-2.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-geracao-3.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-geracao-4.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-geracao-5.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-geracao-6.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-geracao-7.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-geracao-8.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-geracao-gases-1.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "prod-geracao-gases-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos"
+  },
+  "prod-geracao-gases-3.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "prod-geracao-oxigenio.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "prod-geracao-worker.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "produtos"
+  },
+  "prod-reguladores-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "prod-reguladores-calibracao-novo.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-reguladores-calibracao.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-reguladores-especiais-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/Home.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos"
+  },
+  "prod-reguladores-hidraulicos-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "produtos"
+  },
+  "prod-reguladores.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "prod-transmissores-2.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos/transmissores-pressao"
+  },
+  "prod-transmissores-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx",
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "prod-valvulas-2.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "prod-valvulas.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx",
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstalacaoRedeGases.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx",
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "produtos-bg-new.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductsMain.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "produtos-bg-nostar.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "quem-somos-campo.webp": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/About.tsx",
+      "c:/Site-prime-products/src/pages/Home.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "quem-somos"
+  },
+  "quem-somos-equipe.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "quem-somos-nr13.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "regulador-gases-02.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "regulador-gases-04.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "regulador-gases-05.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "regulador-gases-06.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "regulador-gases-07.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "regulador-gases-08.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "regulador-gases-09.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstalacaoRedeGases.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "regulador-gases-10-cropped.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/products/ProductDetail.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "produtos"
+  },
+  "regulador-gases-10.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "segmento-oleo-gas.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/applications/ApplicationDetail.tsx",
+      "c:/Site-prime-products/src/pages/applications/ApplicationsMain.tsx",
+      "c:/Site-prime-products/src/pages/Home.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "aplicacoes/oleo-gas"
+  },
+  "sol-analitica-00.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-analitica-01.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "sol-analitica-02.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-analitica-03.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-analitica-04.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-analitica-novo-analise-processo.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "sol-analitica-novo-cromatografia.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "sol-analitica-novo-instrumentacao.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "sol-analitica-novo-laboratorio.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "sol-instrumentacao-analitica.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoAnalitica.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-analitica"
+  },
+  "sol-instrumentacao-medicao.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-inte-novo-1.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-inte-novo-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-inte-novo-3.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-inte-novo-4.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-inte-novo-5.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-inte-novo-6.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/Integradas.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-medicao-01.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx",
+      "c:/Site-prime-products/public/cms-content.json"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "sol-medicao-02.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/components/ArticleManager.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "sol-medicao-03.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-medicao-04.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-medicao-05.png": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-medicao-novo-01.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "sol-medicao-novo-02.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "sol-medicao-novo-03.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "sol-medicao-novo-04.jpg": {
+    "usedIn": [],
+    "status": "E",
+    "targetFolder": null
+  },
+  "sol-medicao-novo-05.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "sol-medicao-novo-paineis.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/InstrumentacaoMedicao.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas/instrumentacao-medicao"
+  },
+  "sol-seg-novo-1.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-seg-novo-2.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-seg-novo-3.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-seg-novo-4.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-seg-novo-5.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/data/defaultArticles.ts",
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "B",
+    "targetFolder": "solucoes-integradas"
+  },
+  "sol-seg-novo-6.jpg": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/GasesSeguranca.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  },
+  "solucoes-integradas-bg.png": {
+    "usedIn": [
+      "c:/Site-prime-products/src/pages/solutions/SolutionsMain.tsx"
+    ],
+    "status": "A",
+    "targetFolder": "solucoes-integradas"
+  }
+}
