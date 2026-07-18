@@ -21,8 +21,8 @@ const SOLUTIONS = [
   { icon: FlaskConical, id: 'sol_6', label: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio', desc: 'Cilindros leves e resistentes para transporte de gases comprimidos.', img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg' },
   { icon: FlaskConical, id: 'sol_7', label: 'Cilindros Tipo 4', path: '/produto/cilindros-tipo-4', desc: 'Cilindros compósitos de alta performance para logística e mobilidade.', img: '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-new.jpg' },
   { icon: Settings, id: 'sol_8', label: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao', desc: 'Conexões certificadas para aplicações analíticas e industriais.', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg' },
-  { icon: FlaskConical, id: 'sol_9', label: 'Dewars Criogênicos', path: '/produto/dewars-criogenicos', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.', img: '/images/produtos/prod-dewars-criogenicos-new.jpg' },
-  { icon: Gauge, id: 'sol_10', label: 'Reguladores Especiais', path: '/produto/reguladores-especiais', desc: 'Reguladores de alta performance para gases especiais e calibração.', img: '/images/produtos/prod-reguladores-especiais-new.jpg' },
+  { icon: FlaskConical, id: 'sol_9', label: 'Dewars Criogênicos', path: '/produto/dewars-criogenicos', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg' },
+  { icon: Gauge, id: 'sol_10', label: 'Reguladores Especiais', path: '/produto/reguladores-especiais', desc: 'Reguladores de alta performance para gases especiais e calibração.', img: '/images/produtos/reguladores-especiais/aplicacao real.webp' },
 ];
 
 const APPLICATIONS = [
