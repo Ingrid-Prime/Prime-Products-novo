@@ -1,0 +1,1 @@
+c:\Site-prime-products\src\pages\Home.tsx:25 - Expected: "Reguladores de Gases Especiais", Actual: "Reguladores Especiais"

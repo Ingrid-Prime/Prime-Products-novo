@@ -16,11 +16,6 @@ const SERVICES = [
     desc: 'Execução real e instalação física de redes de distribuição, painéis e skids de processo, garantindo montagem de alta integridade técnica e conformidade rigorosa com as normas de segurança operacionais.',
   },
   {
-    icon: LifeBuoy,
-    title: 'Manutenção',
-    desc: 'Suporte técnico contínuo através de manutenção preditiva, preventiva e corretiva para garantir o desempenho operacional de sistemas críticos, minimizando paradas não programadas.',
-  },
-  {
     icon: Cpu,
     title: 'Comissionamento',
     desc: 'Testes funcionais, testes de estanqueidade e comissionamento de sistemas, atestando a conformidade técnica, calibragem e rastreabilidade para o início seguro da operação.',
@@ -29,6 +24,11 @@ const SERVICES = [
     icon: BookOpen,
     title: 'Treinamentos',
     desc: 'Capacitação técnica de equipes para operação segura de sistemas de gases e instrumentação de processos, alinhando as melhores práticas do setor e requisitos de segurança operacional.',
+  },
+  {
+    icon: LifeBuoy,
+    title: 'Manutenção',
+    desc: 'Suporte técnico contínuo através de manutenção preditiva, preventiva e corretiva para garantir o desempenho operacional de sistemas críticos, minimizando paradas não programadas.',
   },
 ];
 

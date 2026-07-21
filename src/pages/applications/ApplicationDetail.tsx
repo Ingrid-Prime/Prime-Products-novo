@@ -37,7 +37,7 @@ const APPLICATION_DATA: Record<string, {
     challenges: ['Pureza dos gases utilizados nos ensaios analíticos', 'Rastreabilidade e certificação dos instrumentos', 'Estanqueidade das conexões em gases reativos', 'Integração com sistemas LIMS e conformidade com normas'],
     solutions: ['Reguladores de alta pureza com certificado de calibração RBC', 'Cilindros com certificado de análise e rastreabilidade', 'Conexões TK-Fujikin para instrumentação analítica', 'Detectores de vazamento para gases tóxicos em laboratório'],
     products: [
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
@@ -52,7 +52,7 @@ const APPLICATION_DATA: Record<string, {
     solutions: ['Cilindros e reguladores para gases USP com certificado de análise', 'Sistemas de distribuição de gases medicinais certificados', 'Instrumentação validada para ambientes GMP', 'Detectores de vazamento e monitoramento de pureza'],
     products: [
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
     ],
@@ -65,10 +65,10 @@ const APPLICATION_DATA: Record<string, {
     challenges: ['Gases de altíssima pureza (5.0, 6.0) com certificado de análise', 'Condições criogênicas para experimentos especiais', 'Flexibilidade e customização das soluções', 'Custo-benefício para aplicações de P&D acadêmico'],
     solutions: ['Cilindros e reguladores para gases de pesquisa de alta pureza', 'Dewars criogênicos para nitrogênio líquido, He e Ar líquido', 'Conexões ultra-limpas e inertes para ambientes de pesquisa', 'Sistemas de geração de gases in-situ (N₂, O₂)'],
     products: [
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Dewars e Recipientes Criogênicos', path: '/produto/dewars-criogenicos' },
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
-      { name: 'Geração de Oxigênio', path: '/produto/geracao-oxigenio' },
+      { name: 'Geração de Oxigênio e Anestesia', path: '/produto/geracao-oxigenio' },
     ],
   },
   'hospitalar': {
@@ -96,7 +96,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Sistemas de Combate a Incêndio', path: '/produto/combate-incendio' },
-      { name: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
   },
   'industria-quimica': {
@@ -109,7 +109,7 @@ const APPLICATION_DATA: Record<string, {
     products: [
       { name: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
     ],
   },
@@ -122,7 +122,7 @@ const APPLICATION_DATA: Record<string, {
     solutions: ['CO₂, N₂ e O₂ de grau alimentar com certificados', 'Reguladores e conexões sanitizáveis para processos higiênicos', 'Sistemas de dosagem e mistura para carbonatação', 'Cilindros e tanques criogênicos para congelamento'],
     products: [
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Dewars e Recipientes Criogênicos', path: '/produto/dewars-criogenicos' },
       { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
@@ -161,7 +161,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Dewars e Recipientes Criogênicos', path: '/produto/dewars-criogenicos' },
       { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
     ],
   },
   'automotivo': {
@@ -173,7 +173,7 @@ const APPLICATION_DATA: Record<string, {
     solutions: ['Misturas Ar+CO₂, Ar+He e gases puros para soldagem', 'Reguladores de alta vazão para linhas de produção', 'Cilindros de alumínio leves para aplicações móveis', 'Kits completos de corte e solda para manutenção'],
     products: [
       { name: 'Equipamentos para Corte e Solda', path: '/produto/corte-solda' },
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
     ],
@@ -188,7 +188,7 @@ const APPLICATION_DATA: Record<string, {
     products: [
       { name: 'Equipamentos para Corte e Solda', path: '/produto/corte-solda' },
       { name: 'Cilindros de Alumínio', path: '/produto/cilindros-aluminio' },
-      { name: 'Reguladores de Pressão Especiais', path: '/produto/reguladores-especiais' },
+      { name: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais' },
       { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
   },
@@ -203,7 +203,7 @@ const APPLICATION_DATA: Record<string, {
       { name: 'Detectores de Vazamento', path: '/produto/detectores-vazamento' },
       { name: 'Transmissores: Pressão - Nível - Temperatura', path: '/produto/transmissores-pressao' },
       { name: 'Sistemas de Combate a Incêndio', path: '/produto/combate-incendio' },
-      { name: 'Válvulas Industriais', path: '/produto/valvulas-industriais' },
+      { name: 'Válvulas Industriais - Medicinais - Especiais', path: '/produto/valvulas-industriais' },
     ],
   },
 };

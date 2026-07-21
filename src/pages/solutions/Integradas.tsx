@@ -14,10 +14,10 @@ const GALLERY = [
 ];
 
 const PRODUCTS = [
-  { path: '/produto/reguladores-hidraulicos', img: '/images/solucoes-integradas/prod-reguladores.png', name: 'Reguladores Hidráulicos', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
-  { path: '/produto/corte-solda', img: '/images/solucoes-integradas/prod-corte-solda.png', name: 'Equipamentos Corte e Solda', desc: 'Sistemas completos para corte e solda industrial.' },
+  { path: '/produto/reguladores-hidraulicos', img: '/images/produtos/prod-reguladores-hidraulicos-new.jpg', name: 'Reguladores Hidráulicos', desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.' },
+  { path: '/produto/corte-solda', img: '/images/produtos/corte-solda/prod-corte-solda-new.jpg', name: 'Equipamentos para Corte e Solda', desc: 'Sistemas completos para corte e solda industrial.' },
   { path: '/produto/transmissores-pressao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Integração de transmissores em painéis de controle.' },
-  { path: '/produto/valvulas-industriais', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', name: 'Válvulas Industriais', desc: 'Válvulas integradas em sistemas de processo customizados.' },
+  { path: '/produto/valvulas-industriais', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', name: 'Válvulas Industriais - Medicinais - Especiais', desc: 'Válvulas integradas em sistemas de processo customizados.' },
 ];
 
 export function Integradas() {
