@@ -4,6 +4,8 @@ import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 import HydrogenEnergyPage from './HydrogenEnergyPage';
+import FarmaceuticaPage from './FarmaceuticaPage';
+import AutomotivaPage from './AutomotivaPage';
 
 const APP_GALLERY: Record<string, string[]> = {
   'laboratorios-analiticos': ['/images/aplicacoes/laboratorio analitico/about-lab.jpg', '/images/aplicacoes/laboratorio analitico/sol-analitica-00.png', '/images/aplicacoes/laboratorio analitico/sol-analitica-02.png', '/images/aplicacoes/laboratorio analitico/WhatsApp Image 2026-03-24 at 17.03.49.jpeg'],
@@ -220,6 +222,16 @@ export function ApplicationDetail() {
   // Intercept the render if it is the Hydrogen page
   if (id === 'energia-transicao-energetica') {
     return <HydrogenEnergyPage />;
+  }
+
+  // Intercept Farmaceutica
+  if (id === 'farmaceutica') {
+    return <FarmaceuticaPage />;
+  }
+
+  // Intercept Automotiva
+  if (id === 'automotivo') {
+    return <AutomotivaPage />;
   }
 
   return (

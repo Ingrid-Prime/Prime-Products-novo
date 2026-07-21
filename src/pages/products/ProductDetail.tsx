@@ -5,11 +5,21 @@ import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 import { useCMS } from '../../contexts/CMSContext';
-import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG } from '../../data/catalogs';
+import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG, TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS } from '../../data/catalogs';
 
-const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG }> = {
+const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS }> = {
   'cilindros-aluminio': { name: 'Cilindros de Alumínio', cat: 'Gases', img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', images: ['/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-2.png', '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-3.png'], desc: 'Cilindros leves e resistentes para transporte seguro de gases comprimidos. Fabricados em ligas de alumínio de alta resistência, ideais para gases medicinais, industriais e especiais.', features: ['Conformidade com normas DOT e ISO', 'Peso reduzido vs. cilindros de aço', 'Resistência à corrosão', 'Diversas capacidades disponíveis', 'Válvulas de segurança integradas'], apps: ['Gases medicinais', 'Gases de laboratório', 'Gases de alta pureza', 'Transporte especializado'] },
-  'cilindros-tipo-4': { name: 'Cilindros Tipo 4', cat: 'Gases', img: '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-new.jpg', images: ['/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-new.jpg', '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-2.png', '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-3.png', '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-4.png'], desc: 'Cilindros compósitos de alta performance com liner polimérico e reforço em fibra de carbono. Máxima leveza com alta capacidade de armazenamento.', features: ['Liner em HDPE ou liner metálico', 'Reforço em fibra de carbono ou vidro', 'Peso 70% menor que aço equivalente', 'Pressões de trabalho de até 700 bar', 'Alta resistência à fadiga'], apps: ['Logística de gases', 'Veículos a GNV', 'Gases medicinais portáteis', 'Indústria aeroespacial'] },
+  'cilindros-tipo-4': { 
+    name: 'Cilindros Tipo 4', 
+    cat: 'Gases', 
+    img: '/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-new.jpg?v=5', 
+    images: ['/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-new.jpg?v=5'], 
+    desc: 'Os cilindros Tipo 4 utilizam liner polimérico não metálico envolvido por reforço estrutural em fibra composta, proporcionando elevada relação entre capacidade de armazenamento e peso. São indicados para aplicações que exigem redução de massa, resistência mecânica e armazenamento de gases comprimidos em alta pressão.', 
+    features: ['Liner polimérico não metálico', 'Reforço estrutural em fibra composta', 'Construção totalmente composta', 'Elevada relação resistência/peso', 'Proteção contra impacto, abrasão e esforços de instalação', 'Configuração de válvula conforme a aplicação', 'Possibilidade de integração com dispositivo de alívio de pressão', 'Montagem mediante suportes tecnicamente dimensionados'], 
+    apps: ['Mobilidade a gás', 'Veículos comerciais', 'Ônibus e caminhões', 'Módulos de armazenamento', 'Sistemas de energia', 'Transporte de gases comprimidos', 'Aplicações industriais customizadas'], 
+    catalogTables: TYPE4_CATALOG, 
+    extraBlocks: TYPE4_EXTRA_BLOCKS 
+  },
   'conexoes-instrumentacao': { name: 'Conexões para Instrumentação', cat: 'Instrumentação', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', images: ['/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', '/images/produtos/conexoes-instrumentacao/prod-conexoes-2.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-3.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-4.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-5.png'], desc: 'Conexões certificadas para aplicações de instrumentação analítica e industrial. Compatibilidade com transmissores, analisadores e sistemas de processo.', features: ['Conexões TK-Fujikin e equivalentes', 'Materiais: SS 316, Hastelloy, PTFE', 'Certificação para fluidos agressivos', 'Conexões compressão, NPT e flange', 'Estanqueidade garantida a altas pressões'], apps: ['Análise de processo', 'Instrumentação industrial', 'Laboratórios', 'Petroquímica'], catalogTables: TKF_CATALOG },
   'detectores-vazamento': { name: 'Detectores de Vazamento', cat: 'Segurança', img: '/images/produtos/detectores-de-vazamentos/detector-principal.jpg', images: ['/images/produtos/detectores-de-vazamentos/detector-principal.jpg', '/images/solucoes-integradas/instrumentacao-analitica/prod-detectores-vazamento.png', '/images/solucoes-integradas/instrumentacao-analitica/app-detector-2.jpg'], desc: 'Sistemas de detecção de gases tóxicos e inflamáveis para proteção de ambientes industriais. Tecnologias catalítica, eletroquímica e de infravermelho.', features: ['Detecção de H₂S, CO, NH₃, LEL', 'Saída 4-20 mA e HART', 'Certificação ATEX e IECEx', 'Display local e alarmes sonoros/visuais', 'Calibração simplificada em campo'], apps: ['Refinarias e petroquímicas', 'Plantas de gás e GNL', 'Laboratórios químicos', 'Ambientes confinados'], catalogTables: GASTRON_CATALOG },
   'dewars-criogenicos': { name: 'Dewars e Recipientes Criogênicos', cat: 'Criogenia', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', images: ['/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', '/images/produtos/dewers-criogenicos/prod-dewars-2.png', '/images/produtos/dewers-criogenicos/prod-dewars-3.png'], desc: 'Recipientes criogênicos para armazenamento e transporte de nitrogênio líquido, oxigênio líquido, argônio líquido e outros gases liquefeitos.', features: ['Isolamento a vácuo multicamada', 'Capacidade de 10 a 500 litros', 'Bocal de acesso largo ou estreito', 'Conformidade com normas de transporte', 'Acessórios e suprimentos'], apps: ['Criopreservação biológica', 'Laboratórios de pesquisa', 'Indústria alimentícia', 'Metalurgia criogênica'] },
@@ -86,6 +96,28 @@ export function ProductDetail() {
             <Link to="/produtos" className="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline">
               <ArrowLeft size={16} /> Voltar para Produtos
             </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div className={`bg-white p-8 rounded-sm shadow-sm border border-gray-100 flex justify-center items-center h-full min-h-[300px] ${id === 'cilindros-tipo-4' ? 'overflow-hidden' : ''}`}>
+              <img 
+                src={img} 
+                alt={name} 
+                className={`max-w-full max-h-96 object-contain ${id === 'cilindros-tipo-4' ? 'scale-[1.30] origin-top-left' : ''}`} 
+              />
+            </div>
+            <div className="space-y-6">
+              <h1 className="text-3xl font-black text-secondary">{name}</h1>
+              <p className="text-gray-600 leading-relaxed">{desc}</p>
+              {features.length > 0 && (
+                <ul className="space-y-2">
+                  {features.slice(0, 4).map((f, i) => (
+                    <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
+                      <CheckCircle size={16} className="text-primary shrink-0" /> {f}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-8">
@@ -176,6 +208,40 @@ export function ProductDetail() {
           </div>
 
           <div className="space-y-8 mt-12">
+            {/* Extra Blocks */}
+            {product?.extraBlocks && (
+              <div className="space-y-8 mb-12">
+                {product.extraBlocks.map((block: any, i: number) => (
+                  <div key={i} className={`bg-white p-8 shadow-md rounded-sm grid grid-cols-1 ${block.image ? 'md:grid-cols-2' : ''} gap-8 items-center`}>
+                    <div className={i % 2 !== 0 && block.image ? 'md:order-last' : ''}>
+                      <h2 className="text-2xl font-bold text-secondary mb-4 border-l-4 border-primary pl-4">{block.title}</h2>
+                      {block.desc && <p className="text-gray-600 mb-6 leading-relaxed">{block.desc}</p>}
+                      {block.list && (
+                        <ul className="space-y-3 mb-6">
+                          {block.list.map((item: string, j: number) => (
+                            <li key={j} className="flex items-start gap-3">
+                              <CheckCircle size={18} className="text-primary mt-0.5 shrink-0" />
+                              <span className="text-gray-700 text-sm">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {block.warning && (
+                        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded-r-sm mt-4">
+                          <p className="text-yellow-800 text-sm font-medium">{block.warning}</p>
+                        </div>
+                      )}
+                    </div>
+                    {block.image && (
+                      <div>
+                        <img src={block.image} alt={block.title} className="w-full max-h-80 object-contain rounded-sm shadow-sm border border-gray-100 mix-blend-multiply" />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+
             {/* Catalog Tables */}
               {product?.catalogTables && (
                 <div className="bg-white p-8 shadow-md">
