@@ -53,7 +53,7 @@ export const defaultArticles: Article[] = [
     category: 'Segurança',
     date: '05 Mar 2025',
     summary: 'Normas e procedimentos essenciais para garantir a integridade e a segurança de sistemas de gases industriais.',
-    image: '/images/conteudos/dossie-02.jpg',
+    image: '/images/aplicacoes/automotivo.jpg',
     content: '<p class=\"mb-4\">A gestão segura de gases industriais exige um entendimento profundo das normas regulamentadoras. A NR-13 estabelece requisitos para gestão de vasos de pressão e caldeiras.</p>',
   },
   {
@@ -62,7 +62,7 @@ export const defaultArticles: Article[] = [
     category: 'Engenharia',
     date: '28 Fev 2025',
     summary: 'A diferença entre a teoria e a prática na otimização de malhas de controle e processos críticos.',
-    image: '/images/conteudos/dossie-03.jpg',
+    image: '/images/aplicacoes/centro-pesquisa.jpg',
     content: '<p class=\"mb-4\">A engenharia aplicada é sobre entender as nuances do processo real. Nossa equipe atua diretamente na especificação de instrumentos e na integração de sistemas.</p>',
   },
   {
@@ -98,7 +98,7 @@ export const defaultArticles: Article[] = [
     category: 'Normas',
     date: '25 Jan 2025',
     summary: 'A importância da documentação técnica na indústria regulada.',
-    image: '/images/conteudos/dossie-01.jpg',
+    image: '/images/aplicacoes/app-bg-pharma.jpg',
     content: '<p>Conteúdo sobre normas em breve.</p>',
   },
   {
@@ -107,7 +107,7 @@ export const defaultArticles: Article[] = [
     category: 'Inovação',
     date: '15 Jan 2025',
     summary: 'O que esperar do futuro da automação e instrumentação industrial.',
-    image: '/images/conteudos/dossie-02.jpg',
+    image: '/images/aplicacoes/app-hospitalar-leito.jpg',
     content: '<p>Conteúdo sobre tendências em breve.</p>',
   },
 ];
