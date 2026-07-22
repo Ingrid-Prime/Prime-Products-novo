@@ -215,6 +215,7 @@ export function ProductDetail() {
             </div>
 
             <div className="space-y-6">
+              {!product?.catalogTables && (
                 <AnimateOnScroll>
                   <img src={img} alt={name === 'Geração de Oxigênio e Anestesia' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
                   {images.length > 1 && (
@@ -237,6 +238,7 @@ export function ProductDetail() {
                     </div>
                   )}
                 </AnimateOnScroll>
+              )}
               <div className="bg-secondary text-white p-8 rounded-sm shadow-lg">
                 <h3 className="font-bold text-lg mb-4">Solicitar Informações</h3>
                 <p className="text-gray-400 text-sm mb-6">Nossa equipe técnica está pronta para atender sua demanda.</p>
