@@ -1,0 +1,57 @@
+[
+  {
+    "category": "Cilindros Tipo 4",
+    "fabricante": "Dongseo",
+    "documento": "Website Dongseo",
+    "url": "https://dongseoen.clickn.co.kr/",
+    "pagina": "Produtos",
+    "modelo": "Geral",
+    "dadoExtraido": "Características gerais de compósitos, liner, pressões nominais.",
+    "unidade": "bar/L",
+    "dataConsulta": "2026-07-21",
+    "autorizacao": "Não",
+    "statusValidacao": "Benchmark",
+    "observacoes": "Usado apenas para benchmark técnico interno. Não utilizar dados como especificação da Prime."
+  },
+  {
+    "category": "Cilindros de Alumínio",
+    "fabricante": "Thunderbird Cylinders (Metal Impact)",
+    "documento": "Website oficial - Thunderbird Cylinders",
+    "url": "https://thunderbird-manufacturing.com/companies/cylinders/",
+    "pagina": "Produtos (Industrial, Medical, Beverage)",
+    "modelo": "AL-series, Medical M/D/E, CO2",
+    "dadoExtraido": "Nomenclatura (M6, E, AL-80), capacidades, pressões (2015 psi / 1800 psi).",
+    "unidade": "psi / L",
+    "dataConsulta": "2026-07-21",
+    "autorizacao": "Não",
+    "statusValidacao": "Benchmark",
+    "observacoes": "Usado para estruturar os dados de mercado e as tabelas dimensionais típicas da norma DOT-3AL. Cilindros de Scuba foram removidos conforme diretriz."
+  },
+  {
+    "category": "Geração de Oxigênio",
+    "fabricante": "Oxymat",
+    "documento": "Website oficial - Tecnologia PSA",
+    "url": "https://oxymat.com/oxygen-psa-generator-technology/",
+    "autorizacao": "Não",
+    "uso": "Apenas Benchmark (Estrutura de capacidades, pureza e princípio de funcionamento PSA)",
+    "status": "Extração Concluída"
+  },
+  {
+    "category": "Corte e Solda",
+    "fabricante": "Longxing (Ningbo Longxing Welding and Cutting Technology)",
+    "documento": "Website oficial - Catálogo Geral",
+    "url": "http://www.nblongxing.com/en/products.html",
+    "autorizacao": "Não",
+    "uso": "Apenas Benchmark (Classificação de reguladores e maçaricos, pressões típicas de serviço)",
+    "status": "Extração Concluída"
+  },
+  {
+    "category": "Combate a Incêndio",
+    "fabricante": "Fiwarec",
+    "documento": "Website oficial - FIWAGUARD Products",
+    "url": "https://www.fiwarec.de/en/products/fiwaguard-products.html",
+    "autorizacao": "Não",
+    "uso": "Benchmark de sistemas autônomos (tubo sensor pneumático) e supressão indireta",
+    "status": "Extração Concluída"
+  }
+]

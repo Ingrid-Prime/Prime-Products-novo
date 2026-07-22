@@ -5,10 +5,20 @@ import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 import { useCMS } from '../../contexts/CMSContext';
-import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG, TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS } from '../../data/catalogs';
+import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG, TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS, ALUMINUM_CYLINDERS_CATALOG, ALUMINUM_CYLINDERS_EXTRA_BLOCKS, OXYGEN_GENERATION_CATALOG, OXYGEN_GENERATION_EXTRA_BLOCKS, CUTTING_WELDING_CATALOG, CUTTING_WELDING_EXTRA_BLOCKS, FIRE_SUPPRESSION_CATALOG, FIRE_SUPPRESSION_EXTRA_BLOCKS } from '../../data/catalogs';
 
-const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS }> = {
-  'cilindros-aluminio': { name: 'Cilindros de Alumínio', cat: 'Gases', img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', images: ['/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-2.png', '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-3.png'], desc: 'Cilindros leves e resistentes para transporte seguro de gases comprimidos. Fabricados em ligas de alumínio de alta resistência, ideais para gases medicinais, industriais e especiais.', features: ['Conformidade com normas DOT e ISO', 'Peso reduzido vs. cilindros de aço', 'Resistência à corrosão', 'Diversas capacidades disponíveis', 'Válvulas de segurança integradas'], apps: ['Gases medicinais', 'Gases de laboratório', 'Gases de alta pureza', 'Transporte especializado'] },
+const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG | typeof ALUMINUM_CYLINDERS_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS | typeof ALUMINUM_CYLINDERS_EXTRA_BLOCKS }> = {
+  'cilindros-aluminio': { 
+    name: 'Cilindros de Alumínio', 
+    cat: 'Gases', 
+    img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', 
+    images: ['/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', '/images/produtos/cilindros-aluminio/cilindro-aluminio-novo-1.jpg', '/images/produtos/cilindros-aluminio/cilindro-aluminio-novo-2.jpg', '/images/produtos/cilindros-aluminio/cilindro-aluminio-novo-3.jpg'], 
+    desc: 'Cilindros leves e resistentes para transporte seguro de gases comprimidos. Fabricados em ligas de alumínio de alta resistência (ex: 6061-T6), ideais para gases medicinais, industriais e alimentícios, com acabamento interno resistente à corrosão.', 
+    features: ['Conformidade com normas DOT-3AL e ISO 7866', 'Até 40% de redução de peso vs. cilindros de aço', 'Alta resistência à corrosão', 'Integridade e pureza para misturas especiais', 'Diversas opções de válvulas e roscas integradas'], 
+    apps: ['Gases medicinais e homecare', 'Gases de laboratório e P&D', 'Bebidas e CO2 alimentício', 'Gases industriais e misturas analíticas'],
+    catalogTables: ALUMINUM_CYLINDERS_CATALOG,
+    extraBlocks: ALUMINUM_CYLINDERS_EXTRA_BLOCKS
+  },
   'cilindros-tipo-4': { 
     name: 'Cilindros Tipo 4', 
     cat: 'Gases', 
@@ -23,12 +33,58 @@ const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; ima
   'conexoes-instrumentacao': { name: 'Conexões para Instrumentação', cat: 'Instrumentação', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', images: ['/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', '/images/produtos/conexoes-instrumentacao/prod-conexoes-2.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-3.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-4.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-5.png'], desc: 'Conexões certificadas para aplicações de instrumentação analítica e industrial. Compatibilidade com transmissores, analisadores e sistemas de processo.', features: ['Conexões TK-Fujikin e equivalentes', 'Materiais: SS 316, Hastelloy, PTFE', 'Certificação para fluidos agressivos', 'Conexões compressão, NPT e flange', 'Estanqueidade garantida a altas pressões'], apps: ['Análise de processo', 'Instrumentação industrial', 'Laboratórios', 'Petroquímica'], catalogTables: TKF_CATALOG },
   'detectores-vazamento': { name: 'Detectores de Vazamento', cat: 'Segurança', img: '/images/produtos/detectores-de-vazamentos/detector-principal.jpg', images: ['/images/produtos/detectores-de-vazamentos/detector-principal.jpg', '/images/solucoes-integradas/instrumentacao-analitica/prod-detectores-vazamento.png', '/images/solucoes-integradas/instrumentacao-analitica/app-detector-2.jpg'], desc: 'Sistemas de detecção de gases tóxicos e inflamáveis para proteção de ambientes industriais. Tecnologias catalítica, eletroquímica e de infravermelho.', features: ['Detecção de H₂S, CO, NH₃, LEL', 'Saída 4-20 mA e HART', 'Certificação ATEX e IECEx', 'Display local e alarmes sonoros/visuais', 'Calibração simplificada em campo'], apps: ['Refinarias e petroquímicas', 'Plantas de gás e GNL', 'Laboratórios químicos', 'Ambientes confinados'], catalogTables: GASTRON_CATALOG },
   'dewars-criogenicos': { name: 'Dewars e Recipientes Criogênicos', cat: 'Criogenia', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', images: ['/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', '/images/produtos/dewers-criogenicos/prod-dewars-2.png', '/images/produtos/dewers-criogenicos/prod-dewars-3.png'], desc: 'Recipientes criogênicos para armazenamento e transporte de nitrogênio líquido, oxigênio líquido, argônio líquido e outros gases liquefeitos.', features: ['Isolamento a vácuo multicamada', 'Capacidade de 10 a 500 litros', 'Bocal de acesso largo ou estreito', 'Conformidade com normas de transporte', 'Acessórios e suprimentos'], apps: ['Criopreservação biológica', 'Laboratórios de pesquisa', 'Indústria alimentícia', 'Metalurgia criogênica'] },
-  'geracao-oxigenio': { name: 'Geração de Oxigênio e Anestesia', cat: 'Gases', img: '/images/produtos/geracao-de-oxigenio/prod-geracao-gases-2.jpg', images: ['/images/produtos/geracao-de-oxigenio/prod-geracao-gases-2.jpg', '/images/produtos/geracao-de-oxigenio/prod-geracao-gases-1.jpg', '/images/produtos/geracao-de-oxigenio/prod-geracao-gases-3.jpg'], desc: 'Sistemas PSA e concentradores de oxigênio para geração on-site. Independência de fornecedores externos de gases com produção contínua e confiável.', features: ['Pureza de 93% a 99,5% O₂', 'Capacidade de 1 a 500 Nm³/h', 'Tecnologia PSA ou VPSA', 'Monitoramento e controle automático', 'Manutenção simplificada'], apps: ['Hospitais e clínicas', 'Ozonização de água', 'Tratamento de efluentes', 'Soldagem e corte'] },
-  'corte-solda': { name: 'Equipamentos para Corte e Solda', cat: 'Industrial', img: '/images/produtos/corte-solda/prod-corte-solda-new.jpg', images: ['/images/produtos/corte-solda/prod-corte-solda-new.jpg', '/images/produtos/corte-solda/prod-corte-solda-2.png', '/images/produtos/corte-solda/prod-corte-solda-3.png', '/images/produtos/corte-solda/prod-corte-solda-4.png'], desc: 'Maçaricos, reguladores e acessórios para corte oxiacetilênico e soldagem MIG/TIG/Eletrodo. Equipamentos para metalurgia, fabricação e manutenção industrial.', features: ['Maçaricos para corte e solda', 'Reguladores para CO₂, Ar, O₂, Acetileno', 'Mangueiras certificadas', 'Bocais e consumíveis', 'Kits completos para oficinas'], apps: ['Metalurgia e siderurgia', 'Construção civil e obras', 'Manutenção industrial', 'Oficinas mecânicas'] },
+  'geracao-oxigenio-anestesia': {
+    name: 'Geração de Oxigênio e Anestesia',
+    cat: 'Gases',
+    desc: 'Sistemas completos on-site com tecnologia PSA/TCA para autonomia na geração de gases. Integração turn-key com redes hospitalares, painéis de alarme e manifolds de backup automático, garantindo conformidade com a RDC 50.',
+    img: '/images/conteudos/generation-hero.jpg',
+    images: ['/images/conteudos/generation-hero.jpg', '/images/produtos/anestesia-1.jpg', '/images/produtos/anestesia-2.jpg', '/images/produtos/anestesia-3.jpg'],
+    features: [
+      'Geração on-site via tecnologia PSA / VPSA (Pureza de 93-95%).',
+      'Painéis de alarme modulares com monitoramento remoto de pressão.',
+      'Manifolds automáticos para backup contínuo sem queda de pressão.',
+      'Sistemas misturadores para gases anestésicos.'
+    ],
+    apps: ['Redes Hospitalares', 'Clínicas Veterinárias', 'Centros Cirúrgicos', 'Indústrias de Ozonização'],
+    catalogTables: OXYGEN_GENERATION_CATALOG,
+    extraBlocks: OXYGEN_GENERATION_EXTRA_BLOCKS
+  },
+  'geracao-oxigenio': { 
+    name: 'Geração de Oxigênio e Anestesia', 
+    cat: 'Gases', 
+    img: '/images/produtos/geracao-de-oxigenio/prod-geracao-gases-2.jpg', 
+    images: ['/images/produtos/geracao-de-oxigenio/psa-control-panel.png', '/images/produtos/geracao-de-oxigenio/prod-geracao-gases-1.jpg', '/images/produtos/geracao-de-oxigenio/prod-geracao-gases-3.jpg'], 
+    desc: 'Sistemas PSA e concentradores de oxigênio para geração on-site. Independência de fornecedores externos de gases com produção contínua e confiável.', 
+    features: ['Pureza de 93% a 99,5% O₂', 'Capacidade de 1 a 500 Nm³/h', 'Tecnologia PSA ou VPSA', 'Monitoramento e controle automático', 'Manutenção simplificada'], 
+    apps: ['Hospitais e clínicas', 'Ozonização de água', 'Tratamento de efluentes', 'Soldagem e corte'],
+    catalogTables: OXYGEN_GENERATION_CATALOG,
+    extraBlocks: OXYGEN_GENERATION_EXTRA_BLOCKS
+  },
+  'corte-solda': { 
+    name: 'Equipamentos para Corte e Solda', 
+    cat: 'Industrial', 
+    img: '/images/produtos/corte-solda/prod-corte-solda-new.jpg', 
+    images: ['/images/produtos/corte-solda/prod-corte-solda-new.jpg'], 
+    desc: 'Maçaricos, reguladores e acessórios para corte oxiacetilênico e soldagem MIG/TIG/Eletrodo. Equipamentos para metalurgia, fabricação e manutenção industrial.', 
+    features: ['Maçaricos para corte e solda', 'Reguladores para CO₂, Ar, O₂, Acetileno', 'Mangueiras certificadas', 'Bocais e consumíveis', 'Kits completos para oficinas'], 
+    apps: ['Metalurgia e siderurgia', 'Construção civil e obras', 'Manutenção industrial', 'Oficinas mecânicas'],
+    catalogTables: CUTTING_WELDING_CATALOG,
+    extraBlocks: CUTTING_WELDING_EXTRA_BLOCKS
+  },
   'reguladores-especiais': { name: 'Reguladores de Gases Especiais', cat: 'Instrumentação', img: '/images/produtos/aplicacao real.webp', images: ['/images/produtos/aplicacao real.webp', '/images/produtos/reguladores-especiais/regulador-gases-08.png', '/images/produtos/reguladores-especiais/regulador-gases-04.jpg', '/images/produtos/reguladores-especiais/regulador-gases-05.jpg', '/images/produtos/reguladores-especiais/regulador-gases-06.jpg', '/images/produtos/reguladores-especiais/regulador-gases-10-cropped.png'], desc: 'Reguladores de alta performance projetados para controle de gases especiais, aplicações de alta e altíssima pressão, e calibração de instrumentos de medição. Desenvolvidos com foco em máxima estabilidade e vedação absoluta contra vazamentos.', features: ['Modelos específicos para gases especiais de alta pureza', 'Estágio simples ou duplo para alta e altíssima pressão (até 300 bar)', 'Otimizados para processos críticos de calibração analítica', 'Construção em materiais inertes (Aço Inox 316, PTFE)', 'Estanqueidade certificada com teste de hélio em fábrica'], apps: ['Análise de gases padrão e misturas especiais', 'Estações de calibração de instrumentação', 'Controle de processos críticos de alta pressão', 'Laboratórios de P&D de alta exigência'], catalogTables: SPECIAL_REGULATORS_CATALOG },
   'reguladores-hidraulicos': { name: 'Reguladores Hidráulicos', cat: 'Alta Pressão', img: '/images/produtos/prod-reguladores-hidraulicos-new.jpg', images: ['/images/produtos/prod-reguladores-hidraulicos-new.jpg', '/images/produtos/prod-reguladores-2.png', '/images/produtos/prod-reguladores-3.png', '/images/produtos/prod-reguladores-4.png', '/images/produtos/prod-reguladores-5.png', '/images/produtos/prod-reguladores-6.png'], desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.', features: ['Controle preciso de alta pressão', 'Construção robusta', 'Vedação confiável'], apps: ['Sistemas hidráulicos', 'Teste de pressão'], catalogTables: HYDRAULIC_CATALOG },
   'reguladores-calibracao': { name: 'Reguladores para Calibração de Equipamentos', cat: 'Calibração', img: '/images/produtos/reguladores-calibracao/bg-principal.png', images: ['/images/produtos/reguladores-calibracao/bg-principal.png', '/images/produtos/reguladores-calibracao/reg-cali-1.png', '/images/produtos/reguladores-calibracao/reg-cali-2.png', '/images/produtos/reguladores-calibracao/reg-cali-3.png'], desc: 'Mini reguladores e reguladores de demanda compactos de alta precisão para calibração e instrumentação.', features: ['Alta precisão', 'Design compacto', 'Conexões C-10, 5/8 UNF e CGA'], apps: ['Calibração de detectores', 'Analisadores portáteis', 'Laboratórios de campo'], catalogTables: CALIBRATION_CATALOG },
-  'combate-incendio': { name: 'Sistemas de Combate a Incêndio', cat: 'Segurança', img: '/images/solucoes-integradas/prod-combate-incendio.png', images: ['/images/solucoes-integradas/prod-combate-incendio.png', '/images/produtos/prod-combate-incendio-2.png', '/images/produtos/prod-combate-3.png', '/images/produtos/prod-combate-4.png'], desc: 'Sistemas de supressão de incêndio com CO₂, FM-200, Novec 1230 e outros agentes limpos. Proteção de salas de dados, painéis elétricos e ambientes críticos.', features: ['Agentes: CO₂, FM-200, Novec 1230', 'Supressão total por inundação', 'Detecção integrada', 'Projeto conforme NFPA 12/2001', 'Manutenção e recarga de cilindros'], apps: ['Data centers e CPD', 'Painéis e subestações elétricas', 'Salas de controle', 'Museus e arquivos'] },
+  'combate-incendio': { 
+    name: 'Sistemas de Combate a Incêndio', 
+    cat: 'Segurança', 
+    img: '/images/solucoes-integradas/prod-combate-incendio.png', 
+    images: ['/images/solucoes-integradas/prod-combate-incendio.png'], 
+    desc: 'Sistemas de supressão de incêndio com CO₂, FM-200, Novec 1230 e outros agentes limpos. Proteção de salas de dados, painéis elétricos e ambientes críticos.', 
+    features: ['Agentes: CO₂, FM-200, Novec 1230', 'Supressão total por inundação', 'Detecção integrada', 'Projeto conforme NFPA 12/2001', 'Manutenção e recarga de cilindros'], 
+    apps: ['Data centers e CPD', 'Painéis e subestações elétricas', 'Salas de controle', 'Museus e arquivos'],
+    catalogTables: FIRE_SUPPRESSION_CATALOG,
+    extraBlocks: FIRE_SUPPRESSION_EXTRA_BLOCKS
+  },
   'transmissores-pressao': { name: 'Transmissores: Pressão - Nível - Temperatura', cat: 'Instrumentação', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-transmissores-new.jpg', images: ['/images/solucoes-integradas/instrumentacao-medicao/prod-transmissores-new.jpg', '/images/produtos/transmissores-pressao/prod-transmissores-2.png'], desc: 'Transmissores inteligentes de alta performance para medição de pressão diferencial, manométrica, absoluta e nível. Compatíveis com HART, Profibus e Foundation Fieldbus.', features: ['Precisão de ±0,04% da URL', 'Protocolo HART, Profibus PA, FF', 'Rangeabilidade de 100:1', 'Display LCD local configurável', 'Certificação ATEX e SIL 2/3'], apps: ['Óleo & gás', 'Petroquímica e química', 'Geração de energia', 'Processos críticos de segurança'], catalogTables: TRANSMITTER_CATALOG },
   'valvulas-industriais': { name: 'Válvulas Industriais - Medicinais - Especiais', cat: 'Válvulas para Cilindros', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', images: ['/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png'], desc: 'Válvulas de agulha, esfera e membrana para gases industriais e medicinais. Com tecnologia de vedação de precisão, suportam altas pressões e oferecem controle fino de fluxo.', features: ['Materiais: aço inox, latão, PTFE', 'Pressões de até 400 bar', 'Tamanhos de 1/8" a 2"', 'Certificação para gases medicinais', 'Conexões rosca, solda e flange'], apps: ['Distribuição de gases medicinais', 'Laboratórios e P&D', 'Indústria química', 'Automação de processos'], catalogTables: TEKNO_VALVES_CATALOG },
 };
@@ -159,7 +215,6 @@ export function ProductDetail() {
             </div>
 
             <div className="space-y-6">
-              {!product?.catalogTables && (
                 <AnimateOnScroll>
                   <img src={img} alt={name === 'Geração de Oxigênio e Anestesia' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
                   {images.length > 1 && (
@@ -182,7 +237,6 @@ export function ProductDetail() {
                     </div>
                   )}
                 </AnimateOnScroll>
-              )}
               <div className="bg-secondary text-white p-8 rounded-sm shadow-lg">
                 <h3 className="font-bold text-lg mb-4">Solicitar Informações</h3>
                 <p className="text-gray-400 text-sm mb-6">Nossa equipe técnica está pronta para atender sua demanda.</p>

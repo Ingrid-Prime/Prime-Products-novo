@@ -7,3 +7,7 @@ export { SPECIAL_REGULATORS_CATALOG } from './products/specialRegulatorsCatalog'
 export { HYDRAULIC_CATALOG } from './products/hydraulicCatalog';
 export { GASTRON_CATALOG } from './products/gastronCatalog';
 export { TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS } from './products/type4Catalog';
+export { ALUMINUM_CYLINDERS_CATALOG, ALUMINUM_CYLINDERS_EXTRA_BLOCKS } from './products/aluminumCylindersCatalog';
+export { OXYGEN_GENERATION_CATALOG, OXYGEN_GENERATION_EXTRA_BLOCKS } from './products/oxygenGenerationCatalog';
+export { CUTTING_WELDING_CATALOG, CUTTING_WELDING_EXTRA_BLOCKS } from './products/cuttingWeldingCatalog';
+export { FIRE_SUPPRESSION_CATALOG, FIRE_SUPPRESSION_EXTRA_BLOCKS } from './products/fireSuppressionCatalog';
