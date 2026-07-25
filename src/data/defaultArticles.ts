@@ -2,12 +2,44 @@ import type { Article } from '../types';
 
 export const defaultArticles: Article[] = [
   {
+  "id": "seguranca-producao-hidrogenio-anp",
+  "title": "Segurança Operacional na Produção de Hidrogênio de Baixa Emissão",
+  "summary": "Relatório oficial da ANP sobre o arcabouço regulatório, gestão de riscos e a segurança operacional para a produção de hidrogênio no Brasil.",
+  "content": "<p>A promulgação da Lei nº 14.948, de 2 de agosto de 2024, instituiu a Política Nacional do Hidrogênio de Baixa Emissão de Carbono, atribuindo à ANP competências regulatórias abrangentes sobre a cadeia do hidrogênio. Neste contexto, o Subgrupo IV do PNH2 elaborou um relatório detalhado para nortear a futura regulação.</p><h3>Panorama Internacional e Nacional</h3><p>A análise da experiência internacional (Europa, América, Ásia e Oceania) revela uma transição de abordagens estritamente prescritivas para regulações baseadas em desempenho e risco, como a Diretiva Seveso. No Brasil, o arcabouço regulatório da ANP estruturado em torno do SGSO (Sistema de Gerenciamento da Segurança Operacional) já incorpora instrumentos compatíveis com as exigências da nova lei.</p><h3>Análise de Incidentes</h3><p>Dados de bancos internacionais como HIAD e H2Tools mostram que acidentes com hidrogênio frequentemente derivam de falhas de projeto (seleção inadequada de materiais), deficiências nos sistemas de gestão, procedimentos operacionais incompletos e manutenção inadequada. Isso reforça a necessidade de um modelo de regulação com foco em gestão de processos e segurança em camadas.</p><h3>Recomendações da ANP</h3><ul><li>Adoção de uma estratégia regulatória escalonada e baseada em riscos.</li><li>Inclusão de ação regulatória na Agenda da ANP, harmonizando novas normas com as práticas de exploração e produção (E&amp;P).</li><li>Mecanismos de <em>sandbox</em> regulatório no período transitório.</li><li>Atualização das normas de comunicação de incidentes.</li></ul><div style=\"margin-top: 2rem; text-align: center;\"><a href=\"/documentos/seguranca-producao-hidrogenio-anp.pdf\" target=\"_blank\" style=\"display: inline-block; padding: 12px 24px; background-color: #0f4c81; color: #fff; font-weight: bold; border-radius: 4px; text-decoration: none;\">📄 Baixar Relatório Completo (PDF)</a></div>",
+  "image": "/images/conteudos/capa-novos-1.png",
+  "category": "Regulação",
+  "author": "Equipe Técnica Prime",
+  "date": "24 Jul 2026",
+  "tags": [
+    "ANP",
+    "Regulação",
+    "Segurança Operacional",
+    "Hidrogênio"
+  ]
+},
+  {
+  "id": "principios-seguranca-hidrogenio",
+  "title": "Princípios Básicos de Segurança do Hidrogênio",
+  "summary": "Síntese técnica de referência sobre as propriedades, perigos dominantes e a filosofia de proteção em camadas para sistemas de hidrogênio.",
+  "content": "<p>Este documento organiza, em linguagem de engenharia, os principais temas de segurança associados ao hidrogênio gasoso e líquido. Inspirado no Volume 6 da coleção <em>Conceitos do H₂ Power-to-X</em>, ele estabelece as bases de segurança para projetos de instalações e operações envolvendo H₂.</p><h3>1. Síntese Executiva</h3><p>O hidrogênio pode ser utilizado com segurança quando a prevenção é construída em camadas independentes:</p><ul><li><strong>Contenção:</strong> Projetar para evitar vazamentos e minimizar juntas desmontáveis.</li><li><strong>Prevenção:</strong> Eliminar bolsões no teto e garantir ventilação comprovada.</li><li><strong>Detecção Precoce:</strong> Instalar sensores pelo caminho provável da pluma.</li><li><strong>Isolamento Automático:</strong> Válvulas fail-safe e lógica de desenergização segura.</li><li><strong>Manutenção:</strong> Inspeção contínua, testes funcionais e calibração ao longo do ciclo de vida.</li></ul><h3>2. Gestão de Riscos e Filosofia de Proteção</h3><p>A análise começa pela definição do inventário, pressões, temperaturas e vazões de liberação. Cada cenário é associado a barreiras preventivas e mitigadoras, como redução do perigo na origem (projeto inerentemente seguro), controle de processo (regulação de pressão), intertravamentos (ESD) e mitigação física (alívios para local externo e barreiras corta-fogo).</p><h3>3. Documentação e Qualidade</h3><p>O sucesso de um projeto de H₂ depende diretamente da integridade das juntas e da seleção criteriosa de materiais compatíveis com os mecanismos de fragilização por hidrogênio. Recomenda-se um checklist estruturado desde o HAZID/HAZOP até a entrega do databook rastreável.</p><div style=\"margin-top: 2rem; text-align: center;\"><a href=\"/documentos/principios-seguranca-hidrogenio.pdf\" target=\"_blank\" style=\"display: inline-block; padding: 12px 24px; background-color: #0f4c81; color: #fff; font-weight: bold; border-radius: 4px; text-decoration: none;\">📄 Baixar Síntese Completa (PDF)</a></div>",
+  "image": "/images/conteudos/capa-novos-1.png",
+  "category": "Segurança",
+  "author": "Equipe Técnica Prime",
+  "date": "24 Jul 2026",
+  "tags": [
+    "Hidrogênio",
+    "Segurança",
+    "Engenharia",
+    "Riscos"
+  ]
+},
+  {
     id: 'manual-projeto-abrigos-cilindros',
     title: 'Manual Prático de Projeto: Definição do Local e Distanciamentos de Abrigos de Cilindros',
     category: 'Engenharia',
     date: '21 Jul 2026',
     summary: 'Guia consolidado com requisitos legais, critérios prescritivos e boas práticas para projetos de centrais externas e abrigos de cilindros de gases comprimidos.',
-    image: '/images/conteudos/dossie-02.jpg',
+    image: '/images/conteudos/abrigo-manual-conteudo-tecnico.jpg',
     content: `<p class="text-lg text-gray-700 mb-6">Este guia consolida requisitos legais, critérios prescritivos e boas práticas para selecionar o local, conceber, detalhar, instalar, comissionar e operar centrais externas ou abrigos de cilindros de gases comprimidos.</p><h3 class="text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4">As sete decisões que controlam o projeto</h3><ol class="list-decimal pl-6 space-y-2 mb-6 text-gray-700"><li>Identificar cada gás, pureza, estado físico, pressão, tamanho e quantidade de cilindros.</li><li>Classificar o sistema (cilindros individuais, central não granel, manifold, armazenamento a granel, uso interno/externo).</li><li>Mapear exposições em planta e elevação (divisa, público, aberturas, fontes de ignição).</li><li>Aplicar primeiro a legislação paulista (IT 32/2025 - CBPMESP) e depois normas ABNT/IEC.</li><li>Dimensionar segregação, ventilação e barreiras para a fonte de vazamento.</li><li>Classificar áreas e especificar instalação elétrica Ex completa.</li><li>Fechar o projeto com causa e efeito, procedimentos de intervenção e comissionamento.</li></ol><h3 class="text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4">Perigos por Família de Gás</h3><div class="overflow-x-auto mb-6"><table class="min-w-full bg-white border border-gray-200"><thead class="bg-gray-100"><tr><th class="py-2 px-4 border-b text-left">Família</th><th class="py-2 px-4 border-b text-left">Perigo Dominante</th><th class="py-2 px-4 border-b text-left">Proteções Prioritárias</th></tr></thead><tbody><tr><td class="py-2 px-4 border-b font-medium">Inflamáveis leves (H₂)</td><td class="py-2 px-4 border-b">Incêndio, jato de chama, explosão</td><td class="py-2 px-4 border-b">Ventilação alta, ausência de bolsões, detecção alta, alívio seguro.</td></tr><tr><td class="py-2 px-4 border-b font-medium">Oxidantes (O₂, N₂O)</td><td class="py-2 px-4 border-b">Aceleração intensa de combustão</td><td class="py-2 px-4 border-b">Separar de inflamáveis, limpeza para O₂, controle de enriquecimento.</td></tr><tr><td class="py-2 px-4 border-b font-medium">Inertes (N₂, Ar, He)</td><td class="py-2 px-4 border-b">Asfixia por deslocamento de O₂</td><td class="py-2 px-4 border-b">Ventilação, monitor O₂ onde confinamento for possível.</td></tr><tr><td class="py-2 px-4 border-b font-medium">Tóxicos/corrosivos</td><td class="py-2 px-4 border-b">Toxicidade/corrosão, nuvem perigosa</td><td class="py-2 px-4 border-b">Gabinete ventilado/scrubber, detecção específica, contenção.</td></tr></tbody></table></div><h3 class="text-2xl font-bold text-secondary mb-4 mt-8 border-l-4 border-primary pl-4">Metodologia para Definir o Local</h3><p class="mb-4">A localização deve ser resolvida antes do detalhamento do abrigo. Começar pelo desenho do gabinete e ‘encaixá-lo’ no espaço disponível costuma produzir ventilação ruim, rotas de cilindro perigosas e afastamentos defensáveis apenas no papel.</p><ul class="list-disc pl-6 space-y-2 mb-6 text-gray-700"><li>Fixar inventário máximo, pressões e diâmetros.</li><li>Eliminar locais inviáveis: subsolos, valas, rotas de fuga, proximidade de tomadas de ar.</li><li>Mapear todas as exposições e medir a partir dos pontos potenciais de fuga.</li><li>Aplicar triagem legal (IT 32) e classificar o sistema nas normas técnicas.</li></ul><div class="bg-blue-50 border-l-4 border-blue-500 p-6 mt-8"><h4 class="text-lg font-bold text-blue-900 mb-2">Nota de Engenharia</h4><p class="text-blue-800">Este guia não substitui o projeto executivo, ART/RRT, análise de riscos ou documentação dos fabricantes. A edição contratual de cada norma deve ser confirmada no congelamento do projeto.</p></div>`
   },
 
@@ -98,7 +130,7 @@ export const defaultArticles: Article[] = [
     category: 'Normas',
     date: '25 Jan 2025',
     summary: 'A importância da documentação técnica na indústria regulada.',
-    image: '/images/aplicacoes/app-bg-pharma.jpg',
+    image: '/images/conteudos/rastreabilidade-crop.jpg',
     content: '<p>Conteúdo sobre normas em breve.</p>',
   },
   {
@@ -107,7 +139,7 @@ export const defaultArticles: Article[] = [
     category: 'Inovação',
     date: '15 Jan 2025',
     summary: 'O que esperar do futuro da automação e instrumentação industrial.',
-    image: '/images/aplicacoes/app-hospitalar-leito.jpg',
+    image: '/images/conteudos/tendencias-crop.jpg',
     content: '<p>Conteúdo sobre tendências em breve.</p>',
   },
 ];

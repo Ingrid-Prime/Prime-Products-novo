@@ -1,35 +1,66 @@
 export const CUTTING_WELDING_CATALOG = [
   {
-    title: 'Reguladores de Pressão Industrial (Linha Longxing)',
-    columns: ['Modelo', 'Gás', 'Pressão Entrada Máx.', 'Pressão de Trabalho', 'Conexão'],
+    title: 'Reguladores de Pressão Industrial',
+    columns: ['Ref Visual', 'Modelo', 'Aplicação Principal'],
     rows: [
-      ['LX-O2 (Oxigênio)', 'Oxigênio', '200 bar (2900 psi)', '0 - 10 bar', 'CGA 540'],
-      ['LX-AC (Acetileno)', 'Acetileno', '25 bar (350 psi)', '0 - 1.5 bar', 'CGA 510 / 300'],
-      ['LX-AR (Argônio/Mistura)', 'Argônio / Mistura', '200 bar (2900 psi)', 'Vazão 0 - 30 L/min', 'CGA 580'],
-      ['LX-CO2 (Dióxido de Carbono)', 'Dióxido de Carbono', '200 bar (2900 psi)', 'Vazão 0 - 30 L/min', 'CGA 320']
+      ['<img src="/images/produtos/corte-solda/lx-lx120_86.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'LX120/86', 'Regulador de alta precisão para redes e cilindros'],
+      ['<img src="/images/produtos/corte-solda/lx-m52_818a.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'M52/818A', 'Regulador de duplo estágio para controle fino'],
+      ['<img src="/images/produtos/corte-solda/lx-m40_885.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'M40/885', 'Trabalho pesado (Heavy-duty)'],
+      ['<img src="/images/produtos/corte-solda/lx-qyq_ox_740.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'QYQ-OX-740', 'Regulador padrão para Oxigênio']
     ]
   },
   {
-    title: 'Maçaricos e Acessórios',
-    columns: ['Categoria', 'Tipo', 'Capacidade de Corte', 'Gases Compatíveis', 'Aplicação Típica'],
+    title: 'Maçaricos de Corte e Solda',
+    columns: ['Ref Visual', 'Modelo', 'Tipo de Uso'],
     rows: [
-      ['Maçarico de Corte', 'Injetor / Misturador', 'Até 300mm (12")', 'Oxi-Acetileno / Oxi-GLP', 'Cortes pesados e demolição'],
-      ['Maçarico de Solda', 'Série Leve / Média', 'Aço até 14mm', 'Oxi-Acetileno', 'Oficinas e funilaria'],
-      ['Válvula Corta-Chamas', 'Seca (Flashback Arrestor)', 'Pressão Máx. Reg.', 'O₂, Combustíveis', 'Segurança na linha de mangueira']
+      ['<img src="/images/produtos/corte-solda/lx-g02_g1_00a.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'G02-G1-00a', 'Maçarico de Corte (Oxi-Combustível)'],
+      ['<img src="/images/produtos/corte-solda/lx-ph01_8b_00.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'PH01-8B-00', 'Maçarico Aquecedor de Alta Capacidade'],
+      ['<img src="/images/produtos/corte-solda/lx-h01_4b6_00.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'H01-4B6-00', 'Maçarico de Solda Média'],
+      ['<img src="/images/produtos/corte-solda/lx-pt_10.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'PT-10', 'Acessórios de brasagem']
+    ]
+  },
+  {
+    title: 'Sistemas de Corte Mecanizado (Tartarugas)',
+    columns: ['Ref Visual', 'Modelo', 'Formato / Deslocamento'],
+    rows: [
+      ['<img src="/images/produtos/corte-solda/lx-cg_30_i.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'CG-30 I', 'Corte Retilíneo e Circular Simples'],
+      ['<img src="/images/produtos/corte-solda/lx-cg_30_ii.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'CG-30 II', 'Duplo Maçarico (Maior versatilidade)'],
+      ['<img src="/images/produtos/corte-solda/lx-cg_100_ii.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'CG-100 II', 'Equipamento Pantográfico Avançado'],
+      ['<img src="/images/produtos/corte-solda/lx-sg_30.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'SG-30', 'Corte e chanfro guiado']
+    ]
+  },
+  {
+    title: 'Componentes MIG / TIG / PLASMA',
+    columns: ['Ref Visual', 'Modelo', 'Família de Equipamento'],
+    rows: [
+      ['<img src="/images/produtos/corte-solda/lx-bzl40kd.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'BZL40KD', 'Tocha e Acessórios MIG'],
+      ['<img src="/images/produtos/corte-solda/lx-pna200a_eu.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'PNA200A EU', 'Tochas para PLASMA'],
+      ['<img src="/images/produtos/corte-solda/lx-ag_60.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'AG-60', 'Consumíveis PLASMA'],
+      ['<img src="/images/produtos/corte-solda/lx-pt_31.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'PT-31', 'Consumíveis PLASMA (Bicos e Eletrodos)']
+    ]
+  },
+  {
+    title: 'Peças, Eletrodos e Consumíveis',
+    columns: ['Ref Visual', 'Código / Descrição', 'Aplicação'],
+    rows: [
+      ['<img src="/images/produtos/corte-solda/lx-66201m_66202m.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'Série 66201M / 66202M', 'Bicos de Corte (Oxi-Acetileno / GLP)'],
+      ['<img src="/images/produtos/corte-solda/lx-carbon_series_1.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'Carbon Series 1', 'Eletrodos de Grafite/Carvão para Goivagem'],
+      ['<img src="/images/produtos/corte-solda/lx-tungsten_electrode_1.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'Tungsten Electrode 1', 'Eletrodos de Tungstênio (Solda TIG)'],
+      ['<img src="/images/produtos/corte-solda/lx-welding_wire.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'Welding Wire', 'Rolos de Arame para Solda MIG/MAG']
     ]
   }
 ];
 
 export const CUTTING_WELDING_EXTRA_BLOCKS = [
   {
-    title: 'Soluções Completas para Metalurgia',
-    image: '/images/produtos/corte-solda/prod-corte-solda-new.jpg',
-    desc: 'Fornecemos desde reguladores industriais robustos até sistemas completos de oxicorte. Nossos equipamentos são homologados e focados na segurança do operador, prevenindo retrocesso de chama e vazamentos em operações severas.',
+    title: 'Longxing: Excelência Mundial em Corte e Solda',
+    image: '/images/produtos/corte-solda/lx-g02_g1_00a.png',
+    desc: 'Como representantes dos equipamentos Longxing, a Prime Products entrega o mais alto padrão em tecnologia para processos metalúrgicos, caldeiraria e fabricação.',
     list: [
-      'Corpo dos reguladores forjados em latão de alta resistência.',
-      'Manômetros com escala dupla (bar / psi) de fácil leitura e proteção.',
-      'Válvulas corta-chamas (Flashback Arrestors) certificadas com dupla proteção.',
-      'Compatibilidade universal com conexões padrão ABNT / CGA.'
+      'Maçaricos ergonômicos desenhados para reduzir a fadiga do operador e aumentar a segurança.',
+      'Máquinas de Corte (Tartarugas) com eletrônica embarcada para precisão milimétrica em chanfros e cortes retos.',
+      'Linha completa de tochas MIG/TIG e consumíveis Plasma para operações contínuas e severas.',
+      'Reguladores forjados de alta durabilidade para controle preciso de fluxo e pressão de gases industriais.'
     ]
   }
 ];

@@ -15,6 +15,38 @@
   },
   "articles": [
     {
+      "id": "seguranca-producao-hidrogenio-anp",
+      "title": "Segurança Operacional na Produção de Hidrogênio de Baixa Emissão",
+      "summary": "Relatório oficial da ANP sobre o arcabouço regulatório, gestão de riscos e a segurança operacional para a produção de hidrogênio no Brasil.",
+      "content": "<p>A promulgação da Lei nº 14.948, de 2 de agosto de 2024, instituiu a Política Nacional do Hidrogênio de Baixa Emissão de Carbono, atribuindo à ANP competências regulatórias abrangentes sobre a cadeia do hidrogênio. Neste contexto, o Subgrupo IV do PNH2 elaborou um relatório detalhado para nortear a futura regulação.</p><h3>Panorama Internacional e Nacional</h3><p>A análise da experiência internacional (Europa, América, Ásia e Oceania) revela uma transição de abordagens estritamente prescritivas para regulações baseadas em desempenho e risco, como a Diretiva Seveso. No Brasil, o arcabouço regulatório da ANP estruturado em torno do SGSO (Sistema de Gerenciamento da Segurança Operacional) já incorpora instrumentos compatíveis com as exigências da nova lei.</p><h3>Análise de Incidentes</h3><p>Dados de bancos internacionais como HIAD e H2Tools mostram que acidentes com hidrogênio frequentemente derivam de falhas de projeto (seleção inadequada de materiais), deficiências nos sistemas de gestão, procedimentos operacionais incompletos e manutenção inadequada. Isso reforça a necessidade de um modelo de regulação com foco em gestão de processos e segurança em camadas.</p><h3>Recomendações da ANP</h3><ul><li>Adoção de uma estratégia regulatória escalonada e baseada em riscos.</li><li>Inclusão de ação regulatória na Agenda da ANP, harmonizando novas normas com as práticas de exploração e produção (E&amp;P).</li><li>Mecanismos de <em>sandbox</em> regulatório no período transitório.</li><li>Atualização das normas de comunicação de incidentes.</li></ul><div style=\"margin-top: 2rem; text-align: center;\"><a href=\"/documentos/seguranca-producao-hidrogenio-anp.pdf\" target=\"_blank\" style=\"display: inline-block; padding: 12px 24px; background-color: #0f4c81; color: #fff; font-weight: bold; border-radius: 4px; text-decoration: none;\">📄 Baixar Relatório Completo (PDF)</a></div>",
+      "image": "/images/conteudos/capa-novos-1.png",
+      "category": "Regulação",
+      "author": "Equipe Técnica Prime",
+      "date": "24 Jul 2026",
+      "tags": [
+        "ANP",
+        "Regulação",
+        "Segurança Operacional",
+        "Hidrogênio"
+      ]
+    },
+    {
+      "id": "principios-seguranca-hidrogenio",
+      "title": "Princípios Básicos de Segurança do Hidrogênio",
+      "summary": "Síntese técnica de referência sobre as propriedades, perigos dominantes e a filosofia de proteção em camadas para sistemas de hidrogênio.",
+      "content": "<p>Este documento organiza, em linguagem de engenharia, os principais temas de segurança associados ao hidrogênio gasoso e líquido. Inspirado no Volume 6 da coleção <em>Conceitos do H₂ Power-to-X</em>, ele estabelece as bases de segurança para projetos de instalações e operações envolvendo H₂.</p><h3>1. Síntese Executiva</h3><p>O hidrogênio pode ser utilizado com segurança quando a prevenção é construída em camadas independentes:</p><ul><li><strong>Contenção:</strong> Projetar para evitar vazamentos e minimizar juntas desmontáveis.</li><li><strong>Prevenção:</strong> Eliminar bolsões no teto e garantir ventilação comprovada.</li><li><strong>Detecção Precoce:</strong> Instalar sensores pelo caminho provável da pluma.</li><li><strong>Isolamento Automático:</strong> Válvulas fail-safe e lógica de desenergização segura.</li><li><strong>Manutenção:</strong> Inspeção contínua, testes funcionais e calibração ao longo do ciclo de vida.</li></ul><h3>2. Gestão de Riscos e Filosofia de Proteção</h3><p>A análise começa pela definição do inventário, pressões, temperaturas e vazões de liberação. Cada cenário é associado a barreiras preventivas e mitigadoras, como redução do perigo na origem (projeto inerentemente seguro), controle de processo (regulação de pressão), intertravamentos (ESD) e mitigação física (alívios para local externo e barreiras corta-fogo).</p><h3>3. Documentação e Qualidade</h3><p>O sucesso de um projeto de H₂ depende diretamente da integridade das juntas e da seleção criteriosa de materiais compatíveis com os mecanismos de fragilização por hidrogênio. Recomenda-se um checklist estruturado desde o HAZID/HAZOP até a entrega do databook rastreável.</p><div style=\"margin-top: 2rem; text-align: center;\"><a href=\"/documentos/principios-seguranca-hidrogenio.pdf\" target=\"_blank\" style=\"display: inline-block; padding: 12px 24px; background-color: #0f4c81; color: #fff; font-weight: bold; border-radius: 4px; text-decoration: none;\">📄 Baixar Síntese Completa (PDF)</a></div>",
+      "image": "/images/conteudos/capa-novos-1.png",
+      "category": "Segurança",
+      "author": "Equipe Técnica Prime",
+      "date": "24 Jul 2026",
+      "tags": [
+        "Hidrogênio",
+        "Segurança",
+        "Engenharia",
+        "Riscos"
+      ]
+    },
+    {
       "id": "manual-projeto-abrigos-cilindros",
       "title": "Manual Prático de Projeto: Definição do Local e Distanciamentos de Abrigos de Cilindros",
       "category": "Engenharia",
@@ -110,7 +142,7 @@
       "category": "Normas",
       "date": "25 Jan 2025",
       "summary": "A importância da documentação técnica na indústria regulada.",
-      "image": "/images/aplicacoes/app-bg-pharma.jpg",
+      "image": "/images/conteudos/rastreabilidade-crop.jpg",
       "content": "<p>Conteúdo sobre normas em breve.</p>"
     },
     {
@@ -119,7 +151,7 @@
       "category": "Inovação",
       "date": "15 Jan 2025",
       "summary": "O que esperar do futuro da automação e instrumentação industrial.",
-      "image": "/images/aplicacoes/app-hospitalar-leito.jpg",
+      "image": "/images/conteudos/tendencias-crop.jpg",
       "content": "<p>Conteúdo sobre tendências em breve.</p>"
     }
   ],

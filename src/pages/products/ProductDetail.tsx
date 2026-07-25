@@ -22,8 +22,8 @@ const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; ima
   'cilindros-tipo-4': { 
     name: 'Cilindros Tipo 4', 
     cat: 'Gases', 
-    img: '/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-new.jpg?v=5', 
-    images: ['/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-new.jpg?v=5'], 
+    img: '/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-3.png', 
+    images: ['/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-3.png'], 
     desc: 'Os cilindros Tipo 4 utilizam liner polimérico não metálico envolvido por reforço estrutural em fibra composta, proporcionando elevada relação entre capacidade de armazenamento e peso. São indicados para aplicações que exigem redução de massa, resistência mecânica e armazenamento de gases comprimidos em alta pressão.', 
     features: ['Liner polimérico não metálico', 'Reforço estrutural em fibra composta', 'Construção totalmente composta', 'Elevada relação resistência/peso', 'Proteção contra impacto, abrasão e esforços de instalação', 'Configuração de válvula conforme a aplicação', 'Possibilidade de integração com dispositivo de alívio de pressão', 'Montagem mediante suportes tecnicamente dimensionados'], 
     apps: ['Mobilidade a gás', 'Veículos comerciais', 'Ônibus e caminhões', 'Módulos de armazenamento', 'Sistemas de energia', 'Transporte de gases comprimidos', 'Aplicações industriais customizadas'], 
@@ -71,7 +71,7 @@ const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; ima
     catalogTables: CUTTING_WELDING_CATALOG,
     extraBlocks: CUTTING_WELDING_EXTRA_BLOCKS
   },
-  'reguladores-especiais': { name: 'Reguladores de Gases Especiais', cat: 'Instrumentação', img: '/images/produtos/aplicacao real.webp', images: ['/images/produtos/aplicacao real.webp', '/images/produtos/reguladores-especiais/regulador-gases-08.png', '/images/produtos/reguladores-especiais/regulador-gases-04.jpg', '/images/produtos/reguladores-especiais/regulador-gases-05.jpg', '/images/produtos/reguladores-especiais/regulador-gases-06.jpg', '/images/produtos/reguladores-especiais/regulador-gases-10-cropped.png'], desc: 'Reguladores de alta performance projetados para controle de gases especiais, aplicações de alta e altíssima pressão, e calibração de instrumentos de medição. Desenvolvidos com foco em máxima estabilidade e vedação absoluta contra vazamentos.', features: ['Modelos específicos para gases especiais de alta pureza', 'Estágio simples ou duplo para alta e altíssima pressão (até 300 bar)', 'Otimizados para processos críticos de calibração analítica', 'Construção em materiais inertes (Aço Inox 316, PTFE)', 'Estanqueidade certificada com teste de hélio em fábrica'], apps: ['Análise de gases padrão e misturas especiais', 'Estações de calibração de instrumentação', 'Controle de processos críticos de alta pressão', 'Laboratórios de P&D de alta exigência'], catalogTables: SPECIAL_REGULATORS_CATALOG },
+  'reguladores-especiais': { name: 'Reguladores de Gases Especiais', cat: 'Instrumentação', img: '/images/produtos/aplicacao-real.webp', images: ['/images/produtos/aplicacao-real.webp', '/images/produtos/reguladores-especiais/regulador-gases-08.png', '/images/produtos/reguladores-especiais/regulador-gases-04.jpg', '/images/produtos/reguladores-especiais/regulador-gases-05.jpg', '/images/produtos/reguladores-especiais/regulador-gases-06.jpg', '/images/produtos/reguladores-especiais/regulador-gases-10-cropped.png'], desc: 'Reguladores de alta performance projetados para controle de gases especiais, aplicações de alta e altíssima pressão, e calibração de instrumentos de medição. Desenvolvidos com foco em máxima estabilidade e vedação absoluta contra vazamentos.', features: ['Modelos específicos para gases especiais de alta pureza', 'Estágio simples ou duplo para alta e altíssima pressão (até 300 bar)', 'Otimizados para processos críticos de calibração analítica', 'Construção em materiais inertes (Aço Inox 316, PTFE)', 'Estanqueidade certificada com teste de hélio em fábrica'], apps: ['Análise de gases padrão e misturas especiais', 'Estações de calibração de instrumentação', 'Controle de processos críticos de alta pressão', 'Laboratórios de P&D de alta exigência'], catalogTables: SPECIAL_REGULATORS_CATALOG },
   'reguladores-hidraulicos': { name: 'Reguladores Hidráulicos', cat: 'Alta Pressão', img: '/images/produtos/prod-reguladores-hidraulicos-new.jpg', images: ['/images/produtos/prod-reguladores-hidraulicos-new.jpg', '/images/produtos/prod-reguladores-2.png', '/images/produtos/prod-reguladores-3.png', '/images/produtos/prod-reguladores-4.png', '/images/produtos/prod-reguladores-5.png', '/images/produtos/prod-reguladores-6.png'], desc: 'Reguladores de alta pressão para aplicações hidráulicas especiais.', features: ['Controle preciso de alta pressão', 'Construção robusta', 'Vedação confiável'], apps: ['Sistemas hidráulicos', 'Teste de pressão'], catalogTables: HYDRAULIC_CATALOG },
   'reguladores-calibracao': { name: 'Reguladores para Calibração de Equipamentos', cat: 'Calibração', img: '/images/produtos/reguladores-calibracao/bg-principal.png', images: ['/images/produtos/reguladores-calibracao/bg-principal.png', '/images/produtos/reguladores-calibracao/reg-cali-1.png', '/images/produtos/reguladores-calibracao/reg-cali-2.png', '/images/produtos/reguladores-calibracao/reg-cali-3.png'], desc: 'Mini reguladores e reguladores de demanda compactos de alta precisão para calibração e instrumentação.', features: ['Alta precisão', 'Design compacto', 'Conexões C-10, 5/8 UNF e CGA'], apps: ['Calibração de detectores', 'Analisadores portáteis', 'Laboratórios de campo'], catalogTables: CALIBRATION_CATALOG },
   'combate-incendio': { 
@@ -158,7 +158,7 @@ export function ProductDetail() {
               <img 
                 src={img} 
                 alt={name} 
-                className={`max-w-full max-h-96 object-contain ${id === 'cilindros-tipo-4' ? 'scale-[1.30] origin-top-left' : ''}`} 
+                className={`max-w-full max-h-96 object-contain mix-blend-multiply ${id === 'cilindros-tipo-4' ? 'scale-[1.30] origin-top-left' : ''}`} 
               />
             </div>
             <div className="space-y-6">
@@ -217,7 +217,7 @@ export function ProductDetail() {
             <div className="space-y-6">
               {!product?.catalogTables && (
                 <AnimateOnScroll>
-                  <img src={img} alt={name === 'Geração de Oxigênio e Anestesia' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
+                  <img src={img} alt={name === 'Geração de Oxigênio e Anestesia' ? 'Sistema de geração de gases on-site com tecnologia PSA/TCA em instalação técnica.' : name} className="w-full rounded-sm shadow-lg mix-blend-multiply" referrerPolicy="no-referrer" />
                   {images.length > 1 && (
                     <div className={`grid ${images.length === 2 ? 'grid-cols-1' : 'grid-cols-2'} gap-2 mt-2`}>
                       {images.slice(1).map((src, i) => {
@@ -230,7 +230,7 @@ export function ProductDetail() {
                               key={i}
                               src={src}
                               alt={`${name} ${i + 2}`}
-                              className={`prime-image-standard ${isFullWidth ? 'col-span-2 h-48 object-cover object-center bg-white border border-gray-100' : (isDetector ? 'h-64 object-cover' : (isCalibracao ? 'h-48 object-contain bg-white border border-gray-100' : (isEspeciais ? 'h-40 object-contain bg-white p-2 border border-gray-100' : 'h-28 object-cover')))} w-full shadow-sm rounded-sm hover:opacity-90 transition-opacity`}
+                              className={`prime-image-standard mix-blend-multiply ${isFullWidth ? 'col-span-2 h-48 object-cover object-center bg-white border border-gray-100' : (isDetector ? 'h-64 object-cover' : (isCalibracao ? 'h-48 object-contain bg-white border border-gray-100' : (isEspeciais ? 'h-40 object-contain bg-white p-2 border border-gray-100' : 'h-28 object-cover')))} w-full shadow-sm rounded-sm hover:opacity-90 transition-opacity`}
                               referrerPolicy="no-referrer"
                             />
                           );
