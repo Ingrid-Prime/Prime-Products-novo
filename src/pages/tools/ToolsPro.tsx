@@ -570,7 +570,7 @@ export function ToolsPro() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[44vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('/images/aplicacoes/app-plantas-industriais.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        defaultStyle={{ backgroundImage: "url('/images/aplicacoes/industria-quimica.jpg')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
       >
         <div className="absolute inset-0 bg-secondary/88 z-0" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/60 to-secondary z-0" />

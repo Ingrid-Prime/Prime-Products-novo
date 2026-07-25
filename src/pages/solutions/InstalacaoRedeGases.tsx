@@ -5,7 +5,7 @@ import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 
 const PRODUCTS = [
-  { path: '/produto/reguladores-especiais', img: '/images/produtos/aplicacao real.webp', name: 'Reguladores de Gases Especiais', desc: 'Reguladores de alta performance para gases especiais, alta pressão e calibração.' },
+  { path: '/produto/reguladores-especiais', img: '/images/produtos/aplicacao-real.webp', name: 'Reguladores de Gases Especiais', desc: 'Reguladores de alta performance para gases especiais, alta pressão e calibração.' },
   { path: '/produto/conexoes-instrumentacao', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', name: 'Conexões para Instrumentação', desc: 'Conexões de alta performance para aplicações industriais e analíticas.' },
   { path: '/produto/valvulas-industriais', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', name: 'Válvulas Industriais - Medicinais - Especiais', desc: 'Válvulas de agulha, esfera e membrana para controle e bloqueio.' },
   { path: '/produto/cilindros-aluminio', img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', name: 'Cilindros de Alumínio', desc: 'Cilindros de alta durabilidade para transporte seguro de gases.' },

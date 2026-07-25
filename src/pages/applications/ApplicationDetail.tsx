@@ -8,18 +8,18 @@ import FarmaceuticaPage from './FarmaceuticaPage';
 import AutomotivaPage from './AutomotivaPage';
 
 const APP_GALLERY: Record<string, string[]> = {
-  'laboratorios-analiticos': ['/images/aplicacoes/laboratorio analitico/about-lab.jpg', '/images/aplicacoes/laboratorio analitico/sol-analitica-00.png', '/images/aplicacoes/laboratorio analitico/sol-analitica-02.png', '/images/aplicacoes/laboratorio analitico/WhatsApp Image 2026-03-24 at 17.03.49.jpeg'],
-  'farmaceutica': ['/images/aplicacoes/farmaceutica/farmaceutica_corredor.jpg', '/images/aplicacoes/farmaceutica/farmaceutica_filtro.jpg', '/images/aplicacoes/farmaceutica/farmaceutica_linha_1.jpg', '/images/aplicacoes/farmaceutica/farmaceutica_linha_2.jpg'],
+  'laboratorios-analiticos': ['/images/aplicacoes/laboratorio-analitico/about-lab.jpg', '/images/aplicacoes/laboratorio-analitico/sol-analitica-00.png', '/images/aplicacoes/laboratorio-analitico/sol-analitica-02.png', '/images/aplicacoes/laboratorio-analitico/whatsapp-image-2026-03-24-at-17.03.49.jpeg'],
+  'farmaceutica': ['/images/aplicacoes/farmaceutica/farmaceutica-corredor.jpg', '/images/aplicacoes/farmaceutica/farmaceutica-filtro.jpg', '/images/aplicacoes/farmaceutica/farmaceutica-linha-1.jpg', '/images/aplicacoes/farmaceutica/farmaceutica-linha-2.jpg'],
   'centros-pesquisa': ['/images/aplicacoes/centro-pesquisa/app-centros-pesquisa.webp', '/images/aplicacoes/centro-pesquisa/pesquisa.jpg'],
-  'hospitalar': ['/images/aplicacoes/hospitalar/Hospitalar.png', '/images/aplicacoes/hospitalar/medical-gas-outlets.png'],
+  'hospitalar': ['/images/aplicacoes/hospitalar/hospitalar.png', '/images/aplicacoes/hospitalar/medical-gas-outlets.png'],
   'oleo-gas': ['/images/aplicacoes/oleo-gas/app-oleo-gas-offshore.jpg', '/images/aplicacoes/oleo-gas/app-oleo-gas-refinaria.jpg'],
   'industria-quimica': ['/images/aplicacoes/quimica-petroquimica/app-quimica-1.jpg', '/images/aplicacoes/quimica-petroquimica/app-quimica-2.jpg', '/images/aplicacoes/quimica-petroquimica/Industria Química.png'],
-  'alimentos-bebidas': ['/images/aplicacoes/alimenticia/app-alimentos-bebidas-1.jpg', '/images/aplicacoes/alimenticia/app-alimentos-bebidas-2.jpg', '/images/aplicacoes/alimenticia/Segmento de Alimentos e Bebidas.png'],
+  'alimentos-bebidas': ['/images/aplicacoes/alimenticia/app-alimentos-bebidas-1.jpg', '/images/aplicacoes/alimenticia/app-alimentos-bebidas-2.jpg', '/images/aplicacoes/alimenticia/segmento-de-alimentos-e-bebidas.png'],
   'energia-transicao-energetica': ['/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-1.jpg', '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-2.jpg', '/images/aplicacoes/Energias Renováveis Hidrogênio/Energia verde - Transição Energética.png', '/images/aplicacoes/Energias Renováveis Hidrogênio/h2-jumbo-tube.png'],
   'criogenia': ['/images/aplicacoes/criogenia/app-criogenia.jpg', '/images/aplicacoes/criogenia/criogenia.png', '/images/aplicacoes/criogenia/prod-dewars-2.png', '/images/aplicacoes/criogenia/prod-dewars-3.png'],
   'automotivo': ['/images/aplicacoes/automotiva/app-automotivo-1.jpg', '/images/aplicacoes/automotiva/app-automotivo-2.jpg', '/images/aplicacoes/automotiva/Caminhão.png'],
-  'soldagem': ['/images/aplicacoes/metal-mecanica/prod-corte-solda-principal.jpg', '/images/aplicacoes/metal-mecanica/Equipamentos para Corte e Solda.png', '/images/aplicacoes/metal-mecanica/prod-corte-solda-2.png'],
-  'mineral': ['/images/aplicacoes/mineracao/mineracao principal.jpg', '/images/aplicacoes/mineracao/app-mineracao-1.jpg', '/images/aplicacoes/mineracao/app-mineracao-2.jpg'],
+  'soldagem': ['/images/aplicacoes/metal-mecanica/prod-corte-solda-principal.jpg', '/images/aplicacoes/metal-mecanica/equipamentos-para-corte-e-solda.png', '/images/aplicacoes/metal-mecanica/prod-corte-solda-2.png'],
+  'mineral': ['/images/aplicacoes/mineracao/mineracao-principal.jpg', '/images/aplicacoes/mineracao/app-mineracao-1.jpg', '/images/aplicacoes/mineracao/app-mineracao-2.jpg'],
 };
 
 const APPLICATION_DATA: Record<string, {
@@ -104,7 +104,7 @@ const APPLICATION_DATA: Record<string, {
   'industria-quimica': {
     name: 'Indústria Química',
     cat: 'Química, Óleo & Gás',
-    img: '/images/aplicacoes/industria quimica.jpg',
+    img: '/images/aplicacoes/industria-quimica.jpg',
     desc: 'A indústria química trabalha com fluidos agressivos, gases reativos e processos em alta pressão. A Prime fornece conexões em materiais resistentes, reguladores para gases especiais e instrumentação certificada para ambientes com substâncias corrosivas.',
     challenges: ['Compatibilidade de materiais com fluidos agressivos e corrosivos', 'Detecção de gases tóxicos como Cl₂, NH₃, HF e outros', 'Alta pressão e temperaturas extremas de processo', 'Rastreabilidade e conformidade com normas de segurança'],
     solutions: ['Conexões em Hastelloy, PTFE e SS316L para fluidos agressivos', 'Detectores de gases tóxicos com certificação ATEX', 'Reguladores de pressão para gases especiais e reativos', 'Transmissores de processo com diafragma e selo químico'],
@@ -118,7 +118,7 @@ const APPLICATION_DATA: Record<string, {
   'alimentos-bebidas': {
     name: 'Alimentos e Bebidas',
     cat: 'Processos Industriais',
-    img: '/images/aplicacoes/alimentos e bebidas.jpg',
+    img: '/images/aplicacoes/alimentos-e-bebidas.jpg',
     desc: 'O setor de alimentos e bebidas utiliza gases de grau alimentar para carbonatação, embalagem em atmosfera modificada (MAP), congelamento criogênico e processos de higienização. A Prime fornece gases certificados e sistemas de distribuição seguros e higiênicos.',
     challenges: ['Gases de grau alimentar (Food Grade) com certificação', 'Sistemas de embalagem em atmosfera modificada (MAP)', 'Carbonatação e dosagem precisa de CO₂', 'Higiene e conformidade com normas sanitárias'],
     solutions: ['CO₂, N₂ e O₂ de grau alimentar com certificados', 'Reguladores e conexões sanitizáveis para processos higiênicos', 'Sistemas de dosagem e mistura para carbonatação', 'Cilindros e tanques criogênicos para congelamento'],
@@ -183,7 +183,7 @@ const APPLICATION_DATA: Record<string, {
   'soldagem': {
     name: 'Metal Mecânica',
     cat: 'Indústria',
-    img: '/images/aplicacoes/metal mecanica.jpg',
+    img: '/images/aplicacoes/metal-mecanica.jpg',
     desc: 'Processos de soldagem MIG/TIG, eletrodo revestido, oxicorte e plasma exigem gases adequados, reguladores calibrados e acessórios certificados. A Prime fornece soluções completas para metalurgia, construção civil e manutenção industrial.',
     challenges: ['Seleção correta do gás de proteção para cada processo', 'Reguladores com vazão adequada para cada aplicação', 'Segurança no manuseio de acetileno e gases combustíveis', 'Qualidade e homogeneidade das juntas soldadas'],
     solutions: ['Gases puros e misturas para MIG/TIG (Ar, CO₂, He, N₂)', 'Maçaricos para corte oxiacetilênico e oxicorte', 'Reguladores para CO₂, O₂, Acetileno e misturas', 'Mangueiras certificadas e acessórios para soldagem'],

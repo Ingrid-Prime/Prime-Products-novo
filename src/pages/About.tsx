@@ -252,7 +252,7 @@ export function About() {
 
       {/* 6. Diferenciais */}
       <section className="bg-secondary py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/images/pattern-grid.png')] opacity-5" />
+        <div className="absolute inset-0 bg-[none] opacity-5" />
         <SectionContainer className="relative z-10">
           <div className="text-center mb-16">
             <AnimateOnScroll>

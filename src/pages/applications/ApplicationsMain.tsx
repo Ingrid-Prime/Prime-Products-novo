@@ -23,7 +23,7 @@ const APPLICATION_GROUPS: AppGroup[] = [
     color: 'bg-blue-700',
     items: [
       { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/aplicacoes/automotivo.jpg' },
-      { id: 'soldagem', name: 'Metal Mecânica', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/aplicacoes/metal mecanica.jpg' },
+      { id: 'soldagem', name: 'Metal Mecânica', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/aplicacoes/metal-mecanica.jpg' },
       { id: 'mineral', name: 'Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/aplicacoes/mineiracao.jpg' },
     ],
   },
@@ -56,8 +56,8 @@ const APPLICATION_GROUPS: AppGroup[] = [
     color: 'bg-orange-700',
     items: [
       { id: 'oleo-gas', name: 'Óleo & Gás', desc: 'Instrumentação ATEX/IECEx, transmissores SIL, detectores de H₂S e LEL, válvulas de segurança e sistemas de supressão para refinarias e plantas de processo.', img: '/images/aplicacoes/segmento-oleo-gas.png' },
-      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy®, AISI 316, Duplex, Superduplex, etc.), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/aplicacoes/industria quimica.jpg' },
-      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases e misturas gasosas (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/aplicacoes/alimentos e bebidas.jpg' },
+      { id: 'industria-quimica', name: 'Indústria Química', desc: 'Conexões em materiais resistentes (Hastelloy®, AISI 316, Duplex, Superduplex, etc.), reguladores para gases reativos, detectores de vazamento e sistemas para ambientes agressivos.', img: '/images/aplicacoes/industria-quimica.jpg' },
+      { id: 'alimentos-bebidas', name: 'Alimentos e Bebidas', desc: 'Gases e misturas gasosas (CO₂, N₂, O₂), sistemas de pureza certificada, instrumentação para processos de embalagem, carbonatação e atmosfera modificada.', img: '/images/aplicacoes/alimentos-e-bebidas.jpg' },
     ],
   },
 ];

@@ -13,24 +13,24 @@ export const OXYGEN_GENERATION_CATALOG = [
     title: 'Two-Column Oxygen Generators',
     columns: ['Ref Visual', 'Série', 'Tecnologia', 'Eficiência (Energia)', 'Aplicações'],
     rows: [
-      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-Two-coulmn-for-blog.jpg" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O21 a O264', 'Torre Dupla PSA', 'Alta (0.6 kW/Nm³)', 'Medicina, Aquicultura, Mineração']
+      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-two-coulmn-for-blog.jpg" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O21 a O264', 'Torre Dupla PSA', 'Alta (0.6 kW/Nm³)', 'Medicina, Aquicultura, Mineração']
     ]
   },
   {
     title: 'Compact Oxygen Solutions',
     columns: ['Ref Visual', 'Modelo', 'Vazão (L/min)', 'Peso (kg)', 'Dimensões (mm)'],
     rows: [
-      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-Cbinet-C.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O4-4C', 'Até 40', '50', '650x275x550'],
-      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-Cbinet-C.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O6-4C', 'Até 40', '75', '650x275x800'],
-      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-Cbinet-C.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O12-4C', 'Até 40', '115', '650x275x1600'],
-      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-Cbinet-C.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O6-2Ci', 'Plug & Play', '80', '650x275x800']
+      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-cbinet-c.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O4-4C', 'Até 40', '50', '650x275x550'],
+      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-cbinet-c.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O6-4C', 'Até 40', '75', '650x275x800'],
+      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-cbinet-c.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O12-4C', 'Até 40', '115', '650x275x1600'],
+      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-cbinet-c.png" class="h-16 object-contain rounded-sm mx-auto mix-blend-multiply" />', 'O6-2Ci', 'Plug & Play', '80', '650x275x800']
     ]
   },
   {
     title: 'Containerized & Inframe Installations',
     columns: ['Ref Visual', 'Formato', 'Isolamento Térmico', 'Mobilidade', 'Uso'],
     rows: [
-      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-Norway.jpg" class="h-16 object-cover rounded-sm mx-auto mix-blend-multiply" />', 'Container 20ft / 40ft', 'Painéis Sanduíche (Frio/Calor)', 'Plug & Play (Pronto p/ Uso)', 'Projetos Turn-key, Mineração remota']
+      ['<img src="/images/produtos/geracao-de-oxigenio/oxymat-norway.jpg" class="h-16 object-cover rounded-sm mx-auto mix-blend-multiply" />', 'Container 20ft / 40ft', 'Painéis Sanduíche (Frio/Calor)', 'Plug & Play (Pronto p/ Uso)', 'Projetos Turn-key, Mineração remota']
     ]
   }
 ];
@@ -38,7 +38,7 @@ export const OXYGEN_GENERATION_CATALOG = [
 export const OXYGEN_GENERATION_EXTRA_BLOCKS = [
   {
     title: 'Soluções Oxymat Originais (Representação)',
-    image: '/images/produtos/geracao-de-oxigenio/oxymat-Norway.jpg',
+    image: '/images/produtos/geracao-de-oxigenio/oxymat-norway.jpg',
     desc: 'Como fornecedores das soluções Oxymat, trazemos a tecnologia líder mundial em separação de gases para o seu projeto. Sistemas modulares escaláveis e de alta eficiência energética, testados e montados para entregar performance contínua e segura na sua planta.',
     list: [
       'Pureza consistente de 93% a 95%, certificada.',

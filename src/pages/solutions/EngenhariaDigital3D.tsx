@@ -93,7 +93,7 @@ export function EngenhariaDigital3D() {
 
         {/* Fluxo de Trabalho Integrado */}
         <section className="py-20 bg-secondary border-b border-gray-800 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/pattern-grid.png')] opacity-5 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-[none] opacity-5 mix-blend-overlay" />
           <SectionContainer className="relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-white mb-4">Fluxo de Trabalho Integrado</h2>

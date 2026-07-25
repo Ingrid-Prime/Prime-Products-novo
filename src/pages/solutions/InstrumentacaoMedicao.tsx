@@ -15,7 +15,7 @@ const GALLERY = [
 
 const PRODUCTS = [
   { path: '/produto/transmissores-pressao', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-transmissores-new.jpg', name: 'Transmissores: Pressão - Nível - Temperatura', desc: 'Alta precisão para medições diferenciais, manométricas e absolutas.' },
-  { path: '/produto/reguladores-especiais', img: '/images/produtos/aplicacao real.webp', name: 'Reguladores de Gases Especiais', desc: 'Reguladores robustos para linhas de processo críticas.' },
+  { path: '/produto/reguladores-especiais', img: '/images/produtos/aplicacao-real.webp', name: 'Reguladores de Gases Especiais', desc: 'Reguladores robustos para linhas de processo críticas.' },
   { path: '/produto/conexoes-instrumentacao', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', name: 'Conexões para Instrumentação', desc: 'Conexões certificadas para instrumentação analítica e industrial.' },
   { path: '/produto/valvulas-industriais', img: '/images/solucoes-integradas/instrumentacao-medicao/prod-valvulas.png', name: 'Válvulas Industriais - Medicinais - Especiais', desc: 'Válvulas para bloqueio e controle com alta confiabilidade.' },
 ];

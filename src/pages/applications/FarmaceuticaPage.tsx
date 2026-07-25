@@ -187,10 +187,10 @@ const FarmaceuticaPage = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              '/images/aplicacoes/farmaceutica/farmaceutica_corredor.jpg',
-              '/images/aplicacoes/farmaceutica/farmaceutica_filtro.jpg',
-              '/images/aplicacoes/farmaceutica/farmaceutica_linha_1.jpg',
-              '/images/aplicacoes/farmaceutica/farmaceutica_linha_2.jpg'
+              '/images/aplicacoes/farmaceutica/farmaceutica-corredor.jpg',
+              '/images/aplicacoes/farmaceutica/farmaceutica-filtro.jpg',
+              '/images/aplicacoes/farmaceutica/farmaceutica-linha-1.jpg',
+              '/images/aplicacoes/farmaceutica/farmaceutica-linha-2.jpg'
             ].map((img, idx) => (
               <div key={idx} className="relative overflow-hidden rounded-sm shadow-md group h-80">
                 <img src={img} alt={`Aplicação Farmacêutica ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
