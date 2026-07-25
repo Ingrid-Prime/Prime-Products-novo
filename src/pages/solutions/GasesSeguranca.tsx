@@ -15,7 +15,7 @@ const GALLERY = [
 
 const PRODUCTS = [
   { path: '/produto/cilindros-aluminio', img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', name: 'Cilindros de Alumínio', desc: 'Leves e resistentes para transporte de gases comprimidos.' },
-  { path: '/produto/cilindros-tipo-4', img: '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-new.jpg', name: 'Cilindros Tipo 4', desc: 'Cilindros compostos de alta performance para logística.' },
+  { path: '/produto/cilindros-tipo-4', img: '/images/produtos/cilindros-tipo-4/capa-new.jpeg', name: 'Cilindros Tipo 4', desc: 'Cilindros compostos de alta performance para logística.' },
   { path: '/produto/dewars-criogenicos', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', name: 'Dewars e Recipientes Criogênicos', desc: 'Recipientes para nitrogênio líquido e outros gases criogênicos.' },
   { path: '/produto/geracao-oxigenio', img: '/images/produtos/geracao-de-oxigenio/prod-geracao-gases-2.jpg', name: 'Geração de Oxigênio e Anestesia', desc: 'Sistemas de geração on-site para aplicações médicas e industriais.' },
   { path: '/produto/detectores-vazamento', img: '/images/produtos/detectores-de-vazamentos/detector-principal.jpg', name: 'Detectores de Vazamento', desc: 'Monitoramento contínuo de ambientes com risco de gases.' },

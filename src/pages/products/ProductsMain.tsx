@@ -6,7 +6,7 @@ import { SectionContainer } from '../../components/SectionContainer';
 
 const PRODUCTS = [
   { id: 'cilindros-aluminio', name: 'Cilindros de Alumínio', cat: 'Gases', img: '/images/produtos/cilindros-aluminio/prod-cilindros-aluminio-new.jpg', desc: 'Cilindros leves e resistentes para transporte de gases comprimidos.' },
-  { id: 'cilindros-tipo-4', name: 'Cilindros Tipo 4', cat: 'Gases', img: '/images/produtos/cilindros-tipo-4/prod-cilindros-tipo4-3.png', desc: 'Cilindros compósitos de alta performance para logística e mobilidade.' },
+  { id: 'cilindros-tipo-4', name: 'Cilindros Tipo 4', cat: 'Gases', img: '/images/produtos/cilindros-tipo-4/capa-new.jpeg', desc: 'Cilindros compósitos de alta performance para logística e mobilidade.' },
   { id: 'conexoes-instrumentacao', name: 'Conexões para Instrumentação', cat: 'Instrumentação', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', desc: 'Conexões certificadas para aplicações analíticas e industriais.' },
   { id: 'detectores-vazamento', name: 'Detectores de Vazamento', cat: 'Segurança', img: '/images/produtos/detectores-de-vazamentos/detector-principal.jpg', desc: 'Detecção de gases tóxicos e inflamáveis para ambientes industriais.' },
   { id: 'dewars-criogenicos', name: 'Dewars Criogênicos', cat: 'Criogenia', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.' },

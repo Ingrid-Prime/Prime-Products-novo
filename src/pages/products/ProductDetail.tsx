@@ -7,7 +7,7 @@ import { SectionContainer } from '../../components/SectionContainer';
 import { useCMS } from '../../contexts/CMSContext';
 import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG, TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS, ALUMINUM_CYLINDERS_CATALOG, ALUMINUM_CYLINDERS_EXTRA_BLOCKS, OXYGEN_GENERATION_CATALOG, OXYGEN_GENERATION_EXTRA_BLOCKS, CUTTING_WELDING_CATALOG, CUTTING_WELDING_EXTRA_BLOCKS, FIRE_SUPPRESSION_CATALOG, FIRE_SUPPRESSION_EXTRA_BLOCKS } from '../../data/catalogs';
 
-const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG | typeof ALUMINUM_CYLINDERS_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS | typeof ALUMINUM_CYLINDERS_EXTRA_BLOCKS }> = {
+const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; video?: string; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG | typeof ALUMINUM_CYLINDERS_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS | typeof ALUMINUM_CYLINDERS_EXTRA_BLOCKS }> = {
   'cilindros-aluminio': { 
     name: 'Cilindros de Alumínio', 
     cat: 'Gases', 
@@ -22,8 +22,9 @@ const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; ima
   'cilindros-tipo-4': { 
     name: 'Cilindros Tipo 4', 
     cat: 'Gases', 
-    img: '/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-3.png', 
-    images: ['/images/produtos/cilindros-tipo-4/capa/prod-cilindros-tipo4-3.png'], 
+    img: '/images/produtos/cilindros-tipo-4/capa-new.jpeg', 
+    images: ['/images/produtos/cilindros-tipo-4/capa-new.jpeg'], 
+    video: '/images/produtos/cilindros-tipo-4/hero-video.mp4',
     desc: 'Os cilindros Tipo 4 utilizam liner polimérico não metálico envolvido por reforço estrutural em fibra composta, proporcionando elevada relação entre capacidade de armazenamento e peso. São indicados para aplicações que exigem redução de massa, resistência mecânica e armazenamento de gases comprimidos em alta pressão.', 
     features: ['Liner polimérico não metálico', 'Reforço estrutural em fibra composta', 'Construção totalmente composta', 'Elevada relação resistência/peso', 'Proteção contra impacto, abrasão e esforços de instalação', 'Configuração de válvula conforme a aplicação', 'Possibilidade de integração com dispositivo de alívio de pressão', 'Montagem mediante suportes tecnicamente dimensionados'], 
     apps: ['Mobilidade a gás', 'Veículos comerciais', 'Ônibus e caminhões', 'Módulos de armazenamento', 'Sistemas de energia', 'Transporte de gases comprimidos', 'Aplicações industriais customizadas'], 
@@ -127,6 +128,7 @@ export function ProductDetail() {
   const desc = product?.desc ?? article?.summary ?? '';
   const features = product?.features ?? [];
   const apps = product?.apps ?? [];
+  const video = product?.video ?? null;
 
   return (
     <>
@@ -135,10 +137,20 @@ export function ProductDetail() {
         type="container"
         as="section"
         className="prime-bg-standard relative min-h-[65vh] flex items-end bg-secondary overflow-hidden pb-16 pt-40"
-        defaultStyle={{ backgroundImage: `url('${img}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        defaultStyle={video ? {} : { backgroundImage: `url('${img}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        {video && (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover z-0"
+            src={video}
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-10" />
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <span className="inline-block bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1 mb-4">{cat}</span>
           <h1 className="text-3xl md:text-5xl font-black text-white leading-tight">
             <EditableElement id={`prod_${id}_title`} defaultContent={name} />
