@@ -67,7 +67,7 @@ export const FIRE_SUPPRESSION_CATALOG = [
     ]
   },
   {
-    title: 'Bicos, Conexões e Acessórios',
+    title: 'Difusores, Conexões e Acessórios',
     columns: ['Ref Visual', 'Produto (Fiwarec)', 'Dados Técnicos'],
     rows: [
       ["<img src=\"/images/produtos/combate-incendio/fiw-17-F0110001-c08178f8.jpg\" alt=\"F011 - Puncture Disc for F110, F204, F422\" class=\"w-16 h-16 object-contain mix-blend-multiply\" />","F011 - Puncture Disc for F110, F204, F422",""],
