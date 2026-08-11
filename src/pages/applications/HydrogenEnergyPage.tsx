@@ -109,7 +109,7 @@ const HydrogenEnergyPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
               <img 
-                src="/images/aplicacoes/Energias Renováveis Hidrogênio/h2-tube-trailer.png" 
+                src="/images/aplicacoes/energias-renovaveis-hidrogenio/h2-tube-trailer.png" 
                 alt="Transportation Systems" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
@@ -142,7 +142,7 @@ const HydrogenEnergyPage = () => {
             <div className="flex flex-col md:flex-row-reverse items-center gap-12">
               <div className="w-full md:w-1/2">
                 <img 
-                  src="/images/aplicacoes/Energias Renováveis Hidrogênio/h2-jumbo-tube.png" 
+                  src="/images/aplicacoes/energias-renovaveis-hidrogenio/h2-jumbo-tube.png" 
                   alt="Storage Systems" 
                   className="w-full h-auto rounded-lg shadow-2xl border-4 border-white/10"
                 />
@@ -174,7 +174,7 @@ const HydrogenEnergyPage = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
               <img 
-                src="/images/aplicacoes/Energias Renováveis Hidrogênio/h2-storage.png" 
+                src="/images/aplicacoes/energias-renovaveis-hidrogenio/h2-storage.png" 
                 alt="H2 Filling Stations" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
@@ -215,8 +215,8 @@ const HydrogenEnergyPage = () => {
           <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Galeria de Aplicações Técnicas</h2>
           <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
             {[
-              '/images/aplicacoes/Energias Renováveis Hidrogênio/Energia verde - Transição Energética.png',
-              '/images/aplicacoes/Energias Renováveis Hidrogênio/app-energia-renovavel-1.jpg'
+              '/images/aplicacoes/energias-renovaveis-hidrogenio/energia-verde-transicao-energetica.png',
+              '/images/aplicacoes/energias-renovaveis-hidrogenio/app-energia-renovavel-1.jpg'
             ].map((src, i) => (
               <div key={i} className="relative group overflow-hidden rounded-sm shadow-md">
                 <img 

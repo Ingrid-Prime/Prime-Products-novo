@@ -222,7 +222,7 @@ const AutomotivaPage = () => {
             {[
               '/images/aplicacoes/automotiva/app-automotivo-1.jpg',
               '/images/aplicacoes/automotiva/app-automotivo-2.jpg',
-              '/images/aplicacoes/automotiva/Caminhão.png'
+              '/images/aplicacoes/automotiva/caminhao.png'
             ].map((img, idx) => (
               <div key={idx} className={`relative overflow-hidden rounded-sm shadow-md group h-80 ${idx === 2 ? 'md:col-span-2' : ''}`}>
                 <img src={img} alt={`Aplicação Automotiva ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
