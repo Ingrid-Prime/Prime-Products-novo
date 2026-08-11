@@ -13,13 +13,17 @@ export function ContentMain() {
       <EditableElement
         id="content_hero_bg"
         type="container"
-        as="section"
-        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        as="div"
+        className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
+        defaultStyle={{ backgroundImage: "url('/images/conteudos/hero-conteudo.jpg')", backgroundSize: 'cover', backgroundPosition: 'center 25%' }}
       >
-        <div className="absolute inset-0 bg-secondary/60 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent z-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        {/* Overlay escuro solicitado para diferenciar da imagem repetida */}
+        <div className="absolute inset-0 bg-black/60 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/40 to-transparent z-0" />
+      </EditableElement>
+
+      <section className="relative min-h-[50vh] flex items-center z-10 pt-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <AnimateOnScroll><div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" /></AnimateOnScroll>
           <AnimateOnScroll delay={200}>
             <h1 className="text-4xl md:text-6xl font-black text-white mb-6">
@@ -32,9 +36,9 @@ export function ContentMain() {
             </div>
           </AnimateOnScroll>
         </div>
-      </EditableElement>
+      </section>
 
-      <section className="bg-surface py-20">
+      <section className="py-20 relative z-10">
         <SectionContainer className="py-0">
           {articles.length === 0 ? (
             <div className="text-center py-20">
@@ -46,13 +50,24 @@ export function ContentMain() {
               <AnimateOnScroll>
                 <Link to={`/artigo/${articles[0].id}`} className="group block mb-12 bg-white shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
                   <div className="grid grid-cols-1 lg:grid-cols-2">
-                    <div className="h-64 lg:h-auto overflow-hidden">
-                      <img
-                        src={articles[0].image}
-                        alt={articles[0].title}
-                        className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        referrerPolicy="no-referrer"
-                      />
+                    <div className="h-64 lg:h-full min-h-[320px] overflow-hidden relative bg-gray-100 flex items-center justify-center">
+                      {!articles[0].image ? (
+                        <span className="text-gray-400">Imagem indisponível</span>
+                      ) : (
+                        <img
+                          src={articles[0].image}
+                          alt={articles[0].title}
+                          className="prime-image-standard absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          referrerPolicy="no-referrer"
+                          onError={(e) => { 
+                            if (e.currentTarget.src !== window.location.origin + '/images/conteudos/capa-novos-2-corrigida.jpg') {
+                              e.currentTarget.src = '/images/conteudos/capa-novos-2-corrigida.jpg'; 
+                            } else {
+                              e.currentTarget.style.display = 'none';
+                            }
+                          }}
+                        />
+                      )}
                     </div>
                     <div className="p-10 flex flex-col justify-center">
                       <span className="inline-flex items-center gap-1 text-xs font-bold uppercase text-primary tracking-wider mb-4">

@@ -1,8 +1,33 @@
 import { Link } from 'react-router-dom';
-import { Gauge, FlaskConical, Flame, Settings, ShieldCheck, ArrowRight, CheckCircle, Wrench, ClipboardList, LifeBuoy, BookOpen, Cpu, Wind, Scan } from 'lucide-react';
+import { Gauge, FlaskConical, Flame, Settings, ShieldCheck, ArrowRight, CheckCircle, Wrench, ClipboardList, LifeBuoy, BookOpen, Cpu, Wind, Scan, Star, MessageSquare, Factory } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
+
+const SOLUTIONS_TESTIMONIALS = [
+  {
+    name: 'Cliente Corporativo',
+    role: 'Parceiro Estratégico',
+    company: 'Indústria Química',
+    quote: '[Espaço reservado para depoimento real. A integração entre engenharia e execução na montagem de redes de gases assegura uma instalação técnica impecável.]',
+    rating: 5,
+    tag: 'PROJETO E MONTAGEM',
+    sealText: 'Padrão Técnico',
+    sealIcon: Factory,
+    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+  },
+  {
+    name: 'Cliente Corporativo',
+    role: 'Parceiro Estratégico',
+    company: 'Setor Farmacêutico',
+    quote: '[Espaço reservado para depoimento real. O comissionamento e a documentação as-built rigorosa garantem total rastreabilidade e segurança operacional.]',
+    rating: 5,
+    tag: 'COMISSIONAMENTO',
+    sealText: 'Controle de Qualidade',
+    sealIcon: ShieldCheck,
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+  }
+];
 
 const SERVICES = [
   {
@@ -91,6 +116,8 @@ const TECHNICAL_AREAS = [
   },
 ];
 
+const SHOW_TESTIMONIALS = false;
+
 export function SolutionsMain() {
   return (
     <>
@@ -162,6 +189,60 @@ export function SolutionsMain() {
           </div>
         </SectionContainer>
       </section>
+
+      {/* Depoimentos Soluções */}
+      {SHOW_TESTIMONIALS && (
+
+      <section className="py-20 relative z-10 border-t border-white/10">
+        <SectionContainer className="py-0">
+          <AnimateOnScroll>
+            <div className="text-center mb-16">
+              <h4 className="text-primary font-bold uppercase tracking-widest text-sm mb-3">
+                Provas Sociais
+              </h4>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Entregas que geram impacto real
+              </h2>
+              <div className="w-16 h-1 bg-primary mx-auto" />
+            </div>
+          </AnimateOnScroll>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto pt-4">
+            {SOLUTIONS_TESTIMONIALS.map(({ name, role, company, quote, rating, tag, sealText, sealIcon: SealIcon, avatar }, i) => (
+              <AnimateOnScroll key={i} delay={i * 150}>
+                <div className="bg-white p-8 shadow-lg border-t-4 border-primary h-full flex flex-col relative mt-2">
+                  <div className="absolute top-0 right-6 -translate-y-1/2 bg-primary text-white text-[10px] sm:text-xs font-bold px-3 py-1 uppercase tracking-widest shadow-md">
+                    {tag}
+                  </div>
+                  
+                  <div className="flex mb-4">
+                    {Array.from({ length: rating }).map((_, j) => (
+                      <Star key={j} size={16} className="text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <MessageSquare size={32} className="text-primary/20 mb-4" />
+                  <p className="text-gray-600 italic leading-relaxed flex-grow">"{quote}"</p>
+                  
+                  <div className="mt-6 flex items-center justify-end gap-2 text-gray-400/80">
+                    <SealIcon size={20} className="shrink-0" />
+                    <span className="text-[10px] font-bold uppercase tracking-wider">{sealText}</span>
+                  </div>
+
+                  <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border-2 border-gray-100">
+                      <img src={avatar} alt={name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-secondary text-sm">{name}</div>
+                      <div className="text-xs text-gray-500">{role} · {company}</div>
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+            ))}
+          </div>
+        </SectionContainer>
+      </section>
+      )}
 
       {/* Áreas Técnicas */}
       <section className="py-20 relative z-10">

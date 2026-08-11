@@ -49,13 +49,16 @@ export function ToolsMain() {
       <EditableElement
         id="tools_hero_bg"
         type="container"
-        as="section"
-        className="prime-bg-standard relative min-h-[55vh] flex items-center bg-secondary overflow-hidden"
-        defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}
+        as="div"
+        className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
+        defaultStyle={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')", backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-secondary/60 z-0" />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent z-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+        <div className="absolute inset-0 bg-secondary/70 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent z-0" />
+      </EditableElement>
+
+      <section className="relative min-h-[50vh] flex items-center z-10 pt-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <AnimateOnScroll><div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" /></AnimateOnScroll>
           <AnimateOnScroll delay={200}>
             <h1 className="text-4xl md:text-6xl font-black text-white mb-6">
@@ -68,13 +71,13 @@ export function ToolsMain() {
             </div>
           </AnimateOnScroll>
         </div>
-      </EditableElement>
+      </section>
 
-      <section className="bg-surface py-20">
+      <section className="py-20 relative z-10">
         <SectionContainer className="py-0">
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold text-secondary mb-2">Ferramentas Online</h2>
-            <p className="text-gray-500">Links para conversores e simuladores externos de referência técnica.</p>
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold text-white mb-3">Ferramentas Online</h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">Links para conversores e simuladores externos de referência técnica.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {WEB_TOOLS.map(({ icon: Icon, name, desc, url }, i) => (

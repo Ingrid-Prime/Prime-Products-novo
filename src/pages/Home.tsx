@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
   Gauge, ShieldCheck, Settings, FlaskConical, Flame, CheckCircle,
   ArrowRight, MessageSquare, Star, ChevronDown, ChevronUp,
-  History, Briefcase, Trophy, PhoneCall, Wrench
+  History, Briefcase, Trophy, PhoneCall, Wrench, Factory, Zap
 } from 'lucide-react';
 import { AnimateOnScroll } from '../components/AnimateOnScroll';
 import { EditableElement } from '../components/EditableElement';
@@ -22,7 +22,7 @@ const SOLUTIONS = [
   { icon: FlaskConical, id: 'sol_7', label: 'Cilindros Tipo 4', path: '/produto/cilindros-tipo-4', desc: 'Cilindros compósitos de alta performance para logística e mobilidade.', img: '/images/produtos/cilindros-tipo-4/capa-new.jpeg' },
   { icon: Settings, id: 'sol_8', label: 'Conexões para Instrumentação', path: '/produto/conexoes-instrumentacao', desc: 'Conexões certificadas para aplicações analíticas e industriais.', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg' },
   { icon: FlaskConical, id: 'sol_9', label: 'Dewars e Recipientes Criogênicos', path: '/produto/dewars-criogenicos', desc: 'Recipientes criogênicos para armazenamento de gases liquefeitos.', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg' },
-  { icon: Gauge, id: 'sol_10', label: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais', desc: 'Reguladores de alta performance para gases especiais e calibração.', img: '/images/produtos/aplicacao-real.webp' },
+  { icon: Gauge, id: 'sol_10', label: 'Reguladores de Gases Especiais', path: '/produto/reguladores-especiais', desc: 'Reguladores de alta performance para gases especiais e calibração.', img: '/images/produtos/prod-reguladores-especiais-new.jpg' },
 ];
 
 const APPLICATIONS = [
@@ -32,9 +32,39 @@ const APPLICATIONS = [
 ];
 
 const TESTIMONIALS = [
-  { name: 'Eng. Ricardo Mendes', role: 'Gerente de Manutenção', company: 'Indústria Petroquímica', quote: 'A Prime Products entregou uma solução de monitoramento de gases que elevou nosso padrão de segurança. O suporte técnico durante a instalação foi o diferencial.', rating: 5 },
-  { name: 'Dra. Juliana Costa', role: 'Diretora de Laboratório', company: 'Centro de Análises Clínicas', quote: 'Precisávamos de gases de alta pureza e reguladores precisos. A consultoria técnica da Prime nos ajudou a especificar exatamente o que precisávamos.', rating: 5 },
-  { name: 'Carlos Ferreira', role: 'Coordenador de Projetos', company: 'Empresa de Energia', quote: 'Confiabilidade é a palavra. Os equipamentos são robustos e a entrega foi pontual. É um parceiro que indicamos para projetos críticos.', rating: 5 },
+  {
+    name: 'Cliente Corporativo',
+    role: 'Parceiro Estratégico',
+    company: 'Setor Petroquímico',
+    quote: '[Espaço reservado para depoimento real. A Prime assegura conformidade e segurança em projetos críticos de automação e gases especiais.]',
+    rating: 5,
+    tag: 'AUTOMAÇÃO DE GASES',
+    sealText: 'Padrão Técnico',
+    sealIcon: Factory,
+    avatar: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+  },
+  {
+    name: 'Cliente Corporativo',
+    role: 'Parceiro Estratégico',
+    company: 'Centro de Análises',
+    quote: '[Espaço reservado para depoimento real. Mais do que fornecer reguladores, a equipe projeta skids focados na estabilidade de vazão.]',
+    rating: 5,
+    tag: 'SISTEMA ANALÍTICO',
+    sealText: 'Qualidade Lab.',
+    sealIcon: FlaskConical,
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+  },
+  {
+    name: 'Cliente Corporativo',
+    role: 'Parceiro Estratégico',
+    company: 'Setor de Energia',
+    quote: '[Espaço reservado para depoimento real. Projetos críticos de energia exigem rigor e especificações entregues dentro do prazo estipulado.]',
+    rating: 5,
+    tag: 'PROJETOS TURN-KEY',
+    sealText: 'Certificação ISO',
+    sealIcon: Zap,
+    avatar: 'https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80'
+  }
 ];
 
 const FAQS = [
@@ -70,6 +100,8 @@ const STATS = [
   { icon: ShieldCheck, numId: 'home_stat_3_num', lblId: 'home_stat_3_lbl', num: '100%', lbl: 'Segurança Operacional' },
   { icon: Trophy, numId: 'home_stat_4_num', lblId: 'home_stat_4_lbl', num: '+50', lbl: 'Marcas Parceiras' },
 ];
+
+const SHOW_TESTIMONIALS = false;
 
 export function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -142,7 +174,7 @@ export function Home() {
               <AnimateOnScroll className="h-full">
               <div className="relative pl-8 pt-8 h-full min-h-[400px]">
                 <div className="absolute top-0 left-0 w-3/4 h-3/4 bg-gray-50 -z-10" />
-                <EditableElement id="home_about_img" type="image" defaultContent="/images/home/home-about-ihm-new-2.jpg" className="w-full h-full object-cover object-center shadow-lg relative z-10 rounded-sm" />
+                <EditableElement id="home_about_img" type="image" defaultContent="/images/home/imagem-para-home-site.webp" className="w-full h-full object-cover object-center shadow-lg relative z-10 rounded-sm" />
                 <div className="absolute bottom-0 right-0 bg-primary text-white p-6 md:p-10 z-20 shadow-xl -mb-6 md:-mb-10 mr-4 md:mr-0 max-w-[200px] md:max-w-[240px]">
                   <div className="text-4xl md:text-5xl font-black mb-1">
                     <EditableElement id="home_about_stat_num" defaultContent="100%" />
@@ -325,6 +357,8 @@ export function Home() {
       </section>
 
       {/* Testimonials */}
+      {SHOW_TESTIMONIALS && (
+
       <section className="bg-surface py-20">
         <SectionContainer className="py-0">
           <AnimateOnScroll>
@@ -333,15 +367,20 @@ export function Home() {
                 <EditableElement id="home_test_label" defaultContent="Depoimentos" />
               </h4>
               <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">
-                <EditableElement id="home_test_title" defaultContent="O que dizem nossos clientes" />
+                <EditableElement id="home_test_title" defaultContent="Resultados comprovados em operações críticas." />
               </h2>
               <div className="w-16 h-1 bg-primary mx-auto" />
             </div>
           </AnimateOnScroll>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {TESTIMONIALS.map(({ name, role, company, quote, rating }, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4">
+            {TESTIMONIALS.map(({ name, role, company, quote, rating, tag, sealText, sealIcon: SealIcon, avatar }, i) => (
               <AnimateOnScroll key={i} delay={i * 150}>
-                <div className="bg-white p-8 shadow-lg border-t-4 border-primary h-full flex flex-col">
+                <div className="bg-white p-8 shadow-lg border-t-4 border-primary h-full flex flex-col relative mt-2">
+                  {/* Tag de Projeto */}
+                  <div className="absolute top-0 right-6 -translate-y-1/2 bg-primary text-white text-[10px] sm:text-xs font-bold px-3 py-1 uppercase tracking-widest shadow-md">
+                    {tag}
+                  </div>
+                  
                   <div className="flex mb-4">
                     {Array.from({ length: rating }).map((_, j) => (
                       <Star key={j} size={16} className="text-yellow-400 fill-current" />
@@ -349,9 +388,16 @@ export function Home() {
                   </div>
                   <MessageSquare size={32} className="text-primary/20 mb-4" />
                   <p className="text-gray-600 italic leading-relaxed flex-grow">"{quote}"</p>
-                  <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
-                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0">
-                      {name.charAt(0)}
+                  
+                  {/* Selos / Logos */}
+                  <div className="mt-6 flex items-center gap-2 text-gray-400/80">
+                    <SealIcon size={20} className="shrink-0" />
+                    <span className="text-[10px] font-bold uppercase tracking-wider">{sealText}</span>
+                  </div>
+
+                  <div className="mt-4 pt-4 border-t border-gray-100 flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 border-2 border-gray-100">
+                      <img src={avatar} alt={name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     </div>
                     <div>
                       <div className="font-bold text-secondary text-sm">{name}</div>
@@ -364,6 +410,7 @@ export function Home() {
           </div>
         </SectionContainer>
       </section>
+      )}
 
       {/* Latest Articles */}
       {latestArticles.length > 0 && (

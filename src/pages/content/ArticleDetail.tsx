@@ -4,12 +4,24 @@ import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { SectionContainer } from '../../components/SectionContainer';
 import { useCMS } from '../../contexts/CMSContext';
 
+const ARTICLE_GALLERY: Record<string, string[]> = {
+  // Exemplo: 'id-do-artigo': ['/caminho/img1.jpg', '/caminho/img2.jpg']
+};
+
 export function ArticleDetail() {
   const { id } = useParams<{ id: string }>();
   const { articles } = useCMS();
 
-  const article = articles.find((a) => a.id === id);
-  const related = articles.filter((a) => a.id !== id).slice(0, 3);
+  // Garante que o primeiro artigo carregue a imagem correta ignorando cache corrompido do CMS local
+  const safeArticles = articles.map(a => 
+    a.id === 'seguranca-producao-hidrogenio-anp' 
+      ? { ...a, image: '/images/conteudos/capa-novos-2-corrigida.jpg' } 
+      : a
+  );
+
+  const article = safeArticles.find((a) => a.id === id);
+  const related = safeArticles.filter((a) => a.id !== id).slice(0, 2);
+  const galleryImages = id ? (ARTICLE_GALLERY[id] ?? []) : [];
 
   if (!article) {
     return (
@@ -28,7 +40,9 @@ export function ArticleDetail() {
         className="prime-bg-standard relative min-h-[65vh] flex items-end bg-secondary overflow-hidden pb-16 pt-40"
         style={{ backgroundImage: `url('${article.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent" />
+        {/* Overlay escuro para não ficar idêntica à imagem da galeria no fim da página */}
+        <div className="absolute inset-0 bg-black/60 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center gap-3 mb-4">
             <span className="inline-flex items-center gap-1 bg-primary text-white text-xs font-bold uppercase tracking-wider px-3 py-1">
@@ -67,30 +81,9 @@ export function ArticleDetail() {
                 )}
               </div>
 
-              {related.length > 0 && (
-                <div>
-                  <h2 className="text-xl font-bold text-secondary mb-6">Artigos Relacionados</h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    {related.map(({ id: rid, title, category, image }) => (
-                      <Link key={rid} to={`/artigo/${rid}`} className="group bg-white shadow-md hover:shadow-lg transition-all block overflow-hidden">
-                        <div className="h-32 overflow-hidden">
-                          <img src={image} alt={title} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
-                        </div>
-                        <div className="p-4">
-                          <span className="text-xs font-bold text-primary uppercase">{category}</span>
-                          <h4 className="text-sm font-bold text-secondary mt-1 leading-tight group-hover:text-primary transition-colors">{title}</h4>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
 
             <div className="space-y-6">
-              <AnimateOnScroll>
-                <img src={article.image} alt={article.title} className="w-full rounded-sm shadow-lg" referrerPolicy="no-referrer" />
-              </AnimateOnScroll>
               <div className="bg-secondary text-white p-8 rounded-sm shadow-lg">
                 <h3 className="font-bold text-lg mb-4">Solicitar Informações</h3>
                 <p className="text-gray-400 text-sm mb-6">Nossa equipe técnica está pronta para atender sua demanda.</p>
@@ -104,17 +97,51 @@ export function ArticleDetail() {
               </div>
               {related.length > 0 && (
                 <div className="bg-white p-6 shadow-md rounded-sm">
-                  <h3 className="font-bold text-secondary mb-4 text-sm uppercase tracking-wide">Mais Artigos</h3>
-                  <div className="space-y-2">
-                    {related.map(({ id: rid, title }) => (
-                      <Link key={rid} to={`/artigo/${rid}`} className="block text-sm text-gray-600 hover:text-primary transition-colors py-1 border-b border-gray-100 last:border-0 flex items-center gap-2">
-                        <ArrowRight size={12} className="text-primary shrink-0" /> {title}
+                  <h3 className="font-bold text-secondary mb-4 text-sm uppercase tracking-wide">Artigos Relacionados</h3>
+                  <div className="grid grid-cols-1 gap-4">
+                    {related.map(({ id: rid, title, category, image }) => (
+                      <Link key={rid} to={`/artigo/${rid}`} className="group border border-gray-100 hover:border-primary hover:shadow-md transition-all block overflow-hidden">
+                        <div className="h-32 overflow-hidden">
+                          <img src={image} alt={title} className="prime-image-standard w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+                        </div>
+                        <div className="p-4 bg-gray-50/50">
+                          <span className="text-xs font-bold text-primary uppercase">{category}</span>
+                          <h4 className="text-sm font-bold text-secondary mt-1 leading-tight group-hover:text-primary transition-colors">{title}</h4>
+                        </div>
                       </Link>
                     ))}
                   </div>
                 </div>
               )}
             </div>
+          </div>
+
+          {/* Galeria Técnica */}
+          <div className="mt-16 border-t border-gray-200 pt-12">
+            <h2 className="text-3xl font-bold text-secondary mb-8 text-center">Galeria Técnica</h2>
+            <AnimateOnScroll>
+              <div className={`grid gap-6 ${galleryImages.length === 0 ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2'}`}>
+                {/* Imagem Principal Grande Embaixo */}
+                <div className="relative group overflow-hidden rounded-sm shadow-md md:col-span-full">
+                  <img 
+                    src={article.image} 
+                    alt={`${article.title} - Imagem Principal`} 
+                    className="w-full max-h-[800px] object-cover bg-gray-50 group-hover:scale-[1.02] transition-transform duration-700" 
+                    referrerPolicy="no-referrer" 
+                  />
+                </div>
+                {galleryImages.map((src: string, i: number) => (
+                  <div key={i} className="relative group overflow-hidden rounded-sm shadow-md">
+                    <img 
+                      src={src} 
+                      alt={`${article.title} - Imagem Técnica ${i + 1}`} 
+                      className="w-full h-96 object-cover group-hover:scale-[1.02] transition-transform duration-700" 
+                      referrerPolicy="no-referrer" 
+                    />
+                  </div>
+                ))}
+              </div>
+            </AnimateOnScroll>
           </div>
         </SectionContainer>
       </section>
