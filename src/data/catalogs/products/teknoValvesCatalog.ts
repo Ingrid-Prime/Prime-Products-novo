@@ -54,7 +54,7 @@ export const TEKNO_VALVES_CATALOG = [
     columns: ['IMAGE', 'MODEL', 'DESCRIPTION', 'APPLICATION'],
     rows: [
       [renderImages(['rwh-03.png', 'rwh-033.png']), 'RWH-03', 'Handwheel Operated Brass Valves in Diaphragm Design. 250 bar WP.', 'Speciality & Refrigerant Gases'],
-      [renderImages(['twh-03.png', 'twh03.png']), 'TWH-03', 'Handwheel Operated Stainless Steel Valves in Diaphragm Design. 240 bar WP. SS 303 / SS 316L body.', 'Speciality, Toxic & Corrosive Gases'],
+      [renderImages(['twh-03.png', 'twh-03.png']), 'TWH-03', 'Handwheel Operated Stainless Steel Valves in Diaphragm Design. 240 bar WP. SS 303 / SS 316L body.', 'Speciality, Toxic & Corrosive Gases'],
       [renderImages(['sswn-22-v-s3.png']), 'SSWN-22/V-S3', 'Handwheel Operated Compression Packed Valves with O-ring Seal. SS 303 body.', 'Ammonia & Amines'],
       [renderImages(['cst-06.png']), 'CST-06', 'Key Operated Carbon Steel Valves in Packed Design (CGA V-9 / IS 3224). Low carbon steel body.', 'Ammonia & Amines'],
       [renderImages(['rdp-03.png']), 'RDP-03', 'Handwheel Operated Brass Valves in Diaphragm Design with integrated RPV.', 'Speciality Gases']

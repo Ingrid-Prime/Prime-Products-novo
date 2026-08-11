@@ -73,10 +73,10 @@ export const TKF_CATALOG = [
     title: 'CNG APPLICATION',
     columns: ['IMAGE', 'PRODUCT FAMILY', 'DESCRIPTION', 'APPLICATION'],
     rows: [
-      [renderImages(['CVV1.png', 'CVV11.png']), 'CVV1', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly'],
-      [renderImages(['CVV1A.jpeg', 'CVV1AA.jpeg']), 'CVV1A', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly'],
-      [renderImages(['CVV2.png', 'CVV22.png']), 'CVV2', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly'],
-      [renderImages(['CVV2A.jpeg', 'CVV2AA.png']), 'CVV2A', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly']
+      [renderImages(['cvv1.png', 'cvv11.png']), 'CVV1', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly'],
+      [renderImages(['cvv1a.jpeg', 'cvv1aa.jpeg']), 'CVV1A', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly'],
+      [renderImages(['cvv2.png', 'cvv22.png']), 'CVV2', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly'],
+      [renderImages(['cvv2a.jpeg', 'cvv2aa.png']), 'CVV2A', 'Hot Forged Brass. W.P: 26Mpa.', 'CNG Assembly']
     ]
   }
 ];
