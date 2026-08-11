@@ -24,7 +24,7 @@ export const TYPE4_CATALOG = [
 export const TYPE4_EXTRA_BLOCKS = [
   {
     title: 'Configurações e Acessórios (Instalação e Fixação)',
-    image: '/images/produtos/cilindros-tipo-4/Sistema de Fixação por Cintas.jpg',
+    image: '/images/produtos/cilindros-tipo-4/sistema-de-fixacao-por-cintas.jpg',
     desc: 'O cilindro compósito deve ser montado de forma a acomodar a expansão volumétrica durante a pressurização. A Prime orienta sobre os sistemas de fixação corretos para evitar danos estruturais.',
     list: [
       'Sistemas de cintas com proteção elastomérica (Neck/Strap Mount).',

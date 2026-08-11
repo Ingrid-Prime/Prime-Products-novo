@@ -1,5 +1,4 @@
 const renderImages = (images: string[], scaleClass: string = '') => {
-  const isMultiple = images.length > 1;
   const containerClass = "flex flex-row flex-wrap gap-2 items-center justify-center min-w-[120px] max-w-[250px] mx-auto";
   const imgSize = "w-24 h-24";
     

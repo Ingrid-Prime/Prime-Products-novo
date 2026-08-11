@@ -16,7 +16,7 @@ export const TKF_CATALOG = [
     title: 'ULTRA HIGH PURITY (UHP) FITTINGS & COMPONENTS',
     columns: ['IMAGE', 'PRODUCT FAMILY', 'DESCRIPTION', 'APPLICATION'],
     rows: [
-      [renderImages(['Bend Fittings.jpeg', 'Bend Fittings2.jpeg', 'Bend Fittings3.jpeg']), 'Bend Fittings', 'High purity bend fittings sizes 1/4" ~ 600A for semiconductor applications.', 'UHP Systems'],
+      [renderImages(['bend-fittings.jpeg', 'bend-fittings2.jpeg', 'bend-fittings3.jpeg']), 'Bend Fittings', 'High purity bend fittings sizes 1/4" ~ 600A for semiconductor applications.', 'UHP Systems'],
       [renderImages(['clean-ball-valve.png']), 'Clean Ball V/V', 'Ultra clean ball valves for high purity gas distribution lines.', 'UHP Systems'],
       [renderImages(['bellows-valve.png']), 'Bellows V/V', 'Bellows sealed valves ensuring absolute leak tightness in UHP environments.', 'UHP Systems'],
       [renderImages(['diaphragm-valve.png']), 'Diaphragm V/V', 'Precision metal diaphragm valves for zero particle generation.', 'UHP Systems'],
