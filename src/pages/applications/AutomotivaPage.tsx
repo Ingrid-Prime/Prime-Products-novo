@@ -14,7 +14,7 @@ const AutomotivaPage = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url("/images/aplicacoes/automotivo.jpg")',
+            backgroundImage: 'url("/images/aplicacoes/automotiva/app-automotivo-2.jpg")',
             backgroundPosition: 'center',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat'
@@ -221,7 +221,7 @@ const AutomotivaPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               '/images/aplicacoes/automotiva/app-automotivo-1.jpg',
-              '/images/aplicacoes/automotiva/app-automotivo-2.jpg',
+              '/images/aplicacoes/automotivo.jpg',
               '/images/aplicacoes/automotiva/caminhao.png'
             ].map((img, idx) => (
               <div key={idx} className={`relative overflow-hidden rounded-sm shadow-md group h-80 ${idx === 2 ? 'md:col-span-2' : ''}`}>

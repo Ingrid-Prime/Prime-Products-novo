@@ -57,7 +57,7 @@ export const TEKNO_VALVES_CATALOG = [
       [renderImages(['twh-03.png', 'twh-03.png']), 'TWH-03', 'Handwheel Operated Stainless Steel Valves in Diaphragm Design. 240 bar WP. SS 303 / SS 316L body.', 'Speciality, Toxic & Corrosive Gases'],
       [renderImages(['sswn-22-v-s3.png']), 'SSWN-22/V-S3', 'Handwheel Operated Compression Packed Valves with O-ring Seal. SS 303 body.', 'Ammonia & Amines'],
       [renderImages(['cst-06.png']), 'CST-06', 'Key Operated Carbon Steel Valves in Packed Design (CGA V-9 / IS 3224). Low carbon steel body.', 'Ammonia & Amines'],
-      [renderImages(['rdp-03.png']), 'RDP-03', 'Handwheel Operated Brass Valves in Diaphragm Design with integrated RPV.', 'Speciality Gases']
+      [renderImages(['rdp-03.png']), 'RDP-03', 'Dual Port (Liquid / Gas) Handwheel Operated Brass Valves in Diaphragm Design for Refrigerant Gases.', 'Speciality Gases']
     ]
   },
   {
@@ -68,7 +68,7 @@ export const TEKNO_VALVES_CATALOG = [
       [renderImages(['mba-10.png'], 'scale-150'), 'MBA-10', 'Medical Valves in O-ring Seal Design. 360 bar WP.', 'Medical Breathing Air'],
       [renderImages(['alv-10.png', 'alv-100.png']), 'ALV-10', 'Auto Lifting Valves for Fire Fighting / CO2 Cylinders. 360 bar WP.', 'Fire Fighting'],
       [renderImages(['fsg-07.png', 'fsg-077.png']), 'FSG-07', 'Handwheel Operated Valves in Packed Design. Heavy duty design.', 'NGV (Natural Gas for Vehicles)'],
-      [renderImages(['bmv-09.png'], 'scale-150'), 'BMV-09', 'Ball Valves for CNG applications.', 'NGV (Natural Gas for Vehicles)']
+      [renderImages(['bmv-09.png'], 'scale-150'), 'BMV-09', 'High Pressure Manifold Line Valve', 'NGV (Natural Gas for Vehicles)']
     ]
   }
 ];

@@ -22,7 +22,7 @@ const APPLICATION_GROUPS: AppGroup[] = [
     group: 'Indústria',
     color: 'bg-blue-700',
     items: [
-      { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/aplicacoes/automotivo.jpg' },
+      { id: 'automotivo', name: 'Automotivo', desc: 'Gases para soldagem, testes de estanqueidade, pintura e processos de fabricação na indústria automotiva.', img: '/images/aplicacoes/automotiva/app-automotivo-2.jpg' },
       { id: 'soldagem', name: 'Metal Mecânica', desc: 'Misturas para MIG/TIG, oxicorte e oxiacetilênico. Reguladores e acessórios para processos de soldagem industrial.', img: '/images/aplicacoes/metal-mecanica.jpg' },
       { id: 'mineral', name: 'Mineração', desc: 'Instrumentação robusta para ambientes de mineração, controle de processo e segurança em ambientes subterrâneos.', img: '/images/aplicacoes/mineiracao.jpg' },
     ],

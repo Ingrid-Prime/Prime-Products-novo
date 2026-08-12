@@ -17,7 +17,7 @@ const APP_GALLERY: Record<string, string[]> = {
   'alimentos-bebidas': ['/images/aplicacoes/alimenticia/app-alimentos-bebidas-1.jpg', '/images/aplicacoes/alimenticia/app-alimentos-bebidas-2.jpg', '/images/aplicacoes/alimenticia/segmento-de-alimentos-e-bebidas.png'],
   'energia-transicao-energetica': ['/images/aplicacoes/energias-renovaveis-hidrogenio/app-energia-renovavel-1.jpg', '/images/aplicacoes/energias-renovaveis-hidrogenio/app-energia-renovavel-2.jpg', '/images/aplicacoes/energias-renovaveis-hidrogenio/energia-verde-transicao-energetica.png', '/images/aplicacoes/energias-renovaveis-hidrogenio/h2-jumbo-tube.png'],
   'criogenia': ['/images/aplicacoes/criogenia/app-criogenia.jpg', '/images/aplicacoes/criogenia/criogenia.png', '/images/aplicacoes/criogenia/prod-dewars-2.png', '/images/aplicacoes/criogenia/prod-dewars-3.png'],
-  'automotivo': ['/images/aplicacoes/automotiva/app-automotivo-1.jpg', '/images/aplicacoes/automotiva/app-automotivo-2.jpg', '/images/aplicacoes/automotiva/caminhao.png'],
+  'automotivo': ['/images/aplicacoes/automotiva/app-automotivo-1.jpg', '/images/aplicacoes/automotivo.jpg', '/images/aplicacoes/automotiva/caminhao.png'],
   'soldagem': ['/images/aplicacoes/metal-mecanica/prod-corte-solda-principal.jpg', '/images/aplicacoes/metal-mecanica/equipamentos-para-corte-e-solda.png', '/images/aplicacoes/metal-mecanica/prod-corte-solda-2.png'],
   'mineral': ['/images/aplicacoes/mineracao/mineracao-principal.jpg', '/images/aplicacoes/mineracao/app-mineracao-1.jpg', '/images/aplicacoes/mineracao/app-mineracao-2.jpg'],
 };
@@ -169,7 +169,7 @@ const APPLICATION_DATA: Record<string, {
   'automotivo': {
     name: 'Automotivo',
     cat: 'Indústria',
-    img: '/images/aplicacoes/automotivo.jpg',
+    img: '/images/aplicacoes/automotiva/app-automotivo-2.jpg',
     desc: 'A indústria automotiva utiliza gases para soldagem MIG/TIG, testes de estanqueidade, pintura a pó, processos de fabricação e controle de qualidade. A Prime fornece misturas certificadas, reguladores e equipamentos para cada etapa da produção.',
     challenges: ['Misturas para soldagem MIG/TIG com precisão de composição', 'Testes de estanqueidade em componentes e sistemas', 'Alta demanda e fornecimento contínuo nas linhas de produção', 'Conformidade com normas automotivas (IATF 16949)'],
     solutions: ['Misturas Ar+CO₂, Ar+He e gases puros para soldagem', 'Reguladores de alta vazão para linhas de produção', 'Cilindros de alumínio leves para aplicações móveis', 'Kits completos de corte e solda para manutenção'],
