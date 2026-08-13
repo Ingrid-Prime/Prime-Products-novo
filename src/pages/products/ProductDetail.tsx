@@ -4,8 +4,9 @@ import { ArrowLeft, ArrowRight, CheckCircle, Phone, Mail, FileText, Send } from 
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
-import { useCMS } from '../../contexts/CMSContext';
+import { defaultArticles } from '../../data/defaultArticles';
 import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG, TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS, ALUMINUM_CYLINDERS_CATALOG, ALUMINUM_CYLINDERS_EXTRA_BLOCKS, OXYGEN_GENERATION_CATALOG, OXYGEN_GENERATION_EXTRA_BLOCKS, CUTTING_WELDING_CATALOG, CUTTING_WELDING_EXTRA_BLOCKS, FIRE_SUPPRESSION_CATALOG, FIRE_SUPPRESSION_EXTRA_BLOCKS } from '../../data/catalogs';
+
 
 const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; video?: string; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG | typeof ALUMINUM_CYLINDERS_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS | typeof ALUMINUM_CYLINDERS_EXTRA_BLOCKS }> = {
   'cilindros-aluminio': { 
@@ -92,7 +93,7 @@ const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; ima
 
 export function ProductDetail() {
   const { id } = useParams<{ id: string }>();
-  const { articles } = useCMS();
+  const articles = defaultArticles;
   const [quoteForm, setQuoteForm] = useState({ name: '', company: '', email: '', phone: '', qty: '', details: '' });
   const [quoteSent, setQuoteSent] = useState(false);
   const [quoteSending, setQuoteSending] = useState(false);

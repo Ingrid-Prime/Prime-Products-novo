@@ -2,18 +2,16 @@ import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import {
   Menu, X, ChevronDown, MapPin, Phone, Mail, ChevronRight,
-  Edit, Lock,
+  Lock,
 } from 'lucide-react';
-import { useCMS } from '../contexts/CMSContext';
-import { CMSEditor } from './CMSEditor';
 import { EditableElement } from './EditableElement';
+import { defaultNavItems } from '../data/navItems';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const location = useLocation();
-  const { isAuthenticated, isEditing, toggleEditing, navItems } = useCMS();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -29,7 +27,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex flex-col min-h-screen font-sans text-secondary">
-      <CMSEditor />
 
       {/* Topbar */}
       <div className="bg-primary text-white text-xs font-medium py-2 px-4 hidden md:block">
@@ -49,14 +46,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Phone size={14} className="text-white fill-current" />
               <EditableElement id="layout_topbar_phone" defaultContent="(31) 9 8670-8742" />
             </span>
-            {isAuthenticated && (
-              <button
-                onClick={toggleEditing}
-                className="ml-4 flex items-center gap-1 bg-white/20 px-2 py-0.5 rounded hover:bg-white/30 transition-colors"
-              >
-                <Edit size={12} /> {isEditing ? 'Sair da Edição' : 'Editar Site'}
-              </button>
-            )}
           </div>
         </div>
       </div>
@@ -83,7 +72,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
             {/* Desktop nav */}
             <nav className="hidden xl:flex space-x-1 items-center">
-              {navItems.map((item, i) => (
+              {defaultNavItems.map((item: any, i: number) => (
                 <div key={item.path} className="relative group px-3 py-2">
                   {item.subItems ? (
                     <>
@@ -100,7 +89,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                       </NavLink>
                       <div className="absolute left-0 top-full pt-2 opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-200 w-56">
                         <div className="bg-white shadow-xl rounded-sm border-t-4 border-primary p-2 flex flex-col gap-1 max-h-[80vh] overflow-y-auto custom-scrollbar">
-                          {item.subItems.map((sub, j) => (
+                          {item.subItems.map((sub: any, j: number) => (
                             <NavLink
                               key={j}
                               to={sub.path}
@@ -158,7 +147,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {mobileOpen && (
           <div className="xl:hidden bg-white border-t border-gray-100 absolute w-full shadow-2xl z-50 animate-fade-in-up">
             <div className="px-4 pt-4 pb-6 space-y-2 h-[80vh] overflow-y-auto">
-              {navItems.map((item, i) => (
+              {defaultNavItems.map((item: any, i: number) => (
                 <div key={item.path}>
                   {item.subItems ? (
                     <div>
@@ -183,7 +172,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                       </div>
                       {mobileExpanded === item.label && (
                         <div className="pl-6 space-y-1 mt-1 border-l-2 border-primary/20 ml-4">
-                          {item.subItems.map((sub, j) => (
+                          {item.subItems.map((sub: any, j: number) => (
                             <NavLink
                               key={j}
                               to={sub.path}
@@ -281,7 +270,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Navegação
               </h3>
               <ul className="space-y-3">
-                {navItems.map((item, i) => (
+                {defaultNavItems.map((item: any, i: number) => (
                   <li key={item.path}>
                     <Link
                       to={item.path}

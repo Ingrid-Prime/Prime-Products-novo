@@ -1,11 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { CMSProvider } from './contexts/CMSContext';
 import { Layout } from './components/Layout';
 
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
-import { Login } from './pages/Login';
 
 import { SolutionsMain } from './pages/solutions/SolutionsMain';
 import { InstrumentacaoMedicao } from './pages/solutions/InstrumentacaoMedicao';
@@ -31,7 +29,6 @@ import { ArticleDetail } from './pages/content/ArticleDetail';
 export function App() {
   return (
     <BrowserRouter>
-      <CMSProvider>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -53,10 +50,8 @@ export function App() {
             <Route path="/conteudo" element={<ContentMain />} />
             <Route path="/artigo/:id" element={<ArticleDetail />} />
             <Route path="/contato" element={<Contact />} />
-            <Route path="/login" element={<Login />} />
           </Routes>
         </Layout>
-      </CMSProvider>
     </BrowserRouter>
   );
 }

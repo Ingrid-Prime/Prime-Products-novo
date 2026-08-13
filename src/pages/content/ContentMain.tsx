@@ -3,10 +3,10 @@ import { ArrowRight, Calendar, Tag } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
-import { useCMS } from '../../contexts/CMSContext';
+import { defaultArticles } from '../../data/defaultArticles';
 
 export function ContentMain() {
-  const { articles } = useCMS();
+  const articles = defaultArticles;
 
   return (
     <>

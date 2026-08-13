@@ -10,7 +10,7 @@ import { EditableElement } from '../components/EditableElement';
 import { SectionContainer } from '../components/SectionContainer';
 import { Counter } from '../components/Counter';
 import { ParticleCanvas } from '../components/ParticleCanvas';
-import { useCMS } from '../contexts/CMSContext';
+import { defaultArticles } from '../data/defaultArticles';
 
 const SOLUTIONS = [
   { icon: Gauge, id: 'sol_1', label: 'Instrumentação de Processos', path: '/solucoes/instrumentacao-medicao', desc: 'Transmissores, sensores, reguladores e sistemas de medição de precisão.', img: '/images/solucoes-integradas/instrumentacao-medicao/capa-medicao-nova.jpg' },
@@ -105,8 +105,9 @@ const SHOW_TESTIMONIALS = false;
 
 export function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const { articles, data, isEditing } = useCMS();
-  const latestArticles = articles.slice(0, 4);
+  const data: Record<string, string> = {};
+  const isEditing = false;
+  const latestArticles = defaultArticles.slice(0, 4);
 
   return (
     <>

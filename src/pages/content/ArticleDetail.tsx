@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Calendar, Tag, Phone, Mail } from 'lucide-react';
 import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { SectionContainer } from '../../components/SectionContainer';
-import { useCMS } from '../../contexts/CMSContext';
+import { defaultArticles } from '../../data/defaultArticles';
 
 const ARTICLE_GALLERY: Record<string, string[]> = {
   // Exemplo: 'id-do-artigo': ['/caminho/img1.jpg', '/caminho/img2.jpg']
@@ -10,10 +10,9 @@ const ARTICLE_GALLERY: Record<string, string[]> = {
 
 export function ArticleDetail() {
   const { id } = useParams<{ id: string }>();
-  const { articles } = useCMS();
 
-  // Garante que o primeiro artigo carregue a imagem correta ignorando cache corrompido do CMS local
-  const safeArticles = articles.map(a => 
+  // Garante que o primeiro artigo carregue a imagem correta
+  const safeArticles = defaultArticles.map(a => 
     a.id === 'seguranca-producao-hidrogenio-anp' 
       ? { ...a, image: '/images/conteudos/capa-novos-2-corrigida.jpg' } 
       : a
