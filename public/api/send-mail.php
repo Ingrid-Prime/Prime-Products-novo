@@ -206,6 +206,10 @@ try {
     echo json_encode(['success' => true]);
 
 } catch (Exception $e) {
+    $logFile = __DIR__ . '/../../api_config/mail-error.log';
+    $errorMsg = "[" . date('Y-m-d H:i:s') . "] PHPMailer Error: " . $mail->ErrorInfo . " | Exception: " . $e->getMessage() . "\n";
+    @file_put_contents($logFile, $errorMsg, FILE_APPEND);
+
     http_response_code(500);
     // Erro genérico para o front-end, erro detalhado pode ser logado no servidor depois
     echo json_encode(['success' => false, 'error' => 'Não foi possível enviar sua mensagem. Tente novamente mais tarde.']);

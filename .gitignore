@@ -3,9 +3,9 @@ node_modules/
 .env.local
 *.local
 dist/
-public/images/Aplicações/
+public/images/AplicaÃ§Ãµes/
 
-public/images/Soluções/
+public/images/SoluÃ§Ãµes/
 public/api/data/cms-data.json
 public/api/data/cms-data.json.tmp
 public_html/api/data/
@@ -23,3 +23,5 @@ ARQUIVO/
 arquivados/
 public_html/
 Prime-Products-novo-main/
+
+ api_config/
