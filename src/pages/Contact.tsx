@@ -5,35 +5,42 @@ import { EditableElement } from '../components/EditableElement';
 import { SectionContainer } from '../components/SectionContainer';
 
 export function Contact() {
-  const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', subject: '', message: '' });
-  const [sent, setSent] = useState(false);
-  const [sending, setSending] = useState(false);
+  const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', subject: '', message: '', _hp: '' });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSending(true);
+    setStatus('sending');
+    setErrorMessage('');
 
-    // Salva lead no localStorage
-    const lead = { ...form, date: new Date().toISOString() };
     try {
-      const existing = JSON.parse(localStorage.getItem('prime_leads') ?? '[]') as object[];
-      existing.unshift(lead);
-      localStorage.setItem('prime_leads', JSON.stringify(existing));
-    } catch {}
-
-    // Envia por email via mailto
-    const body = [
-      `Nome: ${form.name}`,
-      `Empresa: ${form.company}`,
-      `Telefone: ${form.phone}`,
-      `Assunto: ${form.subject}`,
-      `Mensagem: ${form.message}`,
-    ].join('\n');
-    window.location.href = `mailto:diretoria@primeproducts.ind.br?subject=${encodeURIComponent('Contato Site: ' + form.subject)}&body=${encodeURIComponent(body)}`;
-
-    await new Promise((r) => setTimeout(r, 600));
-    setSent(true);
-    setSending(false);
+      const res = await fetch('/api/send-mail.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'contact',
+          nome: form.name,
+          empresa: form.company,
+          email: form.email,
+          telefone: form.phone,
+          assunto: form.subject,
+          mensagem: form.message,
+          _hp: form._hp
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus('success');
+        setForm({ name: '', company: '', email: '', phone: '', subject: '', message: '', _hp: '' });
+      } else {
+        setStatus('error');
+        setErrorMessage(data.error || 'Não foi possível enviar a mensagem.');
+      }
+    } catch (err) {
+      setStatus('error');
+      setErrorMessage('Erro de comunicação. Tente novamente mais tarde.');
+    }
   };
 
   const inputCls = 'w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white text-secondary placeholder-gray-400';
@@ -157,12 +164,12 @@ export function Contact() {
 
               {/* Form panel */}
               <div className="p-12">
-                {sent ? (
-                  <div className="h-full flex flex-col items-center justify-center text-center py-10">
+                {status === 'success' ? (
+                  <div className="h-full flex flex-col items-center justify-center text-center py-10 animate-fade-in-up">
                     <CheckCircle size={64} className="text-green-500 mb-6" />
                     <h3 className="text-2xl font-bold text-secondary mb-3">Mensagem Enviada!</h3>
                     <p className="text-gray-500 mb-6">Nossa equipe entrará em contato em breve.</p>
-                    <button onClick={() => setSent(false)} className="text-primary font-bold hover:underline">Enviar nova mensagem</button>
+                    <button onClick={() => setStatus('idle')} className="text-primary font-bold hover:underline">Enviar nova mensagem</button>
                   </div>
                 ) : (
                   <>
@@ -170,6 +177,7 @@ export function Contact() {
                       <EditableElement id="cont_form_t" defaultContent="Envie sua Mensagem" />
                     </h3>
                     <form onSubmit={handleSubmit} className="space-y-5">
+                      <input type="text" name="_hp" style={{ display: 'none' }} value={form._hp} onChange={(e) => setForm(f => ({ ...f, _hp: e.target.value }))} tabIndex={-1} autoComplete="off" />
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Nome *</label>
@@ -198,8 +206,13 @@ export function Contact() {
                         <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Mensagem *</label>
                         <textarea className={`${inputCls} resize-none`} rows={5} required placeholder="Detalhe sua aplicação, projeto ou dúvida técnica..." value={form.message} onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))} />
                       </div>
-                      <button type="submit" disabled={sending} className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 rounded-sm transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 shadow-lg disabled:opacity-60">
-                        <Send size={18} /> {sending ? 'ENVIANDO...' : 'ENVIAR MENSAGEM'}
+                      {status === 'error' && (
+                        <div className="bg-red-50 text-red-600 p-3 rounded-sm text-sm font-medium">
+                          {errorMessage}
+                        </div>
+                      )}
+                      <button type="submit" disabled={status === 'sending'} className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 rounded-sm transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 shadow-lg disabled:opacity-60">
+                        <Send size={18} /> {status === 'sending' ? 'ENVIANDO...' : 'ENVIAR MENSAGEM'}
                       </button>
                     </form>
                   </>

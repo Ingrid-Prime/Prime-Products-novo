@@ -94,16 +94,44 @@ const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; ima
 export function ProductDetail() {
   const { id } = useParams<{ id: string }>();
   const articles = defaultArticles;
-  const [quoteForm, setQuoteForm] = useState({ name: '', company: '', email: '', phone: '', qty: '', details: '' });
-  const [quoteSent, setQuoteSent] = useState(false);
-  const [quoteSending, setQuoteSending] = useState(false);
+  const [quoteForm, setQuoteForm] = useState({ name: '', company: '', email: '', phone: '', qty: '', details: '', _hp: '' });
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleQuote = async (e: React.FormEvent) => {
     e.preventDefault();
-    setQuoteSending(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setQuoteSent(true);
-    setQuoteSending(false);
+    setStatus('sending');
+    setErrorMessage('');
+
+    try {
+      const res = await fetch('/api/send-mail.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'quote',
+          nome: quoteForm.name,
+          empresa: quoteForm.company,
+          email: quoteForm.email,
+          telefone: quoteForm.phone,
+          quantidade: quoteForm.qty,
+          detalhes: quoteForm.details,
+          produtoNome: product ? product.name : 'Produto Desconhecido',
+          url: window.location.href,
+          _hp: quoteForm._hp
+        })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus('success');
+        setQuoteForm({ name: '', company: '', email: '', phone: '', qty: '', details: '', _hp: '' });
+      } else {
+        setStatus('error');
+        setErrorMessage(data.error || 'Falha ao enviar cotação.');
+      }
+    } catch (err) {
+      setStatus('error');
+      setErrorMessage('Erro de comunicação. Tente novamente mais tarde.');
+    }
   };
 
   const inputCls = 'w-full border border-gray-200 rounded-sm px-3 py-2 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none bg-white text-secondary placeholder-gray-400';
@@ -382,22 +410,22 @@ export function ProductDetail() {
               </div>
 
               {/* Formulário de cotação técnica */}
-              <div className="bg-white p-8 shadow-md">
-                <h2 className="text-xl font-bold text-secondary mb-2">Questionário Técnico para Cotação</h2>
-                <p className="text-gray-500 text-sm mb-6 leading-relaxed">
-                  Preencha os dados abaixo para que nossa equipe elabore uma proposta técnica personalizada para este produto.
-                </p>
-                {quoteSent ? (
-                  <div className="text-center py-8">
+              <div className="bg-surface p-8 shadow-sm rounded-sm">
+                <h3 className="text-xl font-bold text-secondary mb-6 flex items-center gap-2">
+                  <Mail size={24} className="text-primary" /> Solicitar Cotação Técnica
+                </h3>
+                {status === 'success' ? (
+                  <div className="text-center py-8 animate-fade-in-up">
                     <CheckCircle size={48} className="text-green-500 mx-auto mb-4" />
                     <h3 className="text-lg font-bold text-secondary mb-2">Solicitação enviada!</h3>
                     <p className="text-gray-500 text-sm mb-4">Nossa equipe técnica entrará em contato em breve.</p>
-                    <button onClick={() => setQuoteSent(false)} className="text-primary font-bold text-sm hover:underline">
+                    <button onClick={() => setStatus('idle')} className="text-primary font-bold text-sm hover:underline">
                       Enviar nova solicitação
                     </button>
                   </div>
                 ) : (
                   <form onSubmit={handleQuote} className="space-y-4">
+                    <input type="text" name="_hp" style={{ display: 'none' }} value={quoteForm._hp} onChange={(e) => setQuoteForm(f => ({ ...f, _hp: e.target.value }))} tabIndex={-1} autoComplete="off" />
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Nome *</label>
@@ -426,8 +454,13 @@ export function ProductDetail() {
                       <label className="block text-xs font-bold uppercase text-gray-500 mb-1">Detalhes técnicos da aplicação *</label>
                       <textarea className={`${inputCls} resize-none`} rows={4} required placeholder="Descreva sua aplicação, condições de processo, pressão, temperatura, fluido, etc." value={quoteForm.details} onChange={(e) => setQuoteForm((f) => ({ ...f, details: e.target.value }))} />
                     </div>
-                    <button type="submit" disabled={quoteSending} className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-sm transition-all flex items-center justify-center gap-2 disabled:opacity-60">
-                      <Send size={16} /> {quoteSending ? 'ENVIANDO...' : 'SOLICITAR COTAÇÃO TÉCNICA'}
+                    {status === 'error' && (
+                      <div className="bg-red-50 text-red-600 p-3 rounded-sm text-sm font-medium">
+                        {errorMessage}
+                      </div>
+                    )}
+                    <button type="submit" disabled={status === 'sending'} className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-sm transition-all flex items-center justify-center gap-2 disabled:opacity-60">
+                      <Send size={16} /> {status === 'sending' ? 'ENVIANDO...' : 'SOLICITAR COTAÇÃO TÉCNICA'}
                     </button>
                   </form>
                 )}

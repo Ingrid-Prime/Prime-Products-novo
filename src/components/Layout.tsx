@@ -13,6 +13,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const location = useLocation();
 
+  const [newsEmail, setNewsEmail] = useState('');
+  const [newsStatus, setNewsStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
@@ -323,19 +326,62 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 Newsletter
               </h3>
               <p className="text-sm mb-6">Receba artigos técnicos e novidades do setor.</p>
-              <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
-                <input
-                  type="email"
-                  placeholder="Seu e-mail profissional"
-                  className="bg-secondary-dark border border-gray-700 text-white px-4 py-3 text-sm focus:outline-none focus:border-primary rounded-sm transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="bg-primary hover:bg-primary-hover text-white px-4 py-3 text-sm font-bold uppercase rounded-sm transition-all hover:shadow-lg"
+              
+              {newsStatus === 'success' ? (
+                <div className="bg-primary/20 text-white p-4 rounded-sm border border-primary/50 text-sm">
+                  Obrigado por se inscrever!
+                </div>
+              ) : (
+                <form 
+                  className="flex flex-col gap-3" 
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    if (!newsEmail) return;
+                    setNewsStatus('sending');
+                    try {
+                      const res = await fetch('/api/send-mail.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                          type: 'newsletter',
+                          email: newsEmail,
+                          rota: window.location.pathname,
+                          _hp: '' // honeypot
+                        })
+                      });
+                      const data = await res.json();
+                      if (data.success) {
+                        setNewsStatus('success');
+                        setNewsEmail('');
+                      } else {
+                        setNewsStatus('error');
+                      }
+                    } catch (err) {
+                      setNewsStatus('error');
+                    }
+                  }}
                 >
-                  Inscrever-se
-                </button>
-              </form>
+                  <input
+                    type="email"
+                    value={newsEmail}
+                    onChange={(e) => setNewsEmail(e.target.value)}
+                    placeholder="Seu e-mail profissional"
+                    required
+                    disabled={newsStatus === 'sending'}
+                    className="bg-secondary-dark border border-gray-700 text-white px-4 py-3 text-sm focus:outline-none focus:border-primary rounded-sm transition-colors disabled:opacity-50"
+                  />
+                  {newsStatus === 'error' && (
+                    <span className="text-red-400 text-xs">Ocorreu um erro. Tente novamente.</span>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={newsStatus === 'sending'}
+                    className="bg-primary hover:bg-primary-hover text-white px-4 py-3 text-sm font-bold uppercase rounded-sm transition-all hover:shadow-lg disabled:opacity-50"
+                  >
+                    {newsStatus === 'sending' ? 'Enviando...' : 'Inscrever-se'}
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
