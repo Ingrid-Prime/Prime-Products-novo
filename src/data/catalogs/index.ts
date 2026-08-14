@@ -11,3 +11,4 @@ export { ALUMINUM_CYLINDERS_CATALOG, ALUMINUM_CYLINDERS_EXTRA_BLOCKS } from './p
 export { OXYGEN_GENERATION_CATALOG, OXYGEN_GENERATION_EXTRA_BLOCKS } from './products/oxygenGenerationCatalog';
 export { CUTTING_WELDING_CATALOG, CUTTING_WELDING_EXTRA_BLOCKS } from './products/cuttingWeldingCatalog';
 export { FIRE_SUPPRESSION_CATALOG, FIRE_SUPPRESSION_EXTRA_BLOCKS } from './products/fireSuppressionCatalog';
+export { CRYOGENIC_DEWARS_CATALOG, CRYOGENIC_DEWARS_EXTRA_BLOCKS } from './products/cryogenicDewarsCatalog';

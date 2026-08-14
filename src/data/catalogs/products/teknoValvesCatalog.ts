@@ -68,7 +68,7 @@ export const TEKNO_VALVES_CATALOG = [
       [renderImages(['mba-10.png'], 'scale-150'), 'MBA-10', 'Medical Valves in O-ring Seal Design. 360 bar WP.', 'Medical Breathing Air'],
       [renderImages(['alv-10.png', 'alv-100.png']), 'ALV-10', 'Auto Lifting Valves for Fire Fighting / CO2 Cylinders. 360 bar WP.', 'Fire Fighting'],
       [renderImages(['fsg-07.png', 'fsg-077.png']), 'FSG-07', 'Handwheel Operated Valves in Packed Design. Heavy duty design.', 'NGV (Natural Gas for Vehicles)'],
-      [renderImages(['bmv-09.png'], 'scale-150'), 'BMV-09', 'High Pressure Manifold Line Valve', 'NGV (Natural Gas for Vehicles)']
+      [renderImages(['bmv-09.png'], 'scale-150'), 'BMV-09', 'Dual Port (Liquid / Gas) Handwheel Operated Brass Valves in Diaphragm Design for Refrigerant Gases.', 'NGV (Natural Gas for Vehicles)']
     ]
   }
 ];

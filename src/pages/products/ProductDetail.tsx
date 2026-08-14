@@ -5,10 +5,10 @@ import { AnimateOnScroll } from '../../components/AnimateOnScroll';
 import { EditableElement } from '../../components/EditableElement';
 import { SectionContainer } from '../../components/SectionContainer';
 import { defaultArticles } from '../../data/defaultArticles';
-import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG, TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS, ALUMINUM_CYLINDERS_CATALOG, ALUMINUM_CYLINDERS_EXTRA_BLOCKS, OXYGEN_GENERATION_CATALOG, OXYGEN_GENERATION_EXTRA_BLOCKS, CUTTING_WELDING_CATALOG, CUTTING_WELDING_EXTRA_BLOCKS, FIRE_SUPPRESSION_CATALOG, FIRE_SUPPRESSION_EXTRA_BLOCKS } from '../../data/catalogs';
+import { TRANSMITTER_CATALOG, CALIBRATION_CATALOG, HYDRAULIC_CATALOG, VALVES_CATALOG, SPECIAL_REGULATORS_CATALOG, TEKNO_VALVES_CATALOG, TKF_CATALOG, GASTRON_CATALOG, TYPE4_CATALOG, TYPE4_EXTRA_BLOCKS, ALUMINUM_CYLINDERS_CATALOG, ALUMINUM_CYLINDERS_EXTRA_BLOCKS, OXYGEN_GENERATION_CATALOG, OXYGEN_GENERATION_EXTRA_BLOCKS, CUTTING_WELDING_CATALOG, CUTTING_WELDING_EXTRA_BLOCKS, FIRE_SUPPRESSION_CATALOG, FIRE_SUPPRESSION_EXTRA_BLOCKS, CRYOGENIC_DEWARS_CATALOG, CRYOGENIC_DEWARS_EXTRA_BLOCKS } from '../../data/catalogs';
 
 
-const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; video?: string; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG | typeof ALUMINUM_CYLINDERS_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS | typeof ALUMINUM_CYLINDERS_EXTRA_BLOCKS }> = {
+const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; images: string[]; video?: string; desc: string; features: string[]; apps: string[]; catalogTables?: typeof TRANSMITTER_CATALOG | typeof CALIBRATION_CATALOG | typeof HYDRAULIC_CATALOG | typeof VALVES_CATALOG | typeof SPECIAL_REGULATORS_CATALOG | typeof TEKNO_VALVES_CATALOG | typeof TKF_CATALOG | typeof GASTRON_CATALOG | typeof TYPE4_CATALOG | typeof ALUMINUM_CYLINDERS_CATALOG | typeof CRYOGENIC_DEWARS_CATALOG; extraBlocks?: typeof TYPE4_EXTRA_BLOCKS | typeof ALUMINUM_CYLINDERS_EXTRA_BLOCKS | typeof CRYOGENIC_DEWARS_EXTRA_BLOCKS }> = {
   'cilindros-aluminio': { 
     name: 'Cilindros de Alumínio', 
     cat: 'Gases', 
@@ -34,7 +34,7 @@ const PRODUCT_DATA: Record<string, { name: string; cat: string; img: string; ima
   },
   'conexoes-instrumentacao': { name: 'Conexões para Instrumentação', cat: 'Instrumentação', img: '/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', images: ['/images/produtos/conexoes-instrumentacao/prod-conexoes-instrumentacao-new.jpg', '/images/produtos/conexoes-instrumentacao/prod-conexoes-2.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-3.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-4.png', '/images/produtos/conexoes-instrumentacao/prod-conexoes-5.png'], desc: 'Conexões certificadas para aplicações de instrumentação analítica e industrial. Compatibilidade com transmissores, analisadores e sistemas de processo.', features: ['Conexões TK-Fujikin e equivalentes', 'Materiais: SS 316, Hastelloy, PTFE', 'Certificação para fluidos agressivos', 'Conexões compressão, NPT e flange', 'Estanqueidade garantida a altas pressões'], apps: ['Análise de processo', 'Instrumentação industrial', 'Laboratórios', 'Petroquímica'], catalogTables: TKF_CATALOG },
   'detectores-vazamento': { name: 'Detectores de Vazamento', cat: 'Segurança', img: '/images/produtos/detectores-de-vazamentos/detector-principal.jpg', images: ['/images/produtos/detectores-de-vazamentos/detector-principal.jpg', '/images/solucoes-integradas/instrumentacao-analitica/prod-detectores-vazamento.png', '/images/solucoes-integradas/instrumentacao-analitica/app-detector-2.jpg'], desc: 'Sistemas de detecção de gases tóxicos e inflamáveis para proteção de ambientes industriais. Tecnologias catalítica, eletroquímica e de infravermelho.', features: ['Detecção de H₂S, CO, NH₃, LEL', 'Saída 4-20 mA e HART', 'Certificação ATEX e IECEx', 'Display local e alarmes sonoros/visuais', 'Calibração simplificada em campo'], apps: ['Refinarias e petroquímicas', 'Plantas de gás e GNL', 'Laboratórios químicos', 'Ambientes confinados'], catalogTables: GASTRON_CATALOG },
-  'dewars-criogenicos': { name: 'Dewars e Recipientes Criogênicos', cat: 'Criogenia', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', images: ['/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', '/images/produtos/dewers-criogenicos/prod-dewars-2.png', '/images/produtos/dewers-criogenicos/prod-dewars-3.png'], desc: 'Recipientes criogênicos para armazenamento e transporte de nitrogênio líquido, oxigênio líquido, argônio líquido e outros gases liquefeitos.', features: ['Isolamento a vácuo multicamada', 'Capacidade de 10 a 500 litros', 'Bocal de acesso largo ou estreito', 'Conformidade com normas de transporte', 'Acessórios e suprimentos'], apps: ['Criopreservação biológica', 'Laboratórios de pesquisa', 'Indústria alimentícia', 'Metalurgia criogênica'] },
+  'dewars-criogenicos': { name: 'Dewars e Recipientes Criogênicos', cat: 'Criogenia', img: '/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', images: ['/images/produtos/dewers-criogenicos/prod-dewars-criogenicos-new.jpg', '/images/produtos/dewers-criogenicos/prod-dewars-2.png', '/images/produtos/dewers-criogenicos/prod-dewars-3.png'], desc: 'Recipientes criogênicos para armazenamento e transporte de nitrogênio líquido, oxigênio líquido, argônio líquido e outros gases liquefeitos. Portáteis, de alta capacidade térmica e disponíveis em diversas capacidades para uso em laboratório e aplicações industriais.', features: ['Isolamento a vácuo multicamada de alta eficiência', 'Capacidade de 10 a 450 Litros', 'Construção reforçada em inox', 'Conformidade com normas DOT-4L e TPED', 'Válvulas codificadas por cor', 'Isolamento de vácuo com 5 anos de garantia (Série XL)'], apps: ['Criopreservação biológica', 'Laboratórios de pesquisa', 'Indústria alimentícia', 'Metalurgia criogênica', 'Estações de envase e laser'], catalogTables: CRYOGENIC_DEWARS_CATALOG, extraBlocks: CRYOGENIC_DEWARS_EXTRA_BLOCKS },
   'geracao-oxigenio-anestesia': {
     name: 'Geração de Oxigênio e Anestesia',
     cat: 'Gases',
@@ -356,9 +356,15 @@ export function ProductDetail() {
                           <table className="w-full text-sm text-left">
                             <thead className="text-xs text-gray-700 uppercase bg-gray-100">
                               <tr>
-                                {table.columns.map((col: string, j: number) => (
-                                  <th key={j} className="px-4 py-3">{col}</th>
-                                ))}
+                                {table.columns.map((col: string, j: number) => {
+                                  const isFeatures = col.includes('CARACTERÍSTICAS');
+                                  const isImage = col === 'IMAGEM' || col === 'IMAGE';
+                                  return (
+                                    <th key={j} className={`px-4 py-3 ${isImage ? 'w-32' : isFeatures ? 'min-w-[280px]' : 'min-w-[150px]'}`}>
+                                      {col}
+                                    </th>
+                                  );
+                                })}
                               </tr>
                             </thead>
                             <tbody>
