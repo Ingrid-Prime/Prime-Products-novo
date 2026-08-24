@@ -43,48 +43,51 @@ export function Contact() {
     }
   };
 
-  const inputCls = 'w-full border border-gray-300 rounded-sm px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white text-secondary placeholder-gray-400';
+  const inputCls = 'w-full border border-gray-300/50 rounded-sm px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all bg-white/60 focus:bg-white text-secondary placeholder-gray-500 backdrop-blur-sm';
 
   return (
     <>
-      {/* Hero */}
+      {/* Hero Background */}
       <EditableElement
-        id="contact_hero_c"
+        id="contact_hero_bg"
         type="container"
-        as="section"
-        className="prime-bg-standard relative min-h-[60vh] flex items-center bg-secondary overflow-hidden"
+        as="div"
+        className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
         defaultStyle={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')",
+          backgroundImage: "url('/images/contato/contato-consultoria-engenharia-hero.webp')",
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
+          backgroundPosition: '75% 30%'
         }}
       >
         <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-0" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      </EditableElement>
+
+      {/* Hero Content */}
+      <section className="relative min-h-[50vh] flex items-center z-10 pt-16 pb-12">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
           <AnimateOnScroll>
             <div className="inline-block w-20 h-1 bg-primary mb-8 rounded-full" />
           </AnimateOnScroll>
           <AnimateOnScroll delay={200}>
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tight">
               <EditableElement id="cont_hero_t" defaultContent="Fale Conosco" />
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll delay={400}>
-            <div className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
+            <div className="text-lg md:text-xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
               <EditableElement id="cont_hero_s" defaultContent="Canais de suporte de engenharia e atendimento técnico especializado para o seu processo." />
             </div>
           </AnimateOnScroll>
         </div>
-      </EditableElement>
+      </section>
 
-      <section className="bg-surface relative overflow-visible -mt-20 pt-0">
+      <section className="relative z-10 pb-20">
         <SectionContainer className="pt-0">
-          <div className="bg-white rounded-sm shadow-2xl overflow-hidden max-w-6xl mx-auto border-t-8 border-primary">
+          <div className="rounded-sm shadow-2xl overflow-hidden max-w-6xl mx-auto border-t-8 border-primary ring-1 ring-white/10">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Info panel */}
-              <div className="p-12 bg-secondary text-white relative overflow-hidden">
+              <div className="p-12 bg-secondary/80 backdrop-blur-md text-white relative overflow-hidden">
                 <div className="absolute top-0 right-0 -mr-10 -mt-10 bg-white/5 rounded-full w-64 h-64 blur-3xl" />
                 <div className="absolute bottom-0 left-0 -ml-10 -mb-10 bg-primary/20 rounded-full w-64 h-64 blur-3xl" />
                 <div className="relative z-10">
@@ -163,7 +166,7 @@ export function Contact() {
               </div>
 
               {/* Form panel */}
-              <div className="p-12">
+              <div className="p-12 bg-white/70 backdrop-blur-md">
                 {status === 'success' ? (
                   <div className="h-full flex flex-col items-center justify-center text-center py-10 animate-fade-in-up">
                     <CheckCircle size={64} className="text-green-500 mb-6" />

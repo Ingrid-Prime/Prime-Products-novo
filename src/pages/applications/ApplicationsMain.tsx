@@ -70,7 +70,7 @@ export function ApplicationsMain() {
         type="container"
         as="div"
         className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
-        defaultStyle={{ backgroundImage: "url('/images/aplicacoes/app-bg-pharma.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        defaultStyle={{ backgroundImage: "url('/images/aplicacoes/aplicacoes-engenharia-premium-hero.webp')", backgroundSize: 'cover', backgroundPosition: '80% 20%' }}
       >
         <div className="absolute inset-0 bg-secondary/70 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent z-0" />

@@ -126,7 +126,7 @@ export function SolutionsMain() {
         type="container"
         as="div"
         className="fixed inset-0 -z-50 prime-bg-standard bg-secondary"
-        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/solucoes-integradas-bg.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        defaultStyle={{ backgroundImage: "url('/images/solucoes-integradas/solucoes-engenharia-integrada-hero.webp')", backgroundSize: 'cover', backgroundPosition: '85% 30%' }}
       >
         <div className="absolute inset-0 bg-secondary/70 z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/20 to-transparent z-0" />
