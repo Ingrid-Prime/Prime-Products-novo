@@ -113,16 +113,12 @@ export function Home() {
     <>
       {/* Hero */}
       <section className="relative h-[700px] flex items-center bg-secondary overflow-hidden">
-        {/* Video Background */}
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
+        {/* Image Background */}
+        <img 
+          src="/images/home/hero-bg-novo.png" 
+          alt="Prime Products Hero Background" 
           className="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
-        >
-          <source src="/videos/hero-bg.mp4" type="video/mp4" />
-        </video>
+        />
         
         {/* Camada Base removida para testar luminosidade do vídeo */}
         {/* <div className="absolute inset-0 bg-secondary/70 z-[1] pointer-events-none" /> */}
