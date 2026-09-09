@@ -1,21 +1,21 @@
-﻿DirectoryIndex index.html
+DirectoryIndex index.html
 Options -MultiViews
 RewriteEngine On
 
 ErrorDocument 404 /404.html
 
-# Forçar www (Canonical Domain)
+# Forcar www (Canonical Domain) mantendo path/query
 RewriteCond %{HTTP_HOST} ^primeproducts\.ind\.br$ [NC]
-RewriteRule ^(.*)$ https://www.primeproducts.ind.br/ [R=301,L]
+RewriteRule ^(.*)$ https://www.primeproducts.ind.br/$1 [R=301,L]
 
-# Forçar HTTPS
+# Forcar HTTPS mantendo path/query
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/ [R=301,L]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
-# Exceções estritas
+# Excecoes estritas
 RewriteRule ^(robots\.txt|sitemap\.xml|404\.html)$ - [L]
 
-# Se for arquivo ou diretório físico (ex: os HTMLs estáticos gerados pelo prerender)
+# Se for arquivo ou diretorio fisico (ex: os HTMLs estaticos gerados pelo prerender)
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
 RewriteRule ^ - [L]
@@ -24,7 +24,7 @@ RewriteRule ^ - [L]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
 RewriteRule ^(.*)$ /index.html [L]
 
-# Fallback final para rotas inválidas = ERRO 404
+# Fallback final para rotas invalidas = ERRO 404
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ - [R=404,L]
