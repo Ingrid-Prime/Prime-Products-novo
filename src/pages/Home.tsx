@@ -115,16 +115,19 @@ export function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[700px] flex items-center bg-secondary overflow-hidden">
-        {/* Image Background */}
-        <img 
-          src="/images/home/hero-bg-novo.png" 
-          alt="Prime Products Hero Background" 
-          className="absolute inset-0 w-full h-full object-cover z-0 opacity-80"
-        />
-        
-        {/* Camada Base removida para testar luminosidade do vídeo */}
-        {/* <div className="absolute inset-0 bg-secondary/70 z-[1] pointer-events-none" /> */}
+      <EditableElement
+        id="home_hero_bg"
+        type="container"
+        as="section"
+        className="prime-bg-standard relative h-[700px] flex items-center bg-secondary overflow-hidden"
+        defaultStyle={{
+          backgroundImage: "url('/images/lab-analitico-panel.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="absolute inset-0 bg-secondary/80 z-0" />
         <div className="absolute inset-0 z-[1] pointer-events-none">
            <ParticleCanvas />
         </div>
@@ -162,7 +165,7 @@ export function Home() {
           </div>
         </div>
         <div className="absolute bottom-0 right-0 h-32 w-2/3 md:w-1/2 bg-primary z-10 pointer-events-none" style={{ clipPath: 'polygon(15% 100%, 100% 100%, 100% 0, 0 100%)' }} />
-      </section>
+      </EditableElement>
 
       {/* About section */}
       <section className="bg-white overflow-visible py-20">

@@ -114,6 +114,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Phone size={14} className="text-white fill-current" />
               <EditableElement id="layout_topbar_phone" defaultContent="(31) 9 8670-8742" />
             </span>
+            <div className="hidden lg:block ml-4">
+              <LanguageSelector compact />
+            </div>
           </div>
         </div>
       </div>
@@ -197,9 +200,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
               })}
             </nav>
 
-            {/* CTA + Language Selector + mobile toggle */}
+            {/* CTA + mobile toggle */}
             <div className="hidden xl:flex items-center gap-4 shrink-0 ml-4">
-              <LanguageSelector />
               <EditableElement
                 id="layout_nav_cta"
                 type="button"
